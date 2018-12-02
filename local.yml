@@ -24,6 +24,17 @@ services:
       - "8000:8000"
     command: /start
 
+  angular:
+    build:
+      context: .
+      dockerfile: ./compose/production/angular/Dockerfile
+    volumes:
+      - ./clientapp/frontend-angular-app:/usr/app/
+    ports:
+      - 4200:4200
+      - 49153:49153
+    command: /start
+
   postgres:
     build:
       context: .
