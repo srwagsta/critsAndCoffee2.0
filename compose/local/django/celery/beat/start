@@ -1,0 +1,4 @@
+#!/bin/sh
+
+rm -f './celerybeat.pid'
+celery -A crits_and_coffee.taskapp beat -l INFO

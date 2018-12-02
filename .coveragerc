@@ -1,0 +1,5 @@
+[run]
+include = crits_and_coffee/*
+omit = *migrations*, *tests*
+plugins =
+    django_coverage_plugin
