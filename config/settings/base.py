@@ -70,7 +70,6 @@ THIRD_PARTY_APPS = [
 ]
 LOCAL_APPS = [
     'crits_and_coffee.users.apps.UsersAppConfig',
-    'clientapp.apps.ClientappConfig',
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps

@@ -28,8 +28,9 @@ services:
     build:
       context: .
       dockerfile: ./compose/production/angular/Dockerfile
+    image: crits_and_coffee_production_frontend
     volumes:
-      - ./clientapp/frontend-angular-app:/usr/app/
+      - ./angular-frontend:/usr/app/
     ports:
       - 4200:4200
       - 49153:49153
@@ -50,7 +51,7 @@ services:
     build:
       context: .
       dockerfile: ./compose/local/selenium/Dockerfile
-    image: todays_training_docker_selenium
+    image: crits_and_coffee_local_selenium
     ports:
       - 4444:4444   # Selenium
       - 5901:5900   # VNC server
