@@ -20,7 +20,8 @@ urlpatterns = [
         include("crits_and_coffee.users.urls", namespace="users"),
     ),
     path("accounts/", include("allauth.urls")),
-    # Your stuff: custom urls includes go here
+    # https://django-rest-auth.readthedocs.io/en/latest/api_endpoints.html
+    path('rest-auth/', include('rest_auth.urls')),
 ] + static(
     settings.MEDIA_URL, document_root=settings.MEDIA_ROOT
 )

@@ -26,6 +26,7 @@ TIME_ZONE = 'UTC'
 # https://docs.djangoproject.com/en/dev/ref/settings/#language-code
 LANGUAGE_CODE = 'en-us'
 # https://docs.djangoproject.com/en/dev/ref/settings/#site-id
+# https://django-rest-auth.readthedocs.io/en/latest/installation.html
 SITE_ID = 1
 # https://docs.djangoproject.com/en/dev/ref/settings/#use-i18n
 USE_I18N = True
@@ -67,6 +68,8 @@ THIRD_PARTY_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'rest_framework',
+    'rest_framework.authtoken',
+    'rest_auth',
 ]
 LOCAL_APPS = [
     'crits_and_coffee.users.apps.UsersAppConfig',
@@ -254,7 +257,6 @@ ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 ACCOUNT_ADAPTER = 'crits_and_coffee.users.adapters.AccountAdapter'
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
 SOCIALACCOUNT_ADAPTER = 'crits_and_coffee.users.adapters.SocialAccountAdapter'
-
 
 # Your stuff...
 # ------------------------------------------------------------------------------
