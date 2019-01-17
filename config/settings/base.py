@@ -70,6 +70,7 @@ THIRD_PARTY_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'rest_auth',
+    'rest_framework_swagger',
 ]
 LOCAL_APPS = [
     'crits_and_coffee.users.apps.UsersAppConfig',

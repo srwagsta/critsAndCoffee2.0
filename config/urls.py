@@ -4,8 +4,12 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.views.generic import TemplateView
 from django.views import defaults as default_views
+from rest_framework_swagger.views import get_swagger_view
+
+schema_view = get_swagger_view(title='Crits And Coffee API')
 
 urlpatterns = [
+    path('swagger/', schema_view),
     path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
     path(
         "about/",
