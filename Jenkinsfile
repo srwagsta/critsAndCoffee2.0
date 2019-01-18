@@ -1,5 +1,10 @@
-node {
-    checkout scm
-    def dockerfile = 'Dockerfile'
-    def customImage = docker.build("my-image:${env.BUILD_ID}", "-f ${dockerfile} ./compose/local/angular")
+pipeline {
+    agent docker
+    stages {
+        stage('Build') {
+            steps {
+                sh 'docker-compose -f local.yml build'
+            }
+        }
+    }
 }
