@@ -59,6 +59,7 @@ DJANGO_APPS = [
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.gis',
     # 'django.contrib.humanize', # Handy template tags
     'django.contrib.admin',
 ]
@@ -74,7 +75,7 @@ THIRD_PARTY_APPS = [
 ]
 LOCAL_APPS = [
     'crits_and_coffee.users.apps.UsersAppConfig',
-    # Your stuff: custom apps go here
+    'Instagram_Posts.apps.InstagramPostsConfig'
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS

@@ -19,7 +19,7 @@ RUN $(npm bin)/ng build --prod
 # and 49153 for Webpack Hot Module Reload
 EXPOSE 4200 49153
 
-COPY ./compose/production/angular/start /start
+COPY ./compose/local/angular/start /start
 RUN sed -i 's/\r//' /start
 RUN chmod +x /start
 

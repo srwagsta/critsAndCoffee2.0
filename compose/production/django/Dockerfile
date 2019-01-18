@@ -7,8 +7,8 @@ RUN apt-get update \
         postgresql-client \
     && rm -rf /var/lib/apt/lists/*
 
-RUN addgroup -S django \
-    && adduser -S -G django django
+RUN addgroup --system django \
+    && adduser --system --group django
 
 # Requirements are installed here to ensure they will be cached.
 COPY ./requirements /requirements

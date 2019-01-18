@@ -27,10 +27,8 @@ services:
   angular:
     build:
       context: .
-      dockerfile: ./compose/production/angular/Dockerfile
-    image: crits_and_coffee_production_frontend
-    volumes:
-      - ./angular-frontend:/usr/app/
+      dockerfile: compose/local/angular/Dockerfile
+    image: crits_and_coffee_local_frontend
     ports:
       - 4200:4200
       - 49153:49153
