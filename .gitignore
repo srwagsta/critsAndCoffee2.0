@@ -325,5 +325,5 @@ tags
 crits_and_coffee/media/
 
 .pytest_cache/
-.env
-.envs/*
+#.env
+#.envs/*
