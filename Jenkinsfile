@@ -1,3 +1,4 @@
+#!groovy
 node('docker') {
     currentBuild.result = "SUCCESS"
     try {
