@@ -2,7 +2,9 @@ pipeline {
     agent any
     stages {
         stage('Build') {
-            sh "docker-compose -f local.yml build"
+            steps {
+                sh 'docker-compose -f local.yml build'
+            }
         }
     }
 }
