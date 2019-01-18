@@ -1,4 +1,4 @@
-node('Jenkins') {
+node('docker') {
     currentBuild.result = "SUCCESS"
     try {
         stage('Checkout'){
