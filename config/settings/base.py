@@ -75,7 +75,7 @@ THIRD_PARTY_APPS = [
 ]
 LOCAL_APPS = [
     'crits_and_coffee.users.apps.UsersAppConfig',
-    'Instagram_Posts.apps.InstagramPostsConfig'
+    'InstagramPosts.apps.InstagramPostsConfig'
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -259,6 +259,10 @@ ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 ACCOUNT_ADAPTER = 'crits_and_coffee.users.adapters.AccountAdapter'
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
 SOCIALACCOUNT_ADAPTER = 'crits_and_coffee.users.adapters.SocialAccountAdapter'
-
-# Your stuff...
+# rest_framework
 # ------------------------------------------------------------------------------
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAdminUser',
+    ),
+}

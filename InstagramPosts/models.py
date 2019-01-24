@@ -1,7 +1,7 @@
 from django.contrib.gis.db import models
 
 
-class Instagram_Post(models.Model):
+class InstagramPost(models.Model):
     content = models.TextField(default='None', max_length=255)
     id_code = models.CharField(default='None', max_length=255)
     tags = models.TextField(default='None', max_length=255)

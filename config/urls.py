@@ -9,19 +9,22 @@ from rest_framework_swagger.views import get_swagger_view
 schema_view = get_swagger_view(title='Crits And Coffee API')
 
 urlpatterns = [
+    # swagger api documentation
     path('swagger/', schema_view),
-
     # Django Admin, use {% url 'admin:index' %}
     path(settings.ADMIN_URL, admin.site.urls),
-
     # User management
     path("users/",include("crits_and_coffee.users.urls", namespace="users"),),
     path("accounts/", include("allauth.urls")),
     # https://django-rest-auth.readthedocs.io/en/latest/api_endpoints.html
     path('rest-auth/', include('rest_auth.urls')),
 
-    path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
+    # Static page serving
+    path("", TemplateView.as_view(template_name="pages/angular_home.html"), name="home"),
     path("about/", TemplateView.as_view(template_name="pages/about.html"), name="about"),
+
+    # catch-all pattern for compatibility with the Angular routes. This must be last in the list.
+    path("<path:path>/", TemplateView.as_view(template_name="pages/angular_home.html"), name="home"),
 ] + static(
     settings.MEDIA_URL, document_root=settings.MEDIA_ROOT
 )

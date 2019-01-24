@@ -15,23 +15,11 @@ services:
       - mailhog
     links:
     - selenium
-    volumes:
-      - .:/app
     env_file:
       - ./.envs/.local/.django
       - ./.envs/.local/.postgres
     ports:
       - 8000:8000
-    command: /start
-
-  angular:
-    build:
-      context: .
-      dockerfile: compose/local/angular/Dockerfile
-    image: crits_and_coffee_local_frontend
-    ports:
-      - 4200:4200
-      - 49153:49153
     command: /start
 
   postgres:

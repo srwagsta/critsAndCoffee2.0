@@ -1,3 +1,21 @@
+FROM node:9-alpine as angular_build
+
+COPY ./angular-frontend/package.json ./
+COPY ./angular-frontend/package-lock.json ./
+
+RUN npm set progress=false && npm config set depth 0 && npm cache clean --force
+
+## Storing node modules on a separate layer will prevent unnecessary npm installs at each build
+RUN npm i && mkdir /ng-app && cp -R ./node_modules ./ng-app
+
+WORKDIR /ng-app
+
+COPY ./angular-frontend .
+
+## Build the angular app in production mode and store the artifacts in dist folder
+RUN $(npm bin)/ng build --prod --output-hashing=none
+
+
 FROM python:3.6-stretch as GeoDjango
 
 ENV PYTHONUNBUFFERED 1
@@ -7,8 +25,6 @@ RUN apt-get update \
         postgresql-client binutils libproj-dev gdal-bin \
     && rm -rf /var/lib/apt/lists/*
 
-
-# ADD PostGIS here
 # POSTGIS dependencies
 ENV POSTGIS_VERSION 2.4.4
 ENV POSTGIS_SHA256 0dff4902556ad45430e2b85dbe7e9baa758c6eb0bfd5ff6948f478beddd56b67
@@ -39,9 +55,14 @@ RUN mkdir /postGIS_Install && cd /postGIS_Install \
 # END POSTGIS Changes
 
 FROM GeoDjango
+COPY ./ /prod-app/
+COPY --from=angular_build /ng-app/dist/*.js /prod-app/crits_and_coffee/static/js/angular-app/
+COPY --from=angular_build /ng-app/dist/*.css /prod-app/crits_and_coffee/static/css/
+
 # Requirements are installed here to ensure they will be cached.
 COPY ./requirements /requirements
-RUN pip install -r /requirements/local.txt
+RUN pip install --upgrade pip \
+    && pip install -r /requirements/local.txt
 
 COPY ./compose/production/django/entrypoint /entrypoint
 RUN sed -i 's/\r//' /entrypoint
@@ -63,6 +84,6 @@ COPY ./compose/local/django/celery/flower/start /start-flower
 RUN sed -i 's/\r//' /start-flower
 RUN chmod +x /start-flower
 
-WORKDIR /app
+WORKDIR /prod-app
 
 ENTRYPOINT ["/entrypoint"]

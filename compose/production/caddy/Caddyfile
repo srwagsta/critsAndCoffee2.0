@@ -3,14 +3,6 @@ www.{$DOMAIN_NAME} {
 }
 
 {$DOMAIN_NAME} {
-    root /angular
-
-    log stdout
-    errors stdout
-    gzip
-}
-
-api.{$DOMAIN_NAME} {
     proxy / django:5000 {
         header_upstream Host {host}
         header_upstream X-Real-IP {remote}
