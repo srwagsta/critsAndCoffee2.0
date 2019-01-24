@@ -14,7 +14,7 @@
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
-    <orderEntry type="jdk" jdkName="Remote  unknown interpreter Docker Compose (django at [/home/wagstaff/MassStorage/Django_Projects/critsAndCoffee2.0/local.yml])" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Remote Python 3.6.8 Docker (crits_and_coffee_local_django:latest)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PackageRequirementsSettings">
