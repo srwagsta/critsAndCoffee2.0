@@ -13,11 +13,12 @@ urlpatterns = [
     path('swagger/', schema_view),
     # Django Admin, use {% url 'admin:index' %}
     path(settings.ADMIN_URL, admin.site.urls),
-    # User management
-    path("users/",include("crits_and_coffee.users.urls", namespace="users"),),
-    path("accounts/", include("allauth.urls")),
+    # # User management
+    # path("users/",include("crits_and_coffee.users.urls", namespace="users"),),
+    # path("accounts/", include("allauth.urls")),
     # https://django-rest-auth.readthedocs.io/en/latest/api_endpoints.html
     path('rest-auth/', include('rest_auth.urls')),
+    path("rest-auth/registration/", include('rest_auth.registration.urls')),
 
     # Static page serving
     path("", TemplateView.as_view(template_name="pages/angular_home.html"), name="home"),

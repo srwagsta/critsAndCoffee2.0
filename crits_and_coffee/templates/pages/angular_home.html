@@ -4,12 +4,17 @@
 {% block head %}
   <base href="/home">
 {% endblock %}
-{% block content %}
 
+{% block extra_css %}
+  <link href="{% static 'css/styles.css' %}">
+{% endblock %}
+
+{% block content %}
   <app-root>Loading Angular app ... </app-root>
 
-
-  <script type="text/javascript" src="{% static 'js/angular-app/runtime.js' %}"></script>
-  <script type="text/javascript" src="{% static 'js/angular-app/polyfills.js' %}"></script>
-  <script type="text/javascript" src="{% static 'js/angular-app/main.js' %}"></script>
+  {% block extra_javascript %}
+    <script type="text/javascript" src="{% static 'js/angular-app/runtime.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/angular-app/polyfills.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/angular-app/main.js' %}"></script>
+  {% endblock %}
 {% endblock %}

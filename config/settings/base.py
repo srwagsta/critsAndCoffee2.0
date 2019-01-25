@@ -68,14 +68,16 @@ THIRD_PARTY_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    # For social account registratin check -> https://django-rest-auth.readthedocs.io/en/latest/installation.html
     'rest_framework',
     'rest_framework.authtoken',
     'rest_auth',
+    'rest_auth.registration',
     'rest_framework_swagger',
 ]
 LOCAL_APPS = [
     'crits_and_coffee.users.apps.UsersAppConfig',
-    'InstagramPosts.apps.InstagramPostsConfig'
+    'API_InstagramPosts.apps.InstagramPostsConfig'
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS

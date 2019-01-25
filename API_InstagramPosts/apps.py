@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class InstagramPostsConfig(AppConfig):
-    name = 'InstagramPosts'
+    name = 'API_InstagramPosts'
