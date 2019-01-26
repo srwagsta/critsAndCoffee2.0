@@ -22,7 +22,6 @@ urlpatterns = [
 
     # Static page serving
     path("", TemplateView.as_view(template_name="pages/angular_home.html"), name="home"),
-    path("about/", TemplateView.as_view(template_name="pages/about.html"), name="about"),
 
     # catch-all pattern for compatibility with the Angular routes. This must be last in the list.
     path("<path:path>/", TemplateView.as_view(template_name="pages/angular_home.html"), name="home"),

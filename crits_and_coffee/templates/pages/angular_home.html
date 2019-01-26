@@ -2,7 +2,7 @@
 {% load staticfiles %}
 
 {% block head %}
-  <base href="/home">
+  <base href="/">
 {% endblock %}
 
 {% block extra_css %}
@@ -11,10 +11,11 @@
 
 {% block content %}
   <app-root>Loading Angular app ... </app-root>
-
-  {% block extra_javascript %}
-    <script type="text/javascript" src="{% static 'js/angular-app/runtime.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/angular-app/polyfills.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/angular-app/main.js' %}"></script>
-  {% endblock %}
 {% endblock %}
+
+{% block extra_javascript %}
+  <script type="text/javascript" src="{% static 'js/angular-app/runtime.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/angular-app/polyfills.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/angular-app/main.js' %}"></script>
+{% endblock %}
+
