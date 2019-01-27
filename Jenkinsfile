@@ -17,5 +17,11 @@ pipeline {
                 sh 'node --version'
             }
         }
+        stage('Compose Test') {
+            agent none
+            steps {
+                sh docker-compose --version
+            }
+        }
     }
 }
