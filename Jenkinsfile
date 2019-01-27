@@ -1,3 +1,4 @@
+// NOTE: the `push` directives only work because a `docker login` has been executed inside the build container
 pipeline {
     agent none
     stages {
