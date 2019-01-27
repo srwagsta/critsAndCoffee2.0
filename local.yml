@@ -6,10 +6,10 @@ volumes:
 
 services:
   django: &django
+    image: ${DOCKER_REGISTRY}crits_and_coffee_django:${DOCKER_LOCAL_TAG}
     build:
       context: .
       dockerfile: ./compose/local/django/Dockerfile
-    image: ${DOCKER_REGISTRY}crits_and_coffee_django:${DOCKER_LOCAL_TAG}
     depends_on:
       - postgres
       - mailhog
@@ -23,10 +23,10 @@ services:
     command: /start
 
   postgres:
+    image: ${DOCKER_REGISTRY}crits_and_coffee_postgres:${DOCKER_LOCAL_TAG}
     build:
       context: .
       dockerfile: ./compose/production/postgres/Dockerfile
-    image: ${DOCKER_REGISTRY}crits_and_coffee_postgres:${DOCKER_LOCAL_TAG}
     volumes:
       - local_postgres_data:/var/lib/postgresql/data
       - local_postgres_data_backups:/backups
@@ -34,10 +34,10 @@ services:
       - ./.envs/.local/.postgres
 
   selenium:
+    image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${SELENIUM_LOCAL_TAG}
     build:
       context: .
       dockerfile: ./compose/local/selenium/Dockerfile
-    image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${SELENIUM_LOCAL_TAG}
     ports:
       - 4444:4444   # Selenium
       - 5901:5900   # VNC server
