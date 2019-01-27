@@ -2,16 +2,29 @@
 pipeline {
     agent none
     stages {
+        stage('Test Build') {
+            agent any
+            steps {
+                sh 'docker-compose -f ./test.yml build --force-rm --pull'
+            }
+        }
+        stage('Run Tests') {
+            agent any
+            steps {
+                // sh 'docker-compose -f ./test.yml build --force-rm --pull'
+                echo 'TODO: Run tests and output the results?'
+            }
+        }
+        stage('Push Testing Containers') {
+            agent any
+            steps {
+                sh 'docker-compose -f ./test.yml push'
+            }
+        }
         stage('Local Build') {
             agent any
             steps {
                 sh 'docker-compose -f ./local.yml build --force-rm --pull'
-            }
-        }
-        stage('Test Local') {
-            agent any
-            steps {
-                echo 'TODO: Run test on local containers / Should I Build and run the test containers first?'
             }
         }
         stage('Push Local Containers') {
@@ -24,12 +37,6 @@ pipeline {
             agent any
             steps {
                 sh 'docker-compose -f ./production.yml build --force-rm --pull'
-            }
-        }
-        stage('Test Production') {
-            agent any
-            steps {
-                echo 'TODO: Run test on production containers'
             }
         }
         stage('Push Production Containers') {
@@ -47,7 +54,7 @@ pipeline {
         stage('Clean Up') {
             agent any
             steps {
-                 sh 'docker-image rm $(docker-image ls srwagsta/* -qa) --force'
+                 sh 'docker image rm $(docker-image ls srwagsta/* -qa) --force'
             }
         }
     }

@@ -1,0 +1,78 @@
+version: '3'
+
+volumes:
+  local_postgres_data: {}
+  local_postgres_data_backups: {}
+
+services:
+  django: &django
+    image: ${DOCKER_REGISTRY}crits_and_coffee_django:${DOCKER_TEST_TAG}
+    build:
+      context: .
+      dockerfile: ./compose/testing/django/Dockerfile
+    depends_on:
+      - postgres
+      - mailhog
+    links:
+    - selenium
+    env_file:
+      - ./.envs/.testing/.django
+      - ./.envs/.testing/.postgres
+    ports:
+      - 8000:8000
+    command: /start
+
+  postgres:
+    image: ${DOCKER_REGISTRY}crits_and_coffee_postgres:${DOCKER_TEST_TAG}
+    build:
+      context: .
+      dockerfile: ./compose/testing/postgres/Dockerfile
+    volumes:
+      - local_postgres_data:/var/lib/postgresql/data
+      - local_postgres_data_backups:/backups
+    env_file:
+      - ./.envs/.testing/.postgres
+
+  selenium:
+    image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${SELENIUM_TEST_TAG}
+    build:
+      context: .
+      dockerfile: ./compose/testing/selenium/Dockerfile
+    ports:
+      - 4444:4444   # Selenium
+      - 5901:5900   # VNC server
+
+  mailhog:
+    image: mailhog/mailhog:v1.0.0
+    ports:
+      - "8025:8025"
+
+  redis:
+    image: redis:3.2
+
+  celeryworker:
+    <<: *django
+    image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${CELERY_WORKER_TEST_TAG}
+    depends_on:
+      - redis
+      - postgres
+      - mailhog
+    ports: []
+    command: /start-celeryworker
+
+  celerybeat:
+    <<: *django
+    image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${CELERY_BEAT_TEST_TAG}
+    depends_on:
+      - redis
+      - postgres
+      - mailhog
+    ports: []
+    command: /start-celerybeat
+
+  flower:
+    <<: *django
+    image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${FLOWER_TEST_TAG}
+    ports:
+      - "5555:5555"
+    command: /start-flower

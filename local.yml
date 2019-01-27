@@ -13,8 +13,6 @@ services:
     depends_on:
       - postgres
       - mailhog
-    links:
-    - selenium
     env_file:
       - ./.envs/.local/.django
       - ./.envs/.local/.postgres
@@ -32,15 +30,6 @@ services:
       - local_postgres_data_backups:/backups
     env_file:
       - ./.envs/.local/.postgres
-
-  selenium:
-    image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${SELENIUM_LOCAL_TAG}
-    build:
-      context: .
-      dockerfile: ./compose/local/selenium/Dockerfile
-    ports:
-      - 4444:4444   # Selenium
-      - 5901:5900   # VNC server
 
   mailhog:
     image: mailhog/mailhog:v1.0.0

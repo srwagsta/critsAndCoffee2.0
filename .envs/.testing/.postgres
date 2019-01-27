@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=crits_and_coffee_test
+POSTGRES_USER=EBF2B262C3B66F367089FBF68D1BA398
+POSTGRES_PASSWORD=E73ED0E66980F1015038DDEEA4A0A79C
