@@ -9,7 +9,7 @@ services:
     build:
       context: .
       dockerfile: ./compose/local/django/Dockerfile
-    image: crits_and_coffee_local_django
+    image: ${DOCKER_REGISTRY}crits_and_coffee_django:${DOCKER_LOCAL_TAG}
     depends_on:
       - postgres
       - mailhog
@@ -26,7 +26,7 @@ services:
     build:
       context: .
       dockerfile: ./compose/production/postgres/Dockerfile
-    image: crits_and_coffee_production_postgres
+    image: ${DOCKER_REGISTRY}crits_and_coffee_postgres:${DOCKER_LOCAL_TAG}
     volumes:
       - local_postgres_data:/var/lib/postgresql/data
       - local_postgres_data_backups:/backups
@@ -37,7 +37,7 @@ services:
     build:
       context: .
       dockerfile: ./compose/local/selenium/Dockerfile
-    image: crits_and_coffee_local_selenium
+    image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${SELENIUM_LOCAL_TAG}
     ports:
       - 4444:4444   # Selenium
       - 5901:5900   # VNC server
@@ -52,7 +52,7 @@ services:
 
   celeryworker:
     <<: *django
-    image: crits_and_coffee_local_celeryworker
+    image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${CELERY_WORKER_LOCAL_TAG}
     depends_on:
       - redis
       - postgres
@@ -62,7 +62,7 @@ services:
 
   celerybeat:
     <<: *django
-    image: crits_and_coffee_local_celerybeat
+    image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${CELERY_BEAT_LOCAL_TAG}
     depends_on:
       - redis
       - postgres
@@ -72,7 +72,7 @@ services:
 
   flower:
     <<: *django
-    image: crits_and_coffee_local_flower
+    image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${FLOWER_LOCAL_TAG}
     ports:
       - "5555:5555"
     command: /start-flower
