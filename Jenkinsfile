@@ -18,7 +18,7 @@ pipeline {
             }
         }
         stage('Compose Test') {
-            agent none
+            agent any
             steps {
                 sh 'docker-compose --version'
             }
