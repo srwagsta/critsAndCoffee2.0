@@ -14,7 +14,7 @@ pipeline {
             }
         }
         stage('Push Local Containers') {
-            agent any
+            agent docker
             steps {
                 sh 'docker-compose -f ./local.yml push'
             }
