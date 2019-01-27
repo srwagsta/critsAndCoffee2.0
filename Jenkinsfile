@@ -14,8 +14,9 @@ pipeline {
             }
         }
         stage('Push Local Containers') {
-            agent docker
+            agent any
             steps {
+                sh 'docker login -u ${env.DOCKER_REGISTRY_USERNAME} -p ${env.DOCKER_REGISTRY_PASSWORD} '
                 sh 'docker-compose -f ./local.yml push'
             }
         }
