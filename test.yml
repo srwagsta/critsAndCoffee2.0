@@ -7,6 +7,7 @@ volumes:
 services:
   django: &django
     image: ${DOCKER_REGISTRY}crits_and_coffee_django:${DOCKER_TEST_TAG}
+    container_name: django-test
     build:
       context: .
       dockerfile: ./compose/testing/django/Dockerfile
@@ -22,8 +23,20 @@ services:
       - 8000:8000
     command: /start
 
+  angular:
+      image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${ANGULAR_TEST_TAG}
+      container_name: angular-test
+      build:
+        context: .
+        dockerfile: ./compose/testing/angular/Dockerfile
+      volumes:
+        - ./angular-frontend:/app
+      env_file:
+        - ./.envs/.testing/.angular
+
   postgres:
     image: ${DOCKER_REGISTRY}crits_and_coffee_postgres:${DOCKER_TEST_TAG}
+    container_name: postgres-test
     build:
       context: .
       dockerfile: ./compose/testing/postgres/Dockerfile
@@ -35,6 +48,7 @@ services:
 
   selenium:
     image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${SELENIUM_TEST_TAG}
+    container_name: selenium-test
     build:
       context: .
       dockerfile: ./compose/testing/selenium/Dockerfile
@@ -53,6 +67,7 @@ services:
   celeryworker:
     <<: *django
     image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${CELERY_WORKER_TEST_TAG}
+    container_name: ${CELERY_WORKER_TEST_TAG}
     depends_on:
       - redis
       - postgres
@@ -63,6 +78,7 @@ services:
   celerybeat:
     <<: *django
     image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${CELERY_BEAT_TEST_TAG}
+    container_name: ${CELERY_BEAT_TEST_TAG}
     depends_on:
       - redis
       - postgres
@@ -73,6 +89,7 @@ services:
   flower:
     <<: *django
     image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${FLOWER_TEST_TAG}
+    container_name: ${FLOWER_TEST_TAG}
     ports:
       - "5555:5555"
     command: /start-flower
