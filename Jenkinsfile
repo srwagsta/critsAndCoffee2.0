@@ -43,5 +43,11 @@ pipeline {
                 echo 'TODO: Setup Live Environment and Deployment Pipe'
             }
         }
+        stage('Clean Up') {
+            agent any
+            steps {
+                 sh 'docker-image rm $(docker-image ls srwagsta/* -qa) --force'
+            }
+        }
     }
 }
