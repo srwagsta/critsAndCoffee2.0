@@ -1,5 +1,5 @@
 from django.contrib.gis.db import models
-
+import uuid as uuid_lib
 
 class InstagramPost(models.Model):
     content = models.TextField(default='None', max_length=255)
@@ -10,7 +10,10 @@ class InstagramPost(models.Model):
     image = models.ImageField(blank=True)
     created_time = models.DateField(blank=True)
     loc_name = models.TextField(default='None', max_length=255)
-
+    uuid = models.UUIDField(
+        db_index=True,
+        default=uuid_lib.uuid4,
+        editable=False)
     # GeoDjango-specific: a geometry field (PointField)
     loc_point = models.PointField(srid=4326, default='SRID=4326;POINT(43.065019 -87.878286)')
 

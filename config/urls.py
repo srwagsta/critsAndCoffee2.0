@@ -11,11 +11,15 @@ schema_view = get_swagger_view(title='Crits And Coffee API')
 urlpatterns = [
     # swagger api documentation
     path('swagger/', schema_view),
+    # RASTful API Endpoints
+    path('api/', include('API_InstagramPosts.urls')),
+
     # Django Admin, use {% url 'admin:index' %}
     path(settings.ADMIN_URL, admin.site.urls),
     # # User management
     # path("users/",include("crits_and_coffee.users.urls", namespace="users"),),
     # path("accounts/", include("allauth.urls")),
+
     # https://django-rest-auth.readthedocs.io/en/latest/api_endpoints.html
     path('rest-auth/', include('rest_auth.urls')),
     path("rest-auth/registration/", include('rest_auth.registration.urls')),
