@@ -34,6 +34,8 @@ USE_I18N = True
 USE_L10N = True
 # https://docs.djangoproject.com/en/dev/ref/settings/#use-tz
 USE_TZ = True
+# https://django-compressor.readthedocs.io/en/stable/settings/
+COMPRESS_ENABLED = True
 
 # DATABASES
 # ------------------------------------------------------------------------------
@@ -64,6 +66,7 @@ DJANGO_APPS = [
     'django.contrib.admin',
 ]
 THIRD_PARTY_APPS = [
+    'compressor',
     'crispy_forms',
     'allauth',
     'allauth.account',
@@ -157,6 +160,7 @@ STATICFILES_DIRS = [
 STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'compressor.finders.CompressorFinder',
 ]
 
 # MEDIA

@@ -1,8 +1,5 @@
 from rest_framework.generics import (ListAPIView, RetrieveDestroyAPIView)
 from rest_framework.permissions import IsAuthenticated, AllowAny
-from rest_framework_swagger import renderers
-from rest_framework.schemas import SchemaGenerator
-from rest_framework.response import Response
 from .models import InstagramPost
 from .serializer import InstagramPostSerializer
 

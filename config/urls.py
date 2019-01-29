@@ -6,11 +6,11 @@ from django.views.generic import TemplateView
 from django.views import defaults as default_views
 from rest_framework_swagger.views import get_swagger_view
 
-schema_view = get_swagger_view(title='Crits And Coffee API', url='/')
+schema_view = get_swagger_view(title='Crits And Coffee API', url='')
 
 urlpatterns = [
     # swagger api documentation
-    path('swagger/', schema_view),
+    path('swagger', schema_view),
     # RASTful API Endpoints
     path('instagram/', include('API_InstagramPosts.urls')),
 
