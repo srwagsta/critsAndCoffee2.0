@@ -65,6 +65,7 @@ pipeline {
                     }
                 }
             }
+        }
 
         stage('Remove Containers') {
             agent any
