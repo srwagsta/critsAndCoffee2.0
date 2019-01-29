@@ -58,8 +58,8 @@ pipeline {
             agent any
             steps {
                 script {
-                    sh 'docker stop $(docker ps -a | grep -v "jenkins_master" | awk \\\'NR>1 {print $1}\\\')''  ||
-                    echo 'Stopped all containers. With Exception Thrown'
+                    sh 'docker stop $(docker ps -a | grep -v "jenkins_master" | awk \\\'NR>1 {print $1}\\\') ||
+                    echo \\\'Stopped all containers. With Exception Thrown\\\' '
                 }
             }
         }
