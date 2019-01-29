@@ -56,28 +56,39 @@ pipeline {
 
         stage('Stop Containers') {
             agent any
-            try {
-                sh 'docker stop $(docker ps -a | grep -v "jenkins_master" | awk \\\'NR>1 {print $1}\\\')'
-            }catch (Exception e) {
-                sh 'Stopped all containers. With Exception Thrown'
+            steps {
+                script {
+                    try {
+                        sh'docker stop $(docker ps -a | grep -v "jenkins_master" | awk \\\'NR>1 {print $1}\\\')'
+                    }catch (Exception e) {
+                        sh 'Stopped all containers. With Exception Thrown'
+                    }
+                }
             }
-        }
 
         stage('Remove Containers') {
             agent any
-            try{
-                sh 'docker rm $(docker ps -a | grep -v "jenkins_master" | awk \\\'NR>1 {print $1}\\\')'
-            } catch (Exception e) {
-                sh 'Removed all containers. With Exception Thrown'
+            steps {
+                script {
+                    try{
+                        sh 'docker rm $(docker ps -a | grep -v "jenkins_master" | awk \\\'NR>1 {print $1}\\\')'
+                    } catch (Exception e) {
+                        sh 'Removed all containers. With Exception Thrown'
+                    }
+                }
             }
         }
 
         stage('Deleting Containers') {
             agent any
-            try {
-                sh 'docker image rm $(docker image ls -qa) --force'
-            } catch (Exception e) {
-                sh 'Removed images. With Exception Thrown'
+            steps {
+                script {
+                    try {
+                        sh 'docker image rm $(docker image ls -qa) --force'
+                    } catch (Exception e) {
+                        sh 'Removed images. With Exception Thrown'
+                    }
+                }
             }
         }
 
