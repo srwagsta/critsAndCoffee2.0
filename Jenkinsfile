@@ -54,14 +54,21 @@ pipeline {
         stage('Clean Up') {
             agent any
             steps {
-
-                // TODO: The removal of images in this step could cause bash error,
-                // but these are expected because we don't want to stop or remove the builder
-
-                 sh 'docker stop $(docker ps -a | grep -v "jenkins_master" | awk \\\'NR>1 {print $1}\\\')'
-                 sh 'docker rm $(docker ps -a | grep -v "jenkins_master" | awk \\\'NR>1 {print $1}\\\')'
-                 sh 'docker image rm $(docker image ls -qa) --force'
-
+                try {
+                    sh 'docker stop $(docker ps -a | grep -v "jenkins_master" | awk \\\'NR>1 {print $1}\\\')'
+                } catch (Exception e) {
+                    sh 'Stopped all containers. With Exception Thrown'
+                }
+                try {
+                    sh 'docker rm $(docker ps -a | grep -v "jenkins_master" | awk \\\'NR>1 {print $1}\\\')'
+                } catch (Exception e) {
+                    sh 'Removed all containers. With Exception Thrown'
+                }
+                try {
+                    sh 'docker image rm $(docker image ls -qa) --force'
+                } catch (Exception e) {
+                    sh 'Removed images. With Exception Thrown'
+                }
             }
         }
     }
