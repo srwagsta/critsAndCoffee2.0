@@ -4,6 +4,6 @@ from API_InstagramPosts import views
 
 app_name = "instagramPost"
 urlpatterns = [
-    path("instagram/", view=views.InstagramPostListAPIView, name="instagramPost_rest_api"),
-    path("instagram/<uuid:uuid>", view=views.InstagramPostRetrieveDestoryAPIView, name="instagramPost_rest_api"),
+    path("api/v1", view=views.InstagramPostListAPIView.as_view(), name="instagramPost_rest_api"),
+    path("api/v1/<uuid:uuid>", view=views.InstagramPostRetrieveDestoryAPIView.as_view(), name="instagramPost_rest_api"),
 ]
