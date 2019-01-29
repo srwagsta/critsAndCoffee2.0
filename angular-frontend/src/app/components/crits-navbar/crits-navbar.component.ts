@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CritsNavbarComponent implements OnInit {
 
+  brandImageURL:string = "/static/angular_resources/images/components/crits-navbar/brand.png";
   constructor() { }
 
   ngOnInit() {
