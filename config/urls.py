@@ -10,7 +10,7 @@ schema_view = get_swagger_view(title='Crits And Coffee API', url='')
 
 urlpatterns = [
     # swagger api documentation
-    path('swagger', schema_view),
+    path('api-docs', schema_view),
     # RASTful API Endpoints
     path('instagram/', include('API_InstagramPosts.urls')),
 
