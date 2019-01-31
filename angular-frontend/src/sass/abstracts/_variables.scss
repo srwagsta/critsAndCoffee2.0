@@ -27,28 +27,18 @@ $text-color: #222222 !default;
 $brand-primary-color: #e7bd70 !default;
 $brand-secondary-color: #d9d9d9 !default;
 
-/// Light grey
-/// @type Color
-$light-grey: rgb(237, 237, 237) !default;
 
 /// Medium grey
 /// @type Color
-$mid-grey: rgb(153, 153, 153) !default;
-
-/// Dark grey
-/// @type Color
-$dark-grey: rgb(68, 68, 68) !default;
-
-
+$base-grey: #999999 !default;
+$light-grey: lighten($base-grey, 20%) !default;
+$dark-grey: darken($base-grey, 20%) !default;
 
 
 
 /// Container's maximum width
 /// @type Length
 $max-width: 1180px !default;
-
-
-
 
 
 /// Breakpoints map

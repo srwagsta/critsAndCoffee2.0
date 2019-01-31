@@ -11,12 +11,8 @@ schema_view = get_swagger_view(title='Crits And Coffee API', url='')
 urlpatterns = [
     # swagger api documentation
     path('api-docs', schema_view),
-    # RASTful API Endpoints
-    path('instagram/', include('API_InstagramPosts.urls')),
-
-    # https://django-rest-auth.readthedocs.io/en/latest/api_endpoints.html
-    path('rest-auth/', include('rest_auth.urls')),
-    path("rest-auth/registration/", include('rest_auth.registration.urls')),
+    # RASTful API V! Endpoints
+    path('api/v1/', include('config.apiv1_urls'), name="apiv1"),
 
     # Django Admin, use {% url 'admin:index' %}
     path(settings.ADMIN_URL, admin.site.urls),

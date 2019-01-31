@@ -7,6 +7,12 @@
  */
 html {
   box-sizing: border-box;
+  background-color: rgba($dark-grey, .5);
+}
+
+body {
+  background-color: rgba($dark-grey, .5);
+
 }
 
 /**
@@ -33,3 +39,4 @@ a {
     text-decoration: underline;
   }
 }
+

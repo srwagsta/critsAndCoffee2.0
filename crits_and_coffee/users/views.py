@@ -35,7 +35,7 @@ class UserUpdateView(LoginRequiredMixin, UpdateView):
         return reverse("users:detail", kwargs={"username": self.request.user.username})
 
     def get_object(self):
-        return User.objects.get(,
+        return User.objects.get(username=self.request.user.username)
 
 
 user_update_view = UserUpdateView.as_view()
