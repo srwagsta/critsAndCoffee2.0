@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class CritsNavbarComponent implements OnInit {
 
   brandImageURL:string = "/static/angular_resources/images/components/crits-navbar/brand.png";
+  API_route:string = `${window.location.origin}/api-docs`;
   constructor() { }
 
   ngOnInit() {

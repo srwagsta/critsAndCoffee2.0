@@ -1,22 +1,29 @@
-<nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <a class="navbar-brand" routerLink="home">
-    <img [src]="brandImageURL" width="120" height="50" class="d-inline-block align-top" alt="">
-  </a>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto" routerLinkActive="active">
-      <li class="nav-item">
-        <a class="nav-link" routerLink="home">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="about">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="api-docs">API</a>
-      </li>
-    </ul>
+<div class="pos-f-t">
+  <div class="collapse" id="navbarToggle">
+    <div class="bg-dark p-4">
+      <ul class="navbar-nav ml-auto flex-nowrap" routerLinkActive="active">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [href]="API_route">API</a>
+        </li>
+      </ul>
+    </div>
   </div>
-</nav>
+
+  <nav class="navbar navbar-dark">
+
+    <a class="navbar-brand mx-auto abs" routerLink="home">
+      <img [src]="brandImageURL" width="120" height="50" class="d-inline-block align-top" alt="">
+    </a>
+
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+  </nav>
+</div>

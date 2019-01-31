@@ -14,11 +14,6 @@ const routes: Routes = [
       path: 'about',
       component: AboutComponent
   },
-    {
-      path: 'api-docs',
-      redirectTo: '/api-docs',
-      pathMatch: 'full'
-  },
   {
       path: '',
       redirectTo: '/home',
