@@ -1,29 +1,19 @@
-<div class="pos-f-t">
-  <div class="collapse" id="navbarToggle">
-    <div class="bg-dark p-4">
-      <ul class="navbar-nav mr-auto flex-nowrap" routerLinkActive="active">
-        <li class="nav-item">
-          <a class="nav-link" routerLink="home">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [href]="API_route">API</a>
-        </li>
-      </ul>
+<nav class="navbar navbar-dark ">
+
+  <a class="navbar-brand mx-auto abs" routerLink="home">
+    <img [src]="brandImageURL" width="120" height="50" class="d-inline-block align-top" alt="">
+  </a>
+
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarToggle">
+    <div class="navbar-nav ">
+      <a class="nav-link ml-auto" routerLink="home">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-link ml-auto" routerLink="about">About</a>
+      <a class="nav-link ml-auto" [href]="API_route">API</a>
     </div>
   </div>
 
-  <nav class="navbar navbar-dark">
-
-    <a class="navbar-brand mx-auto abs" routerLink="home">
-      <img [src]="brandImageURL" width="120" height="50" class="d-inline-block align-top" alt="">
-    </a>
-
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-  </nav>
-</div>
+</nav>
