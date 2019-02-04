@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  brandImageURL:string = "/static/angular_resources/images/components/crits-navbar/brand.png";
-  API_route:string = `${window.location.origin}/api-docs`;
+  brandImageURL: string = "/static/angular_resources/images/components/crits-navbar/brand.png";
+  API_route: string = `${window.location.origin}/api-docs`;
 
   constructor() { }
 

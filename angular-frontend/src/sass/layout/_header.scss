@@ -1,3 +1,36 @@
 nav {
   background: rgba($dark-grey, .5);
 }
+
+.nav-link{
+  color: rgba($brand-primary-color, .5) !important;
+  &:hover {
+    color: rgba($brand-primary-color, .75) !important;
+  }
+}
+
+.togglerBar1, .togglerBar2, .togglerBar3{
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change {
+   .togglerBar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+
+  .togglerBar2 {opacity: 0;}
+
+  .togglerBar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+}
+
+
+
+

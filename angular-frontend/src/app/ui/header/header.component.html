@@ -4,11 +4,15 @@
     <img [src]="brandImageURL" width="120" height="50" class="d-inline-block align-top" alt="">
   </a>
 
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
-  <div class="collapse navbar-collapse" id="navbarToggle">
+
+  <div class="navbar-toggler navbar-toggler-right" (click)="$event.currentTarget.classList.toggle('change');" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="togglerBar1"></div>
+    <div class="togglerBar2"></div>
+    <div class="togglerBar3"></div>
+  </div>
+
+  <div class="collapse navbar-collapse" id="navbarMenu">
     <div class="navbar-nav ">
       <a class="nav-link ml-auto" routerLink="home">Home <span class="sr-only">(current)</span></a>
       <a class="nav-link ml-auto" routerLink="about">About</a>
