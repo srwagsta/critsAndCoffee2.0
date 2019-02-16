@@ -1,18 +1,7 @@
-nav {
-  background: rgba($dark-grey, .5);
-}
-
-.nav-link{
-  color: rgba($brand-primary-color, .5) !important;
-  &:hover {
-    color: rgba($brand-primary-color, .75) !important;
-  }
-}
-
 .togglerBar1, .togglerBar2, .togglerBar3{
   width: 35px;
   height: 5px;
-  background-color: #333;
+  background-color: $brand-primary-color;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -21,6 +10,7 @@ nav {
    .togglerBar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
+     background-color: $brand-secondary-color;
   }
 
   .togglerBar2 {opacity: 0;}
@@ -28,9 +18,48 @@ nav {
   .togglerBar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
+    background-color: $brand-primary-color;
+
   }
 }
 
+.navbar-crits-custom {
+  background-color: rgba($dark-grey, .5);
 
+  /* change the brand and text color */
+  .navbar-brand {
+    font-style: italic;
+    font-size: 250%;
+    color: rgba($brand-secondary-color, .8);
+    &:hover{
+      color: rgba($brand-primary-color, .8);
+    }
+  }
 
+  /* change the link color */
+  .navbar-nav .nav-link {
+    color: rgba($brand-primary-color, .5);
+  }
+
+  /* change the color of active or hovered links */
+  .nav-item.active .nav-link,
+  .nav-item:hover .nav-link {
+    color: $white;
+  }
+
+  /* for dropdown only - change the color of droodown */
+  .dropdown-menu {
+    background-color: rgba($dark-grey, .5);
+  }
+
+  .dropdown-item {
+    color: $white;
+  }
+
+  .dropdown-item:hover,
+  .dropdown-item:focus {
+    color: $dark-grey;
+    background-color: rgba($brand-primary-color, .5);
+  }
+}
 

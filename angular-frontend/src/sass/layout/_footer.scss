@@ -1,3 +1,52 @@
 .crits-footer {
   background: rgba($dark-grey, .5);
 }
+
+.footer{
+  color: $white;
+  &-top{
+    padding: 1rem 5rem .5rem 5rem;
+    color: $white;
+    font-size: .8rem;
+    text-align: center;
+    a {
+      color: rgba($brand-primary-color, 1);
+      &:hover{
+        color: rgba($brand-secondary-color, 1);
+        text-decoration: none;
+      }
+  }
+  }
+
+  &-bottom{
+    padding: 1rem 0rem;
+    font-size: .5rem;
+    text-align: center;
+  }
+
+}
+/**Sub Navigation**/
+.subnavigation-container{
+  background: #3d6277;
+}
+.subnavigation .nav-link{
+  color: white;
+  font-weight: bold;
+}
+.subnavigation-container{
+  text-align: center;
+}
+.subnavigation-container .navbar{
+  display: inline-block;
+  margin-bottom: -6px; /* Inline-block margin offffset HACK -Gilron */
+}
+.col-subnav a{
+  padding: 1rem 1rem;
+  color: white;
+  font-weight: bold;
+}
+.col-subnav .active{
+  border-top:5px solid orange;
+ background: white;
+  color: black;
+}
