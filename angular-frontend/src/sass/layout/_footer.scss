@@ -1,5 +1,5 @@
 .crits-footer {
-  background: rgba($dark-grey, .5);
+  background: rgba($dark-grey, .1);
 }
 
 .footer{
@@ -8,14 +8,25 @@
     padding: 1rem 5rem .5rem 5rem;
     color: $white;
     font-size: .8rem;
-    text-align: center;
     a {
       color: rgba($brand-primary-color, 1);
       &:hover{
         color: rgba($brand-secondary-color, 1);
         text-decoration: none;
+        fa-icon {
+          color: rgba($brand-primary-color, .9);
+        }
       }
-  }
+    }
+    fa-icon {
+      font-size: 1rem;
+      padding: .5rem .5rem;
+      color: rgba($brand-secondary-color, .9);
+      &:hover{
+        color: rgba($brand-primary-color, .9);
+      }
+    }
+
   }
 
   &-bottom{
