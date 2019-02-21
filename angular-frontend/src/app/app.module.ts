@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AgmCoreModule } from '@agm/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './components/app-root/app.component';
@@ -28,7 +29,10 @@ import { ApiTermsOfUseComponent } from './components/legal-documents/api-terms-o
   imports: [
     BrowserModule,
     AppRoutingModule,
-    UiModule
+    UiModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCNPlDnedCEachOH08pszCanYO2RDuJ6pk\n'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
