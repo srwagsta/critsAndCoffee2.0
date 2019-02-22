@@ -24,7 +24,8 @@
 }
 
 .navbar-crits-custom {
-  background-color: rgba($dark-grey, .1);
+  background-color: rgba($dark-grey, .5);
+  padding: 0 1rem;
 
   /* change the brand and text color */
   .navbar-brand {
@@ -47,7 +48,7 @@
     color: $white;
   }
 
-  /* for dropdown only - change the color of droodown */
+  /* for dropdown only - change the color of dropdown */
   .dropdown-menu {
     background-color: rgba($dark-grey, .5);
   }
