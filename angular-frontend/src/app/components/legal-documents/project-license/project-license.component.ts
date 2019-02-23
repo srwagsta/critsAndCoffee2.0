@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-project-license',
   templateUrl: './project-license.component.html',
-  styleUrls: ['./project-license.component.scss']
+  styleUrls: ['../legal-docs.scss']
 })
 export class ProjectLicenseComponent implements OnInit {
 

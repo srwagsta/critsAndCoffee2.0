@@ -27,11 +27,14 @@
   background-color: rgba($dark-grey, .5);
   padding: 0 1rem;
 
+  .crits-collapse {
+    padding: 1rem;
+  }
   /* change the brand and text color */
   .navbar-brand {
     font-style: italic;
     font-size: 250%;
-    color: rgba($brand-secondary-color, .8);
+    color: rgba($brand-secondary-color, 1);
     &:hover{
       color: rgba($brand-primary-color, .8);
     }
@@ -39,7 +42,7 @@
 
   /* change the link color */
   .navbar-nav .nav-link {
-    color: rgba($brand-primary-color, .5);
+    color: rgba($brand-primary-color, 1);
   }
 
   /* change the color of active or hovered links */
