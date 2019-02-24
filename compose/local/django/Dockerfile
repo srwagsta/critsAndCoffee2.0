@@ -18,7 +18,7 @@ COPY ./angular-frontend .
 RUN $(npm bin)/ng build --prod --output-hashing=none
 
 
-FROM $GeoDjango
+FROM ${GeoDjango}
 COPY ./ /prod-app/
 COPY --from=angular_build /ng-app/dist/*.js /prod-app/crits_and_coffee/static/js/angular-app/
 COPY --from=angular_build /ng-app/dist/*.css /prod-app/crits_and_coffee/static/css/

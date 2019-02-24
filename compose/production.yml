@@ -8,31 +8,31 @@ volumes:
 services:
   django: &django
     build:
-      context: .
+      context: ../
       dockerfile: ./compose/production/django/Dockerfile
     image: ${DOCKER_REGISTRY}crits_and_coffee_django:${DOCKER_PRODUCTION_TAG}
     depends_on:
       - postgres
       - redis
     env_file:
-      - ./.envs/.production/.django
-      - ./.envs/.production/.postgres
+      - ../.envs/.production/.django
+      - ../.envs/.production/.postgres
     command: /start
 
   postgres:
     build:
-      context: .
+      context: ../
       dockerfile: ./compose/production/postgres/Dockerfile
     image: ${DOCKER_REGISTRY}crits_and_coffee_postgres:${DOCKER_PRODUCTION_TAG}
     volumes:
       - production_postgres_data:/var/lib/postgresql/data
       - production_postgres_data_backups:/backups
     env_file:
-      - ./.envs/.production/.postgres
+      - ../.envs/.production/.postgres
 
   caddy:
     build:
-      context: .
+      context: ../
       dockerfile: ./compose/production/caddy/Dockerfile
     image: ${DOCKER_REGISTRY}crits_and_coffee_caddy:${DOCKER_PRODUCTION_TAG}
     depends_on:
@@ -40,7 +40,7 @@ services:
     volumes:
       - production_caddy:/root/.caddy
     env_file:
-      - ./.envs/.production/.caddy
+      - ../.envs/.production/.caddy
     ports:
       - "0.0.0.0:80:80"
       - "0.0.0.0:443:443"

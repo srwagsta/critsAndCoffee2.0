@@ -10,7 +10,7 @@ PRODUCTION_DOTENV_FILE_PATHS = [
     os.path.join(PRODUCTION_DOTENVS_DIR_PATH, ".postgres"),
     os.path.join(PRODUCTION_DOTENVS_DIR_PATH, ".caddy"),
 ]
-DOTENV_FILE_PATH = os.path.join(ROOT_DIR_PATH, ".env")
+DOTENV_FILE_PATH = os.path.join(ROOT_DIR_PATH, "compose", ".env")
 
 
 def merge(
@@ -34,7 +34,7 @@ def main():
 def test_merge(tmpdir_factory, merged_file_count: int, append_linesep: bool):
     tmp_dir_path = str(tmpdir_factory.getbasetemp())
 
-    output_file_path = os.path.join(tmp_dir_path, ".env")
+    output_file_path = os.path.join(tmp_dir_path, "compose", ".env")
 
     expected_output_file_content = ""
     merged_file_paths = []

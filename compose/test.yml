@@ -9,7 +9,7 @@ services:
     image: ${DOCKER_REGISTRY}crits_and_coffee_django:${DOCKER_TEST_TAG}
     container_name: django-test
     build:
-      context: .
+      context: ../
       dockerfile: ./compose/testing/django/Dockerfile
     depends_on:
       - postgres
@@ -17,8 +17,8 @@ services:
     links:
     - selenium
     env_file:
-      - ./.envs/.testing/.django
-      - ./.envs/.testing/.postgres
+      - ../.envs/.testing/.django
+      - ../.envs/.testing/.postgres
     ports:
       - 8000:8000
     command: /start
@@ -27,30 +27,30 @@ services:
       image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${ANGULAR_TEST_TAG}
       container_name: angular-test
       build:
-        context: .
+        context: ../
         dockerfile: ./compose/testing/angular/Dockerfile
       volumes:
-        - ./angular-frontend:/app
+        - ../angular-frontend:/app
       env_file:
-        - ./.envs/.testing/.angular
+        - ../.envs/.testing/.angular
 
   postgres:
     image: ${DOCKER_REGISTRY}crits_and_coffee_postgres:${DOCKER_TEST_TAG}
     container_name: postgres-test
     build:
-      context: .
+      context: ..
       dockerfile: ./compose/testing/postgres/Dockerfile
     volumes:
       - local_postgres_data:/var/lib/postgresql/data
       - local_postgres_data_backups:/backups
     env_file:
-      - ./.envs/.testing/.postgres
+      - ../.envs/.testing/.postgres
 
   selenium:
     image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${SELENIUM_TEST_TAG}
     container_name: selenium-test
     build:
-      context: .
+      context: ../
       dockerfile: ./compose/testing/selenium/Dockerfile
     ports:
       - 4444:4444   # Selenium

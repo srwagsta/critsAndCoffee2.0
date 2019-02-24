@@ -5,15 +5,16 @@ pipeline {
         stage('Build and Push new GeoDjango container') {
             agent any
             steps {
-                sh 'cd ./bash_scripts && ./build.sh'
+                sh 'cd ./bash_scripts/build && ./build_base_images.sh'
             }
         }
-        stage('Test Build') {
+        stage('Build and Push test images') {
             agent any
             steps {
-                sh 'docker-compose -f ./test.yml build --force-rm --pull'
+                sh 'cd ./bash_scripts/build && ./build_test.sh'
             }
         }
+
         stage('Run Tests') {
             agent any
             steps {
@@ -21,36 +22,21 @@ pipeline {
                 echo 'TODO: Run tests and output the results?'
             }
         }
-        stage('Push Testing Containers') {
+
+        stage('Build and Push local images') {
             agent any
             steps {
-                sh 'docker-compose -f ./test.yml push'
+                sh 'cd ./bash_scripts/build && ./build_local.sh'
             }
         }
-        stage('Local Build') {
+
+        stage('Build and Push production images') {
             agent any
             steps {
-                sh 'docker-compose -f ./local.yml build --force-rm --pull'
+                sh 'cd ./bash_scripts/build && ./build_production.sh'
             }
         }
-        stage('Push Local Containers') {
-            agent any
-            steps {
-                sh 'docker-compose -f ./local.yml push'
-            }
-        }
-        stage('Production Build') {
-            agent any
-            steps {
-                sh 'docker-compose -f ./production.yml build --force-rm --pull'
-            }
-        }
-        stage('Push Production Containers') {
-            agent any
-            steps {
-                sh 'docker-compose -f ./production.yml build --force-rm --pull'
-            }
-        }
+
         stage('Deploy To Live') {
             agent any
             steps {
