@@ -1,4 +1,4 @@
-ARG GeoDjango="srwagsta/crits_and_coffee_accessories/geo-django:latest"
+ARG GeoDjango="srwagsta/crits_and_coffee_accessories:geo-django"
 
 FROM node:9-alpine as angular_build
 
