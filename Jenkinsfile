@@ -18,8 +18,7 @@ pipeline {
         stage('Run Tests') {
             agent any
             steps {
-                // sh 'docker-compose -f ./test.yml build --force-rm --pull'
-                echo 'TODO: Run tests and output the results?'
+                sh 'cd ./bash_scripts/deployment && chmod 777 ./* && ./execute_test.sh'
             }
         }
 
@@ -33,16 +32,19 @@ pipeline {
         stage('Deploy To Live') {
             agent any
             steps {
-                echo 'TODO: Setup Live Environment and Deployment Pipe'
+                 sh 'cd ./bash_scripts/deployment && chmod 777 ./* && ./live.sh'
             }
         }
 
-        stage('Cleanup Environment') {
-            agent any
-            steps {
-                sh 'cd ./bash_scripts/image-builder && chmod 777 ./* && ./cleanup_environment.sh'
+        try {
+            stage('Cleanup Environment') {
+                agent any
+                steps {
+                    sh 'cd ./bash_scripts/image-builder && chmod 777 ./* && ./cleanup_environment.sh'
+                }
             }
+        }catch (err) {
+            currentBuild.result = "SUCCESS"
         }
-
     }
 }
