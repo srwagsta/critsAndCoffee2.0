@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
+cd ../../compose
 
-docker-compose -f ../../compose/local.yml pull
+docker-compose -f ./local.yml pull
 
-docker-compose -f ../../compose/local.yml build
+docker-compose -f ./local.yml build --force-rm
 
-docker-compose -f ../../compose/local.yml up
+docker-compose -f ./local.yml up

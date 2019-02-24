@@ -18,7 +18,7 @@ pipeline {
         stage('Run Tests') {
             agent any
             steps {
-                sh 'cd ./bash_scripts/deployment && chmod 777 ./* && ./execute_test.sh'
+                sh 'cd ./bash_scripts/deployment && chmod 777 ./* && ./execute_tests.sh'
             }
         }
 
