@@ -36,15 +36,19 @@ pipeline {
             }
         }
 
-        try {
-            stage('Cleanup Environment') {
-                agent any
-                steps {
-                    sh 'cd ./bash_scripts/image-builder && chmod 777 ./* && ./cleanup_environment.sh'
-                }
+        stage('Cleanup Environment') {
+            agent any
+            steps {
+                sh 'cd ./bash_scripts/image-builder && chmod 777 ./* && ./cleanup_environment.sh'
             }
-        }catch (err) {
-            currentBuild.result = "SUCCESS"
         }
+        post{
+            failure{
+                currentBuild.result = "SUCCESS"
+            }
+        }
+
     }
 }
+
+
