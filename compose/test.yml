@@ -89,10 +89,10 @@ services:
 
   selenium_hub:
     image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${SELENIUM_TEST_TAG}
-      container_name: selenium-test
-      build:
-        context: ..
-        dockerfile: ./compose/testing/selenium/Dockerfile
+    container_name: selenium-test
+    build:
+      context: ..
+      dockerfile: ./compose/testing/selenium/Dockerfile
     platform: linux
     privileged: true
     ports:

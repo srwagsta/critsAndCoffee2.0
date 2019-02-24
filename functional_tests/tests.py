@@ -25,7 +25,7 @@ class BaseTestCase(StaticLiveServerTestCase):
             #  Set to: htttp://{selenium-container-name}:port/wd/hub
             #  In our example, the container is named `selenium`
             #  and runs on port 4444
-            command_executor='http://selenium:4444/wd/hub',
+            command_executor='http://selenium-hub:4444/wd/hub',
             # Set to CHROME since we are using the Chrome container
             desired_capabilities=DesiredCapabilities.CHROME,
 

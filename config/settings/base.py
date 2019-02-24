@@ -41,7 +41,14 @@ COMPRESS_ENABLED = True
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
 DATABASES = {
-    'default': env.db('DATABASE_URL'),
+    'default': {
+        'ENGINE': 'django.contrib.gis.db.backends.postgis',
+        'NAME': env.db('POSTGRES_DB'),
+        'HOST': env.db('POSTGRES_HOST'),
+        'PORT': env.db('POSTGRES_PORT'),
+        'USER': env.db('POSTGRES_USER'),
+        'PASSWORD': env.db('POSTGRES_PASSWORD')
+    }
 }
 DATABASES['default']['ATOMIC_REQUESTS'] = True
 
