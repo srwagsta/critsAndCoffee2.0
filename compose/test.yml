@@ -93,7 +93,6 @@ services:
     build:
       context: ..
       dockerfile: ./compose/testing/selenium/Dockerfile
-    platform: linux
     privileged: true
     ports:
       - 4444:4444
@@ -106,7 +105,6 @@ services:
 
   nodechrome2:
     image: selenium/node-chrome-debug
-    platform: linux
     privileged: true
     depends_on:
       - selenium_hub
@@ -120,7 +118,6 @@ services:
 
   nodefirefox2:
     image: selenium/node-firefox-debug
-    platform: linux
     privileged: true
     depends_on:
       - selenium_hub
