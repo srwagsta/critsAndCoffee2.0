@@ -11,7 +11,7 @@ pipeline {
         stage('Build and Push test images') {
             agent any
             steps {
-                sh 'cd ./bash_scripts/image-builder && ./build_test.sh'
+                sh 'cd ./bash_scripts/image-builder && chmod 777 ./* && ./build_test.sh'
             }
         }
 
@@ -23,17 +23,10 @@ pipeline {
             }
         }
 
-        stage('Build and Push local images') {
+        stage('Build and Push local and production images') {
             agent any
             steps {
-                sh 'cd ./bash_scripts/image-builder && ./build_local.sh'
-            }
-        }
-
-        stage('Build and Push production images') {
-            agent any
-            steps {
-                sh 'cd ./bash_scripts/image-builder && ./build_production.sh'
+                sh 'cd ./bash_scripts/image-builder && chmod 777 ./* && ./build_containers.sh'
             }
         }
 
@@ -44,41 +37,10 @@ pipeline {
             }
         }
 
-
-
-        stage('Stop Containers') {
+        stage('Cleanup Environment') {
             agent any
             steps {
-                script {
-                    '''
-                        docker stop $(docker ps -a | grep -v "jenkins_master" | awk 'NR>1 {print $1}') ||
-                        echo 'Stopped all containers. With Exception Thrown'
-                    '''
-                }
-            }
-        }
-
-        stage('Remove Containers') {
-            agent any
-            steps {
-                script {
-                    '''
-                        docker rm $(docker ps -a | grep -v "jenkins_master" | awk 'NR>1 {print $1}') ||
-                       echo 'Removed all containers. With Exception Thrown'
-                   '''
-                }
-            }
-        }
-
-        stage('Deleting Containers') {
-            agent any
-            steps {
-                script {
-                    '''
-                        docker image rm $(docker image ls -qa) --force ||
-                        echo 'Removed images. With Exception Thrown'
-                    '''
-                }
+                sh 'cd ./bash_scripts/image-builder && chmod 777 ./* && ./cleanup_environment.sh'
             }
         }
 
