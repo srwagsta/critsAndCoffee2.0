@@ -22,17 +22,8 @@ services:
     ports:
       - 8000:8000
     command: /start
-
-  angular:
-      image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${ANGULAR_TEST_TAG}
-      container_name: angular-test
-      build:
-        context: ../
-        dockerfile: ./compose/testing/angular/Dockerfile
-      volumes:
-        - ../angular-frontend:/app
-      env_file:
-        - ../.envs/.testing/.angular
+    networks:
+      - selenuim_env
 
   postgres:
     image: ${DOCKER_REGISTRY}crits_and_coffee_postgres:${DOCKER_TEST_TAG}
@@ -45,24 +36,20 @@ services:
       - local_postgres_data_backups:/backups
     env_file:
       - ../.envs/.testing/.postgres
-
-  selenium:
-    image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${SELENIUM_TEST_TAG}
-    container_name: selenium-test
-    build:
-      context: ../
-      dockerfile: ./compose/testing/selenium/Dockerfile
-    ports:
-      - 4444:4444   # Selenium
-      - 5901:5900   # VNC server
+    networks:
+      - selenuim_env
 
   mailhog:
     image: mailhog/mailhog:v1.0.0
     ports:
       - "8025:8025"
+    networks:
+      - selenuim_env
 
   redis:
     image: redis:3.2
+    networks:
+      - selenuim_env
 
   celeryworker:
     <<: *django
@@ -74,6 +61,8 @@ services:
       - mailhog
     ports: []
     command: /start-celeryworker
+    networks:
+      - selenuim_env
 
   celerybeat:
     <<: *django
@@ -85,6 +74,8 @@ services:
       - mailhog
     ports: []
     command: /start-celerybeat
+    networks:
+      - selenuim_env
 
   flower:
     <<: *django
@@ -93,3 +84,54 @@ services:
     ports:
       - "5555:5555"
     command: /start-flower
+    networks:
+      - selenuim_env
+
+  selenium_hub:
+    image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${SELENIUM_TEST_TAG}
+      container_name: selenium-test
+      build:
+        context: ..
+        dockerfile: ./compose/testing/selenium/Dockerfile
+    platform: linux
+    privileged: true
+    ports:
+      - 4444:4444
+    environment:
+      - GRID_TIMEOUT=240000
+      - GRID_BROWSER_TIMEOUT=240000
+    command: /run_tests
+    networks:
+      - selenuim_env
+
+  nodechrome2:
+    image: selenium/node-chrome-debug
+    platform: linux
+    privileged: true
+    depends_on:
+      - selenium_hub
+    ports:
+      - 5900:5900
+    environment:
+      - HUB_PORT_4444_TCP_ADDR=selenium_hub
+      - HUB_PORT_4444_TCP_PORT=4444
+    networks:
+      - selenuim_env
+
+  nodefirefox2:
+    image: selenium/node-firefox-debug
+    platform: linux
+    privileged: true
+    depends_on:
+      - selenium_hub
+    ports:
+      - 5901:5901
+    environment:
+      - HUB_PORT_4444_TCP_ADDR=selenium_hub
+      - HUB_PORT_4444_TCP_PORT=4444
+    networks:
+      - selenuim_env
+
+networks:
+    selenuim_env:
+
