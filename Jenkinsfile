@@ -5,13 +5,13 @@ pipeline {
         stage('Build and Push new GeoDjango container') {
             agent any
             steps {
-                sh 'cd ./bash_scripts/build && ./build_base_images.sh'
+                sh 'cd ./bash_scripts/image-builder && ./build_base_images.sh'
             }
         }
         stage('Build and Push test images') {
             agent any
             steps {
-                sh 'cd ./bash_scripts/build && ./build_test.sh'
+                sh 'cd ./bash_scripts/image-builder && ./build_test.sh'
             }
         }
 
@@ -26,14 +26,14 @@ pipeline {
         stage('Build and Push local images') {
             agent any
             steps {
-                sh 'cd ./bash_scripts/build && ./build_local.sh'
+                sh 'cd ./bash_scripts/image-builder && ./build_local.sh'
             }
         }
 
         stage('Build and Push production images') {
             agent any
             steps {
-                sh 'cd ./bash_scripts/build && ./build_production.sh'
+                sh 'cd ./bash_scripts/image-builder && ./build_production.sh'
             }
         }
 
