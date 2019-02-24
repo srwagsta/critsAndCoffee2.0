@@ -15,7 +15,7 @@ services:
       - postgres
       - mailhog
     links:
-    - selenium
+    - selenium-hub
     env_file:
       - ../.envs/.testing/.django
       - ../.envs/.testing/.postgres
@@ -87,7 +87,7 @@ services:
     networks:
       - selenuim_env
 
-  selenium_hub:
+  selenium-hub:
     image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${SELENIUM_TEST_TAG}
     container_name: selenium-test
     build:
@@ -107,7 +107,7 @@ services:
     image: selenium/node-chrome-debug
     privileged: true
     depends_on:
-      - selenium_hub
+      - selenium-hub
     ports:
       - 5900:5900
     environment:
@@ -120,7 +120,7 @@ services:
     image: selenium/node-firefox-debug
     privileged: true
     depends_on:
-      - selenium_hub
+      - selenium-hub
     ports:
       - 5901:5901
     environment:
