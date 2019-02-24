@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
+cd ../../compose/
 
-docker-compose -f ../../compose/local.yml build --force-rm --pull
+docker-compose -f ./local.yml build --force-rm --pull
 
-docker-compose -f ../../compose/production.yml build --force-rm --pull
+docker-compose -f ./production.yml build --force-rm --pull
 
-docker-compose -f ../../compose/local.yml push
+docker-compose -f ./local.yml push
 
-docker-compose -f ../../compose/production.yml push
+docker-compose -f ./production.yml push

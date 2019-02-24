@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
-docker-compose -f ../../compose/test.yml build --force-rm --pull
+cd ../../compose/
 
-docker-compose -f ../../compose/test.yml push
+docker-compose -f ./test.yml build --force-rm --pull
+
+docker-compose -f ./test.yml push
