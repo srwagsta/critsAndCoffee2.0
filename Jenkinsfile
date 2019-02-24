@@ -40,7 +40,6 @@ pipeline {
             agent any
             steps {
                 sh 'cd ./bash_scripts/image-builder && chmod 777 ./* && ./cleanup_environment.sh'
-                script{ currentBuild.result = "SUCCESS" }
             }
         }
 
