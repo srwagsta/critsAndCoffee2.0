@@ -5,7 +5,7 @@ pipeline {
         stage('Build and Push new GeoDjango container') {
             agent any
             steps {
-                sh './bash_scripts/build.sh'
+                sh 'cd ./bash-scripts && ./build.sh'
             }
         }
         stage('Test Build') {
