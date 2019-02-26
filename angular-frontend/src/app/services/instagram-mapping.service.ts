@@ -16,7 +16,8 @@ export class InstagramMappingService {
 
   constructor(private log: LoggingService, private http: HttpClient,) { }
 
-  private _instagramUrl = 'api/heroes';
+  // TODO: find the hostname to go before the _instagramUrl
+  private _instagramUrl = 'api/v1/instagram';
 
   getPosts(): Observable<InstagramLocation[]> {
     return this.http.get<InstagramLocation[]>(this._instagramUrl)

@@ -29,5 +29,5 @@ export class InstagramMapComponent implements OnInit {
     this.instagramService.getPosts()
     .subscribe(posts => this._posts = posts);
   }
-  
+
 }

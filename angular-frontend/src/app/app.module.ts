@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule }    from '@angular/common/http';
 import { AgmCoreModule } from '@agm/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -28,6 +29,7 @@ import { ApiTermsOfUseComponent } from './components/legal-documents/api-terms-o
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     UiModule,
     AgmCoreModule.forRoot({
