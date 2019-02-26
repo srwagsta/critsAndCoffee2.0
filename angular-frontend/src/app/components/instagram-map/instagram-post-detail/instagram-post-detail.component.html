@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="col-6">
+    <img [src]="post.imageUrl" [alt]="post.locationName">
+  </div>
+  <div class="col-6">
+    <p>{{post.content}} <sub>{{post.tags}}</sub> </p>
+    <a href="{{post.link}}}">View it!</a>
+    <p>{{post.createdTime}}</p>
+  </div>
+</div>

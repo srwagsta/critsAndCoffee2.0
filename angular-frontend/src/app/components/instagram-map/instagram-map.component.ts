@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, OnDestroy} from '@angular/core';
+import {Subscription} from "rxjs";
 import {InstagramMappingService} from "../../services/instagram-mapping.service";
 import {LoggingService} from "../../services/logging.service";
-import {InstagramLocation} from "../../models/instagram-location";
+import {InstagramPostModel} from "../../models/instagram-post.model";
 
 @Component({
   selector: 'app-instagram-map',
@@ -9,25 +10,51 @@ import {InstagramLocation} from "../../models/instagram-location";
   styleUrls: ['./instagram-map.component.scss'],
 
 })
-export class InstagramMapComponent implements OnInit {
-
-  title: string = 'My first AGM project';
-  lat: number = 51.678418;
-  lng: number = 7.809007;
+export class InstagramMapComponent implements OnInit, OnDestroy {
 
   constructor(private instagramService: InstagramMappingService,
-              private log: LoggingService) { }
+              private log: LoggingService) {}
 
-  private _posts: InstagramLocation[];
+  //<editor-fold desc="Class Fields">
+  private _componentName: string = 'Instagram Map Component: ';
+  private _subscriptions: Subscription[] = [];
+  public posts: InstagramPostModel[];
+  public selectedPost:InstagramPostModel;
+
+  public clientCoordinate: any = {lat: 43.067303, lng: -87.876882};
+  //</editor-fold>
+
+  //<editor-fold desc="ng Events">
   ngOnInit() {
-    this.log.info('instgram component started.');
+    this._subscriptions.push(this.instagramService.getClientPosition().subscribe(
+      (pos: Position) => {
+        this.clientCoordinate = {
+          lat: +(pos.coords.latitude),
+          lng: +(pos.coords.longitude)
+        };
+      }));
+
     this.getPosts();
-    // TODO: Call instagram service to get map points
+
+    this.log.info(`${this._componentName} Started, focus location (${this.clientCoordinate.lat}, ${this.clientCoordinate.lng})`);
   }
 
-  private getPosts():void{
-    this.instagramService.getPosts()
-    .subscribe(posts => this._posts = posts);
+  ngOnDestroy() {
+    this._subscriptions.forEach(s => s.unsubscribe());
+  }
+  //</editor-fold>
+
+  public onSelect(post: InstagramPostModel): void {
+    this.selectedPost = post;
+    // TODO: Show the instagram post detail modal, maybe using material.angular.io/components/dialog/overview
   }
 
+  //<editor-fold desc="Private Helper Functions">
+  private getPosts(): void {
+    this.log.info(`${this._componentName} Gathering Instagram post data`);
+    this._subscriptions.push(this.instagramService.getPosts()
+      .subscribe(posts => this.posts = posts));
+  }
+
+  //</editor-fold>
 }

@@ -3,38 +3,43 @@ import { Observable, of} from 'rxjs';
 import { catchError, tap } from 'rxjs/operators';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import {LoggingService} from "./logging.service";
-import {InstagramLocation} from "../models/instagram-location";
+import {InstagramPostModel} from "../models/instagram-post.model";
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 };
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable({ providedIn: 'root' })
 export class InstagramMappingService {
 
   constructor(private log: LoggingService, private http: HttpClient,) { }
 
+  private _serviceName:string = "Instagram Mapping Service: ";
   private _instagramUrl:string = 'api/v1/instagram';
 
-  getPosts(): Observable<InstagramLocation[]> {
-    return this.http.get<InstagramLocation[]>(`${this._instagramUrl}/posts`)
+
+  public getClientPosition(): Observable<Position> {
+    return Observable.create(
+      (observer) => {
+      navigator.geolocation.watchPosition((pos: Position) => { observer.next(pos); }),
+      () => {this.log.error(`${this._serviceName} Position not available.`) },
+      { enableHighAccuracy: true };
+    });
+  }
+
+
+  public getPosts(): Observable<InstagramPostModel[]> {
+    return this.http.get<InstagramPostModel[]>(`${this._instagramUrl}/posts`)
       .pipe(
-        tap(_ => this.log.info('Gathered instgram posts')),
+        tap(_ => this.log.info(`${this._serviceName} Retrieved Instagram data`)),
         catchError(this.handleError('getPosts', []))
       );
   }
 
   private handleError<T> (operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
-
-      // TODO: send the error to remote logging infrastructure
-      console.error(error); // log to console instead
-
-      // TODO: better job of transforming error for user consumption
-      this.log.error(`${operation} failed: ${error.message}`);
-
+      this.log.error(`${this._serviceName} ${error}`);
+      this.log.error(`${this._serviceName} ${operation} failed: ${error.message}`);
       // Let the app keep running by returning an empty result.
       return of(result as T);
     };

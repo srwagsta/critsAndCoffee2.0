@@ -1,21 +1,17 @@
 import { Injectable } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable({ providedIn: 'root' })
 export class LoggingService {
 
   constructor() { }
 
-  // TODO: Add the time and application data to the logging
-
   info(message:string):void{
-    console.info(message);
+    console.info(`${+new Date} -- ${message}`);
   }
 
   error(message:string):void{
+    console.error(`${+new Date} -- ${message}`);
     console.trace();
-    console.error(message);
   }
 
 }

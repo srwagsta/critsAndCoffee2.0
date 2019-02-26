@@ -1,3 +1,21 @@
-<agm-map [latitude]="lat" [longitude]="lng">
-  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-</agm-map>
+<div class="map" style="height: 100%" #map>
+  <agm-map [style.height.px]="map.offsetHeight"
+           [latitude]="clientCoordinate.lat"
+           [longitude]="clientCoordinate.lng"
+           [zoom]="10">
+
+    <agm-marker
+      *ngFor="let post of posts"
+      [class.selected]="post === selectedPost"
+      (markerClick)="onSelect(post)"
+      [latitude]="post.location.lat"
+      [longitude]="post.location.lng">
+    </agm-marker>
+
+  </agm-map>
+  <app-instagram-post-detail
+    *ngIf="selectedPost"
+    [post]="selectedPost">
+  </app-instagram-post-detail>
+
+</div>

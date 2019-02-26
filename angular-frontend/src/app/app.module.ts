@@ -14,6 +14,7 @@ import { PrivacyPolicyComponent } from './components/legal-documents/privacy-pol
 import { CopyrightPolicyComponent } from './components/legal-documents/copyright-policy/copyright-policy.component';
 import { ProjectLicenseComponent } from './components/legal-documents/project-license/project-license.component';
 import { ApiTermsOfUseComponent } from './components/legal-documents/api-terms-of-use/api-terms-of-use.component';
+import { InstagramPostDetailComponent } from './components/instagram-map/instagram-post-detail/instagram-post-detail.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ApiTermsOfUseComponent } from './components/legal-documents/api-terms-o
     PrivacyPolicyComponent,
     CopyrightPolicyComponent,
     ProjectLicenseComponent,
-    ApiTermsOfUseComponent
+    ApiTermsOfUseComponent,
+    InstagramPostDetailComponent
   ],
   imports: [
     BrowserModule,
