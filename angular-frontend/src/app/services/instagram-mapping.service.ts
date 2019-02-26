@@ -16,11 +16,10 @@ export class InstagramMappingService {
 
   constructor(private log: LoggingService, private http: HttpClient,) { }
 
-  // TODO: find the hostname to go before the _instagramUrl
-  private _instagramUrl = 'api/v1/instagram';
+  private _instagramUrl:string = 'api/v1/instagram';
 
   getPosts(): Observable<InstagramLocation[]> {
-    return this.http.get<InstagramLocation[]>(this._instagramUrl)
+    return this.http.get<InstagramLocation[]>(`${this._instagramUrl}/posts`)
       .pipe(
         tap(_ => this.log.info('Gathered instgram posts')),
         catchError(this.handleError('getPosts', []))
