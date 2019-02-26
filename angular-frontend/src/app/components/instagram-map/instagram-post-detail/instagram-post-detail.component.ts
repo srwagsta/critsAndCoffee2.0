@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {InstagramPostModel} from "../../../models/instagram-post.model";
 import {LoggingService} from "../../../services/logging.service";
 
@@ -12,7 +12,7 @@ export class InstagramPostDetailComponent implements OnInit {
   constructor(private log: LoggingService) { }
 
   private _componentName: string = "Instagram Post Detail: ";
-  public post:InstagramPostModel;
+  @Input() post:InstagramPostModel;
 
   ngOnInit() {
     this.log.info(`${this._componentName} Displaying post -- ${this.post.idCode}`);
