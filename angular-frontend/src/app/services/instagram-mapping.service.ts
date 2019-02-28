@@ -34,6 +34,7 @@ export class InstagramMappingService {
         tap(_ => this.log.info(`${this._serviceName} Retrieved Instagram data`)),
         catchError(this.handleError('getPosts', []))
       );
+    // TODO: I need to better understand how this pipe is going to map to my model if it can?
   }
 
   private handleError<T> (operation = 'operation', result?: T) {
