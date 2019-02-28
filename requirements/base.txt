@@ -21,6 +21,6 @@ djangorestframework==3.8.2  # https://github.com/encode/django-rest-framework
 coreapi==2.3.3  # https://github.com/core-api/python-client
 django-rest-auth>=0.9.3 # https://django-rest-auth.readthedocs.io/en/latest/installation.html
 django-rest-swagger>=2.2.0 # https://django-rest-swagger.readthedocs.io/en/latest/
-
+djangorestframework-gis>= 0.14.0 # https://github.com/djangonauts/django-rest-framework-gis
 
 

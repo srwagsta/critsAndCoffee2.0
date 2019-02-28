@@ -74,6 +74,7 @@ THIRD_PARTY_APPS = [
     'allauth.socialaccount',
     # For social account registratin check -> https://django-rest-auth.readthedocs.io/en/latest/installation.html
     'rest_framework',
+    'rest_framework_gis',
     'rest_framework.authtoken',
     'rest_auth',
     'rest_auth.registration',

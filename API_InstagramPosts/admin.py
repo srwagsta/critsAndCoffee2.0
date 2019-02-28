@@ -1,3 +1,7 @@
-from django.contrib import admin
+from django.contrib.gis import admin
+from .models import InstagramPost
 
-# Register your models here.
+@admin.register(InstagramPost)
+class UserAdmin(admin.OSMGeoAdmin):
+    search_fields = ["created_time"]
+

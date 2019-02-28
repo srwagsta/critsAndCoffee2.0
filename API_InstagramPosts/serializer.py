@@ -6,3 +6,4 @@ class InstagramPostSerializer(serializers.ModelSerializer):
         model = InstagramPost
         fields = ['content', 'id_code', 'tags', 'link', 'image_url',
                   'image', 'created_time', 'loc_name', 'loc_point']
+
