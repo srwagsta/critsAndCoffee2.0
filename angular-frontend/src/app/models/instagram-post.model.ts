@@ -1,27 +1,30 @@
-export class InstagramPostModel {
-  idCode                 :string;
-  uuid                   :string;
-  locationName           :string;
-  imageUrl               :string;
-  link                  :string;
-  tags                   :string;
-  content                :string;
+export interface InstagramPostModel {
 
-  location:string; // TODO: This may come through as an array?
-  image:string; // TODO: Decode sting into image field?
-  createdTime:string // TODO: Parse into Date object
+  id_code                 :string | null;
+  uuid                  :string | null;
+  loc_name           :string | null;
+  image_url              :string | null;
+  link                 :string | null;
+  tags                :string | null;
+  content             :string | null;
+
+  image:string | null; // TODO: Decode sting into image field?
+  created_time:string | null; // TODO: Parse into Date object
+  loc_point; // TODO: This may come through as an array?
 
 
-  constructor(idCode: string, uuid: string, locationName: string, imageUrl: string, link: string, tags: string, content: string, location: string, image: string, createdTime: string) {
-    this.idCode = idCode;
-    this.uuid = uuid;
-    this.locationName = locationName;
-    this.imageUrl = imageUrl;
-    this.link = link;
-    this.tags = tags;
-    this.content = content;
-    this.location = location;
-    this.image = image;
-    this.createdTime = createdTime;
-  }
+  //
+  // constructor(id_code: string, uuid: string, loc_name: string, image_url: string, link: string, tags: string, content: string, image: string, created_time: string, loc_point) {
+  //   this.id_code = id_code;
+  //   this.uuid = uuid;
+  //   this.loc_name = loc_name;
+  //   this.image_url = image_url;
+  //   this.link = link;
+  //   this.tags = tags;
+  //   this.content = content;
+  //   this.image = image;
+  //   this.created_time = created_time;
+  //   this.loc_point = loc_point;
+  // }
+
 }

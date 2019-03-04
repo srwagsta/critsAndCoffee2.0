@@ -2,14 +2,15 @@
   <agm-map [style.height.px]="map.offsetHeight"
            [latitude]="clientCoordinate.lat"
            [longitude]="clientCoordinate.lng"
-           [zoom]="10">
+           [zoom]="10"
+  (mouseover)="getPosts()">
 
     <agm-marker
       *ngFor="let post of posts"
       [class.selected]="post === selectedPost"
       (markerClick)="onSelect(post)"
-      [latitude]="post.location.lat"
-      [longitude]="post.location.lng">
+      [latitude]="post.loc_point.coordinates[1]"
+      [longitude]="post.loc_point.coordinates[0]">
     </agm-marker>
 
   </agm-map>

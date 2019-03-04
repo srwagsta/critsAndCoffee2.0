@@ -1,5 +1,5 @@
 import {Component, OnInit, OnDestroy} from '@angular/core';
-import {Subscription} from "rxjs";
+import {Observable, Subscription} from "rxjs";
 import {InstagramMappingService} from "../../services/instagram-mapping.service";
 import {LoggingService} from "../../services/logging.service";
 import {InstagramPostModel} from "../../models/instagram-post.model";
@@ -18,7 +18,7 @@ export class InstagramMapComponent implements OnInit, OnDestroy {
   //<editor-fold desc="Class Fields">
   private _componentName: string = 'Instagram Map Component: ';
   private _subscriptions: Subscription[] = [];
-  public posts: InstagramPostModel[];
+  public posts: InstagramPostModel[] = [];
   public selectedPost:InstagramPostModel;
 
   public clientCoordinate: any = {lat: 43.067303, lng: -87.876882};
@@ -34,8 +34,8 @@ export class InstagramMapComponent implements OnInit, OnDestroy {
         };
       }));
 
-    this.getPosts();
-
+    this.instagramService.getPosts().subscribe((posts:InstagramPostModel[]) => this.posts = posts);
+    // this.getPosts();
     this.log.info(`${this._componentName} Started, focus location (${this.clientCoordinate.lat}, ${this.clientCoordinate.lng})`);
   }
 
@@ -49,12 +49,16 @@ export class InstagramMapComponent implements OnInit, OnDestroy {
     // TODO: Show the instagram post detail modal, maybe using material.angular.io/components/dialog/overview
   }
 
-  //<editor-fold desc="Private Helper Functions">
-  private getPosts(): void {
-    this.log.info(`${this._componentName} Gathering Instagram post data`);
-    this._subscriptions.push(this.instagramService.getPosts()
-      .subscribe(posts => this.posts = posts));
+  public getPosts(){
+    this.log.error(`POST:: ${this.posts[0].loc_name}`);
   }
+
+  //<editor-fold desc="Private Helper Functions">
+  // private getPosts(): void {
+  //   this.log.info(`${this._componentName} Gathering Instagram post data`);
+  //   this._subscriptions.push(this.instagramService.getPosts()
+  //     .subscribe(post => this.posts = post));
+  // }
 
   //</editor-fold>
 }

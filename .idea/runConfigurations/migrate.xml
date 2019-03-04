@@ -12,6 +12,43 @@
     <option name="IS_MODULE_SDK" value="true" />
     <option name="ADD_CONTENT_ROOTS" value="true" />
     <option name="ADD_SOURCE_ROOTS" value="true" />
+    <EXTENSION ID="DockerContainerSettingsRunConfigurationExtension">
+      <option name="envVars">
+        <list />
+      </option>
+      <option name="extraHosts">
+        <list />
+      </option>
+      <option name="links">
+        <list />
+      </option>
+      <option name="networkDisabled" value="false" />
+      <option name="networkMode" value="bridge" />
+      <option name="portBindings">
+        <list />
+      </option>
+      <option name="publishAllPorts" value="false" />
+      <option name="version" value="1" />
+      <option name="volumeBindings">
+        <list>
+          <DockerVolumeBindingImpl>
+            <option name="containerPath" value="/opt/project" />
+            <option name="editable" value="true" />
+            <option name="hostPath" value="$PROJECT_DIR$" />
+            <option name="readOnly" value="false" />
+          </DockerVolumeBindingImpl>
+        </list>
+      </option>
+    </EXTENSION>
+    <EXTENSION ID="net.ashald.envfile">
+      <option name="IS_ENABLED" value="false" />
+      <option name="IS_SUBST" value="false" />
+      <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+      <option name="IS_IGNORE_MISSING_FILES" value="false" />
+      <ENTRIES>
+        <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+      </ENTRIES>
+    </EXTENSION>
     <PathMappingSettings>
       <option name="pathMappings">
         <list>
@@ -27,6 +64,6 @@
     <option name="runNoReload" value="false" />
     <option name="useCustomRunCommand" value="true" />
     <option name="customRunCommand" value="migrate" />
-    <method />
+    <method v="2" />
   </configuration>
 </component>

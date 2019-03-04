@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of} from 'rxjs';
-import { catchError, tap } from 'rxjs/operators';
+import { catchError, tap, map } from 'rxjs/operators';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import {LoggingService} from "./logging.service";
 import {InstagramPostModel} from "../models/instagram-post.model";
@@ -28,12 +28,11 @@ export class InstagramMappingService {
   }
 
 
-  public getPosts(): Observable<InstagramPostModel[]> {
-    return this.http.get<InstagramPostModel[]>(`${this._instagramUrl}/posts`)
+  public getPosts(){
+    return this.http.get<InstagramPostModel[]>(`${this._instagramUrl}/posts`, httpOptions)
       .pipe(
-        tap(_ => this.log.info(`${this._serviceName} Retrieved Instagram data`)),
-        catchError(this.handleError('getPosts', []))
-      );
+        tap(data => this.log.info(`Entry content: ${data}`),
+            error =>  catchError(this.handleError(error, []))));
     // TODO: I need to better understand how this pipe is going to map to my model if it can?
   }
 

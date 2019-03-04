@@ -15,7 +15,7 @@ export class InstagramPostDetailComponent implements OnInit {
   @Input() post:InstagramPostModel;
 
   ngOnInit() {
-    this.log.info(`${this._componentName} Displaying post -- ${this.post.idCode}`);
+    this.log.info(`${this._componentName} Displaying post -- ${this.post.id_code}`);
   }
 
 }
