@@ -1,0 +1,9 @@
+@import "../../../../sass/styles";
+
+mat-card {
+  z-index: 9;
+  background: rgba($base-grey, .5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
