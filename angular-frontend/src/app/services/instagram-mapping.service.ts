@@ -5,6 +5,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import {LoggingService} from "./logging.service";
 import {InstagramPostModel} from "../models/instagram-post.model";
 
+
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 };
@@ -32,9 +33,11 @@ export class InstagramMappingService {
     return this.http.get<InstagramPostModel[]>(`${this._instagramUrl}/posts`, httpOptions)
       .pipe(
         tap(data => this.log.info(`Entry content: ${data}`),
-            error =>  catchError(this.handleError(error, []))));
-    // TODO: I need to better understand how this pipe is going to map to my model if it can?
+            error =>  catchError(this.handleError(error, [])))
+      );
   }
+
+  // TODO: GET post function, DELETE post function
 
   private handleError<T> (operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {

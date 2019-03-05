@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, Output} from '@angular/core';
 import {InstagramPostModel} from "../../../models/instagram-post.model";
 import {LoggingService} from "../../../services/logging.service";
 

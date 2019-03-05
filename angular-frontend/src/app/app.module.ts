@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule }    from '@angular/common/http';
 import { AgmCoreModule } from '@agm/core';
+import {MatCardModule} from '@angular/material/card';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './components/app-root/app.component';
@@ -34,6 +36,7 @@ import { InstagramPostDetailComponent } from './components/instagram-map/instagr
     HttpClientModule,
     AppRoutingModule,
     UiModule,
+    MatCardModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCNPlDnedCEachOH08pszCanYO2RDuJ6pk\n'
     })
