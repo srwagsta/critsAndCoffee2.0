@@ -15,6 +15,7 @@ services:
       - postgres
       - mailhog
     env_file:
+      - ../.envs/.private/.instagram
       - ../.envs/.local/.django
       - ../.envs/.local/.postgres
     ports:

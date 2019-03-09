@@ -17,6 +17,7 @@ services:
     links:
     - selenium-hub
     env_file:
+      - ../.envs/.private/.instagram
       - ../.envs/.testing/.django
       - ../.envs/.testing/.postgres
     ports:

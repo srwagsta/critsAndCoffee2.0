@@ -15,6 +15,7 @@ services:
       - postgres
       - redis
     env_file:
+      - ../.envs/.private/.instagram
       - ../.envs/.production/.django
       - ../.envs/.production/.postgres
     command: /start
