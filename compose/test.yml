@@ -15,7 +15,7 @@ services:
       - postgres
       - mailhog
     links:
-    - selenium-hub
+      - selenium-hub
     env_file:
       - ../.envs/.private/.instagram
       - ../.envs/.testing/.django

@@ -11,6 +11,8 @@ services:
       context: ../
       dockerfile: ./compose/production/django/Dockerfile
     image: ${DOCKER_REGISTRY}crits_and_coffee_django:${DOCKER_PRODUCTION_TAG}
+    links:
+      - selenium
     depends_on:
       - postgres
       - redis
@@ -48,6 +50,9 @@ services:
 
   redis:
     image: redis:3.2
+
+  selenium:
+    image: selenium/standalone-chrome
 
   celeryworker:
     <<: *django

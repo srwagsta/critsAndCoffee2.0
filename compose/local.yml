@@ -11,6 +11,8 @@ services:
     build:
       context: ../
       dockerfile: ./compose/local/django/Dockerfile
+    links:
+      - selenium
     depends_on:
       - postgres
       - mailhog
@@ -38,6 +40,9 @@ services:
     image: mailhog/mailhog:v1.0.0
     ports:
       - "8025:8025"
+
+  selenium:
+    image: selenium/standalone-chrome
 
   redis:
     image: redis:3.2
