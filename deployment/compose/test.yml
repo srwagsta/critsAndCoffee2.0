@@ -11,6 +11,8 @@ services:
     build:
       context: ../..
       dockerfile: testing/django/Dockerfile
+    volumes:
+      - ../../functional_tests:/functional_tests
     depends_on:
       - postgres
       - mailhog

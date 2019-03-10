@@ -82,7 +82,8 @@ THIRD_PARTY_APPS = [
 ]
 LOCAL_APPS = [
     'crits_and_coffee.users.apps.UsersAppConfig',
-    'API_InstagramPosts.apps.InstagramPostsConfig'
+    'API_InstagramPosts.apps.InstagramPostsConfig',
+    'API_Logging.apps.ApiLoggingConfig'
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -269,8 +270,13 @@ ACCOUNT_ADAPTER = 'crits_and_coffee.users.adapters.AccountAdapter'
 SOCIALACCOUNT_ADAPTER = 'crits_and_coffee.users.adapters.SocialAccountAdapter'
 # rest_framework
 # ------------------------------------------------------------------------------
+REST_USE_JWT = True
+
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAdminUser',
+    ),
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
     ),
 }
