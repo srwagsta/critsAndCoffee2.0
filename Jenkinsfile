@@ -2,6 +2,12 @@
 pipeline {
     agent none
     stages {
+        stage('Add Private data to project for building from host') {
+            agent any
+            steps {
+                sh 'cp -r /var/jenkins_build_data/.private ./deployment/.envs'
+            }
+        }
         stage('Build and Push new GeoDjango container') {
             agent any
             steps {
