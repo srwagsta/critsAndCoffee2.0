@@ -9,8 +9,8 @@ services:
     image: ${DOCKER_REGISTRY}crits_and_coffee_django:${DOCKER_TEST_TAG}
     container_name: django-test
     build:
-      context: ../
-      dockerfile: ./compose/testing/django/Dockerfile
+      context: ../..
+      dockerfile: testing/django/Dockerfile
     depends_on:
       - postgres
       - mailhog
@@ -30,8 +30,8 @@ services:
     image: ${DOCKER_REGISTRY}crits_and_coffee_postgres:${DOCKER_TEST_TAG}
     container_name: postgres-test
     build:
-      context: ..
-      dockerfile: ./compose/testing/postgres/Dockerfile
+      context: ../..
+      dockerfile: testing/postgres/Dockerfile
     volumes:
       - local_postgres_data:/var/lib/postgresql/data
       - local_postgres_data_backups:/backups
@@ -92,8 +92,8 @@ services:
     image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${SELENIUM_TEST_TAG}
     container_name: selenium-test
     build:
-      context: ..
-      dockerfile: ./compose/testing/selenium/Dockerfile
+      context: ../..
+      dockerfile: testing/selenium/Dockerfile
     privileged: true
     ports:
       - 4444:4444

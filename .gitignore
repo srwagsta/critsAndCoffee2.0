@@ -326,5 +326,5 @@ crits_and_coffee/media/
 
 .pytest_cache/
 #.env
-#.envs/*
-.envs/.private
+#deployment/.envs/*
+deployment/.envs/.private

@@ -9,8 +9,8 @@ services:
     image: ${DOCKER_REGISTRY}crits_and_coffee_django:${DOCKER_LOCAL_TAG}
     container_name: django-local
     build:
-      context: ../
-      dockerfile: ./compose/local/django/Dockerfile
+      context: ../..
+      dockerfile: ./deployment/compose/local/django/Dockerfile
     links:
       - selenium
     depends_on:
@@ -28,8 +28,8 @@ services:
     image: ${DOCKER_REGISTRY}crits_and_coffee_postgres:${DOCKER_LOCAL_TAG}
     container_name: postgres-production
     build:
-      context: ../
-      dockerfile: ./compose/production/postgres/Dockerfile
+      context: ../..
+      dockerfile: ./deployment/compose/production/postgres/Dockerfile
     volumes:
       - local_postgres_data:/var/lib/postgresql/data
       - local_postgres_data_backups:/backups

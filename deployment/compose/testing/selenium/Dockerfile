@@ -1,5 +1,5 @@
 FROM selenium/hub:latest
 
-COPY ./compose/testing/selenium/run_tests /run_tests
+COPY ./deployment/compose/testing/selenium/run_tests /run_tests
 RUN sed -i 's/\r//' /run_tests
 RUN chmod +x /run_tests

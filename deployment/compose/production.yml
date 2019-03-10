@@ -8,8 +8,8 @@ volumes:
 services:
   django: &django
     build:
-      context: ../
-      dockerfile: ./compose/production/django/Dockerfile
+      context: ../..
+      dockerfile: ./deployment/compose/production/django/Dockerfile
     image: ${DOCKER_REGISTRY}crits_and_coffee_django:${DOCKER_PRODUCTION_TAG}
     links:
       - selenium
@@ -24,8 +24,8 @@ services:
 
   postgres:
     build:
-      context: ../
-      dockerfile: ./compose/production/postgres/Dockerfile
+      context: ../..
+      dockerfile: ./deployment/compose/production/postgres/Dockerfile
     image: ${DOCKER_REGISTRY}crits_and_coffee_postgres:${DOCKER_PRODUCTION_TAG}
     volumes:
       - production_postgres_data:/var/lib/postgresql/data
@@ -35,8 +35,8 @@ services:
 
   caddy:
     build:
-      context: ../
-      dockerfile: ./compose/production/caddy/Dockerfile
+      context: ../..
+      dockerfile: ./deployment/compose/production/caddy/Dockerfile
     image: ${DOCKER_REGISTRY}crits_and_coffee_caddy:${DOCKER_PRODUCTION_TAG}
     depends_on:
       - django
