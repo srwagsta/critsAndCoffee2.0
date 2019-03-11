@@ -8,7 +8,7 @@ class InstagramPostListAPIView(ListAPIView):
     queryset = InstagramPost.objects.all()
     permission_classes = (AllowAny,)
     serializer_class = InstagramPostSerializer
-    lookup_field = 'uuid'
+    lookup_field = 'id'
 
 
 class InstagramPostRetrieveDestoryAPIView(RetrieveDestroyAPIView):
@@ -16,7 +16,7 @@ class InstagramPostRetrieveDestoryAPIView(RetrieveDestroyAPIView):
     queryset = InstagramPost.objects.all()
     permission_classes = (IsAuthenticated,)
     serializer_class = InstagramPostSerializer
-    lookup_field = 'uuid'
+    lookup_field = 'id'
 
 
 

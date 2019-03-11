@@ -16,7 +16,7 @@ export class InstagramPostDetailComponent implements OnInit {
   @Output() postChange = new EventEmitter<InstagramPostModel>();
 
   ngOnInit() {
-    this.log.info(`${this._componentName} Displaying post -- ${this.post.id_code}`);
+    this.log.info(`${this._componentName} Displaying post -- ${this.post.id}`);
   }
 
   public resetPost(){

@@ -8,8 +8,8 @@
       *ngFor="let post of posts"
       [class.selected]="post === selectedPost"
       (markerClick)="onSelect(post)"
-      [latitude]="post.loc_point.coordinates[1]"
-      [longitude]="post.loc_point.coordinates[0]">
+      [latitude]="post.location.coordinates[1]"
+      [longitude]="post.location.coordinates[0]">
     </agm-marker>
   </agm-map>
 

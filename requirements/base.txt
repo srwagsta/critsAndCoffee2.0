@@ -26,7 +26,3 @@ django-rest-auth>=0.9.3 # https://django-rest-auth.readthedocs.io/en/latest/inst
 djangorestframework-jwt>=1.11.0 # http://getblimp.github.io/django-rest-framework-jwt/#overview
 django-rest-swagger>=2.2.0 # https://django-rest-swagger.readthedocs.io/en/latest/
 djangorestframework-gis>= 0.14.0 # https://github.com/djangonauts/django-rest-framework-gis
-
-# Instagram
-# ------------------------------------------------------------------------------
-python-instagram # https://github.com/facebookarchive/python-instagram

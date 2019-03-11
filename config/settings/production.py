@@ -176,18 +176,10 @@ LOGGING = {
             'level': 'ERROR',
             'class': 'raven.contrib.django.raven_compat.handlers.SentryHandler',
         },
-        'api_logfile': {
-            'level':'DEBUG',
-            'class':'logging.handlers.RotatingFileHandler',
-            'filename': '/crits-logs/api.log',
-            'maxBytes': 1024*1024*15, # 15MB
-            'backupCount': 10,
-            'formatter': 'standard'
-        },
         'django_logfile': {
             'level':'DEBUG',
             'class':'logging.handlers.RotatingFileHandler',
-            'filename': '/crits-logs/django.log',
+            'filename': '/crits-logs/critsAndcoffee.log',
             'maxBytes': 1024*1024*15, # 15MB
             'backupCount': 10,
             'formatter': 'standard'
@@ -214,16 +206,11 @@ LOGGING = {
             'handlers': ['django_logfile', 'sentry'],
             'propagate': False,
         },
-        'api': {
-            'level': 'ERROR',
-            'handlers': ['api_logfile', 'sentry'],
+        'django': {
+            'level': 'DEBUG',
+            'handlers': ['django_logfile'],
             'propagate': True,
         },
-        'django': {
-            'level': 'ERROR',
-            'handlers': ['django_logfile', 'sentry'],
-            'propagate': True,
-        }
     },
 }
 

@@ -7,19 +7,13 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.chrome.options import Options
 import requests
 import urllib.parse as urlparse
-from instagram.client import InstagramAPI
 from os import environ
+import logging
+
+log = logging.getLogger('django')
 
 
-class my_log:
-    def __init__(self):
-        self.error = print
-
-
-log = my_log()
-
-
-def get_instagram_auth_token(headless=True, docker_driver=True):
+def _get_instagram_auth_token(headless=True, docker_driver=True):
     try:
         REDIRECT_URI = environ['INSTAGRAM_REDIRECT_URI']
         CLIENT_ID = environ['INSTAGRAM_CLIENT_ID']
@@ -79,11 +73,24 @@ def get_instagram_auth_token(headless=True, docker_driver=True):
 
     return return_token
 
-def get_latest_posts():
-    access_token = get_instagram_auth_token()
-    client_secret = environ['INSTAGRAM_CLIENT_SECRET']
-    api = InstagramAPI(access_token=access_token, client_secret=client_secret)
-    recent_media, next_ = api.user_recent_media(user_id="userid", count=10)
-    for media in recent_media:
-        print(media.caption.text)
-        # TODO: query the db for all id's and compare this id to the the exsisting ones in the db
+def _parse_recent_media():
+    recent_media_url = "https://api.instagram.com/v1/users/self/media/recent/"
+    auth_params = {'access_token': _get_instagram_auth_token()}
+    try:
+        return requests.get(url=recent_media_url, params=auth_params).json()['data']
+    except Exception as e:
+        log.error(f'INSTAGRAM DATA FAILURE => {e}')
+        return None
+
+def retrieve_recent_media():
+    recent_media = _parse_recent_media()
+    if recent_media is not None:
+        #TODO: query the DB for all the id's? or is there a better method to check if an id is already in the db?
+        for media in recent_media:
+            # TODO: have a factory method for creating the new posts and putting them in the DB?
+
+            # TODO: Make sure to convert the created_time to a datetime object
+                # utc_dt = datetime.utcfromtimestamp(media['created_time']).replace(tzinfo=pytz.utc)
+            log.info(media['id'])
+        return True
+    return  False

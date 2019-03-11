@@ -118,23 +118,15 @@ LOGGING = {
     },
     'formatters': {
         'standard': {
-            'format' : "[%(asctime)s] %(levelname)s [%(name)s:%(lineno)s] %(message)s",
+            'format' : "[%(asctime)s] %(levelname)s [%(pathname)s:%(lineno)s] %(message)s",
             'datefmt' : "%d/%b/%Y %H:%M:%S"
         },
     },
     'handlers': {
-        'api_logfile': {
-            'level':'DEBUG',
-            'class':'logging.handlers.RotatingFileHandler',
-            'filename': '/crits-logs/api.log',
-            'maxBytes': 1024*1024*15, # 15MB
-            'backupCount': 10,
-            'formatter': 'standard'
-        },
         'django_logfile': {
             'level':'DEBUG',
             'class':'logging.handlers.RotatingFileHandler',
-            'filename': '/crits-logs/django.log',
+            'filename': '/crits-logs/critsAndcoffee.log',
             'maxBytes': 1024*1024*15, # 15MB
             'backupCount': 10,
             'formatter': 'standard'
@@ -156,13 +148,8 @@ LOGGING = {
             'handlers': ['django_logfile'],
             'propagate': False,
         },
-        'api': {
-            'level': 'INFO',
-            'handlers': ['api_logfile'],
-            'propagate': True,
-        },
         'django': {
-            'level': 'INFO',
+            'level': 'DEBUG',
             'handlers': ['django_logfile'],
             'propagate': True,
         },

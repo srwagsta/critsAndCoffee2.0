@@ -1,22 +1,21 @@
 from django.contrib.gis.db import models
-import uuid as uuid_lib
+
 
 class InstagramPost(models.Model):
-    content = models.TextField(default='None', max_length=255)
-    id_code = models.CharField(default='None', max_length=255)
-    tags = models.TextField(default='None', max_length=255)
-    link = models.CharField(default='None', max_length=255)
-    image_url = models.CharField(default='None', max_length=255)
-    image = models.ImageField(blank=True)
-    created_time = models.DateField(blank=True)
-    loc_name = models.TextField(default='None', max_length=255)
-    uuid = models.UUIDField(
-        db_index=True,
-        default=uuid_lib.uuid4,
-        editable=False)
+    id = models.CharField(unique=True, primary_key=True, db_index=True, max_length=255)
+    image_thumbnail_url = models.URLField(max_length=2000)
+    image_low_resolution_url = models.URLField(max_length=2000)
+    image_standard_resolution_url = models.URLField(max_length=2000)
+    created_time = models.DateField()
+    caption = models.TextField()
+    likes = models.IntegerField()
+    tags = models.TextField()
+    link = models.URLField(max_length=2000)
     # GeoDjango-specific: a geometry field (PointField)
-    loc_point = models.PointField(srid=4326, default='SRID=4326;POINT(43.065019 -87.878286)')
+    location = models.PointField(srid=4326, default='SRID=4326;POINT(43.065019 -87.878286)')
+    location_name = models.TextField(default='None', max_length=255)
+
 
     # Returns the string representation of the model.
     def __str__(self):              # __unicode__ on Python 2
-        return self.id_code
+        return self.id

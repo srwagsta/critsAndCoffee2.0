@@ -1,12 +1,12 @@
 <mat-card (click)="resetPost()">
   <mat-card-header>
     <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>{{ post.loc_name }}</mat-card-title>
+    <mat-card-title>{{ post.location_name }}</mat-card-title>
     <mat-card-subtitle>{{ post.tags }}</mat-card-subtitle>
   </mat-card-header>
-  <img mat-card-image src="{{ post.image_url }}" alt="{{ post.loc_name }}">
+  <img mat-card-image src="{{post.image_standard_resolution_url}}" alt="{{ post.location_name }}">
   <mat-card-content>
-    <p>{{ post.content }}</p>
+    <p>{{ post.caption }}</p>
   </mat-card-content>
   <mat-card-actions>
     <button mat-button>LIKE</button>

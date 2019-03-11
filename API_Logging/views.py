@@ -4,7 +4,7 @@ from rest_framework.permissions import AllowAny
 from rest_framework.throttling import UserRateThrottle
 import logging
 
-log = logging.getLogger('api')
+log = logging.getLogger('django')
 INVALID_MASSAGE_FORMAT_MESSAGE = 'Invalid request format attempted logging'
 
 class OneThousandPerHour(UserRateThrottle):
@@ -13,7 +13,7 @@ class OneThousandPerHour(UserRateThrottle):
 def extract_message(request):
     return_message = None
     try:
-        return_message = request.body['log_message']
+        return_message = str(request.body)
     except Exception as e:
         log.error(f'{INVALID_MASSAGE_FORMAT_MESSAGE} => {e}')
     return return_message
@@ -67,6 +67,3 @@ def log_debug_create_view(request):
         log.debug(message)
         return Response(200)
     return Response(400)
-
-
-# TODO: Somehow validate the request did come from my app, without forcing user auth?
