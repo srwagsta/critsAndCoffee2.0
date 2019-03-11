@@ -19,6 +19,7 @@ django-redis==4.9.0  # https://github.com/niwinz/django-redis
 django_compressor>=2.2 #https://django-compressor.readthedocs.io/en/stable/quickstart/
 
 # Django REST Framework
+# ------------------------------------------------------------------------------
 djangorestframework==3.8.2  # https://github.com/encode/django-rest-framework
 coreapi==2.3.3  # https://github.com/core-api/python-client
 django-rest-auth>=0.9.3 # https://django-rest-auth.readthedocs.io/en/latest/installation.html
@@ -26,4 +27,6 @@ djangorestframework-jwt>=1.11.0 # http://getblimp.github.io/django-rest-framewor
 django-rest-swagger>=2.2.0 # https://django-rest-swagger.readthedocs.io/en/latest/
 djangorestframework-gis>= 0.14.0 # https://github.com/djangonauts/django-rest-framework-gis
 
-
+# Instagram
+# ------------------------------------------------------------------------------
+python-instagram # https://github.com/facebookarchive/python-instagram

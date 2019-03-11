@@ -11,6 +11,8 @@ services:
     build:
       context: ../..
       dockerfile: ./deployment/compose/local/django/Dockerfile
+    volumes:
+      - ../../logs/:/crits-logs/
     links:
       - selenium
     depends_on:

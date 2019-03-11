@@ -82,7 +82,6 @@ ENV/
 
 ### Node template
 # Logs
-logs
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -328,3 +327,4 @@ crits_and_coffee/media/
 #.env
 #deployment/.envs/*
 deployment/.envs/.private
+

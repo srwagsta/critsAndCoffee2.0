@@ -1,0 +1,5 @@
+[11/Mar/2019 00:03:09] CRITICAL [api:16] b'----------------------------563682795143145526429535\r\nContent-Disposition: form-data; name="log"\r\n\r\nTHIS IS A TEST OF THE ERROR LOGGIN\r\n----------------------------563682795143145526429535--\r\n'
+[11/Mar/2019 00:03:09] CRITICAL [api:16] b'----------------------------563682795143145526429535\r\nContent-Disposition: form-data; name="log"\r\n\r\nTHIS IS A TEST OF THE ERROR LOGGIN\r\n----------------------------563682795143145526429535--\r\n'
+[11/Mar/2019 00:04:08] WARNING [api:30] b'----------------------------099965226729174699708287\r\nContent-Disposition: form-data; name="log"\r\n\r\nTHIS IS A TEST OF THE ERROR LOGGIN\r\n----------------------------099965226729174699708287--\r\n'
+[11/Mar/2019 00:04:08] WARNING [api:30] b'----------------------------099965226729174699708287\r\nContent-Disposition: form-data; name="log"\r\n\r\nTHIS IS A TEST OF THE ERROR LOGGIN\r\n----------------------------099965226729174699708287--\r\n'
+[11/Mar/2019 00:27:04] WARNING [api:30] b'{\n    "message": "This is my test message"\n}'

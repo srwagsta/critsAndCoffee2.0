@@ -7,6 +7,7 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.chrome.options import Options
 import requests
 import urllib.parse as urlparse
+from instagram.client import InstagramAPI
 from os import environ
 
 
@@ -77,3 +78,12 @@ def get_instagram_auth_token(headless=True, docker_driver=True):
         driver.close()
 
     return return_token
+
+def get_latest_posts():
+    access_token = get_instagram_auth_token()
+    client_secret = environ['INSTAGRAM_CLIENT_SECRET']
+    api = InstagramAPI(access_token=access_token, client_secret=client_secret)
+    recent_media, next_ = api.user_recent_media(user_id="userid", count=10)
+    for media in recent_media:
+        print(media.caption.text)
+        # TODO: query the db for all id's and compare this id to the the exsisting ones in the db
