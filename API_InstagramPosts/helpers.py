@@ -9,6 +9,7 @@ import requests
 import urllib.parse as urlparse
 from os import environ
 import logging
+from .models import InstagramPost
 
 log = logging.getLogger('django')
 
@@ -82,15 +83,23 @@ def _parse_recent_media():
         log.error(f'INSTAGRAM DATA FAILURE => {e}')
         return None
 
+def _add_post_to_db(post_data):
+    InstagramPost.objects.create(**post_data).full_clean()
+
 def retrieve_recent_media():
     recent_media = _parse_recent_media()
     if recent_media is not None:
         #TODO: query the DB for all the id's? or is there a better method to check if an id is already in the db?
         for media in recent_media:
+            try:
+                _add_post_to_db(media)
+                log.info(media['id'] + f' => Added post')
+            except Exception as e:
+                log.info(media['id'] + f' => Post NOT add --- {e}')
+
             # TODO: have a factory method for creating the new posts and putting them in the DB?
 
             # TODO: Make sure to convert the created_time to a datetime object
                 # utc_dt = datetime.utcfromtimestamp(media['created_time']).replace(tzinfo=pytz.utc)
-            log.info(media['id'])
         return True
     return  False
