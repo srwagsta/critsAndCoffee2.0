@@ -26,7 +26,7 @@ $text-color: #222222 !default;
 /// @type Color
 $brand-primary-color: #14d3e3 !default;
 $brand-secondary-color: #d9d9d9 !default;
-
+$brand-warning-color: 	#DC143C !default;
 
 /// Medium grey
 /// @type Color
@@ -61,3 +61,5 @@ $breakpoints: (
 /// @example scss - When using a CDN
 ///   $base-url: 'http://cdn.example.com/assets/';
 $base-url: '/static/' !default;
+
+

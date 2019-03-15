@@ -1,3 +1,5 @@
+import pytz
+from django.utils.datetime_safe import datetime
 from selenium import webdriver
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
@@ -10,6 +12,8 @@ import urllib.parse as urlparse
 from os import environ
 import logging
 from .models import InstagramPost
+from django.contrib.gis.geos import Point
+import traceback
 
 log = logging.getLogger('django')
 
@@ -84,22 +88,27 @@ def _parse_recent_media():
         return None
 
 def _add_post_to_db(post_data):
-    InstagramPost.objects.create(**post_data).full_clean()
+    InstagramPost(**{'id': post_data['id'],
+                 'image_thumbnail_url': post_data['images']['thumbnail']['url'],
+                 'image_low_resolution_url': post_data['images']['low_resolution']['url'],
+                 'image_standard_resolution_url': post_data['images']['standard_resolution']['url'],
+                 'created_time': datetime.utcfromtimestamp(int(post_data['created_time'])).replace(tzinfo=pytz.utc),
+                 'caption': post_data['caption']['text'],
+                 'likes': int(post_data['likes']['count']),
+                 'tags': post_data['tags'],
+                 'link': post_data['link'],
+                 'location': Point(int(post_data['location']['longitude']), int(post_data['location']['latitude']), srid=4326),
+                 'location_name': post_data['location']['name']
+                 }).save()
 
 def retrieve_recent_media():
     recent_media = _parse_recent_media()
     if recent_media is not None:
-        #TODO: query the DB for all the id's? or is there a better method to check if an id is already in the db?
         for media in recent_media:
             try:
                 _add_post_to_db(media)
                 log.info(media['id'] + f' => Added post')
             except Exception as e:
-                log.info(media['id'] + f' => Post NOT add --- {e}')
-
-            # TODO: have a factory method for creating the new posts and putting them in the DB?
-
-            # TODO: Make sure to convert the created_time to a datetime object
-                # utc_dt = datetime.utcfromtimestamp(media['created_time']).replace(tzinfo=pytz.utc)
+                log.info(media['id'] + f' => Post NOT added --- {e} : {traceback.print_tb(tb=e.__traceback__)}')
         return True
     return  False

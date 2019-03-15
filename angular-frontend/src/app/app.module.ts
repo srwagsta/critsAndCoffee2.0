@@ -1,8 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule }    from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { AgmCoreModule } from '@agm/core';
 import {MatCardModule} from '@angular/material/card';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -33,6 +35,8 @@ import { InstagramPostDetailComponent } from './components/instagram-map/instagr
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    FlexLayoutModule,
     HttpClientModule,
     AppRoutingModule,
     UiModule,

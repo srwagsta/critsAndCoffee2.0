@@ -9,7 +9,8 @@
       [class.selected]="post === selectedPost"
       (markerClick)="onSelect(post)"
       [latitude]="post.location.coordinates[1]"
-      [longitude]="post.location.coordinates[0]">
+      [longitude]="post.location.coordinates[0]"
+      [openInfoWindow]="true">
     </agm-marker>
   </agm-map>
 

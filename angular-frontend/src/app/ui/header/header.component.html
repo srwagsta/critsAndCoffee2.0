@@ -1,24 +1,39 @@
-<nav class="navbar navbar-dark navbar-crits-custom">
+<div class="crits-nav-container">
+  <mat-toolbar color="primary" class="crits-toolbar">
+    <h1 class="crits-brand" routerLink="home">
+      Crits & Coffee
+    </h1>
 
-  <a class="navbar-brand" routerLink="home">
-    Crits & Coffee
-  </a>
+    <span class="spacer"></span>
 
-
-  <div class="custom-toggler" (click)="$event.currentTarget.classList.toggle('change');" data-toggle="collapse"
-       data-target="#navbarMenu" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-    <div class="togglerBar1"></div>
-    <div class="togglerBar2"></div>
-    <div class="togglerBar3"></div>
-  </div>
-
-  <div class="crits-collapse collapse navbar-collapse" id="navbarMenu">
-    <div class="navbar-nav ">
-      <a class="nav-link ml-auto" routerLink="home">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-link ml-auto" routerLink="instagram-map">View My Travels</a>
-      <a class="nav-link ml-auto" routerLink="about">About</a>
-      <a class="nav-link ml-auto" [href]="API_route">API</a>
+    <div #menuIcon class="custom-toggler" (click)="onClick()">
+      <div class="togglerBar1"></div>
+      <div class="togglerBar2"></div>
+      <div class="togglerBar3"></div>
     </div>
-  </div>
+  </mat-toolbar>
 
-</nav>
+  <mat-sidenav-container (backdropClick)="toggleMenuIcon()" class="crits-sidenav-container">
+    <mat-sidenav #sideNav fixedTopGap="56" (keydown)="toggleMenuIcon()">
+      <mat-nav-list>
+        <button mat-list-item mat-icon-button color="primary" (click)="onClick()" routerLink="home">
+          <mat-icon aria-label="home icon button">home</mat-icon>
+        </button>
+        <button mat-list-item mat-icon-button color="primary" (click)="onClick()" routerLink="instagram-map">
+          <mat-icon aria-label="map button">home</mat-icon>
+        </button>
+        <button mat-list-item mat-icon-button color="primary" (click)="onClick()" routerLink="about">
+          <mat-icon aria-label="about page button">home</mat-icon>
+        </button>
+        <button mat-list-item mat-icon-button color="primary" (click)="onClick()" >
+          <mat-icon aria-label="api docs button">home</mat-icon>
+        </button>
+        <a class="mat-list-item" (click)="onClick()" [href]="API_route">API</a>
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <ng-content></ng-content>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

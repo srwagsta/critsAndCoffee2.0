@@ -9,6 +9,10 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 library.add(fas, fab);
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatListModule} from '@angular/material/list';
+import {MatButtonModule, MatIconModule} from '@angular/material';
 
 @NgModule({
   declarations: [LayoutComponent, HeaderComponent, FooterComponent],
@@ -16,7 +20,12 @@ library.add(fas, fab);
   imports: [
     AppRoutingModule,
     CommonModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatListModule,
+    MatButtonModule
   ]
 })
 export class UiModule { }
