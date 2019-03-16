@@ -97,7 +97,7 @@ def _add_post_to_db(post_data):
                  'likes': int(post_data['likes']['count']),
                  'tags': post_data['tags'],
                  'link': post_data['link'],
-                 'location': Point(int(post_data['location']['longitude']), int(post_data['location']['latitude']), srid=4326),
+                 'location': Point(int(post_data['location']['longitude']), int(post_data['location']['latitude'])),
                  'location_name': post_data['location']['name']
                  }).save()
 

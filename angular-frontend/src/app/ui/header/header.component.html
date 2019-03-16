@@ -16,19 +16,26 @@
   <mat-sidenav-container (backdropClick)="toggleMenuIcon()" class="crits-sidenav-container">
     <mat-sidenav #sideNav fixedTopGap="56" (keydown)="toggleMenuIcon()">
       <mat-nav-list>
-        <button mat-list-item mat-icon-button color="primary" (click)="onClick()" routerLink="home">
-          <mat-icon aria-label="home icon button">home</mat-icon>
-        </button>
-        <button mat-list-item mat-icon-button color="primary" (click)="onClick()" routerLink="instagram-map">
-          <mat-icon aria-label="map button">home</mat-icon>
-        </button>
-        <button mat-list-item mat-icon-button color="primary" (click)="onClick()" routerLink="about">
-          <mat-icon aria-label="about page button">home</mat-icon>
-        </button>
-        <button mat-list-item mat-icon-button color="primary" (click)="onClick()" >
-          <mat-icon aria-label="api docs button">home</mat-icon>
-        </button>
-        <a class="mat-list-item" (click)="onClick()" [href]="API_route">API</a>
+        <p>
+          <button mat-icon-button color="primary" matTooltip="Home" (click)="onClick()" routerLink="home">
+            <mat-icon aria-label="home icon button">home</mat-icon>
+          </button>
+        </p>
+        <p>
+          <button mat-icon-button color="primary" matTooltip="Instagram Map" (click)="onClick()" routerLink="instagram-map">
+            <mat-icon aria-label="map button">map</mat-icon>
+          </button>
+        </p>
+        <p>
+          <button mat-icon-button color="primary" matTooltip="About" (click)="onClick()" routerLink="about">
+            <mat-icon aria-label="about page button">help_outline</mat-icon>
+          </button>
+        </p>
+        <p>
+          <button mat-icon-button color="primary" matTooltip="API Docs" (click)="onClick()" >
+            <mat-icon aria-label="api docs button">description</mat-icon>
+          </button>
+        </p>
       </mat-nav-list>
     </mat-sidenav>
 
