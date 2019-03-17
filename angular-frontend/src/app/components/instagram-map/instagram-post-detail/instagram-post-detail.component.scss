@@ -1,9 +1,19 @@
 @import "../../../../sass/styles";
 
-mat-card {
+.mat-card {
+  overflow-y: auto;
+  background: rgba($base-grey, 1);
+}
+
+.crits-card {
+  top: 10%;
+  left: 20%;
+  text-align: center;
+  position: fixed;
   z-index: 9;
-  background: rgba($base-grey, .5);
-  position: absolute;
-  top: 0;
-  left: 0;
+}
+
+img {
+  height: 32rem;
+  width: 23.5rem;
 }

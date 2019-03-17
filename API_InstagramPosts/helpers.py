@@ -95,9 +95,9 @@ def _add_post_to_db(post_data):
                  'created_time': datetime.utcfromtimestamp(int(post_data['created_time'])).replace(tzinfo=pytz.utc),
                  'caption': post_data['caption']['text'],
                  'likes': int(post_data['likes']['count']),
-                 'tags': post_data['tags'],
+                 'tags': str(post_data['tags']).replace('\'','').replace('[','').replace(']',''),
                  'link': post_data['link'],
-                 'location': Point(int(post_data['location']['longitude']), int(post_data['location']['latitude'])),
+                 'location': Point(float(post_data['location']['longitude']), float(post_data['location']['latitude'])),
                  'location_name': post_data['location']['name']
                  }).save()
 

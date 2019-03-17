@@ -46,7 +46,6 @@ export class InstagramMapComponent implements OnInit, OnDestroy {
 
   public onSelect(post: InstagramPostModel): void {
     this.selectedPost = post;
-    // TODO: Show the instagram post detail modal, maybe using material.angular.io/components/dialog/overview
   }
 
   // <editor-fold desc="Private Helper Functions">

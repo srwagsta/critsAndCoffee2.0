@@ -17,24 +17,24 @@
     <mat-sidenav #sideNav fixedTopGap="56" (keydown)="toggleMenuIcon()">
       <mat-nav-list>
         <p>
-          <button mat-icon-button color="primary" matTooltip="Home" (click)="onClick()" routerLink="home">
+          <a mat-icon-button color="primary" matTooltip="Home" (click)="onClick()" routerLink="home">
             <mat-icon aria-label="home icon button">home</mat-icon>
-          </button>
+          </a>
         </p>
         <p>
-          <button mat-icon-button color="primary" matTooltip="Instagram Map" (click)="onClick()" routerLink="instagram-map">
+          <a mat-icon-button color="primary" matTooltip="Instagram Map" (click)="onClick()" routerLink="instagram-map">
             <mat-icon aria-label="map button">map</mat-icon>
-          </button>
+          </a>
         </p>
         <p>
-          <button mat-icon-button color="primary" matTooltip="About" (click)="onClick()" routerLink="about">
+          <a mat-icon-button color="primary" matTooltip="About" (click)="onClick()" routerLink="about">
             <mat-icon aria-label="about page button">help_outline</mat-icon>
-          </button>
+          </a>
         </p>
         <p>
-          <button mat-icon-button color="primary" matTooltip="API Docs" (click)="onClick()" >
+          <a mat-icon-button color="primary" matTooltip="API Docs" (click)="onClick()" [href]="API_route" >
             <mat-icon aria-label="api docs button">description</mat-icon>
-          </button>
+          </a>
         </p>
       </mat-nav-list>
     </mat-sidenav>
