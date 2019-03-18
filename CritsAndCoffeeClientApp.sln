@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CritsAndCoffeeClientApp", "CritsAndCoffeeClientApp\CritsAndCoffeeClientApp.csproj", "{4C0BECD4-82EC-4330-AE3F-B9777B0883D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C0BECD4-82EC-4330-AE3F-B9777B0883D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C0BECD4-82EC-4330-AE3F-B9777B0883D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C0BECD4-82EC-4330-AE3F-B9777B0883D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C0BECD4-82EC-4330-AE3F-B9777B0883D6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

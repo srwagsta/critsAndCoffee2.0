@@ -1,0 +1,22 @@
+<div class="map">
+  <agm-map style="height: 60vh;"
+    [latitude]="clientCoordinate.lat"
+    [longitude]="clientCoordinate.lng"
+    [zoom]="10">
+
+    <agm-marker
+      *ngFor="let post of posts"
+      [class.selected]="post === selectedPost"
+      (markerClick)="onSelect(post)"
+      [latitude]="post.location.coordinates[1]"
+      [longitude]="post.location.coordinates[0]"
+      [openInfoWindow]="true">
+    </agm-marker>
+  </agm-map>
+
+
+  <app-instagram-post-detail
+    *ngIf="selectedPost"
+    [(post)]="selectedPost">
+  </app-instagram-post-detail>
+</div>

@@ -1,0 +1,77 @@
+@import "../../sass/styles.scss";
+mat-nav-list{
+  padding: 1rem 1rem 0 1rem;
+}
+
+mat-sidenav{
+  background: rgba($dark-grey, .92) !important;
+}
+
+app-footer {
+  z-index: 2;
+  width: 100%;
+}
+
+.crits-brand{
+    font-style: italic !important;
+    font-size: 250% !important;
+    color: rgba($brand-secondary-color, 1);
+    &:hover{
+      color: rgba($brand-primary-color, .8);
+    }
+}
+
+.crits-nav-container{
+}
+
+.crits-toolbar{
+  background:  rgba($dark-grey, .7) !important;
+}
+
+.crits-sidenav-container{}
+
+.crits-content{ }
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+
+.togglerBar1, .togglerBar2, .togglerBar3{
+  width: 35px;
+  height: 5px;
+  background-color: $brand-primary-color;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change {
+   .togglerBar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+     background-color: $brand-secondary-color;
+  }
+
+  .togglerBar2 {opacity: 0;}
+
+  .togglerBar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+    background-color: $brand-primary-color;
+
+  }
+}
+
+/* change the link color */
+.navbar-nav .nav-link {
+  color: rgba($brand-primary-color, 1);
+}
+
+/* change the color of active or hovered links */
+.nav-item.active .nav-link,
+.nav-item:hover .nav-link {
+  color: $white;
+}
+
+
+
