@@ -23,7 +23,7 @@ services:
 
 
   instagram-api: &instagram-api
-    image: ${DOCKER_REGISTRY}crits_and_coffee_django:${DOCKER_TEST_TAG}
+    image: ${DOCKER_REGISTRY}crits_and_coffee_api:${INSTAGRAM_API_TEST_TAG}
     container_name: instagram-api-test
     build:
       context: ../../CritsAndCoffee.Instagram.API
@@ -53,8 +53,8 @@ services:
     image: ${DOCKER_REGISTRY}crits_and_coffee_postgres:${DOCKER_TEST_TAG}
     container_name: postgres-test
     build:
-      context: ../..
-      dockerfile: testing/postgres/Dockerfile
+      context: .
+      dockerfile: ./testing/postgres/Dockerfile
     volumes:
       - local_postgres_data:/var/lib/postgresql/data
       - local_postgres_data_backups:/backups

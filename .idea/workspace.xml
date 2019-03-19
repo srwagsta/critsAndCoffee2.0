@@ -5,444 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90fe1e25-08d0-474a-b016-dfaccdc13a79" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CritsAndCoffeeClientApp/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/critsAndCoffee2.0.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/wagstaff.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Docker/.envs/.private/.instagram" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Docker/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Docker/compose/local/Dockerfile.Instagram.API" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Docker/logs/critsAndcoffee.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CritsAndCoffeeClientApp/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CritsAndCoffeeClientApp/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CritsAndCoffeeClientApp/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CritsAndCoffeeClientApp/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CritsAndCoffeeClientApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CritsAndCoffeeClientApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp.sln" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/.dockerignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/e2e/protractor.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/e2e/protractor.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/e2e/src/app.e2e-spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/e2e/src/app.e2e-spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/e2e/src/app.po.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/e2e/src/app.po.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/e2e/tsconfig.e2e.json" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/e2e/tsconfig.e2e.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/about/about.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/about/about.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/about/about.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/about/about.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/about/about.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/about/about.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/about/about.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/about/about.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/app-root/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/app-root/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/app-root/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/app-root/app.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/app-root/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/app-root/app.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/app-root/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/app-root/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/crits-hero/crits-hero.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/crits-hero/crits-hero.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/crits-hero/crits-hero.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/crits-hero/crits-hero.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/crits-hero/crits-hero.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/crits-hero/crits-hero.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/crits-hero/crits-hero.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/crits-hero/crits-hero.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/home.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/home.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/home.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/home.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/home.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/instagram-map/instagram-map.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/instagram-map/instagram-map.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/instagram-map/instagram-map.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/instagram-map/instagram-map.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/instagram-map/instagram-map.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/instagram-map/instagram-map.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/instagram-map/instagram-map.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/instagram-map/instagram-map.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/instagram-map/instagram-post-detail/instagram-post-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/instagram-map/instagram-post-detail/instagram-post-detail.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/instagram-map/instagram-post-detail/instagram-post-detail.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/instagram-map/instagram-post-detail/instagram-post-detail.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/instagram-map/instagram-post-detail/instagram-post-detail.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/instagram-map/instagram-post-detail/instagram-post-detail.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/instagram-map/instagram-post-detail/instagram-post-detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/instagram-map/instagram-post-detail/instagram-post-detail.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/legal-documents/api-terms-of-use/api-terms-of-use.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/legal-documents/api-terms-of-use/api-terms-of-use.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/legal-documents/api-terms-of-use/api-terms-of-use.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/legal-documents/api-terms-of-use/api-terms-of-use.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/legal-documents/api-terms-of-use/api-terms-of-use.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/legal-documents/api-terms-of-use/api-terms-of-use.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/legal-documents/copyright-policy/copyright-policy.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/legal-documents/copyright-policy/copyright-policy.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/legal-documents/copyright-policy/copyright-policy.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/legal-documents/copyright-policy/copyright-policy.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/legal-documents/copyright-policy/copyright-policy.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/legal-documents/copyright-policy/copyright-policy.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/legal-documents/legal-docs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/legal-documents/legal-docs.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/legal-documents/privacy-policy/privacy-policy.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/legal-documents/privacy-policy/privacy-policy.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/legal-documents/privacy-policy/privacy-policy.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/legal-documents/privacy-policy/privacy-policy.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/legal-documents/privacy-policy/privacy-policy.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/legal-documents/privacy-policy/privacy-policy.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/legal-documents/project-license/project-license.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/legal-documents/project-license/project-license.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/legal-documents/project-license/project-license.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/legal-documents/project-license/project-license.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/legal-documents/project-license/project-license.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/legal-documents/project-license/project-license.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/page-not-found/page-not-found.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/page-not-found/page-not-found.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/page-not-found/page-not-found.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/page-not-found/page-not-found.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/page-not-found/page-not-found.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/page-not-found/page-not-found.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/page-not-found/page-not-found.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/page-not-found/page-not-found.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/models/instagram-post.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/models/instagram-post.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/services/instagram-mapping.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/services/instagram-mapping.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/services/logging.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/services/logging.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/services/tests/instagram-mapping.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/services/tests/instagram-mapping.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/services/tests/logging.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/services/tests/logging.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/ui/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/ui/footer/footer.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/ui/footer/footer.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/ui/footer/footer.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/ui/footer/footer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/ui/footer/footer.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/ui/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/ui/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/ui/header/header.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/ui/header/header.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/ui/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/ui/header/header.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/ui/layout/layout.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/ui/layout/layout.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/ui/layout/layout.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/ui/layout/layout.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/ui/layout/layout.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/ui/layout/layout.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/ui/ui.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/ui/ui.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/ui/ui.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/ui/ui.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/assets/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/assets/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/assets/images/components/crits-navbar/brand.png" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/assets/images/components/crits-navbar/brand.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/assets/images/components/home/crits-hero-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/assets/images/components/home/crits-hero-bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/assets/images/site_images/crits_and_coffee_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/assets/images/site_images/crits_and_coffee_logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/assets/images/site_images/nav-background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/assets/images/site_images/nav-background.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/browserslist" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/browserslist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/environments/environment.prod.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/environments/environment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/favicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/karma.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/karma.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/polyfills.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/sass/abstracts/_functions.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/sass/abstracts/_functions.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/sass/abstracts/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/sass/abstracts/_mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/sass/abstracts/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/sass/abstracts/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/sass/base/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/sass/base/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/sass/base/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/sass/base/_fonts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/sass/base/_helpers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/sass/base/_helpers.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/sass/base/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/sass/base/_typography.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/sass/components/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/sass/components/_button.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/sass/layout/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/sass/layout/_footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/sass/pages/_home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/sass/pages/_home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/sass/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/sass/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/sass/vendors/_material.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/sass/vendors/_material.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/sass/vendors/_normalize.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/sass/vendors/_normalize.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/tsconfig.app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/tsconfig.spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/tsconfig.spec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/tslint.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/tslint.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/Controllers/InstagramDataProxyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/Controllers/InstagramDataProxyController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/Controllers/SampleDataController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/Controllers/SampleDataController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/CritsAndCoffeeClientApp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/CritsAndCoffeeClientApp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/production/Dockerfile.ClientApp.Prod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/Dockerfile.dev" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/local/Dockerfile.ClientApp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/Pages/Error.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/Pages/Error.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/Pages/Error.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/Pages/Error.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/Pages/_ViewImports.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/Pages/_ViewImports.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/docker-compose.dev.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/start.sh" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/docker-scripts/start.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/wwwroot/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/wwwroot/favicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/.coveragerc" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/.coveragerc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/.dockerignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/.idea/crits_and_coffee.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/.idea/runConfigurations/merge_production_dotenvs_in_dotenv.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/.idea/runConfigurations/migrate.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/.idea/runConfigurations/pytest___.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/.idea/runConfigurations/pytest__users.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/.idea/runConfigurations/runserver.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/.idea/runConfigurations/runserver_plus.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/.idea/watcherTasks.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/.idea/webResources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/.pylintrc" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/.pylintrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/API_InstagramPosts/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/API_InstagramPosts/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/API_InstagramPosts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/API_InstagramPosts/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/API_InstagramPosts/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/API_InstagramPosts/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/API_InstagramPosts/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/API_InstagramPosts/helpers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/API_InstagramPosts/management/commands/collectinstagramposts.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/API_InstagramPosts/management/commands/collectinstagramposts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/API_InstagramPosts/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/API_InstagramPosts/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/API_InstagramPosts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/API_InstagramPosts/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/API_InstagramPosts/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/API_InstagramPosts/serializer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/API_InstagramPosts/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/API_InstagramPosts/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/API_InstagramPosts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/API_InstagramPosts/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/API_InstagramPosts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/API_InstagramPosts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/API_Logging/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/API_Logging/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/API_Logging/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/API_Logging/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/API_Logging/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/API_Logging/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/API_Logging/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/API_Logging/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/API_Logging/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/API_Logging/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/API_Logging/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/API_Logging/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/CONTRIBUTORS.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CONTRIBUTORS.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/e2e/protractor.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/e2e/protractor.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/e2e/src/app.e2e-spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/e2e/src/app.e2e-spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/e2e/src/app.po.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/e2e/src/app.po.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/e2e/tsconfig.e2e.json" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/e2e/tsconfig.e2e.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/about/about.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/about/about.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/about/about.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/about/about.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/about/about.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/about/about.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/about/about.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/about/about.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/app-root/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/app-root/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/app-root/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/app-root/app.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/app-root/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/app-root/app.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/app-root/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/app-root/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/home/crits-hero/crits-hero.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/home/crits-hero/crits-hero.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/home/crits-hero/crits-hero.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/home/crits-hero/crits-hero.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/home/crits-hero/crits-hero.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/home/crits-hero/crits-hero.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/home/crits-hero/crits-hero.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/home/crits-hero/crits-hero.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/home/home.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/home/home.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/home/home.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/home/home.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/home/home.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/instagram-map/instagram-map.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/instagram-map/instagram-map.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/instagram-map/instagram-map.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/instagram-map/instagram-map.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/instagram-map/instagram-map.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/instagram-map/instagram-map.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/instagram-map/instagram-map.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/instagram-map/instagram-map.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/instagram-map/instagram-post-detail/instagram-post-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/instagram-map/instagram-post-detail/instagram-post-detail.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/instagram-map/instagram-post-detail/instagram-post-detail.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/instagram-map/instagram-post-detail/instagram-post-detail.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/instagram-map/instagram-post-detail/instagram-post-detail.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/instagram-map/instagram-post-detail/instagram-post-detail.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/instagram-map/instagram-post-detail/instagram-post-detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/instagram-map/instagram-post-detail/instagram-post-detail.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/legal-documents/api-terms-of-use/api-terms-of-use.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/legal-documents/api-terms-of-use/api-terms-of-use.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/legal-documents/api-terms-of-use/api-terms-of-use.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/legal-documents/api-terms-of-use/api-terms-of-use.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/legal-documents/api-terms-of-use/api-terms-of-use.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/legal-documents/api-terms-of-use/api-terms-of-use.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/legal-documents/copyright-policy/copyright-policy.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/legal-documents/copyright-policy/copyright-policy.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/legal-documents/copyright-policy/copyright-policy.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/legal-documents/copyright-policy/copyright-policy.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/legal-documents/copyright-policy/copyright-policy.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/legal-documents/copyright-policy/copyright-policy.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/legal-documents/legal-docs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/legal-documents/legal-docs.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/legal-documents/privacy-policy/privacy-policy.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/legal-documents/privacy-policy/privacy-policy.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/legal-documents/privacy-policy/privacy-policy.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/legal-documents/privacy-policy/privacy-policy.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/legal-documents/privacy-policy/privacy-policy.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/legal-documents/privacy-policy/privacy-policy.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/legal-documents/project-license/project-license.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/legal-documents/project-license/project-license.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/legal-documents/project-license/project-license.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/legal-documents/project-license/project-license.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/legal-documents/project-license/project-license.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/legal-documents/project-license/project-license.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/page-not-found/page-not-found.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/page-not-found/page-not-found.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/page-not-found/page-not-found.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/page-not-found/page-not-found.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/page-not-found/page-not-found.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/page-not-found/page-not-found.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/components/page-not-found/page-not-found.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/page-not-found/page-not-found.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/models/instagram-post.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/models/instagram-post.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/services/instagram-mapping.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/services/instagram-mapping.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/services/logging.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/services/logging.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/services/tests/instagram-mapping.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/services/tests/instagram-mapping.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/services/tests/logging.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/services/tests/logging.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/ui/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/ui/footer/footer.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/ui/footer/footer.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/ui/footer/footer.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/ui/footer/footer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/ui/footer/footer.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/ui/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/ui/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/ui/header/header.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/ui/header/header.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/ui/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/ui/header/header.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/ui/layout/layout.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/ui/layout/layout.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/ui/layout/layout.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/ui/layout/layout.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/ui/layout/layout.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/ui/layout/layout.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/ui/ui.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/ui/ui.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/app/ui/ui.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/ui/ui.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/assets/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/assets/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/assets/images/components/crits-navbar/brand.png" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/assets/images/components/crits-navbar/brand.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/assets/images/components/home/crits-hero-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/assets/images/components/home/crits-hero-bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/assets/images/site_images/crits_and_coffee_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/assets/images/site_images/crits_and_coffee_logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/assets/images/site_images/crits_favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/assets/images/site_images/crits_favicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/assets/images/site_images/nav-background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/assets/images/site_images/nav-background.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/browserslist" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/browserslist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/environments/environment.prod.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/environments/environment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/karma.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/karma.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/polyfills.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/sass/abstracts/_functions.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/sass/abstracts/_functions.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/sass/abstracts/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/sass/abstracts/_mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/sass/abstracts/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/sass/abstracts/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/sass/base/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/sass/base/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/sass/base/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/sass/base/_fonts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/sass/base/_helpers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/sass/base/_helpers.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/sass/base/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/sass/base/_typography.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/sass/components/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/sass/components/_button.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/sass/layout/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/sass/layout/_footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/sass/pages/_home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/sass/pages/_home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/sass/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/sass/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/sass/vendors/_material.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/sass/vendors/_material.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/sass/vendors/_normalize.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/sass/vendors/_normalize.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/tsconfig.app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/tsconfig.spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/tsconfig.spec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/src/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/tslint.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/tslint.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/config/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/config/apiv1_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/apiv1_urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/config/rest_auth_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/rest_auth_urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/config/settings/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/settings/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/config/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/settings/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/config/settings/local.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/settings/local.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/config/settings/production.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/settings/production.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/config/settings/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/settings/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/config/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/contrib/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/contrib/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/contrib/sites/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/contrib/sites/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/contrib/sites/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/contrib/sites/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/contrib/sites/migrations/0002_alter_domain_unique.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/contrib/sites/migrations/0002_alter_domain_unique.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/contrib/sites/migrations/0003_set_site_domain_and_name.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/contrib/sites/migrations/0003_set_site_domain_and_name.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/contrib/sites/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/contrib/sites/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/static/angular_resources/images/components/crits-navbar/brand.png" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/static/angular_resources/images/components/crits-navbar/brand.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/static/angular_resources/images/components/home/home-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/static/angular_resources/images/components/home/home-bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/static/angular_resources/images/site_images/crits_and_coffee_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/static/angular_resources/images/site_images/crits_and_coffee_logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/static/angular_resources/images/site_images/crits_favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/static/angular_resources/images/site_images/crits_favicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/static/css/project.css" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/static/css/project.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/static/fonts/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/static/fonts/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/static/js/angular-app/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/static/js/angular-app/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/static/js/project.js" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/static/js/project.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/static/sass/custom_bootstrap_vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/static/sass/custom_bootstrap_vars.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/static/sass/project.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/static/sass/project.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/taskapp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/taskapp/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/taskapp/celery.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/taskapp/celery.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/templates/403_csrf.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/templates/403_csrf.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/templates/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/templates/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/templates/500.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/templates/500.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/templates/account/account_inactive.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/templates/account/account_inactive.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/templates/account/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/templates/account/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/templates/account/email.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/templates/account/email.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/templates/account/email_confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/templates/account/email_confirm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/templates/account/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/templates/account/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/templates/account/logout.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/templates/account/logout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/templates/account/password_change.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/templates/account/password_change.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/templates/account/password_reset.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/templates/account/password_reset.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/templates/account/password_reset_done.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/templates/account/password_reset_done.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/templates/account/password_reset_from_key.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/templates/account/password_reset_from_key.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/templates/account/password_reset_from_key_done.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/templates/account/password_reset_from_key_done.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/templates/account/password_set.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/templates/account/password_set.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/templates/account/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/templates/account/signup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/templates/account/signup_closed.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/templates/account/signup_closed.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/templates/account/verification_sent.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/templates/account/verification_sent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/templates/account/verified_email_required.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/templates/account/verified_email_required.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/templates/pages/angular_home.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/templates/pages/angular_home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/templates/rest_framework_swagger/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/templates/rest_framework_swagger/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/templates/users/user_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/templates/users/user_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/templates/users/user_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/templates/users/user_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/templates/users/user_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/templates/users/user_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/users/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/users/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/users/adapters.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/users/adapters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/users/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/users/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/users/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/users/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/users/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/users/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/users/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/users/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/users/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/users/tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/users/tests/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/users/tests/factories.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/users/tests/factories.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/users/tests/test_forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/users/tests/test_forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/users/tests/test_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/users/tests/test_models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/users/tests/test_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/users/tests/test_urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/users/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/users/tests/test_views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/users/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/crits_and_coffee/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/users/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/.envs/.local/.django" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/.envs/.local/.django" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/.envs/.local/.postgres" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/.envs/.local/.postgres" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/.envs/.production/.caddy" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/.envs/.production/.caddy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/.envs/.production/.django" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/.envs/.production/.django" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/.envs/.production/.postgres" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/.envs/.production/.postgres" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/.envs/.testing/.angular" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/.envs/.testing/.angular" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/.envs/.testing/.django" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/.envs/.testing/.django" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/.envs/.testing/.postgres" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/.envs/.testing/.postgres" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/bash_scripts/deployment/execute_tests.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/bash_scripts/deployment/execute_tests.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/bash_scripts/deployment/live.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/bash_scripts/deployment/live.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/bash_scripts/deployment/local.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/bash_scripts/deployment/local.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/bash_scripts/image-builder/build_base_images.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/bash_scripts/image-builder/build_base_images.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/bash_scripts/image-builder/build_containers.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/bash_scripts/image-builder/build_containers.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/bash_scripts/image-builder/build_test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/bash_scripts/image-builder/build_test.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/bash_scripts/image-builder/cleanup_environment.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/bash_scripts/image-builder/cleanup_environment.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/.env" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/base_images/Dockerfile.geo-django" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/base_images/Dockerfile.geo-django" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/local.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/local/django/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/local/django/celery/beat/start" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/docker-scripts/celery/beat/start" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/local/django/celery/flower/start" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/docker-scripts/celery/flower/start" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/local/django/celery/worker/start" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/docker-scripts/celery/worker/start" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/local/django/start" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/docker-scripts/django/start.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/production.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/production.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/production/caddy/Caddyfile" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/production/caddy/Caddyfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/production/caddy/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/production/caddy/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/production/django/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/production/Dockerfile.Instagram.API.Prod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/production/django/celery/beat/start" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/docker-scripts/celery.prod/beat/start" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/production/django/celery/flower/start" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/docker-scripts/celery.prod/flower/start" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/production/django/celery/worker/start" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/docker-scripts/celery.prod/worker/start" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/production/django/entrypoint" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/production/django/start" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/docker-scripts/django/start.prod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/production/postgres/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/production/postgres/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/production/postgres/maintenance/_sourced/constants.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/production/postgres/maintenance/_sourced/constants.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/production/postgres/maintenance/_sourced/countdown.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/production/postgres/maintenance/_sourced/countdown.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/production/postgres/maintenance/_sourced/messages.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/production/postgres/maintenance/_sourced/messages.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/production/postgres/maintenance/_sourced/yes_no.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/production/postgres/maintenance/_sourced/yes_no.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/production/postgres/maintenance/backup" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/production/postgres/maintenance/backup" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/production/postgres/maintenance/backups" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/production/postgres/maintenance/backups" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/production/postgres/maintenance/restore" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/production/postgres/maintenance/restore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/test.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/testing/django/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/testing/django/celery/beat/start" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/testing/django/celery/flower/start" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/testing/django/celery/worker/start" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/testing/django/start" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/testing/postgres/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/testing/postgres/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/testing/postgres/maintenance/_sourced/constants.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/testing/postgres/maintenance/_sourced/constants.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/testing/postgres/maintenance/_sourced/countdown.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/testing/postgres/maintenance/_sourced/countdown.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/testing/postgres/maintenance/_sourced/messages.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/testing/postgres/maintenance/_sourced/messages.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/testing/postgres/maintenance/_sourced/yes_no.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/testing/postgres/maintenance/_sourced/yes_no.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/testing/postgres/maintenance/backup" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/testing/postgres/maintenance/backup" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/testing/postgres/maintenance/backups" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/testing/postgres/maintenance/backups" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/testing/postgres/maintenance/restore" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/testing/postgres/maintenance/restore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/testing/selenium/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/testing/selenium/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/compose/testing/selenium/run_tests" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/testing/selenium/run_tests" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/docs/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/docs/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/docs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/docs/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/docs/angular/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/docs/angular/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/docs/angular/ng_comands_docker.md" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/docs/angular/ng_comands_docker.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/docs/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/docs/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/docs/dango/management_docker.md" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/docs/dango/management_docker.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/docs/deploy.rst" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/docs/deploy.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/docs/docker_ec2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/docs/docker_ec2.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/docs/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/docs/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/docs/install.rst" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/docs/install.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/docs/make.bat" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/docs/make.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/docs/pycharm/configuration.rst" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/docs/pycharm/configuration.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/docs/pycharm/images/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/docs/pycharm/images/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/docs/pycharm/images/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/docs/pycharm/images/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/docs/pycharm/images/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/docs/pycharm/images/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/docs/pycharm/images/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/docs/pycharm/images/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/docs/pycharm/images/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/docs/pycharm/images/7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/docs/pycharm/images/8.png" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/docs/pycharm/images/8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/docs/pycharm/images/f1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/docs/pycharm/images/f1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/docs/pycharm/images/f2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/docs/pycharm/images/f2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/docs/pycharm/images/f3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/docs/pycharm/images/f3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/docs/pycharm/images/f4.png" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/docs/pycharm/images/f4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/docs/pycharm/images/issue1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/docs/pycharm/images/issue1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/docs/pycharm/images/issue2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/docs/pycharm/images/issue2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/docs/styling/Crits_and_coffee_logo_v1.xcf" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/docs/styling/Crits_and_coffee_logo_v1.xcf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/docs/styling/Crits_and_coffee_logo_v1_square.xcf" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/docs/styling/Crits_and_coffee_logo_v1_square.xcf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/docs/styling/style_guide.md" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/docs/styling/style_guide.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/deployment/docs/testing.rst" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/docs/testing.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/functional_tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/functional_tests/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/functional_tests/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/functional_tests/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/locale/README.rst" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/locale/README.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/merge_production_dotenvs_in_dotenv.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/merge_production_dotenvs_in_dotenv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/pytest.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/requirements/base.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/requirements/base.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/requirements/local.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/requirements/local.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/requirements/production.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/requirements/production.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/setup.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/setup.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/.idea/.idea.CritsAndCoffeeClientApp/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/.idea/.idea.CritsAndCoffeeClientApp/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/.idea/.idea.CritsAndCoffeeClientApp/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/.idea/.idea.CritsAndCoffeeClientApp/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/.idea/.idea.CritsAndCoffeeClientApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/.idea/.idea.CritsAndCoffeeClientApp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docker/compose/test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/test.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docker/compose/testing/postgres/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/testing/postgres/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docker/compose/testing/selenium/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/testing/selenium/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docker/compose/testing/selenium/run_tests" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/testing/selenium/run_tests" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -457,10 +27,23 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.rst">
-          <provider selected="true" editor-type-id="restructured-text-editor" />
+        <entry file="file://$PROJECT_DIR$/Docker/compose/test.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="25" column="65" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Docker/compose/local.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -491,8 +74,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/bash_scripts/deployment/execute_tests.sh" />
-        <option value="$PROJECT_DIR$/config/settings/base.py" />
         <option value="$PROJECT_DIR$/compose/local/django/start" />
         <option value="$PROJECT_DIR$/bash_scripts/image-builder/build_containers.sh" />
         <option value="$PROJECT_DIR$/angular-frontend/src/app/components/instagram-map/instagram-map.component.scss" />
@@ -537,11 +118,13 @@
         <option value="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/.gitignore" />
         <option value="$PROJECT_DIR$/Docker/.gitignore" />
         <option value="$PROJECT_DIR$/Docker/compose/.env" />
-        <option value="$PROJECT_DIR$/Docker/compose/testing/selenium/Dockerfile" />
         <option value="$PROJECT_DIR$/Docker/compose/production.yml" />
-        <option value="$PROJECT_DIR$/Docker/compose/test.yml" />
         <option value="$PROJECT_DIR$/Docker/compose/local.yml" />
         <option value="$PROJECT_DIR$/README.rst" />
+        <option value="$PROJECT_DIR$/Docker/compose/testing/postgres/Dockerfile" />
+        <option value="$PROJECT_DIR$/Docker/compose/testing/selenium/Dockerfile" />
+        <option value="$PROJECT_DIR$/Docker/compose/testing/selenium/run_tests" />
+        <option value="$PROJECT_DIR$/Docker/compose/test.yml" />
       </list>
     </option>
   </component>
@@ -571,7 +154,13 @@
             <path>
               <item name="critsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
               <item name="critsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
-              <item name="CritsAndCoffee.Instagram.API" type="462c0819:PsiDirectoryNode" />
+              <item name="Docker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="critsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="critsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="Docker" type="462c0819:PsiDirectoryNode" />
+              <item name="compose" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -640,7 +229,8 @@
       <workItem from="1552247359542" duration="1034000" />
       <workItem from="1552268433781" duration="17301000" />
       <workItem from="1552781216759" duration="12194000" />
-      <workItem from="1552950605513" duration="13683000" />
+      <workItem from="1552950605513" duration="14304000" />
+      <workItem from="1553036130909" duration="452000" />
     </task>
     <servers />
   </component>
@@ -650,14 +240,14 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90322000" />
+    <option name="totallyTimeSpent" value="91395000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="2560" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.19093078" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.19252187" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.09453125" />
       <window_info id="npm" order="3" sideWeight="0.5005291" side_tool="true" weight="0.09257813" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" weight="0.32903227" />
@@ -698,8 +288,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/crits_and_coffee/templates/pages/angular_home.html" />
-    <entry file="file://$PROJECT_DIR$/angular-frontend/src/app/components/home/crits-hero/crits-hero.component.html" />
     <entry file="file://$PROJECT_DIR$/angular-frontend/src/app/components/instagram-map/instagram-map.component.ts" />
     <entry file="file://$PROJECT_DIR$/angular-frontend/src/app/components/instagram-map/instagram-map.component.html" />
     <entry file="file://$PROJECT_DIR$/angular-frontend/src/app/components/instagram-map/instagram-post-detail/instagram-post-detail.component.html" />
@@ -804,13 +392,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/docker-compose.dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/docker-compose.dev.yml" />
     <entry file="file://$PROJECT_DIR$/Docker/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
@@ -831,9 +413,7 @@
     <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/docker-scripts/celery.prod/beat/start">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Docker/compose/production/django/entrypoint">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Docker/compose/production/django/entrypoint" />
     <entry file="file://$PROJECT_DIR$/Docker/compose/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -847,40 +427,16 @@
     <entry file="file://$PROJECT_DIR$/Docker/compose/production/Dockerfile.ClientApp.Prod">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Docker/compose/testing/django/celery/beat/start">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Docker/compose/testing/django/celery/beat/start" />
     <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/docker-scripts/celery.prod/flower/start">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/docker-scripts/celery/flower/start">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Docker/compose/testing/django/celery/flower/start">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Docker/compose/testing/django/start">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Docker/compose/testing/django/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-485" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Docker/compose/testing/selenium/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Docker/compose/test.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="709">
-          <caret line="177" column="44" selection-start-line="177" selection-start-column="44" selection-end-line="177" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Docker/compose/testing/django/celery/flower/start" />
+    <entry file="file://$PROJECT_DIR$/Docker/compose/testing/django/start" />
+    <entry file="file://$PROJECT_DIR$/Docker/compose/testing/django/Dockerfile" />
     <entry file="file://$PROJECT_DIR$/Docker/compose/production.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="709">
@@ -912,15 +468,43 @@
     <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/README.rst">
       <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Docker/compose/local.yml">
+    <entry file="file://$PROJECT_DIR$/README.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Docker/compose/testing/postgres/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+        <state relative-caret-position="46">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
+    <entry file="file://$PROJECT_DIR$/Docker/compose/testing/selenium/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Docker/compose/testing/selenium/run_tests">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Docker/compose/local.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Docker/compose/test.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="25" column="65" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
