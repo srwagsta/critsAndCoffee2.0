@@ -14,6 +14,7 @@
       <change afterPath="$PROJECT_DIR$/Docker/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Docker/compose/local/Dockerfile.Instagram.API" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Docker/logs/critsAndcoffee.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/.gitattributes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CritsAndCoffeeClientApp/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CritsAndCoffeeClientApp/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CritsAndCoffeeClientApp/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CritsAndCoffeeClientApp/.idea/indexLayout.xml" afterDir="false" />
@@ -177,7 +178,6 @@
       <change beforePath="$PROJECT_DIR$/crits_and_coffee/CONTRIBUTORS.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CONTRIBUTORS.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crits_and_coffee/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crits_and_coffee/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits_and_coffee/README.rst" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/README.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crits_and_coffee/angular-frontend/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/angular.json" afterDir="false" />
@@ -459,12 +459,8 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Docker/compose/local.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/README.rst">
+          <provider selected="true" editor-type-id="restructured-text-editor" />
         </entry>
       </file>
     </leaf>
@@ -495,7 +491,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/bash_scripts/deployment/local.sh" />
         <option value="$PROJECT_DIR$/bash_scripts/deployment/execute_tests.sh" />
         <option value="$PROJECT_DIR$/config/settings/base.py" />
         <option value="$PROJECT_DIR$/compose/local/django/start" />
@@ -546,6 +541,7 @@
         <option value="$PROJECT_DIR$/Docker/compose/production.yml" />
         <option value="$PROJECT_DIR$/Docker/compose/test.yml" />
         <option value="$PROJECT_DIR$/Docker/compose/local.yml" />
+        <option value="$PROJECT_DIR$/README.rst" />
       </list>
     </option>
   </component>
@@ -556,9 +552,9 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="27" />
-    <option name="width" value="2550" />
-    <option name="height" value="789" />
+    <option name="y" value="25" />
+    <option name="width" value="2560" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -571,6 +567,11 @@
             <path>
               <item name="critsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
               <item name="critsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="critsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="critsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="CritsAndCoffee.Instagram.API" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -595,18 +596,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Docker/compose/production" />
       <recent name="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/docker-scripts" />
       <recent name="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/docker-scripts/django" />
       <recent name="$PROJECT_DIR$/Docker/compose/local" />
-      <recent name="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/docker-scripts" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/CritsAndCoffee.Instagram.API" />
       <recent name="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/docker-scripts/django" />
       <recent name="$PROJECT_DIR$/angular-frontend/src/assets/images/components/home" />
       <recent name="$PROJECT_DIR$/crits_and_coffee/contrib/sites/migrations" />
       <recent name="$PROJECT_DIR$/crits_and_coffee/users/migrations" />
-      <recent name="$PROJECT_DIR$/compose_scripts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -639,7 +640,7 @@
       <workItem from="1552247359542" duration="1034000" />
       <workItem from="1552268433781" duration="17301000" />
       <workItem from="1552781216759" duration="12194000" />
-      <workItem from="1552950605513" duration="12094000" />
+      <workItem from="1552950605513" duration="13683000" />
     </task>
     <servers />
   </component>
@@ -649,10 +650,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88733000" />
+    <option name="totallyTimeSpent" value="90322000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="2560" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.19093078" />
@@ -696,8 +698,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/angular-frontend/src/app/ui/ui.module.ts" />
-    <entry file="file://$PROJECT_DIR$/angular-frontend/src/app/app.module.ts" />
     <entry file="file://$PROJECT_DIR$/crits_and_coffee/templates/pages/angular_home.html" />
     <entry file="file://$PROJECT_DIR$/angular-frontend/src/app/components/home/crits-hero/crits-hero.component.html" />
     <entry file="file://$PROJECT_DIR$/angular-frontend/src/app/components/instagram-map/instagram-map.component.ts" />
@@ -909,12 +909,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/README.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Docker/compose/local.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
-          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+          <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
   </component>
 </project>
