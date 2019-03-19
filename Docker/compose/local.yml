@@ -1,0 +1,129 @@
+version: '3'
+
+volumes:
+  local_postgres_data: {}
+  local_postgres_data_backups: {}
+
+services:
+  front-end-app:
+    image: ${DOCKER_REGISTRY}crits_and_coffee_client_app:${DOCKER_LOCAL_TAG}
+    container_name: client-app-local
+    build:
+      context: ../../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp
+      dockerfile: ../../Docker/compose/local/Dockerfile.ClientApp
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - NODE_ENV=development
+    volumes:
+      - ../../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/:/CritsAndCoffeeClientApp
+      - ../../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/node_modules/
+    depends_on:
+      - postgres
+      - instagram-api
+    networks:
+      - front-end
+    ports:
+      - 8000:5001
+    command: "/start.sh"
+
+  instagram-api: &instagram-api
+    image: ${DOCKER_REGISTRY}crits_and_coffee_api:${INSTAGRAM_API_LOCAL_TAG}
+    container_name: instagram-api-local
+    build:
+      context: ../../CritsAndCoffee.Instagram.API
+      dockerfile: ../Docker/compose/local/Dockerfile.Instagram.API
+    volumes:
+      - ../logs/:/crits-logs/
+    links:
+      - selenium
+    depends_on:
+      - postgres
+      - mailhog
+    networks:
+      - front-end
+      - back-end
+    env_file:
+      - ../.envs/.private/.instagram
+      - ../.envs/.local/.django
+      - ../.envs/.local/.postgres
+    ports:
+      - 8080:8000
+    command: /start
+
+  postgres:
+    image: ${DOCKER_REGISTRY}crits_and_coffee_postgres:${DOCKER_LOCAL_TAG}
+    container_name: postgres-production
+    build:
+      context: ./production/postgres
+      dockerfile: ./Dockerfile
+    networks:
+      - back-end
+    volumes:
+      - local_postgres_data:/var/lib/postgresql/data
+      - local_postgres_data_backups:/backups
+    env_file:
+      - ../.envs/.local/.postgres
+
+  mailhog:
+    image: mailhog/mailhog:v1.0.0
+    networks:
+      - back-end
+    ports:
+      - "8025:8025"
+
+  selenium:
+    image: selenium/standalone-chrome
+    networks:
+      - back-end
+
+  redis:
+    image: redis:3.2
+    networks:
+      - back-end
+
+  celeryworker:
+    <<: *instagram-api
+    image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${CELERY_WORKER_LOCAL_TAG}
+    container_name: ${CELERY_WORKER_LOCAL_TAG}
+    depends_on:
+      - redis
+      - postgres
+      - mailhog
+    networks:
+      - back-end
+    ports: []
+    command: /start-celeryworker
+
+  celerybeat:
+    <<: *instagram-api
+    image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${CELERY_BEAT_LOCAL_TAG}
+    container_name: ${CELERY_BEAT_LOCAL_TAG}
+    depends_on:
+      - redis
+      - postgres
+      - mailhog
+    networks:
+      - back-end
+    ports: []
+    command: /start-celerybeat
+
+  flower:
+    <<: *instagram-api
+    image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${FLOWER_LOCAL_TAG}
+    container_name: ${FLOWER_LOCAL_TAG}
+    networks:
+      - back-end
+    ports:
+      - "5555:5555"
+    command: /start-flower
+
+
+networks:
+  front-end:
+    driver: bridge
+    driver_opts:
+      com.docker.network.enable_ipv6: "true"
+  back-end:
+    driver: bridge
+    driver_opts:
+      com.docker.network.enable_ipv6: "true"

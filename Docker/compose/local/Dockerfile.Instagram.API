@@ -1,0 +1,33 @@
+ARG GeoDjango="srwagsta/crits_and_coffee_accessories:geo-django"
+
+
+FROM ${GeoDjango}
+COPY ./ /prod-app/
+# Requirements are installed here to ensure they will be cached.
+COPY ./requirements /requirements
+RUN pip install --upgrade pip \
+    && pip install -r /requirements/local.txt
+
+COPY ./docker-scripts/django/entrypoint /entrypoint
+RUN sed -i 's/\r//' /entrypoint
+RUN chmod +x /entrypoint
+
+COPY ./docker-scripts/django/start.local /start
+RUN sed -i 's/\r//' /start
+RUN chmod +x /start
+
+COPY ./docker-scripts/celery/worker/start /start-celeryworker
+RUN sed -i 's/\r//' /start-celeryworker
+RUN chmod +x /start-celeryworker
+
+COPY ./docker-scripts/celery/beat/start /start-celerybeat
+RUN sed -i 's/\r//' /start-celerybeat
+RUN chmod +x /start-celerybeat
+
+COPY ./docker-scripts/celery/flower/start /start-flower
+RUN sed -i 's/\r//' /start-flower
+RUN chmod +x /start-flower
+
+WORKDIR /prod-app
+
+ENTRYPOINT ["/entrypoint"]

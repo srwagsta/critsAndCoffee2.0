@@ -1,3 +1,0 @@
-#!/bin/sh
-
-celery -A crits_and_coffee.taskapp worker -l INFO
