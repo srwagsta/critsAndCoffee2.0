@@ -1,0 +1,28 @@
+{$DOMAIN_NAME}:8080 {
+tls self_signed
+    proxy / https://front-end-app:5001 {
+        websocket
+	    insecure_skip_verify
+    }
+    proxy /api/v1/auth instagram-api:8000 {
+        header_upstream Host {host}
+        header_upstream X-Real-IP {remote}
+        header_upstream X-Forwarded-Proto {scheme}
+    }
+
+    proxy /api/v1/logger instagram-api:8000 {
+        header_upstream Host {host}
+        header_upstream X-Real-IP {remote}
+        header_upstream X-Forwarded-Proto {scheme}
+    }
+
+    proxy /api/v1/instagram instagram-api:8000 {
+        header_upstream Host {host}
+        header_upstream X-Real-IP {remote}
+        header_upstream X-Forwarded-Proto {scheme}
+    }
+
+    log stdout
+    errors stdout
+    gzip
+}

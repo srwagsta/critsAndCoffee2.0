@@ -59,7 +59,7 @@ services:
   caddy:
     build:
       context: ./production/caddy
-      dockerfile: ./Dockerfile
+      dockerfile: ./Dockerfile.prod
     image: ${DOCKER_REGISTRY}crits_and_coffee_caddy:${DOCKER_PRODUCTION_TAG}
     depends_on:
       - front-end-app

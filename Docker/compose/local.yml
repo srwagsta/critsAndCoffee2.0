@@ -3,6 +3,7 @@ version: '3'
 volumes:
   local_postgres_data: {}
   local_postgres_data_backups: {}
+  local_caddy: {}
 
 services:
   front-end-app:
@@ -16,14 +17,12 @@ services:
       - NODE_ENV=development
     volumes:
       - ../../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/:/CritsAndCoffeeClientApp
-      - ../../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/node_modules/
+      - /CritsAndCoffeeClientApp/ClientApp/node_modules/
     depends_on:
       - postgres
       - instagram-api
     networks:
       - front-end
-    ports:
-      - 8000:5001
     command: "/start.sh"
 
   instagram-api: &instagram-api
@@ -46,8 +45,6 @@ services:
       - ../.envs/.private/.instagram
       - ../.envs/.local/.django
       - ../.envs/.local/.postgres
-    ports:
-      - 8080:8000
     command: /start
 
   postgres:
@@ -63,6 +60,25 @@ services:
       - local_postgres_data_backups:/backups
     env_file:
       - ../.envs/.local/.postgres
+
+  caddy:
+    build:
+      context: ./local
+      dockerfile: ./Dockerfile.caddy.local
+    image: ${DOCKER_REGISTRY}crits_and_coffee_caddy:${DOCKER_LOCAL_TAG}
+    container_name: caddy-local
+    depends_on:
+      - front-end-app
+      - instagram-api
+    volumes:
+      - local_caddy:/root/.caddy
+    env_file:
+      - ../.envs/.local/.caddy
+    networks:
+      - back-end
+      - front-end
+    ports:
+      - "8080:8080"
 
   mailhog:
     image: mailhog/mailhog:v1.0.0
