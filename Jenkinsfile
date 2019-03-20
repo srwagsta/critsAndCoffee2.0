@@ -24,7 +24,7 @@ pipeline {
         stage('Run Tests') {
             agent any
             steps {
-                sh 'cd ./Docker/bash_scripts/Docker && chmod 777 ./* && ./execute_tests.sh'
+                sh 'cd ./Docker/bash_scripts/deployment && chmod 777 ./* && ./execute_tests.sh'
             }
         }
 
@@ -38,7 +38,7 @@ pipeline {
         stage('Deploy To Live') {
             agent any
             steps {
-                 //sh 'cd ./Docker/bash_scripts/Docker && chmod 777 ./* && ./live.sh'
+                 //sh 'cd ./Docker/bash_scripts/deployment && chmod 777 ./* && ./live.sh'
                  sh 'echo TODO: Deploy Live!'
             }
         }
