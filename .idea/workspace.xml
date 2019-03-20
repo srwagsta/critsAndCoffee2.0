@@ -8,7 +8,114 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/.idea/.idea.CritsAndCoffeeClientApp/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/.idea/.idea.CritsAndCoffeeClientApp/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/.idea/.idea.CritsAndCoffeeClientApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/.idea/.idea.CritsAndCoffeeClientApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/e2e/tsconfig.e2e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/about/about.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/about/about.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/about/about.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/about/about.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/app-root/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/app-root/app.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/app-root/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/app-root/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/home/crits-hero/crits-hero.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/home/crits-hero/crits-hero.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/home/crits-hero/crits-hero.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/home/crits-hero/crits-hero.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/home/home.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/home/home.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/home/home.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/home/home.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/instagram-map/instagram-map.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/instagram-map/instagram-map.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/instagram-map/instagram-map.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/instagram-map/instagram-map.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/instagram-map/instagram-post-detail/instagram-post-detail.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/instagram-map/instagram-post-detail/instagram-post-detail.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/instagram-map/instagram-post-detail/instagram-post-detail.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/instagram-map/instagram-post-detail/instagram-post-detail.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/legal-documents/api-terms-of-use/api-terms-of-use.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/legal-documents/api-terms-of-use/api-terms-of-use.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/legal-documents/api-terms-of-use/api-terms-of-use.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/legal-documents/copyright-policy/copyright-policy.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/legal-documents/copyright-policy/copyright-policy.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/legal-documents/copyright-policy/copyright-policy.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/legal-documents/legal-docs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/legal-documents/privacy-policy/privacy-policy.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/legal-documents/privacy-policy/privacy-policy.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/legal-documents/privacy-policy/privacy-policy.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/legal-documents/project-license/project-license.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/legal-documents/project-license/project-license.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/legal-documents/project-license/project-license.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/page-not-found/page-not-found.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/page-not-found/page-not-found.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/page-not-found/page-not-found.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/components/page-not-found/page-not-found.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/models/instagram-post.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/services/instagram-mapping.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/services/logging.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/services/tests/instagram-mapping.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/services/tests/logging.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/ui/footer/footer.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/ui/footer/footer.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/ui/footer/footer.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/ui/header/header.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/ui/header/header.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/ui/header/header.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/ui/layout/layout.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/ui/layout/layout.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/ui/layout/layout.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/ui/ui.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/app/ui/ui.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/assets/images/components/crits-navbar/brand.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/assets/images/components/home/crits-hero-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/assets/images/site_images/crits_and_coffee_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/assets/images/site_images/crits_favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/assets/images/site_images/nav-background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/browserslist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/sass/abstracts/_functions.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/sass/abstracts/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/sass/abstracts/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/sass/base/_base.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/sass/base/_fonts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/sass/base/_helpers.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/sass/base/_typography.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/sass/components/_button.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/sass/layout/_footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/sass/pages/_home.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/sass/styles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/sass/vendors/_material.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/sass/vendors/_normalize.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/src/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/angular-frontend/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/apiv1_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/apiv1_urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/static/angular_resources/images/components/crits-navbar/brand.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/static/angular_resources/images/components/home/home-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/static/angular_resources/images/site_images/crits_and_coffee_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/static/angular_resources/images/site_images/crits_favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docker/compose/production/Dockerfile.Instagram.API.Prod" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/production/Dockerfile.Instagram.API.Prod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docker/compose/production/caddy/Caddyfile" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/production/caddy/Caddyfile" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,28 +132,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Docker/compose/test.yml">
+        <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="25" column="65" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Jenkinsfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="40" column="58" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Docker/compose/production/caddy/Caddyfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="122">
+              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -54,8 +146,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Docker/compose/production.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
+            <state relative-caret-position="-119">
               <caret line="8" column="15" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Docker/compose/production/Dockerfile.Instagram.API.Prod">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="720">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
             </state>
           </provider>
         </entry>
@@ -88,9 +189,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/angular-frontend/src/app/components/instagram-map/instagram-map.component.scss" />
-        <option value="$PROJECT_DIR$/angular-frontend/src/app/models/instagram-post.ts" />
-        <option value="$PROJECT_DIR$/angular-frontend/src/app/services/logging.service.ts" />
         <option value="$PROJECT_DIR$/angular-frontend/src/app/services/instagram-mapping.service.ts" />
         <option value="$PROJECT_DIR$/config/settings/production.py" />
         <option value="$PROJECT_DIR$/config/settings/local.py" />
@@ -137,8 +235,11 @@
         <option value="$PROJECT_DIR$/Docker/compose/test.yml" />
         <option value="$PROJECT_DIR$/Docker/.gitignore" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/Docker/compose/production/caddy/Caddyfile" />
         <option value="$PROJECT_DIR$/Jenkinsfile" />
+        <option value="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/urls.py" />
+        <option value="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/apiv1_urls.py" />
+        <option value="$PROJECT_DIR$/Docker/compose/production/caddy/Caddyfile" />
+        <option value="$PROJECT_DIR$/Docker/compose/production/Dockerfile.Instagram.API.Prod" />
       </list>
     </option>
   </component>
@@ -168,13 +269,83 @@
             <path>
               <item name="CritsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
               <item name="CritsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="CritsAndCoffee.ClientApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CritsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CritsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="CritsAndCoffee.ClientApp" type="462c0819:PsiDirectoryNode" />
+              <item name="CritsAndCoffeeClientApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CritsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CritsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="CritsAndCoffee.ClientApp" type="462c0819:PsiDirectoryNode" />
+              <item name="CritsAndCoffeeClientApp" type="462c0819:PsiDirectoryNode" />
+              <item name="ClientApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CritsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CritsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="CritsAndCoffee.ClientApp" type="462c0819:PsiDirectoryNode" />
+              <item name="CritsAndCoffeeClientApp" type="462c0819:PsiDirectoryNode" />
+              <item name="ClientApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CritsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CritsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="CritsAndCoffee.Instagram.API" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CritsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CritsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="CritsAndCoffee.Instagram.API" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CritsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CritsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="CritsAndCoffee.Instagram.API" type="462c0819:PsiDirectoryNode" />
+              <item name="crits_and_coffee" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CritsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CritsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="CritsAndCoffee.Instagram.API" type="462c0819:PsiDirectoryNode" />
+              <item name="docker-scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CritsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CritsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="CritsAndCoffee.Instagram.API" type="462c0819:PsiDirectoryNode" />
+              <item name="docker-scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="django" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CritsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CritsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
               <item name="Docker" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CritsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
               <item name="CritsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
               <item name="Docker" type="462c0819:PsiDirectoryNode" />
-              <item name="bash_scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="compose" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CritsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CritsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="Docker" type="462c0819:PsiDirectoryNode" />
+              <item name="compose" type="462c0819:PsiDirectoryNode" />
+              <item name="local" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CritsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CritsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="Docker" type="462c0819:PsiDirectoryNode" />
+              <item name="compose" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -198,19 +369,19 @@
     <property name="typescript-compiler-editor-notification" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src" />
+      <recent name="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/Docker/compose/production" />
+      <recent name="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/docker-scripts" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/CritsAndCoffee.Instagram.API" />
       <recent name="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/docker-scripts/django" />
       <recent name="$PROJECT_DIR$/angular-frontend/src/assets/images/components/home" />
       <recent name="$PROJECT_DIR$/crits_and_coffee/contrib/sites/migrations" />
       <recent name="$PROJECT_DIR$/crits_and_coffee/users/migrations" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/Docker/compose/production" />
-      <recent name="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/docker-scripts" />
-      <recent name="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/docker-scripts/django" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -247,7 +418,7 @@
       <workItem from="1553036130909" duration="452000" />
       <workItem from="1553040157665" duration="370000" />
       <workItem from="1553040576642" duration="1380000" />
-      <workItem from="1553043620927" duration="95000" />
+      <workItem from="1553043620927" duration="1584000" />
     </task>
     <servers />
   </component>
@@ -257,7 +428,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93240000" />
+    <option name="totallyTimeSpent" value="94729000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="0" />
@@ -305,30 +476,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/angular-frontend/src/app/components/instagram-map/instagram-post-detail/instagram-post-detail.component.scss" />
-    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/docker-scripts/django/start.local">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Docker/compose/production/postgres/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Docker/compose/base_images/Dockerfile.geo-django">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Docker/compose/local/Dockerfile.ClientApp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/docker-scripts/django/entrypoint">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Docker/logs/critsAndcoffee.log">
       <provider selected="true" editor-type-id="LogFileEditorProvider">
         <state relative-caret-position="506">
@@ -382,23 +529,6 @@
     <entry file="file://$PROJECT_DIR$/Docker/bash_scripts/image-builder/cleanup_environment.sh">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Docker/compose/local/Dockerfile.Instagram.API">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/settings/local.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="128" column="32" selection-start-line="128" selection-start-column="32" selection-end-line="128" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/docker-compose.dev.yml" />
     <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/docker-scripts/celery/beat/start">
       <provider selected="true" editor-type-id="text-editor" />
@@ -415,9 +545,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/docker-scripts/start.sh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Docker/compose/production/Dockerfile.ClientApp.Prod">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Docker/compose/testing/django/celery/beat/start" />
@@ -439,9 +566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/apiv1_urls.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/API_InstagramPosts/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -450,9 +574,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/README.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/README.rst">
       <provider selected="true" editor-type-id="restructured-text-editor" />
@@ -480,13 +601,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CritsAndCoffeeClientApp/obj/project.assets.json" />
     <entry file="file://$PROJECT_DIR$/Docker/.gitignore" />
-    <entry file="file://$PROJECT_DIR$/Docker/compose/local.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
@@ -501,6 +615,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Jenkinsfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="40" column="58" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Docker/compose/test.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -508,24 +629,89 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/locale/README.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/README.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-227" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/settings/local.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2944">
+          <caret line="128" column="32" selection-start-line="128" selection-start-column="32" selection-end-line="128" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/settings/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6042" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/crits_and_coffee/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/apiv1_urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Docker/compose/local.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Docker/compose/production/caddy/Caddyfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Docker/compose/production.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
+        <state relative-caret-position="-119">
           <caret line="8" column="15" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Jenkinsfile">
+    <entry file="file://$PROJECT_DIR$/Docker/compose/production/Dockerfile.ClientApp.Prod">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="40" column="58" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
+        <state relative-caret-position="-82" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Docker/compose/local/Dockerfile.Instagram.API">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Docker/compose/production/Dockerfile.Instagram.API.Prod">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>

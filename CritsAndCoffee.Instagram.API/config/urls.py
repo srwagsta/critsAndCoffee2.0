@@ -12,7 +12,7 @@ urlpatterns = [
     # swagger api documentation
     path('api-docs', schema_view),
     # RASTful API V! Endpoints
-    path('api/v1/', include('config.apiv1_urls'), name="apiv1"),
+    path('api/', include('config.apiv1_urls'), name="apiv1"),
 
     # Django Admin, use {% url 'admin:index' %}
     path(settings.ADMIN_URL, admin.site.urls),
@@ -20,11 +20,6 @@ urlpatterns = [
     # path("users/",include("crits_and_coffee.users.urls", namespace="users"),),
     path("accounts/", include("allauth.urls")),
 
-    # Static page serving
-    path("", TemplateView.as_view(template_name="pages/angular_home.html"), name="home"),
-
-    # catch-all pattern for compatibility with the Angular routes. This must be last in the list.
-    path("<path:path>/", TemplateView.as_view(template_name="pages/angular_home.html"), name="home"),
 ] + static(
     settings.MEDIA_URL, document_root=settings.MEDIA_ROOT
 )
