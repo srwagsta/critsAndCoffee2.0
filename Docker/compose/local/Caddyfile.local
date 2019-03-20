@@ -22,6 +22,17 @@ tls self_signed
         header_upstream X-Forwarded-Proto {scheme}
     }
 
+    proxy /api/docs instagram-api:8000 {
+        header_upstream Host {host}
+        header_upstream X-Real-IP {remote}
+        header_upstream X-Forwarded-Proto {scheme}
+    }
+
+    proxy /admin instagram-api:8000 {
+        header_upstream Host {host}
+        header_upstream X-Real-IP {remote}
+        header_upstream X-Forwarded-Proto {scheme}
+    }
     log stdout
     errors stdout
     gzip

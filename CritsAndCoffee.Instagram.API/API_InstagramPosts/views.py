@@ -10,16 +10,10 @@ class InstagramPostListAPIView(ListAPIView):
     serializer_class = InstagramPostSerializer
     lookup_field = 'id'
 
-
 class InstagramPostRetrieveDestoryAPIView(RetrieveDestroyAPIView):
     """Instagram Post Resource"""
     queryset = InstagramPost.objects.all()
     permission_classes = (IsAuthenticated,)
     serializer_class = InstagramPostSerializer
     lookup_field = 'id'
-
-
-
-
-
 

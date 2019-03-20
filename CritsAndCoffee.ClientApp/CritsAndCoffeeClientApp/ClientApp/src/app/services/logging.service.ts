@@ -5,11 +5,11 @@ export class LoggingService {
 
   constructor() { }
 
-  info(message:string):void{
+  info(message: string): void{
     console.info(`${+new Date} -- ${message}`);
   }
 
-  error(message:string):void{
+  error(message: string): void{
     console.error(`${+new Date} -- ${message}`);
     console.trace();
   }

@@ -7,7 +7,7 @@ import {MatSidenav} from "@angular/material";
   styleUrls: ['../ui.module.scss']
 })
 export class HeaderComponent implements OnInit {
-  API_route: string = `${window.location.origin}/api-docs`;
+  API_route: string = `${window.location.origin}/api/docs`;
 
   @ViewChild('sideNav') sidenav: MatSidenav;
   @ViewChild('menuIcon', {read: ElementRef}) menuIcon: ElementRef;
