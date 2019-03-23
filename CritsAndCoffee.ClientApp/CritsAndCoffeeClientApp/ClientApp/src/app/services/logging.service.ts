@@ -1,17 +1,35 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
+import {HttpClient} from "@angular/common/http";
 
-@Injectable({ providedIn: 'root' })
+@Injectable({providedIn: 'root'})
 export class LoggingService {
 
-  constructor() { }
-
-  info(message: string): void{
-    console.info(`${+new Date} -- ${message}`);
+  constructor(private log: LoggingService, private http: HttpClient,) {
   }
 
-  error(message: string): void{
-    console.error(`${+new Date} -- ${message}`);
-    console.trace();
+  private _serviceName: string = "Instagram Logging Service: ";
+  private _loggingUrl: string = 'api/v1/logger';
+
+  // No need to return anything, not worried about logging failures.
+  public info(message: string): void {
+    this.http.post(`${this._loggingUrl}/info`, message);
+  }
+
+  public warning(message: string): void {
+    this.http.post(`${this._loggingUrl}/warning`, message);
+  }
+
+  public error(message: string): void {
+    this.http.post(`${this._loggingUrl}/error`, message);
+  }
+
+  public critical(message: string): void {
+    this.http.post(`${this._loggingUrl}/critical`, message);
+  }
+
+  public debug(message: string): void {
+    this.http.post(`${this._loggingUrl}/debug`, message);
+
   }
 
 }

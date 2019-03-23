@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of} from 'rxjs';
-import { catchError, tap, map } from 'rxjs/operators';
+import { catchError, tap } from 'rxjs/operators';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import {LoggingService} from "./logging.service";
 import {InstagramPostModel} from "../models/instagram-post.model";
