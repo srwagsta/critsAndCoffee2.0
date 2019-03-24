@@ -1,24 +1,19 @@
-<div class="crits-card">
-  <mat-card>
-
-    <mat-card-actions>
-      <button mat-button (click)="resetPost()" matTooltip="Close"><mat-icon>close</mat-icon></button>
-      <a mat-button [href]="post.link" matTooltip="View it on Instagram"><mat-icon>add_a_photo</mat-icon></a>
-    </mat-card-actions>
-
-    <mat-card-header>
-
-      <mat-card-title>{{ post.location_name }} ({{post.location.coordinates[1]}}, {{post.location.coordinates[0]}})</mat-card-title>
-
-      <mat-card-subtitle>{{ post.caption }}</mat-card-subtitle>
-
-    </mat-card-header>
-
-    <img mat-card-image src="{{ post.image_standard_resolution_url }}" alt="{{ post.location_name }}">
-
-    <mat-card-content>
-      <p>{{ post.tags }}</p>
-    </mat-card-content>
-
-  </mat-card>
+<div class="modal-header">
+  <p class="modal-title">{{post.caption}}</p>
+  <br/>
+  <button mat-button aria-label="Close" matTooltip="Close" (click)="activeModal.dismiss('Cross click')">
+    <mat-icon>close</mat-icon>
+  </button>
+</div>
+<div class="modal-body">
+  <img src="{{ post.image_standard_resolution_url }}" alt="{{ post.location_name }}">
+  <p>{{ post.location_name }} <br/> ({{post.location.coordinates[1]}}
+    , {{post.location.coordinates[0]}})</p>
+</div>
+<div class="modal-footer">
+  <p>{{ post.tags }}</p>
+  <br/>
+  <a mat-button [href]="post.link" matTooltip="View it on Instagram">
+    <mat-icon>add_a_photo</mat-icon>
+  </a>
 </div>

@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 import { AgmCoreModule } from '@agm/core';
-import {MatCardModule,
+import {
+  MatTooltipModule,
   MatButtonModule,
   MatIconModule
 } from '@angular/material';
@@ -46,15 +47,16 @@ import { CritsHeroComponent } from './components/home/crits-hero/crits-hero.comp
     HttpClientModule,
     AppRoutingModule,
     UiModule,
-    MatCardModule,
     MatButtonModule,
     MatIconModule,
+    MatTooltipModule,
     NgbModule.forRoot(),
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCNPlDnedCEachOH08pszCanYO2RDuJ6pk\n'
     })
   ],
   providers: [],
+  entryComponents: [InstagramPostDetailComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

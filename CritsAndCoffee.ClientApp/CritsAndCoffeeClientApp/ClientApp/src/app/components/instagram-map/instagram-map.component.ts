@@ -3,6 +3,9 @@ import {Subscription} from "rxjs";
 import {InstagramMappingService} from "../../services/instagram-mapping.service";
 import {LoggingService} from "../../services/logging.service";
 import {InstagramPostModel} from "../../models/instagram-post.model";
+import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import {InstagramPostDetailComponent} from "./instagram-post-detail/instagram-post-detail.component";
+
 
 @Component({
   selector: 'app-instagram-map',
@@ -13,13 +16,13 @@ import {InstagramPostModel} from "../../models/instagram-post.model";
 export class InstagramMapComponent implements OnInit, OnDestroy {
 
   constructor(private instagramService: InstagramMappingService,
-              private log: LoggingService) {}
+              private log: LoggingService,
+              private modalService: NgbModal) {}
 
   //<editor-fold desc="Class Fields">
   private _componentName: string = 'Instagram Map Component: ';
   private _subscriptions: Subscription[] = [];
   public posts: InstagramPostModel[] = [];
-  public selectedPost:InstagramPostModel;
 
   public clientCoordinate: any = {lat: 43.067303, lng: -87.876882};
   //</editor-fold>
@@ -44,8 +47,9 @@ export class InstagramMapComponent implements OnInit, OnDestroy {
   }
   //</editor-fold>
 
-  public onSelect(post: InstagramPostModel): void {
-    this.selectedPost = post;
+  public onMarkerClick(post: InstagramPostModel): void{
+    const modalRef = this.modalService.open(InstagramPostDetailComponent);
+    modalRef.componentInstance.post = post;
   }
 
   // <editor-fold desc="Private Helper Functions">
