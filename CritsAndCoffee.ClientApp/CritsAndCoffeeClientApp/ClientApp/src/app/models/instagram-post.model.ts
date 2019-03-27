@@ -10,7 +10,4 @@ export interface InstagramPostModel {
   caption: string|null
   location_name: string | null;
   location: any;
-
-
-
 }

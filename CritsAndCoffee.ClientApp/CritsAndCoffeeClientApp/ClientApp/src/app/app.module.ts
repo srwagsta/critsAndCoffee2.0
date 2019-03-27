@@ -8,6 +8,13 @@ import {
   MatButtonModule,
   MatIconModule
 } from '@angular/material';
+
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import {library} from '@fortawesome/fontawesome-svg-core';
+import {fas} from '@fortawesome/free-solid-svg-icons';
+import {fab} from '@fortawesome/free-brands-svg-icons';
+library.add(fas, fab);
+
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FlexLayoutModule} from '@angular/flex-layout';
 
@@ -25,6 +32,13 @@ import { ProjectLicenseComponent } from './components/legal-documents/project-li
 import { ApiTermsOfUseComponent } from './components/legal-documents/api-terms-of-use/api-terms-of-use.component';
 import { InstagramPostDetailComponent } from './components/instagram-map/instagram-post-detail/instagram-post-detail.component';
 import { CritsHeroComponent } from './components/home/crits-hero/crits-hero.component';
+
+import { NgxsModule } from '@ngxs/store';
+import { NgxsLoggerPluginModule } from '@ngxs/logger-plugin';
+import { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';
+import { NgxsRouterPluginModule } from '@ngxs/router-plugin';
+
+
 
 @NgModule({
   declarations: [
@@ -50,7 +64,12 @@ import { CritsHeroComponent } from './components/home/crits-hero/crits-hero.comp
     MatButtonModule,
     MatIconModule,
     MatTooltipModule,
-    NgbModule.forRoot(),
+    FontAwesomeModule,
+    NgbModule,
+    NgxsModule.forRoot([]),
+    NgxsLoggerPluginModule.forRoot({}),
+    NgxsReduxDevtoolsPluginModule.forRoot(),
+    NgxsRouterPluginModule.forRoot(),
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCNPlDnedCEachOH08pszCanYO2RDuJ6pk\n'
     })

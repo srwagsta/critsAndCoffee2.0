@@ -1,5 +1,9 @@
 .crits-hero-container{
-  //background: url("../../../assets/images/components/home/crits-hero-bg.jpg");
-  //background-size: 100%;
-  //background-repeat: no-repeat;
+  background: url("~/assets/images/components/home/crits-hero-bg.jpg");
+  background-size: 100%;
+  margin-top: 1rem;
+}
+
+.spacer {
+  flex: 1 1 auto;
 }
