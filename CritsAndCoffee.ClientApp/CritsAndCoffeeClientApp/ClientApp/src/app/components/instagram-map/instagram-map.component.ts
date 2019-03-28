@@ -22,9 +22,9 @@ export class InstagramMapComponent implements OnInit, OnDestroy {
   //<editor-fold desc="Class Fields">
   private _componentName: string = 'Instagram Map Component: ';
   private _subscriptions: Subscription[] = [];
-  public posts: InstagramPostModel[] = [];
+  public posts: InstagramPostModel[] = []; //Ngxs will soon replace this
 
-  public clientCoordinate: any = {lat: 43.067303, lng: -87.876882};
+  public clientCoordinate: any = {lat: 43.067303, lng: -87.876882}; // ngxs can also hold this information
   //</editor-fold>
 
   //<editor-fold desc="ng Events">

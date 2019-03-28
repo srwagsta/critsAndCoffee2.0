@@ -5,8 +5,8 @@
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
 @include mat-core();
-$crits-app-primary: mat-palette($mat-grey);
-$crits-app-accent:  mat-palette($mat-cyan);
+$crits-app-primary: mat-palette($mat-cyan);
+$crits-app-accent:  mat-palette($mat-indigo);
 
 // The warn palette is optional (defaults to red).
 $crits-app-warn:    mat-palette($mat-red);
@@ -17,6 +17,7 @@ $crits-dark-app-theme: mat-dark-theme($crits-app-primary, $crits-app-accent, $cr
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
+@include angular-material-theme($crits-dark-app-theme)
 
 @include mat-core-theme($crits-dark-app-theme);
 @include mat-toolbar-theme($crits-dark-app-theme);
