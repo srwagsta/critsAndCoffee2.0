@@ -1,10 +1,12 @@
 import {Component, OnInit, OnDestroy} from '@angular/core';
-import {Subscription} from "rxjs";
+import {Observable, Subscription} from "rxjs";
 import {InstagramMappingService} from "../../services/instagram-mapping.service";
 import {LoggingService} from "../../services/logging.service";
 import {InstagramPostModel} from "../../models/instagram-post.model";
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import {InstagramPostDetailComponent} from "./instagram-post-detail/instagram-post-detail.component";
+import {InstagramPostListState} from "../../state/instagram/instagram.state";
+import {Select} from "@ngxs/store";
 
 
 @Component({
@@ -15,6 +17,8 @@ import {InstagramPostDetailComponent} from "./instagram-post-detail/instagram-po
 })
 export class InstagramMapComponent implements OnInit, OnDestroy {
 
+   @Select(InstagramPostListState) postList$: Observable<InstagramPostModel[]>;
+
   constructor(private instagramService: InstagramMappingService,
               private log: LoggingService,
               private modalService: NgbModal) {}
@@ -22,7 +26,7 @@ export class InstagramMapComponent implements OnInit, OnDestroy {
   //<editor-fold desc="Class Fields">
   private _componentName: string = 'Instagram Map Component: ';
   private _subscriptions: Subscription[] = [];
-  public posts: InstagramPostModel[] = []; //Ngxs will soon replace this
+  // public posts: InstagramPostModel[] = []; //Ngxs will soon replace this
 
   public clientCoordinate: any = {lat: 43.067303, lng: -87.876882}; // ngxs can also hold this information
   //</editor-fold>
@@ -37,8 +41,7 @@ export class InstagramMapComponent implements OnInit, OnDestroy {
         };
       }));
 
-
-    this.getPosts();
+    // this.getPosts();
     this.log.info(`${this._componentName} Started, focus location (${this.clientCoordinate.lat}, ${this.clientCoordinate.lng})`);
   }
 
@@ -54,11 +57,11 @@ export class InstagramMapComponent implements OnInit, OnDestroy {
 
   // <editor-fold desc="Private Helper Functions">
 
-  private getPosts(): void{
-    this._subscriptions.push(
-      this.instagramService.getPosts()
-        .subscribe((posts:InstagramPostModel[]) => this.posts = posts));
-  }
+  // private getPosts(): void{
+  //   this._subscriptions.push(
+  //     this.instagramService.getPosts()
+  //       .subscribe((posts:InstagramPostModel[]) => this.posts = posts));
+  // }
 
   //</editor-fold>
 }

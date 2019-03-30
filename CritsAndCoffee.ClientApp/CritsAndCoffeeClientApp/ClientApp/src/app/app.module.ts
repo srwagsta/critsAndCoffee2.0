@@ -37,6 +37,7 @@ import { NgxsModule } from '@ngxs/store';
 import { NgxsLoggerPluginModule } from '@ngxs/logger-plugin';
 import { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';
 import { NgxsRouterPluginModule } from '@ngxs/router-plugin';
+import {InstagramPostListState} from "./state/instagram/instagram.state";
 
 
 
@@ -66,7 +67,7 @@ import { NgxsRouterPluginModule } from '@ngxs/router-plugin';
     MatTooltipModule,
     FontAwesomeModule,
     NgbModule,
-    NgxsModule.forRoot([]),
+    NgxsModule.forRoot([InstagramPostListState],{developmentMode: true }),
     NgxsLoggerPluginModule.forRoot({}),
     NgxsReduxDevtoolsPluginModule.forRoot(),
     NgxsRouterPluginModule.forRoot(),
