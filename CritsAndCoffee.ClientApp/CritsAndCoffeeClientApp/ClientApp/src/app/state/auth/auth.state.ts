@@ -18,18 +18,18 @@ export class AuthState {
 
   constructor(private authService: AuthService) {}
 
-  @Action(Login)
-  login({ patchState }: StateContext<AuthStateModel>, { payload }: Login) {
-    return this.authService.login(payload).pipe(tap((token:string) => {
-      patchState({ token, username: payload.username });
-    }))
-  }
-
-  @Action(Logout)
-  logout({ setState, getState }: StateContext<AuthStateModel>) {
-    const { token } = getState();
-    return this.authService.logout(token).pipe(tap(() => {
-      setState({});
-    }));
-  }
+  // @Action(Login)
+  // login({ patchState }: StateContext<AuthStateModel>, { payload }: Login) {
+  //   return this.authService.login(payload).pipe(tap((token:string) => {
+  //     patchState({ token, username: payload.username });
+  //   }))
+  // }
+  //
+  // @Action(Logout)
+  // logout({ setState, getState }: StateContext<AuthStateModel>) {
+  //   const { token } = getState();
+  //   return this.authService.logout(token).pipe(tap(() => {
+  //     setState({});
+  //   }));
+  // }
 }

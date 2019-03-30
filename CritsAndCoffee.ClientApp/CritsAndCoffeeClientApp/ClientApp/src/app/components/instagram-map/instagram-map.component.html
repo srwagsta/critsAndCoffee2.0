@@ -1,7 +1,7 @@
 <div class="map">
   <agm-map style="height: 60vh;"
-    [latitude]="clientCoordinate.lat"
-    [longitude]="clientCoordinate.lng"
+    [latitude]="clientCoordinate$.coords.latitude | async"
+    [longitude]="clientCoordinate$.coords.longitude | async"
     [zoom]="10">
 
     <agm-marker

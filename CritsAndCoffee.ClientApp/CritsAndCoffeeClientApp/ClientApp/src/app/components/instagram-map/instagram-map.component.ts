@@ -17,32 +17,32 @@ import {Select} from "@ngxs/store";
 })
 export class InstagramMapComponent implements OnInit, OnDestroy {
 
-   @Select(InstagramPostListState) postList$: Observable<InstagramPostModel[]>;
-
   constructor(private instagramService: InstagramMappingService,
               private log: LoggingService,
               private modalService: NgbModal) {}
 
   //<editor-fold desc="Class Fields">
   private _componentName: string = 'Instagram Map Component: ';
-  private _subscriptions: Subscription[] = [];
-  // public posts: InstagramPostModel[] = []; //Ngxs will soon replace this
+  @Select(InstagramPostListState.posts) postList$: Observable<InstagramPostModel[]>;
+  @Select(InstagramPostListState.clientPosition) clientCoordinate$: Observable<Position>;
 
-  public clientCoordinate: any = {lat: 43.067303, lng: -87.876882}; // ngxs can also hold this information
+  private _subscriptions: Subscription[] = [];
+
+  // public clientCoordinate: any = {lat: 43.067303, lng: -87.876882}; // ngxs can also hold this information
   //</editor-fold>
 
   //<editor-fold desc="ng Events">
   ngOnInit() {
-    this._subscriptions.push(this.instagramService.getClientPosition().subscribe(
-      (pos: Position) => {
-        this.clientCoordinate = {
-          lat: +(pos.coords.latitude),
-          lng: +(pos.coords.longitude)
-        };
-      }));
+    // this._subscriptions.push(this.instagramService.getClientPosition().subscribe(
+    //   (pos: Position) => {
+    //     this.clientCoordinate = {
+    //       lat: +(pos.coords.latitude),
+    //       lng: +(pos.coords.longitude)
+    //     };
+    //   }));
 
     // this.getPosts();
-    this.log.info(`${this._componentName} Started, focus location (${this.clientCoordinate.lat}, ${this.clientCoordinate.lng})`);
+    // this.log.info(`${this._componentName} Started, focus location (${this.clientCoordinate.lat}, ${this.clientCoordinate.lng})`);
   }
 
   ngOnDestroy() {
@@ -55,13 +55,4 @@ export class InstagramMapComponent implements OnInit, OnDestroy {
     modalRef.componentInstance.post = post;
   }
 
-  // <editor-fold desc="Private Helper Functions">
-
-  // private getPosts(): void{
-  //   this._subscriptions.push(
-  //     this.instagramService.getPosts()
-  //       .subscribe((posts:InstagramPostModel[]) => this.posts = posts));
-  // }
-
-  //</editor-fold>
 }

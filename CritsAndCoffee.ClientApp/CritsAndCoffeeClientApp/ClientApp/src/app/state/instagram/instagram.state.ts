@@ -1,9 +1,10 @@
-import {State, Action, StateContext, NgxsAfterBootstrap} from '@ngxs/store';
+import {State, Action, Selector, StateContext, NgxsOnInit} from '@ngxs/store';
 import {AddInstagramPost} from './instagram.actions';
 import {LoggingService} from "../../services/logging.service";
-import {HttpClient, HttpHeaders} from "@angular/common/http";
-import { tap } from "rxjs/operators";
+import {InstagramMappingService} from "../../services/instagram-mapping.service"
+import {tap} from "rxjs/operators";
 import {InstagramPostModel} from "../../models/instagram-post.model";
+
 
 export interface InstagramPostModel {
   id: string | null;
@@ -19,35 +20,61 @@ export interface InstagramPostModel {
   location: any;
 }
 
+export interface InstagramPostListModel {
+  clientPosition: Position;
+  posts: InstagramPostModel[];
+}
 
-@State<InstagramPostModel[]>({
+@State<InstagramPostListModel>({
   name: 'instagramPostList',
-  defaults: []
+  defaults: {
+    clientPosition: {
+      timestamp: Date.now(),
+      coords: {
+        speed: null,
+        heading: null,
+        altitudeAccuracy: null,
+        altitude: null,
+        accuracy: null,
+        latitude: 43.067303,
+        longitude: -87.876882
+      }
+    },
+    posts: []
+  }
 })
-export class InstagramPostListState implements NgxsAfterBootstrap {
+export class InstagramPostListState implements NgxsOnInit {
 
-  private _instagramUrl: string = 'api/v1/instagram';
-
-  private httpOptions = {
-    headers: new HttpHeaders({'Content-Type': 'application/json'})
-  };
-
-  constructor(private log: LoggingService, private http: HttpClient) {
+  constructor(private log: LoggingService,
+              private instagramService: InstagramMappingService) {
   }
 
-  ngxsAfterBootstrap(ctx: StateContext<InstagramPostModel[]>) {
-    this.http.get<InstagramPostModel>(`${this._instagramUrl}/posts`, this.httpOptions)
-      .pipe(
-        tap(post => ctx.dispatch(new AddInstagramPost(post)),
-            error => this.log.error(`Instagram state: ${error}`))
-      );
+  ngxsOnInit({getState, patchState}: StateContext<InstagramPostListModel>) {
+    this.instagramService.getPosts().subscribe(posts => {
+      patchState({posts: posts});
+    });
+
+    this.instagramService.getClientPosition().subscribe(location =>{
+      patchState({clientPosition: location});
+    })
+
   }
 
   @Action(AddInstagramPost)
-  addPost(ctx: StateContext<InstagramPostModel[]>, action: AddInstagramPost) {
-    const state = ctx.getState();
-    ctx.patchState([...state, action.payloadPost]);
+  addPost({getState, patchState}: StateContext<InstagramPostListModel>, action: AddInstagramPost) {
+    const state = getState();
+    patchState({posts: [...state.posts, action.payloadPost]});
+    //TODO: To truly add a post the backend service would need to be posted to?
   }
 
+  @Selector()
+  public static posts(state: InstagramPostListModel) {
+    return state.posts;
+  }
+
+  @Selector()
+  public static clientPosition(state: InstagramPostListModel) {
+    return state.clientPosition;
+  }
 }
 

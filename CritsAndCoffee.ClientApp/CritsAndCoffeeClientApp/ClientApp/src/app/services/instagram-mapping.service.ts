@@ -22,9 +22,9 @@ export class InstagramMappingService {
   public getClientPosition(): Observable<Position> {
     return Observable.create(
       (observer) => {
-      navigator.geolocation.watchPosition((pos: Position) => { observer.next(pos); }),
+      navigator.geolocation.watchPosition((pos: Position) => { observer.next(pos); },
       () => {this.log.error(`${this._serviceName} Position not available.`) },
-      { enableHighAccuracy: true };
+      { enableHighAccuracy: true });
     });
   }
 

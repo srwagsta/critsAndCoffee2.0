@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
-import {Observable} from 'rxjs/Observable';
+
+import 'rxjs/add/observable/of';
+
 
 @Injectable({
   providedIn: 'root'
@@ -7,12 +9,12 @@ import {Observable} from 'rxjs/Observable';
 export class AuthService {
 
   constructor() { }
-
-  public login(credentials: {username: string, password: string}): Observable<string>{
-    return "TODO: get a token"
-  }
-
-  public logout(token: string): Observable<Boolean>{
-    // TODO: Use the token to log the user out of the django backend
-  }
+  //
+  // public login(credentials: {username: string, password: string}): Observable<string>{
+  //   return Observable.of("TODO: get a token");
+  // }
+  //
+  // public logout(token: string): Observable<Boolean>{
+  //   TODO: Use the token to log the user out of the django backend
+  // }
 }
