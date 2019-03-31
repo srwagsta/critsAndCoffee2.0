@@ -11,6 +11,6 @@ urlpatterns = [
     path('jwt-verify/', verify_jwt_token),
 
     # https://django-rest-auth.readthedocs.io/en/latest/api_endpoints.html
-    path('rest-auth/', include('rest_auth.urls')),
-    path('rest-auth/registration/', include('rest_auth.registration.urls')),
+    path('', include('rest_auth.urls')),
+    path('registration/', include('rest_auth.registration.urls')),
 ]

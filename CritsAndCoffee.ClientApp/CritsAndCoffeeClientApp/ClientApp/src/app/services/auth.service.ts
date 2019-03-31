@@ -3,6 +3,7 @@ import {Observable, of} from "rxjs";
 import {catchError, tap} from "rxjs/operators";
 import {LoggingService} from "./logging.service";
 import {HttpClient, HttpHeaders} from "@angular/common/http";
+import {AuthUserModel} from "../models/auth-user.model";
 
 
 const httpOptions = {
@@ -19,21 +20,47 @@ export class AuthService {
 
   constructor(private log: LoggingService, private http: HttpClient) { }
 
-  public login(credentials: {username: string, password: string}): Observable<{token: string}> {
-    return this.http.post<{token: string}>(`${this._authUrl}/jwt`, credentials)
+  public login(credentials: {username: string, password: string, email?: string}): Observable<{token: string, user:AuthUserModel}> {
+    return this.http.post<{token: string, user: AuthUserModel}>(`${this._authUrl}/login/`, credentials)
+      .pipe(
+        tap(data => this.log.info(`Login success for => ${data.user.username}`),
+            error =>  catchError(this.handleError(error, [])))
+      );
+  }
+
+  public logout(): Observable<{detail: string}>{
+    return this.http.post<{detail: string}>(`${this._authUrl}/logout/`, httpOptions)
+      .pipe(
+        tap(data => this.log.info(`Entry content: ${data}`),
+            error =>  catchError(this.handleError(error, [])))
+      );
+    // TODO: On the backend a blacklist needs to be setup to understand an invalid token
+  }
+
+  public passwordReset(email: string): Observable<string> {
+    return this.http.post<string>(`${this._authUrl}/password/reset/`, email)
       .pipe(
         tap(data => this.log.info(`Entry content: ${data}`),
             error =>  catchError(this.handleError(error, [])))
       );
   }
-  //
-  // public login(credentials: {username: string, password: string}): Observable<string>{
-  //   return Observable.of("TODO: get a token");
-  // }
-  //
-  // public logout(token: string): Observable<Boolean>{
-  //   TODO: Use the token to log the user out of the django backend
-  // }
+
+  public passwordChange(credentials: {old_password: string, new_password1: string, new_password2: string}): Observable<string> {
+    return this.http.post<string>(`${this._authUrl}/password/change/`, credentials)
+      .pipe(
+        tap(data => this.log.info(`Entry content: ${data}`),
+            error =>  catchError(this.handleError(error, [])))
+      );
+  }
+
+  public basicRegister(credentials: {username: string, password1: string, password2: string, email: string}): Observable<string> {
+    return this.http.post<string>(`${this._authUrl}/registration/`, credentials)
+      .pipe(
+        tap(data => this.log.info(`Entry content: ${data}`),
+            error =>  catchError(this.handleError(error, [])))
+      );
+  }
+
   private handleError<T> (operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
       this.log.error(`${this._serviceName} ${error}`);

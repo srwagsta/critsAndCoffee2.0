@@ -5,33 +5,23 @@ tls self_signed
 	    insecure_skip_verify
     }
     proxy /api/v1/auth instagram-api:8000 {
-        header_upstream Host {host}
-        header_upstream X-Real-IP {remote}
-        header_upstream X-Forwarded-Proto {scheme}
+        transparent
     }
 
     proxy /api/v1/logger instagram-api:8000 {
-        header_upstream Host {host}
-        header_upstream X-Real-IP {remote}
-        header_upstream X-Forwarded-Proto {scheme}
+        transparent
     }
 
     proxy /api/v1/instagram instagram-api:8000 {
-        header_upstream Host {host}
-        header_upstream X-Real-IP {remote}
-        header_upstream X-Forwarded-Proto {scheme}
+        transparent
     }
 
     proxy /api/docs instagram-api:8000 {
-        header_upstream Host {host}
-        header_upstream X-Real-IP {remote}
-        header_upstream X-Forwarded-Proto {scheme}
+        transparent
     }
 
     proxy /admin instagram-api:8000 {
-        header_upstream Host {host}
-        header_upstream X-Real-IP {remote}
-        header_upstream X-Forwarded-Proto {scheme}
+        transparent
     }
     log stdout
     errors stdout

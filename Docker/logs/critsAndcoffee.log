@@ -7613,3 +7613,1403 @@ django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in [
 [31/Mar/2019 01:11:04] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1823708344192656888_38742995 => Added post
 [31/Mar/2019 01:11:04] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1819324693455736217_38742995 => Added post
 [31/Mar/2019 01:11:04] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1819324693455736217_38742995 => Added post
+[31/Mar/2019 18:31:03] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Bad Request: /api/v1/auth/rest-auth/login/
+[31/Mar/2019 18:31:03] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Bad Request: /api/v1/auth/rest-auth/login/
+[31/Mar/2019 18:51:39] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1995370618250780070_38742995 => Added post
+[31/Mar/2019 18:51:39] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1995370618250780070_38742995 => Added post
+[31/Mar/2019 18:51:39] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1979351214256662945_38742995 => Added post
+[31/Mar/2019 18:51:39] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1979351214256662945_38742995 => Added post
+[31/Mar/2019 18:51:39] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1977264875492585806_38742995 => Added post
+[31/Mar/2019 18:51:39] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1977264875492585806_38742995 => Added post
+[31/Mar/2019 18:51:39] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1969304739402732254_38742995 => Added post
+[31/Mar/2019 18:51:39] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1969304739402732254_38742995 => Added post
+[31/Mar/2019 18:51:39] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1962844021685806843_38742995 => Added post
+[31/Mar/2019 18:51:39] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1962844021685806843_38742995 => Added post
+[31/Mar/2019 18:51:39] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1962014591895847266_38742995 => Added post
+[31/Mar/2019 18:51:39] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1962014591895847266_38742995 => Added post
+[31/Mar/2019 18:51:39] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1961277828290113847_38742995 => Added post
+[31/Mar/2019 18:51:39] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1961277828290113847_38742995 => Added post
+[31/Mar/2019 18:51:39] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1941758933128720198_38742995 => Added post
+[31/Mar/2019 18:51:39] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1941758933128720198_38742995 => Added post
+[31/Mar/2019 18:51:39] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1933186277676824084_38742995 => Added post
+[31/Mar/2019 18:51:39] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1933186277676824084_38742995 => Added post
+[31/Mar/2019 18:51:39] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1932376825532907137_38742995 => Added post
+[31/Mar/2019 18:51:39] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1932376825532907137_38742995 => Added post
+[31/Mar/2019 18:51:39] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1913451134284459308_38742995 => Added post
+[31/Mar/2019 18:51:39] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1913451134284459308_38742995 => Added post
+[31/Mar/2019 18:51:39] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1909765201596854294_38742995 => Added post
+[31/Mar/2019 18:51:39] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1909765201596854294_38742995 => Added post
+[31/Mar/2019 18:51:39] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1902729774046153250_38742995 => Added post
+[31/Mar/2019 18:51:39] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1902729774046153250_38742995 => Added post
+[31/Mar/2019 18:51:39] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1896639289765499201_38742995 => Added post
+[31/Mar/2019 18:51:39] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1896639289765499201_38742995 => Added post
+[31/Mar/2019 18:51:40] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1890996537069411423_38742995 => Added post
+[31/Mar/2019 18:51:40] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1890996537069411423_38742995 => Added post
+[31/Mar/2019 18:51:40] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1848186091405071671_38742995 => Added post
+[31/Mar/2019 18:51:40] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1848186091405071671_38742995 => Added post
+[31/Mar/2019 18:51:40] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1839378330383008827_38742995 => Added post
+[31/Mar/2019 18:51:40] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1839378330383008827_38742995 => Added post
+[31/Mar/2019 18:51:40] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1825892741163762342_38742995 => Added post
+[31/Mar/2019 18:51:40] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1825892741163762342_38742995 => Added post
+[31/Mar/2019 18:51:40] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1823708344192656888_38742995 => Added post
+[31/Mar/2019 18:51:40] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1823708344192656888_38742995 => Added post
+[31/Mar/2019 18:51:40] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1819324693455736217_38742995 => Added post
+[31/Mar/2019 18:51:40] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1819324693455736217_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1995370618250780070_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1995370618250780070_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1979351214256662945_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1979351214256662945_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1977264875492585806_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1977264875492585806_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1969304739402732254_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1969304739402732254_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1962844021685806843_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1962844021685806843_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1962014591895847266_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1962014591895847266_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1961277828290113847_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1961277828290113847_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1941758933128720198_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1941758933128720198_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1933186277676824084_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1933186277676824084_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1932376825532907137_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1932376825532907137_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1913451134284459308_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1913451134284459308_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1909765201596854294_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1909765201596854294_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1902729774046153250_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1902729774046153250_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1896639289765499201_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1896639289765499201_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1890996537069411423_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1890996537069411423_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1848186091405071671_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1848186091405071671_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1839378330383008827_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1839378330383008827_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1825892741163762342_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1825892741163762342_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1823708344192656888_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1823708344192656888_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1819324693455736217_38742995 => Added post
+[31/Mar/2019 19:02:21] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1819324693455736217_38742995 => Added post
+[31/Mar/2019 19:05:04] DEBUG [/usr/local/lib/python3.6/site-packages/django/template/base.py:872] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLPattern 'api/docs'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-refresh/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-verify/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '^media\/(?P<path>.*)$'>]], 'path': 'api/v1/auth/rest-auth/login/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>
+[31/Mar/2019 19:05:04] DEBUG [/usr/local/lib/python3.6/site-packages/django/template/base.py:872] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLPattern 'api/docs'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-refresh/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-verify/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '^media\/(?P<path>.*)$'>]], 'path': 'api/v1/auth/rest-auth/login/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>
+[31/Mar/2019 19:05:04] DEBUG [/usr/local/lib/python3.6/site-packages/django/template/base.py:872] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLPattern 'api/docs'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-refresh/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-verify/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '^media\/(?P<path>.*)$'>]], 'path': 'api/v1/auth/rest-auth/login/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>
+[31/Mar/2019 19:05:04] DEBUG [/usr/local/lib/python3.6/site-packages/django/template/base.py:872] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLPattern 'api/docs'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-refresh/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-verify/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '^media\/(?P<path>.*)$'>]], 'path': 'api/v1/auth/rest-auth/login/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>
+[31/Mar/2019 19:05:04] DEBUG [/usr/local/lib/python3.6/site-packages/django/template/base.py:872] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLPattern 'api/docs'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-refresh/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-verify/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '^media\/(?P<path>.*)$'>]], 'path': 'api/v1/auth/rest-auth/login/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>
+[31/Mar/2019 19:05:04] DEBUG [/usr/local/lib/python3.6/site-packages/django/template/base.py:872] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLPattern 'api/docs'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-refresh/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-verify/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '^media\/(?P<path>.*)$'>]], 'path': 'api/v1/auth/rest-auth/login/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>
+[31/Mar/2019 19:05:04] DEBUG [/usr/local/lib/python3.6/site-packages/django/template/base.py:872] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLPattern 'api/docs'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-refresh/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-verify/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '^media\/(?P<path>.*)$'>]], 'path': 'api/v1/auth/rest-auth/login/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>
+[31/Mar/2019 19:05:04] DEBUG [/usr/local/lib/python3.6/site-packages/django/template/base.py:872] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLPattern 'api/docs'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-refresh/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-verify/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '^media\/(?P<path>.*)$'>]], 'path': 'api/v1/auth/rest-auth/login/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>
+[31/Mar/2019 19:05:04] DEBUG [/usr/local/lib/python3.6/site-packages/django/template/base.py:872] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLPattern 'api/docs'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-refresh/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-verify/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '^media\/(?P<path>.*)$'>]], 'path': 'api/v1/auth/rest-auth/login/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+[31/Mar/2019 19:05:04] DEBUG [/usr/local/lib/python3.6/site-packages/django/template/base.py:872] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLPattern 'api/docs'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-refresh/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-verify/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '^media\/(?P<path>.*)$'>]], 'path': 'api/v1/auth/rest-auth/login/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+[31/Mar/2019 19:05:04] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Not Found: /api/v1/auth/rest-auth/login/
+[31/Mar/2019 19:05:04] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Not Found: /api/v1/auth/rest-auth/login/
+[31/Mar/2019 19:05:13] DEBUG [/usr/local/lib/python3.6/site-packages/django/template/base.py:872] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLPattern 'api/docs'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-refresh/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-verify/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '^media\/(?P<path>.*)$'>]], 'path': 'api/v1/auth/login/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>
+[31/Mar/2019 19:05:13] DEBUG [/usr/local/lib/python3.6/site-packages/django/template/base.py:872] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLPattern 'api/docs'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-refresh/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-verify/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '^media\/(?P<path>.*)$'>]], 'path': 'api/v1/auth/login/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>
+[31/Mar/2019 19:05:13] DEBUG [/usr/local/lib/python3.6/site-packages/django/template/base.py:872] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLPattern 'api/docs'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-refresh/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-verify/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '^media\/(?P<path>.*)$'>]], 'path': 'api/v1/auth/login/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>
+[31/Mar/2019 19:05:13] DEBUG [/usr/local/lib/python3.6/site-packages/django/template/base.py:872] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLPattern 'api/docs'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-refresh/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-verify/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '^media\/(?P<path>.*)$'>]], 'path': 'api/v1/auth/login/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>
+[31/Mar/2019 19:05:13] DEBUG [/usr/local/lib/python3.6/site-packages/django/template/base.py:872] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLPattern 'api/docs'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-refresh/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-verify/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '^media\/(?P<path>.*)$'>]], 'path': 'api/v1/auth/login/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>
+[31/Mar/2019 19:05:13] DEBUG [/usr/local/lib/python3.6/site-packages/django/template/base.py:872] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLPattern 'api/docs'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-refresh/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-verify/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '^media\/(?P<path>.*)$'>]], 'path': 'api/v1/auth/login/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>
+[31/Mar/2019 19:05:13] DEBUG [/usr/local/lib/python3.6/site-packages/django/template/base.py:872] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLPattern 'api/docs'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-refresh/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-verify/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '^media\/(?P<path>.*)$'>]], 'path': 'api/v1/auth/login/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>
+[31/Mar/2019 19:05:13] DEBUG [/usr/local/lib/python3.6/site-packages/django/template/base.py:872] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLPattern 'api/docs'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-refresh/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-verify/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '^media\/(?P<path>.*)$'>]], 'path': 'api/v1/auth/login/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>
+[31/Mar/2019 19:05:13] DEBUG [/usr/local/lib/python3.6/site-packages/django/template/base.py:872] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLPattern 'api/docs'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-refresh/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-verify/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '^media\/(?P<path>.*)$'>]], 'path': 'api/v1/auth/login/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+[31/Mar/2019 19:05:13] DEBUG [/usr/local/lib/python3.6/site-packages/django/template/base.py:872] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLPattern 'api/docs'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-refresh/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-verify/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '^media\/(?P<path>.*)$'>]], 'path': 'api/v1/auth/login/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+[31/Mar/2019 19:05:13] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Not Found: /api/v1/auth/login/
+[31/Mar/2019 19:05:13] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Not Found: /api/v1/auth/login/
+[31/Mar/2019 19:05:30] DEBUG [/usr/local/lib/python3.6/site-packages/django/template/base.py:872] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLPattern 'api/docs'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-refresh/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-verify/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '^media\/(?P<path>.*)$'>]], 'path': 'api/v1/auth/login/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>
+[31/Mar/2019 19:05:30] DEBUG [/usr/local/lib/python3.6/site-packages/django/template/base.py:872] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLPattern 'api/docs'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-refresh/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-verify/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '^media\/(?P<path>.*)$'>]], 'path': 'api/v1/auth/login/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>
+[31/Mar/2019 19:05:30] DEBUG [/usr/local/lib/python3.6/site-packages/django/template/base.py:872] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLPattern 'api/docs'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-refresh/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-verify/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '^media\/(?P<path>.*)$'>]], 'path': 'api/v1/auth/login/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>
+[31/Mar/2019 19:05:30] DEBUG [/usr/local/lib/python3.6/site-packages/django/template/base.py:872] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLPattern 'api/docs'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-refresh/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-verify/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '^media\/(?P<path>.*)$'>]], 'path': 'api/v1/auth/login/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>
+[31/Mar/2019 19:05:30] DEBUG [/usr/local/lib/python3.6/site-packages/django/template/base.py:872] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLPattern 'api/docs'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-refresh/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-verify/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '^media\/(?P<path>.*)$'>]], 'path': 'api/v1/auth/login/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>
+[31/Mar/2019 19:05:30] DEBUG [/usr/local/lib/python3.6/site-packages/django/template/base.py:872] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLPattern 'api/docs'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-refresh/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-verify/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '^media\/(?P<path>.*)$'>]], 'path': 'api/v1/auth/login/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>
+[31/Mar/2019 19:05:30] DEBUG [/usr/local/lib/python3.6/site-packages/django/template/base.py:872] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLPattern 'api/docs'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-refresh/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-verify/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '^media\/(?P<path>.*)$'>]], 'path': 'api/v1/auth/login/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>
+[31/Mar/2019 19:05:30] DEBUG [/usr/local/lib/python3.6/site-packages/django/template/base.py:872] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLPattern 'api/docs'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-refresh/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-verify/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '^media\/(?P<path>.*)$'>]], 'path': 'api/v1/auth/login/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>
+[31/Mar/2019 19:05:30] DEBUG [/usr/local/lib/python3.6/site-packages/django/template/base.py:872] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLPattern 'api/docs'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-refresh/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-verify/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '^media\/(?P<path>.*)$'>]], 'path': 'api/v1/auth/login/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+[31/Mar/2019 19:05:30] DEBUG [/usr/local/lib/python3.6/site-packages/django/template/base.py:872] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLPattern 'api/docs'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-refresh/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLPattern 'jwt-verify/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/urls.py'> (None:None) '/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'config.rest_auth_urls' from '/prod-app/config/rest_auth_urls.py'> (rest_auth:rest_auth) 'auth/'>, <URLResolver <module 'rest_auth.registration.urls' from '/usr/local/lib/python3.6/site-packages/rest_auth/registration/urls.py'> (None:None) 'registration/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_InstagramPosts.urls' from '/prod-app/API_InstagramPosts/urls.py'> (instagramPost:instagramPost) 'instagram/'>], [<URLResolver <module 'config.apiv1_urls' from '/prod-app/config/apiv1_urls.py'> (None:None) 'api/v1/'>, <URLResolver <module 'API_Logging.urls' from '/prod-app/API_Logging/urls.py'> (logger:logger) 'logger/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '^media\/(?P<path>.*)$'>]], 'path': 'api/v1/auth/login/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+[31/Mar/2019 19:05:30] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Not Found: /api/v1/auth/login/
+[31/Mar/2019 19:05:30] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Not Found: /api/v1/auth/login/
+[31/Mar/2019 19:09:12] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1995370618250780070_38742995 => Added post
+[31/Mar/2019 19:09:12] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1995370618250780070_38742995 => Added post
+[31/Mar/2019 19:09:12] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1979351214256662945_38742995 => Added post
+[31/Mar/2019 19:09:12] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1979351214256662945_38742995 => Added post
+[31/Mar/2019 19:09:12] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1977264875492585806_38742995 => Added post
+[31/Mar/2019 19:09:12] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1977264875492585806_38742995 => Added post
+[31/Mar/2019 19:09:12] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1969304739402732254_38742995 => Added post
+[31/Mar/2019 19:09:12] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1969304739402732254_38742995 => Added post
+[31/Mar/2019 19:09:12] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1962844021685806843_38742995 => Added post
+[31/Mar/2019 19:09:12] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1962844021685806843_38742995 => Added post
+[31/Mar/2019 19:09:12] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1962014591895847266_38742995 => Added post
+[31/Mar/2019 19:09:12] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1962014591895847266_38742995 => Added post
+[31/Mar/2019 19:09:13] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1961277828290113847_38742995 => Added post
+[31/Mar/2019 19:09:13] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1961277828290113847_38742995 => Added post
+[31/Mar/2019 19:09:13] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1941758933128720198_38742995 => Added post
+[31/Mar/2019 19:09:13] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1941758933128720198_38742995 => Added post
+[31/Mar/2019 19:09:13] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1933186277676824084_38742995 => Added post
+[31/Mar/2019 19:09:13] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1933186277676824084_38742995 => Added post
+[31/Mar/2019 19:09:13] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1932376825532907137_38742995 => Added post
+[31/Mar/2019 19:09:13] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1932376825532907137_38742995 => Added post
+[31/Mar/2019 19:09:13] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1913451134284459308_38742995 => Added post
+[31/Mar/2019 19:09:13] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1913451134284459308_38742995 => Added post
+[31/Mar/2019 19:09:13] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1909765201596854294_38742995 => Added post
+[31/Mar/2019 19:09:13] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1909765201596854294_38742995 => Added post
+[31/Mar/2019 19:09:13] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1902729774046153250_38742995 => Added post
+[31/Mar/2019 19:09:13] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1902729774046153250_38742995 => Added post
+[31/Mar/2019 19:09:13] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1896639289765499201_38742995 => Added post
+[31/Mar/2019 19:09:13] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1896639289765499201_38742995 => Added post
+[31/Mar/2019 19:09:13] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1890996537069411423_38742995 => Added post
+[31/Mar/2019 19:09:13] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1890996537069411423_38742995 => Added post
+[31/Mar/2019 19:09:13] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1848186091405071671_38742995 => Added post
+[31/Mar/2019 19:09:13] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1848186091405071671_38742995 => Added post
+[31/Mar/2019 19:09:13] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1839378330383008827_38742995 => Added post
+[31/Mar/2019 19:09:13] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1839378330383008827_38742995 => Added post
+[31/Mar/2019 19:09:13] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1825892741163762342_38742995 => Added post
+[31/Mar/2019 19:09:13] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1825892741163762342_38742995 => Added post
+[31/Mar/2019 19:09:13] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1823708344192656888_38742995 => Added post
+[31/Mar/2019 19:09:13] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1823708344192656888_38742995 => Added post
+[31/Mar/2019 19:09:13] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1819324693455736217_38742995 => Added post
+[31/Mar/2019 19:09:13] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1819324693455736217_38742995 => Added post
+[31/Mar/2019 19:25:44] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Bad Request: /api/v1/auth/jwt-verify/
+[31/Mar/2019 19:25:44] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Bad Request: /api/v1/auth/jwt-verify/
+[31/Mar/2019 19:41:12] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Unauthorized: /api/v1/auth/user/
+[31/Mar/2019 19:41:12] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Unauthorized: /api/v1/auth/user/
+[31/Mar/2019 19:41:22] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Unauthorized: /api/v1/auth/user/
+[31/Mar/2019 19:41:22] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Unauthorized: /api/v1/auth/user/
+[31/Mar/2019 19:41:45] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Bad Request: /api/v1/auth/jwt-verify/
+[31/Mar/2019 19:41:45] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Bad Request: /api/v1/auth/jwt-verify/
+[31/Mar/2019 19:41:58] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Unauthorized: /api/v1/auth/user/
+[31/Mar/2019 19:41:58] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Unauthorized: /api/v1/auth/user/
+[31/Mar/2019 19:42:21] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Unauthorized: /api/v1/auth/user/
+[31/Mar/2019 19:42:21] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Unauthorized: /api/v1/auth/user/
+[31/Mar/2019 19:42:51] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Unauthorized: /api/v1/auth/user/
+[31/Mar/2019 19:42:51] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Unauthorized: /api/v1/auth/user/
+[31/Mar/2019 19:42:59] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Unauthorized: /api/v1/auth/user/
+[31/Mar/2019 19:42:59] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Unauthorized: /api/v1/auth/user/
+[31/Mar/2019 19:44:25] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Unauthorized: /api/v1/auth/user/
+[31/Mar/2019 19:44:25] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Unauthorized: /api/v1/auth/user/
+[31/Mar/2019 19:44:46] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Unauthorized: /api/v1/auth/user/
+[31/Mar/2019 19:44:46] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Unauthorized: /api/v1/auth/user/
+[31/Mar/2019 19:45:08] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Unauthorized: /api/v1/auth/user/
+[31/Mar/2019 19:45:08] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Unauthorized: /api/v1/auth/user/
+[31/Mar/2019 19:45:19] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Unauthorized: /api/v1/auth/user/
+[31/Mar/2019 19:45:19] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Unauthorized: /api/v1/auth/user/
+[31/Mar/2019 19:50:07] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Bad Request: /api/v1/auth/jwt-verify/
+[31/Mar/2019 19:50:07] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Bad Request: /api/v1/auth/jwt-verify/
+[31/Mar/2019 19:50:28] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Unauthorized: /api/v1/auth/user/
+[31/Mar/2019 19:50:28] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Unauthorized: /api/v1/auth/user/
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1995370618250780070_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1995370618250780070_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1979351214256662945_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1979351214256662945_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1977264875492585806_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1977264875492585806_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1969304739402732254_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1969304739402732254_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1962844021685806843_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1962844021685806843_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1962014591895847266_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1962014591895847266_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1961277828290113847_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1961277828290113847_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1941758933128720198_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1941758933128720198_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1933186277676824084_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1933186277676824084_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1932376825532907137_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1932376825532907137_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1913451134284459308_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1913451134284459308_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1909765201596854294_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1909765201596854294_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1902729774046153250_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1902729774046153250_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1896639289765499201_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1896639289765499201_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1890996537069411423_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1890996537069411423_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1848186091405071671_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1848186091405071671_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1839378330383008827_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1839378330383008827_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1825892741163762342_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1825892741163762342_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1823708344192656888_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1823708344192656888_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1819324693455736217_38742995 => Added post
+[31/Mar/2019 20:00:55] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1819324693455736217_38742995 => Added post
+[31/Mar/2019 20:01:22] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Bad Request: /api/v1/auth/jwt-verify/
+[31/Mar/2019 20:01:22] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Bad Request: /api/v1/auth/jwt-verify/
+[31/Mar/2019 20:01:52] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Unauthorized: /api/v1/auth/user/
+[31/Mar/2019 20:01:52] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Unauthorized: /api/v1/auth/user/
+[31/Mar/2019 20:02:05] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Unauthorized: /api/v1/auth/user/
+[31/Mar/2019 20:02:05] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Unauthorized: /api/v1/auth/user/
+[31/Mar/2019 20:02:35] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Unauthorized: /api/v1/auth/user/
+[31/Mar/2019 20:02:35] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Unauthorized: /api/v1/auth/user/
+[31/Mar/2019 20:03:07] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Unauthorized: /api/v1/auth/user/
+[31/Mar/2019 20:03:07] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Unauthorized: /api/v1/auth/user/
+[31/Mar/2019 20:03:23] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Unauthorized: /api/v1/auth/user/
+[31/Mar/2019 20:03:23] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Unauthorized: /api/v1/auth/user/
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1995370618250780070_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1995370618250780070_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1979351214256662945_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1979351214256662945_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1977264875492585806_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1977264875492585806_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1969304739402732254_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1969304739402732254_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1962844021685806843_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1962844021685806843_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1962014591895847266_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1962014591895847266_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1961277828290113847_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1961277828290113847_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1941758933128720198_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1941758933128720198_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1933186277676824084_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1933186277676824084_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1932376825532907137_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1932376825532907137_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1913451134284459308_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1913451134284459308_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1909765201596854294_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1909765201596854294_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1902729774046153250_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1902729774046153250_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1896639289765499201_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1896639289765499201_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1890996537069411423_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1890996537069411423_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1848186091405071671_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1848186091405071671_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1839378330383008827_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1839378330383008827_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1825892741163762342_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1825892741163762342_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1823708344192656888_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1823708344192656888_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1819324693455736217_38742995 => Added post
+[31/Mar/2019 20:09:54] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1819324693455736217_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1995370618250780070_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1995370618250780070_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1979351214256662945_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1979351214256662945_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1977264875492585806_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1977264875492585806_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1969304739402732254_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1969304739402732254_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1962844021685806843_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1962844021685806843_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1962014591895847266_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1962014591895847266_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1961277828290113847_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1961277828290113847_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1941758933128720198_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1941758933128720198_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1933186277676824084_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1933186277676824084_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1932376825532907137_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1932376825532907137_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1913451134284459308_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1913451134284459308_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1909765201596854294_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1909765201596854294_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1902729774046153250_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1902729774046153250_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1896639289765499201_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1896639289765499201_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1890996537069411423_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1890996537069411423_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1848186091405071671_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1848186091405071671_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1839378330383008827_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1839378330383008827_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1825892741163762342_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1825892741163762342_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1823708344192656888_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1823708344192656888_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1819324693455736217_38742995 => Added post
+[31/Mar/2019 20:11:29] INFO [/prod-app/API_InstagramPosts/helpers.py:110] 1819324693455736217_38742995 => Added post
+[31/Mar/2019 20:55:21] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Bad Request: /api/v1/auth/registration/
+[31/Mar/2019 20:55:21] WARNING [/usr/local/lib/python3.6/site-packages/django/utils/log.py:228] Bad Request: /api/v1/auth/registration/
