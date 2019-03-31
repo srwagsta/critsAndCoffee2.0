@@ -4,12 +4,16 @@ import { AuthService } from '../../services/auth.service'
 import { tap } from 'rxjs/operators';
 
 export class AuthStateModel {
-  token?: string;
-  username?: string;
+  token: string;
+  username: string;
 }
 
 @State<AuthStateModel>({
-  name: 'auth'
+  name: 'auth',
+  defaults: {
+    token: '',
+    username: 'unauthenticated_user'
+  }
 })
 export class AuthState {
 
@@ -18,12 +22,12 @@ export class AuthState {
 
   constructor(private authService: AuthService) {}
 
-  // @Action(Login)
-  // login({ patchState }: StateContext<AuthStateModel>, { payload }: Login) {
-  //   return this.authService.login(payload).pipe(tap((token:string) => {
-  //     patchState({ token, username: payload.username });
-  //   }))
-  // }
+  @Action(Login)
+  login({ patchState }: StateContext<AuthStateModel>, action: Login) {
+    return this.authService.login(action.payload).pipe(tap((jwt_token) => {
+      patchState({ token: jwt_token.token, username: action.payload.username });
+    }));
+  }
   //
   // @Action(Logout)
   // logout({ setState, getState }: StateContext<AuthStateModel>) {

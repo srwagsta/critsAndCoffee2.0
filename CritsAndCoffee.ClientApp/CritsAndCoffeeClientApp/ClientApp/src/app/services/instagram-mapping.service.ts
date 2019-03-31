@@ -13,7 +13,7 @@ const httpOptions = {
 @Injectable({ providedIn: 'root' })
 export class InstagramMappingService {
 
-  constructor(private log: LoggingService, private http: HttpClient,) { }
+  constructor(private log: LoggingService, private http: HttpClient) { }
 
   private _serviceName:string = "Instagram Mapping Service: ";
   private _instagramUrl:string = 'api/v1/instagram';
