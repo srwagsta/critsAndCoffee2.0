@@ -1,7 +1,12 @@
-import {InstagramPostModel} from "./instagram.state";
 
-export class AddInstagramPost {
-  static readonly type = '[Instagram] Add post';
-  constructor(public payloadPost: InstagramPostModel) { }
+export class SetClientLocation {
+  static readonly type = '[Instagram] Set client location';
+  constructor() { }
 }
+
+export class GetInstagramPosts {
+  static readonly type = '[Instagram] Get posts';
+  constructor() { }
+}
+
 

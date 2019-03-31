@@ -29,15 +29,13 @@ export class InstagramMappingService {
   }
 
 
-  public getPosts(){
+  public getPosts(): Observable<InstagramPostModel[]> {
     return this.http.get<InstagramPostModel[]>(`${this._instagramUrl}/posts`, httpOptions)
       .pipe(
         tap(data => this.log.info(`Entry content: ${data}`),
             error =>  catchError(this.handleError(error, [])))
       );
   }
-
-  // TODO: GET post function, DELETE post function
 
   private handleError<T> (operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
