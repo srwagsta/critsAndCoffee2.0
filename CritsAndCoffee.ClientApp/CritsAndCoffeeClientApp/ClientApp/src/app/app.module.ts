@@ -14,7 +14,7 @@ import {
 } from '@angular/material';
 
 // Custom modules
-import { UiModule } from './ui/ui.module';
+import { UiModule } from './modules/ui/ui.module';
 
 // Font awesome icons
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';

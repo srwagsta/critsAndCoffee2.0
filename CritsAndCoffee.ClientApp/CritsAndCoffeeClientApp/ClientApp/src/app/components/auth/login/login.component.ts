@@ -15,6 +15,6 @@ export class LoginComponent implements OnInit {
   }
 
   public onSubmit(){
-    this._store.dispatch(new Login({username: 'srwagsta', password: 'Emmawatsonis110%SEXY'}))
+    // this._store.dispatch(new Login({username: 'username', password: 'password'}))
   }
 }

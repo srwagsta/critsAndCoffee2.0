@@ -1,0 +1,41 @@
+<div class="crits-nav-container">
+  <mat-toolbar color="primary" class="crits-toolbar">
+    <h1 class="crits-brand" routerLink="home">
+      Crits & Coffee
+    </h1>
+
+    <span class="spacer"></span>
+
+    <div #menuIcon class="custom-toggler" (click)="onClick()">
+      <div class="togglerBar1"></div>
+      <div class="togglerBar2"></div>
+      <div class="togglerBar3"></div>
+    </div>
+  </mat-toolbar>
+
+  <mat-sidenav-container (backdropClick)="toggleMenuIcon()" class="crits-sidenav-container">
+    <mat-sidenav #sideNav fixedTopGap="56" (keydown)="toggleMenuIcon()">
+      <mat-nav-list>
+
+        <mat-list-item *ngFor="let link of links" (click)="onClick()">
+          <button mat-icon-button routerLink="{{link.link}}">
+            <mat-icon>{{link.icon}}</mat-icon>
+          </button>
+          <a matLine routerLink="{{link.link}}">{{ link.label }}</a>
+        </mat-list-item>
+
+        <mat-list-item (click)="onClick()">
+          <button mat-icon-button>
+            <mat-icon>description</mat-icon>
+          </button>
+          <a matLine [href]="API_route">API Docs</a>
+        </mat-list-item>
+
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <ng-content></ng-content>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
