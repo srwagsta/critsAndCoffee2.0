@@ -1,16 +1,18 @@
 from flask import Flask
+from API_Logger import api
+from logging.handlers import RotatingFileHandler
+import logging
 
-from API_Quant import api
-from API_Quant.extensions import db, migrate
 
-
-def create_app(config=None, testing=False, cli=False):
+def create_app(config=None, testing=False):
     """Application factory, used to create application
     """
-    app = Flask('API_Logger')
+    file_logger = RotatingFileHandler('/crits-logs/critsAndcoffee.log', maxBytes=1024 * 1024 * 15, backupCount=10)
+    file_logger.setLevel(logging.INFO)
 
+    app = Flask('API_Logger')
+    app.logger.addHandler(file_logger)
     configure_app(app, testing)
-    configure_extensions(app, cli)
     register_blueprints(app)
 
     return app
@@ -27,16 +29,7 @@ def configure_app(app, testing=False):
         app.config.from_object('API_Logger.configtest')
     else:
         # override with env variable, fail silently if not set
-        app.config.from_envvar("API_QUANT_CONFIG", silent=True)
-
-
-def configure_extensions(app, cli):
-    """configure flask extensions
-    """
-    db.init_app(app)
-
-    if cli is True:
-        migrate.init_app(app, db)
+        app.config.from_envvar("API_LOGGER_CONFIG", silent=True)
 
 
 def register_blueprints(app):

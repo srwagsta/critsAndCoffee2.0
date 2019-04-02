@@ -3,19 +3,17 @@ FROM  intelpython/intelpython3_full:latest
 RUN addgroup --system quant \
     && adduser --system --group quant
 
-WORKDIR /quant_api
+WORKDIR /quant_api_root
 
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 RUN pip install gunicorn
 
-COPY API_Quant /app
-#COPY app.py config.py ./
+COPY . /quant_api_root
 
 COPY Docker_scripts/start.prod /start
 RUN chmod +x /start
 RUN chown quant /start
-
 
 COPY Docker_scripts/entrypoint /entrypoint
 RUN sed -i 's/\r//' /entrypoint
@@ -24,9 +22,8 @@ RUN chown quant /entrypoint
 
 ENV FLASK_APP app.py
 
-RUN chown -R quant /app
+RUN chown -R quant /quant_api_root
 
 USER quant
 
-EXPOSE 5000
 ENTRYPOINT ["/entrypoint"]

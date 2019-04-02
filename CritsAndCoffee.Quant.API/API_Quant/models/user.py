@@ -1,4 +1,4 @@
-# from API_Quant.extensions import db, pwd_context
+# from API_Logger.extensions import db, pwd_context
 #
 #
 # class User(db.Model):

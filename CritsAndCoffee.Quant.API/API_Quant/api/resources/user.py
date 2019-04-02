@@ -4,14 +4,6 @@ from API_Quant.extensions import ma, db
 from API_Quant.commons.pagination import paginate
 from API_Quant.decorators.jwt_validation import jwt_required
 
-class DataList(Resource):
-    """Creation and get_all
-    """
-    method_decorators = [jwt_required]
-
-    def get(self):
-        return {'Status': 'Success'}
-
 
 # class UserResource(Resource):
 #     """Single object resource

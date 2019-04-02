@@ -19,7 +19,7 @@ def init():
     and create a new user named admin with password admin
     """
     from API_Quant.extensions import db
-    # from API_Quant.models import User
+    # from API_Logger.models import User
     # click.echo("create database")
     # db.create_all()
     # click.echo("done")

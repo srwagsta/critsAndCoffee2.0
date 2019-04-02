@@ -9,14 +9,8 @@ setup(
     packages=find_packages(exclude=['tests']),
     install_requires=[
         'flask',
-        'flask-sqlalchemy',
         'flask-restful',
-        'flask-migrate',
-        'flask-marshmallow',
-        'marshmallow-sqlalchemy',
-        'python-dotenv',
-        'passlib',
-        'psycopg2'
+        'python-dotenv'
     ],
     entry_points={
         'console_scripts': [

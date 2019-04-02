@@ -81,8 +81,7 @@ THIRD_PARTY_APPS = [
 ]
 LOCAL_APPS = [
     'crits_and_coffee.users.apps.UsersAppConfig',
-    'API_InstagramPosts.apps.InstagramPostsConfig',
-    'API_Logging.apps.ApiLoggingConfig'
+    'API_InstagramPosts.apps.InstagramPostsConfig'
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS

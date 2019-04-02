@@ -4,11 +4,16 @@ tls self_signed
         websocket
 	    insecure_skip_verify
     }
-    proxy /api/v1/auth instagram-api:8000 {
+
+    proxy /api/v1/quant quant-api:5000 {
         transparent
     }
 
-    proxy /api/v1/logger instagram-api:8000 {
+    proxy /api/v1/logger logger-api:5000 {
+        transparent
+    }
+
+    proxy /api/v1/auth instagram-api:8000 {
         transparent
     }
 

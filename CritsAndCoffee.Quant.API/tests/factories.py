@@ -1,4 +1,4 @@
-# from API_Quant.models import User
+# from API_Logger.models import User
 #
 #
 # def user_factory(i):

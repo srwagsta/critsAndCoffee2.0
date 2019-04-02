@@ -1,5 +1,3 @@
 #!/bin/sh
 
-flask db upgrade
-flask translate compile
-/usr/local/bin/gunicorn API_Quant.wsgi --bind 0.0.0.0:5000 --chdir=/app
+gunicorn  --chdir /quant_api_root --bind 0.0.0.0:5000 API_Quant.wsgi:app

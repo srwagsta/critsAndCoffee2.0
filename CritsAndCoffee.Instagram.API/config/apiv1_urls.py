@@ -7,7 +7,4 @@ urlpatterns = [
     # Instagram API
     path('instagram/', include('API_InstagramPosts.urls')),
 
-    # Logging API
-    path('logger/', include('API_Logging.urls')),
-
 ]

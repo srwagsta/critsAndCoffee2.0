@@ -1,0 +1,22 @@
+FROM  python:slim
+
+RUN addgroup --system logger \
+    && adduser --system --group logger
+
+WORKDIR /logger_api_root
+
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
+RUN pip install gunicorn
+
+COPY . /logger_api_root
+
+COPY Docker_scripts/start.prod /start
+RUN chmod +x /start
+RUN chown logger /start
+
+ENV FLASK_APP app.py
+
+RUN chown -R logger /logger_api_root
+
+USER logger
