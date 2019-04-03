@@ -7,6 +7,7 @@ from API_Logger.decorators.jwt_validation import jwt_required
 logger = logging.getLogger('LOG API')
 file_handler = RotatingFileHandler('/crits-logs/critsAndcoffee.log', maxBytes=1024 * 1024 * 15, backupCount=10)\
     .setLevel(logging.INFO)
+
 logger.addHandler(file_handler)
 
 
@@ -15,7 +16,7 @@ class CriticalLogger(Resource):
 
     def post(self):
         try:
-            logger.critical(request.json)
+            logger.critical(request.remote_addr)
             return {}, 201
         except Exception as e:
             logger.error(f'API failed to parse logging request => {e}')

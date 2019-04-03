@@ -7,7 +7,7 @@ from API_Quant.extensions import db, migrate
 def create_app(config=None, testing=False, cli=False):
     """Application factory, used to create application
     """
-    app = Flask('API_Logger')
+    app = Flask('API_Quant')
 
     configure_app(app, testing)
     configure_extensions(app, cli)
@@ -20,11 +20,11 @@ def configure_app(app, testing=False):
     """set configuration for application
     """
     # default configuration
-    app.config.from_object('API_Logger.config')
+    app.config.from_object('API_Quant.config')
 
     if testing is True:
         # override with testing config
-        app.config.from_object('API_Logger.configtest')
+        app.config.from_object('API_Quant.configtest')
     else:
         # override with env variable, fail silently if not set
         app.config.from_envvar("API_QUANT_CONFIG", silent=True)

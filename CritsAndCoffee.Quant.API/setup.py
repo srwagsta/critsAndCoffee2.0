@@ -4,7 +4,7 @@ __version__ = '0.1'
 
 
 setup(
-    name='API_Logger',
+    name='API_Quant',
     version=__version__,
     packages=find_packages(exclude=['tests']),
     install_requires=[
@@ -20,7 +20,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'API_Logger = API_Logger.manage:cli'
+            'API_Quant = API_Quant.manage:cli'
         ]
     }
 )

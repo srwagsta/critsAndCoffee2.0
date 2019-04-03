@@ -3,7 +3,6 @@ flask-restful
 flask-migrate
 flask-sqlalchemy
 flask-marshmallow
-flask-jwt-extended
 marshmallow-sqlalchemy
 python-dotenv
 passlib

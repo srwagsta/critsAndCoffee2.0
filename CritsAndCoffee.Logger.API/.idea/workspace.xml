@@ -3,31 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d4ff619e-abd9-4cf9-a2b5-15bf7e6ac91b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.Instagram.API/API_Logging/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.Instagram.API/API_Logging/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.Instagram.API/API_Logging/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.Instagram.API/API_Logging/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.Instagram.API/API_Logging/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.Instagram.API/API_Logging/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.Instagram.API/config/apiv1_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.Instagram.API/config/apiv1_urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.Instagram.API/config/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.Instagram.API/config/settings/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.Quant.API/API_Quant/api/resources/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.Quant.API/API_Quant/api/resources/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.Quant.API/API_Quant/api/resources/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.Quant.API/API_Quant/api/resources/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.Quant.API/API_Quant/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.Quant.API/API_Quant/api/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.Quant.API/API_Quant/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.Quant.API/API_Quant/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.Quant.API/API_Quant/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.Quant.API/API_Quant/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.Quant.API/API_Quant/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.Quant.API/API_Quant/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.Quant.API/API_Quant/models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.Quant.API/API_Quant/models/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.Quant.API/API_Quant/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.Quant.API/API_Quant/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.Quant.API/Docker_scripts/start.prod" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.Quant.API/Docker_scripts/start.prod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.Quant.API/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.Quant.API/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.Quant.API/tests/factories.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.Quant.API/tests/factories.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.Quant.API/tox.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Docker/compose/.env" beforeDir="false" afterPath="$PROJECT_DIR$/../Docker/compose/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Docker/compose/local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../Docker/compose/local.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Docker/compose/local/Caddyfile.local" beforeDir="false" afterPath="$PROJECT_DIR$/../Docker/compose/local/Caddyfile.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Docker/compose/local/Dockerfile.Quant.API" beforeDir="false" afterPath="$PROJECT_DIR$/../Docker/compose/local/Dockerfile.Quant.API" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Docker/logs/critsAndcoffee.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_Logger/api/resources/log.py" beforeDir="false" afterPath="$PROJECT_DIR$/API_Logger/api/resources/log.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Docker/compose/production.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../Docker/compose/production.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Docker/compose/production/caddy/Caddyfile" beforeDir="false" afterPath="$PROJECT_DIR$/../Docker/compose/production/Caddyfile.production" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Docker/compose/production/caddy/Dockerfile.prod" beforeDir="false" afterPath="$PROJECT_DIR$/../Docker/compose/production/Dockerfile.caddy.Prod" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,12 +22,12 @@
     <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/API_Logger/api/resources/log.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+            <state relative-caret-position="254">
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -56,10 +36,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/API_Logger/api/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/API_Logger/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="230">
+              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -111,6 +103,19 @@
               <item name="CritsAndCoffee.Logger.API" type="462c0819:PsiDirectoryNode" />
               <item name="API_Logger" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="CritsAndCoffee.Logger.API" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CritsAndCoffee.Logger.API" type="462c0819:PsiDirectoryNode" />
+              <item name="API_Logger" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CritsAndCoffee.Logger.API" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CritsAndCoffee.Logger.API" type="462c0819:PsiDirectoryNode" />
+              <item name="API_Logger" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -146,22 +151,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554174298419</updated>
-      <workItem from="1554174299990" duration="5394000" />
+      <workItem from="1554174299990" duration="5607000" />
+      <workItem from="1554295488914" duration="1590000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5394000" />
+    <option name="totallyTimeSpent" value="7197000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17447495" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17932148" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Docker" />
-      <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -173,12 +176,14 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Python Console" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Data View" order="3" />
+      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,16 +240,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/API_Logger/api/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/API_Logger/wsgi.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -255,22 +250,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/API_Logger/app.py">
+    <entry file="file://$PROJECT_DIR$/API_Logger/api/resources/log.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="254">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#0#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/API_Logger/api/resources/log.py">
+    <entry file="file://$PROJECT_DIR$/API_Logger/api/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+        <state relative-caret-position="276">
+          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
           <folding>
-            <element signature="e#0#34#0" expanded="true" />
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API_Logger/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>

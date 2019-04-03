@@ -4,62 +4,13 @@ volumes:
   production_postgres_data: {}
   production_postgres_data_backups: {}
   production_caddy: {}
+  production_logs: {}
 
 services:
-  front-end-app:
-    image: ${DOCKER_REGISTRY}crits_and_coffee_client_app:${DOCKER_PRODUCTION_TAG}
-    container_name: client-app-production
-    build:
-      context: ../../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp
-      dockerfile: ../../Docker/compose/production/Dockerfile.ClientApp.Prod
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Production
-      - NODE_ENV=production
-    depends_on:
-      - postgres
-      - instagram-api
-    networks:
-      - front-end
-
-  instagram-api: &instagram-api
-    image: ${DOCKER_REGISTRY}crits_and_coffee_api:${INSTAGRAM_API_PRODUCTION_TAG}
-    container_name: instagram-api-production
-    build:
-      context: ../../CritsAndCoffee.Instagram.API
-      dockerfile: ../Docker/compose/production/Dockerfile.Instagram.API.Prod
-    volumes:
-      - ../logs/:/crits-logs/
-    links:
-      - selenium
-    depends_on:
-      - postgres
-      - redis
-    networks:
-      - front-end
-      - back-end
-    env_file:
-      - ../.envs/.private/.instagram
-      - ../.envs/.production/.django
-      - ../.envs/.production/.postgres
-    command: /start
-
-  postgres:
-    build:
-      context: ./production/postgres
-      dockerfile: ./Dockerfile
-    image: ${DOCKER_REGISTRY}crits_and_coffee_postgres:${DOCKER_PRODUCTION_TAG}
-    networks:
-      - back-end
-    volumes:
-      - production_postgres_data:/var/lib/postgresql/data
-      - production_postgres_data_backups:/backups
-    env_file:
-      - ../.envs/.production/.postgres
-
   caddy:
     build:
       context: ./production/caddy
-      dockerfile: ./Dockerfile.prod
+      dockerfile: production/caddy/Dockerfile.caddy.Prod
     image: ${DOCKER_REGISTRY}crits_and_coffee_caddy:${DOCKER_PRODUCTION_TAG}
     depends_on:
       - front-end-app
@@ -74,6 +25,91 @@ services:
     ports:
       - "0.0.0.0:80:80"
       - "0.0.0.0:443:443"
+
+  front-end-app:
+    image: ${DOCKER_REGISTRY}crits_and_coffee_client_app:${DOCKER_PRODUCTION_TAG}
+    container_name: client-app-production
+    build:
+      context: ../../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp
+      dockerfile: ../../Docker/compose/production/Dockerfile.ClientApp.Prod
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://+:80
+      - NODE_ENV=production
+    depends_on:
+      - postgres
+      - instagram-api
+      - quant-api
+      - logger-api
+    networks:
+      - back-end
+
+  instagram-api: &instagram-api
+    image: ${DOCKER_REGISTRY}crits_and_coffee_api:${INSTAGRAM_API_PRODUCTION_TAG}
+    container_name: instagram-api-production
+    build:
+      context: ../../CritsAndCoffee.Instagram.API
+      dockerfile: ../Docker/compose/production/Dockerfile.Instagram.API.Prod
+    volumes:
+      - production_logs:/crits-logs/
+    links:
+      - selenium
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - back-end
+    env_file:
+      - ../.envs/.private/.instagram
+      - ../.envs/.production/.django
+      - ../.envs/.production/.postgres
+    command: /start
+
+  quant-api:
+    image: ${DOCKER_REGISTRY}crits_and_coffee_api:${QUANT_API_LOCAL_TAG}
+    container_name: quant-api-local
+    build:
+      context: ../../CritsAndCoffee.Quant.API
+      dockerfile: ../Docker/compose/local/Dockerfile.Quant.API
+    depends_on:
+      - postgres
+      - instagram-api
+      - logger-api
+    networks:
+      - back-end
+    env_file:
+      - ../.envs/.local/.postgres
+      - ../.envs/.local/.flask_quant
+    command: /start
+
+  logger-api:
+    image: ${DOCKER_REGISTRY}crits_and_coffee_api:${LOGGER_API_LOCAL_TAG}
+    container_name: logger-api-local
+    build:
+      context: ../../CritsAndCoffee.Logger.API
+      dockerfile: ../Docker/compose/local/Dockerfile.Logger.API
+    volumes:
+      - production_logs:/crits-logs/
+    depends_on:
+      - postgres
+    networks:
+      - back-end
+    env_file:
+      - ../.envs/.local/.flask_logger
+    command: /start
+
+  postgres:
+    build:
+      context: ./production/postgres
+      dockerfile: ./Dockerfile
+    image: ${DOCKER_REGISTRY}crits_and_coffee_postgres:${DOCKER_PRODUCTION_TAG}
+    networks:
+      - back-end
+    volumes:
+      - production_postgres_data:/var/lib/postgresql/data
+      - production_postgres_data_backups:/backups
+    env_file:
+      - ../.envs/.production/.postgres
 
   redis:
     image: redis:3.2
