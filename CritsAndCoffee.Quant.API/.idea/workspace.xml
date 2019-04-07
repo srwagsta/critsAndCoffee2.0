@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75cf0d85-bcf1-4ca9-8d65-40d4235bb1e7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/.idea/.idea.CritsAndCoffeeClientApp/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/.idea/.idea.CritsAndCoffeeClientApp/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/.idea/.idea.CritsAndCoffeeClientApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/.idea/.idea.CritsAndCoffeeClientApp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/services/logging.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/services/logging.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/state/instagram/instagram.state.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/state/instagram/instagram.state.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.Logger.API/.idea/CritsAndCoffee.Logger.API.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.Logger.API/.idea/CritsAndCoffee.Logger.API.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.Logger.API/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.Logger.API/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.Logger.API/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.Logger.API/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.pip.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.pip.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Docker/compose/local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../Docker/compose/local.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Docker/compose/production.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../Docker/compose/production.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.Logger.API/API_Logger/api/resources/log.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.Logger.API/API_Logger/api/resources/log.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_Quant/api/resources/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/API_Quant/api/resources/data.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,23 +26,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/API_Quant/api/resources/data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-              <folding>
-                <element signature="e#0#34#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="46">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/requirements.pip.txt">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/API_Quant/api/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+            <state relative-caret-position="46">
+              <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -66,7 +68,6 @@
         <option value="$PROJECT_DIR$/API_Quant/api/resources/__init__.py" />
         <option value="$PROJECT_DIR$/API_Quant/api/views.py" />
         <option value="$PROJECT_DIR$/API_Quant/config.py" />
-        <option value="$PROJECT_DIR$/API_Quant/api/resources/data.py" />
         <option value="$PROJECT_DIR$/API_Quant/models/__init__.py" />
         <option value="$PROJECT_DIR$/API_Quant/configtest.py" />
         <option value="$PROJECT_DIR$/API_Quant/extensions.py" />
@@ -76,6 +77,7 @@
         <option value="$PROJECT_DIR$/API_Quant/__init__.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/requirements.pip.txt" />
+        <option value="$PROJECT_DIR$/API_Quant/api/resources/data.py" />
       </list>
     </option>
   </component>
@@ -164,12 +166,12 @@
       <updated>1554168272236</updated>
       <workItem from="1554168277017" duration="4150000" />
       <workItem from="1554297108371" duration="3396000" />
-      <workItem from="1554608951299" duration="1042000" />
+      <workItem from="1554608951299" duration="2591000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8588000" />
+    <option name="totallyTimeSpent" value="10137000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="0" />
@@ -209,16 +211,6 @@
           <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Quant/api/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -351,20 +343,27 @@
     <entry file="file://$PROJECT_DIR$/requirements.conda.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/API_Quant/api/resources/data.py">
+    <entry file="file://$PROJECT_DIR$/requirements.pip.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="230">
+          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API_Quant/api/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
           <folding>
-            <element signature="e#0#34#0" expanded="true" />
+            <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.pip.txt">
+    <entry file="file://$PROJECT_DIR$/API_Quant/api/resources/data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        <state relative-caret-position="46">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>

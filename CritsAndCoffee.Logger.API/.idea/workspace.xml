@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4ff619e-abd9-4cf9-a2b5-15bf7e6ac91b" name="Default Changelist" comment="" />
+    <list default="true" id="d4ff619e-abd9-4cf9-a2b5-15bf7e6ac91b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/services/logging.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/services/logging.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/state/instagram/instagram.state.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/state/instagram/instagram.state.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/CritsAndCoffee.Logger.API.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CritsAndCoffee.Logger.API.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_Logger/api/resources/log.py" beforeDir="false" afterPath="$PROJECT_DIR$/API_Logger/api/resources/log.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.Quant.API/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.Quant.API/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.Quant.API/API_Quant/api/resources/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.Quant.API/API_Quant/api/resources/data.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/API_Logger/api/resources/log.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+            <state relative-caret-position="1541">
+              <caret line="67" column="100" selection-start-line="67" selection-start-column="100" selection-end-line="67" selection-end-column="100" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -43,7 +53,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/API_Logger/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="230">
               <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
@@ -125,7 +135,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -152,17 +162,18 @@
       <workItem from="1554174299990" duration="5607000" />
       <workItem from="1554295488914" duration="1590000" />
       <workItem from="1554607080319" duration="1755000" />
+      <workItem from="1554648400246" duration="643000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8952000" />
+    <option name="totallyTimeSpent" value="9595000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18174475" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18416801" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -250,6 +261,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/API_Logger/api/resources/log.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1541">
+          <caret line="67" column="100" selection-start-line="67" selection-start-column="100" selection-end-line="67" selection-end-column="100" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/API_Logger/api/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -262,20 +283,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/API_Logger/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="230">
           <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Logger/api/resources/log.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
           </folding>
         </state>
       </provider>

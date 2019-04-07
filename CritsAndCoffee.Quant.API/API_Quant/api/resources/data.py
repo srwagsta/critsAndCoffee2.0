@@ -1,4 +1,5 @@
 from flask_restful import Resource
+import quandl
 from API_Quant.decorators.jwt_validation import jwt_required
 
 

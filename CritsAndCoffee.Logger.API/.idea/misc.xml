@@ -19,5 +19,5 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Remote Python 3.6.8 Docker (srwagsta/crits_and_coffee_api:quant-local)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Remote Python 3.7.3 Docker (srwagsta/crits_and_coffee_api:logger-local)" project-jdk-type="Python SDK" />
 </project>

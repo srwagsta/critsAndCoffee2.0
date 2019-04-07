@@ -22,8 +22,7 @@ export interface InstagramPostListModel {
 })
 export class InstagramPostListState implements NgxsAfterBootstrap {
 
-  constructor(private log: LoggingService,
-              private instagramService: InstagramMappingService) {
+  constructor(private _instagramService: InstagramMappingService) {
   }
 
   ngxsAfterBootstrap(ctx: StateContext<InstagramPostListModel>) {
@@ -33,14 +32,14 @@ export class InstagramPostListState implements NgxsAfterBootstrap {
 
   @Action(SetClientLocation)
   setLocation({patchState}: StateContext<InstagramPostListModel>) {
-    this.instagramService.getClientPosition().subscribe(location => {
+    this._instagramService.getClientPosition().subscribe(location => {
       patchState({clientPosition: {latitude: location.coords.latitude, longitude: location.coords.longitude}});
     });
   }
 
   @Action(GetInstagramPosts)
   getPosts({patchState}: StateContext<InstagramPostListModel>) {
-    this.instagramService.getPosts().subscribe(posts => {
+    this._instagramService.getPosts().subscribe(posts => {
       patchState({posts: posts});
     });
   }

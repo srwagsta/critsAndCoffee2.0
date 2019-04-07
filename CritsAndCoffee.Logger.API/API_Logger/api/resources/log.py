@@ -16,7 +16,7 @@ class CriticalLogger(Resource):
 
     def post(self):
         try:
-            logger.critical(f'{datetime.utcnow()} CRITICAL => Source:({request.remote_addr}) {request.values.to_dict()}')
+            logger.critical(f'{datetime.utcnow()} CRITICAL => Source:({request.remote_addr}) {request.data}')
             # Testing the logging format
             return {}, 201
         except Exception as e:
@@ -29,7 +29,7 @@ class ErrorLogger(Resource):
 
     def post(self):
         try:
-            logger.error(f'{datetime.utcnow()} ERROR => Source:({request.remote_addr}) {request.values.to_dict()}')
+            logger.error(f'{datetime.utcnow()} ERROR => Source:({request.remote_addr}) {request.data}')
             return {}, 201
         except Exception as e:
             logger.error(f'API failed to parse logging request => {e}')
@@ -41,7 +41,7 @@ class WarningLogger(Resource):
 
     def post(self):
         try:
-            logger.warning(f'{datetime.utcnow()} WARNING => Source:({request.remote_addr}) {request.values.to_dict()}')
+            logger.warning(f'{datetime.utcnow()} WARNING => Source:({request.remote_addr}) {request.data}')
             return {}, 201
         except Exception as e:
             logger.error(f'API failed to parse logging request => {e}')
@@ -53,7 +53,7 @@ class InfoLogger(Resource):
 
     def post(self):
         try:
-            logger.info(f'{datetime.utcnow()} INFO => Source:({request.remote_addr}) {request.values.to_dict()}')
+            logger.info(f'{datetime.utcnow()} INFO => Source:({request.remote_addr}) {request.data}')
             return {}, 201
         except Exception as e:
             logger.error(f'API failed to parse logging request => {e}')
@@ -65,7 +65,7 @@ class DebugLogger(Resource):
 
     def post(self):
         try:
-            logger.debug(f'{datetime.utcnow()} DEBUG => Source:({request.remote_addr}) {request.values.to_dict()}')
+            logger.debug(f'{datetime.utcnow()} DEBUG => Source:({request.remote_addr}) {request.data}')
             return {}, 201
         except Exception as e:
             logger.error(f'API failed to parse logging request => {e}')
