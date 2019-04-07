@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$USER_HOME$/.Rider2018.3/system/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/.Rider2018.3/system/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_CritsAndCoffeeClientApp.1173559916.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="CritsAndCoffeeClientApp" t="IncludeRecursive">
         <e p=".dockerignore" t="Include" />
         <e p=".gitignore" t="Include" />
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
         <e p="ClientApp" t="Include">
           <e p=".editorconfig" t="Include" />
           <e p=".gitignore" t="Include" />
@@ -40,6 +41,10 @@
             <e p="@fortawesome/free-brands-svg-icons" t="IncludeRecursive" />
             <e p="@fortawesome/free-solid-svg-icons" t="IncludeRecursive" />
             <e p="@ng-bootstrap/ng-bootstrap" t="IncludeRecursive" />
+            <e p="@ngxs/devtools-plugin" t="IncludeRecursive" />
+            <e p="@ngxs/logger-plugin" t="IncludeRecursive" />
+            <e p="@ngxs/router-plugin" t="IncludeRecursive" />
+            <e p="@ngxs/store" t="IncludeRecursive" />
             <e p="@types" t="IncludeRecursive">
               <e p="jasmine" t="IncludeRecursive" />
               <e p="jasminewd2" t="IncludeRecursive" />
@@ -124,6 +129,33 @@
                   <e p="app.component.spec.ts" t="Include" />
                   <e p="app.component.ts" t="Include" />
                 </e>
+                <e p="auth" t="Include">
+                  <e p="login" t="Include">
+                    <e p="login.component.html" t="Include" />
+                    <e p="login.component.scss" t="Include" />
+                    <e p="login.component.ts" t="Include" />
+                  </e>
+                  <e p="logout" t="Include">
+                    <e p="logout.component.html" t="Include" />
+                    <e p="logout.component.scss" t="Include" />
+                    <e p="logout.component.ts" t="Include" />
+                  </e>
+                  <e p="password-change" t="Include">
+                    <e p="password-change.component.html" t="Include" />
+                    <e p="password-change.component.scss" t="Include" />
+                    <e p="password-change.component.ts" t="Include" />
+                  </e>
+                  <e p="password-reset" t="Include">
+                    <e p="password-reset.component.html" t="Include" />
+                    <e p="password-reset.component.scss" t="Include" />
+                    <e p="password-reset.component.ts" t="Include" />
+                  </e>
+                  <e p="register" t="Include">
+                    <e p="register.component.html" t="Include" />
+                    <e p="register.component.scss" t="Include" />
+                    <e p="register.component.ts" t="Include" />
+                  </e>
+                </e>
                 <e p="home" t="Include">
                   <e p="crits-hero" t="Include">
                     <e p="crits-hero.component.html" t="Include" />
@@ -179,34 +211,51 @@
                 </e>
               </e>
               <e p="models" t="Include">
+                <e p="auth-user.model.ts" t="Include" />
                 <e p="instagram-post.model.ts" t="Include" />
               </e>
+              <e p="modules" t="Include">
+                <e p="ui" t="Include">
+                  <e p="footer" t="Include">
+                    <e p="footer.component.html" t="Include" />
+                    <e p="footer.component.spec.ts" t="Include" />
+                    <e p="footer.component.ts" t="Include" />
+                  </e>
+                  <e p="header" t="Include">
+                    <e p="header.component.html" t="Include" />
+                    <e p="header.component.spec.ts" t="Include" />
+                    <e p="header.component.ts" t="Include" />
+                  </e>
+                  <e p="layout" t="Include">
+                    <e p="layout.component.html" t="Include" />
+                    <e p="layout.component.spec.ts" t="Include" />
+                    <e p="layout.component.ts" t="Include" />
+                  </e>
+                  <e p="ui.module.scss" t="Include" />
+                  <e p="ui.module.ts" t="Include" />
+                </e>
+              </e>
               <e p="services" t="Include">
+                <e p="auth.service.ts" t="Include" />
                 <e p="instagram-mapping.service.ts" t="Include" />
                 <e p="logging.service.ts" t="Include" />
                 <e p="tests" t="Include">
+                  <e p="auth.service.spec.ts" t="Include" />
                   <e p="instagram-mapping.service.spec.ts" t="Include" />
                   <e p="logging.service.spec.ts" t="Include" />
                 </e>
               </e>
-              <e p="ui" t="Include">
-                <e p="footer" t="Include">
-                  <e p="footer.component.html" t="Include" />
-                  <e p="footer.component.spec.ts" t="Include" />
-                  <e p="footer.component.ts" t="Include" />
+              <e p="state" t="Include">
+                <e p="app.actions.ts" t="Include" />
+                <e p="app.state.ts" t="Include" />
+                <e p="auth" t="Include">
+                  <e p="auth.actions.ts" t="Include" />
+                  <e p="auth.state.ts" t="Include" />
                 </e>
-                <e p="header" t="Include">
-                  <e p="header.component.html" t="Include" />
-                  <e p="header.component.spec.ts" t="Include" />
-                  <e p="header.component.ts" t="Include" />
+                <e p="instagram" t="Include">
+                  <e p="instagram.actions.ts" t="Include" />
+                  <e p="instagram.state.ts" t="Include" />
                 </e>
-                <e p="layout" t="Include">
-                  <e p="layout.component.html" t="Include" />
-                  <e p="layout.component.spec.ts" t="Include" />
-                  <e p="layout.component.ts" t="Include" />
-                </e>
-                <e p="ui.module.scss" t="Include" />
-                <e p="ui.module.ts" t="Include" />
               </e>
             </e>
             <e p="assets" t="Include">
@@ -276,19 +325,6 @@
           <e p="SampleDataController.cs" t="Include" />
         </e>
         <e p="CritsAndCoffeeClientApp.csproj" t="IncludeRecursive" />
-        <e p="Pages" t="Include">
-          <e p="Error.cshtml" t="Include" />
-          <e p="Error.cshtml.cs" t="Include" />
-          <e p="_ViewImports.cshtml" t="Include" />
-        </e>
-        <e p="Program.cs" t="Include" />
-        <e p="Properties" t="Include">
-          <e p="launchSettings.json" t="Include" />
-        </e>
-        <e p="Startup.cs" t="Include" />
-        <e p="appsettings.Development.json" t="Include" />
-        <e p="appsettings.json" t="Include" />
-        <e p="bin" t="ExcludeRecursive" />
         <e p="docker-compose.yml" t="Include" />
         <e p="docker-scripts" t="Include">
           <e p="start.sh" t="Include" />
@@ -300,6 +336,16 @@
             </e>
           </e>
         </e>
+        <e p="pages" t="Include">
+          <e p="_ViewImports.cshtml" t="Include" />
+          <e p="Error.cshtml" t="Include" />
+          <e p="Error.cshtml.cs" t="Include" />
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
         <e p="wwwroot" t="Include">
           <e p="favicon.png" t="Include" />
         </e>
@@ -307,5 +353,7 @@
       <e p="CritsAndCoffeeClientApp.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />
     </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2018.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.3/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_CritsAndCoffeeClientApp.-1616525923.00" t="ExcludeRecursive" />
   </component>
 </project>

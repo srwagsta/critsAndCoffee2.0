@@ -8,3 +8,4 @@ python-dotenv
 passlib
 tox
 psycopg2-binary
+quandl

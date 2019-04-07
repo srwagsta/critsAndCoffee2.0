@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7a6df5cd-21fb-440d-80e7-2b6197104334" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CritsAndCoffeeClientApp/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CritsAndCoffeeClientApp/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CritsAndCoffeeClientApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CritsAndCoffeeClientApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/crits-hero/crits-hero.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/crits-hero/crits-hero.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Docker/logs/critsAndcoffee.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Docker/logs/critsAndcoffee.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.Logger.API/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.Logger.API/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,11 +20,6 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="115">
                   <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-                  <folding>
-                    <marker date="1552950405092" expanded="true" signature="78:302" ph="{...}" />
-                    <marker date="1552950405092" expanded="true" signature="177:300" ph="{...}" />
-                    <marker date="1552950405092" expanded="true" signature="235:294" ph="{...}" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -39,8 +31,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/services/instagram-mapping.service.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="734">
-                  <caret line="53" selection-start-line="53" selection-end-line="53" />
+                <state relative-caret-position="1104">
+                  <caret line="51" selection-start-line="51" selection-end-line="51" />
                   <folding>
                     <element signature="e#0#43#0" expanded="true" />
                   </folding>
@@ -51,8 +43,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/crits-hero/crits-hero.component.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="575">
-                  <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+                <state relative-caret-position="402">
+                  <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
                 </state>
               </provider>
             </entry>
@@ -74,11 +66,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="43" />
-    <option name="width" value="1260" />
-    <option name="height" value="737" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="777" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -86,7 +77,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -99,78 +90,12 @@
               <item name="CritsAndCoffeeClientApp" type="24d0babc:SolutionExplorerModelNode" />
               <item name="CritsAndCoffeeClientApp" type="24d0babc:SolutionExplorerModelNode" />
             </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="CritsAndCoffeeClientApp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="CritsAndCoffeeClientApp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="ClientApp" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="CritsAndCoffeeClientApp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="CritsAndCoffeeClientApp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="ClientApp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="CritsAndCoffeeClientApp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="CritsAndCoffeeClientApp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="ClientApp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="app" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="CritsAndCoffeeClientApp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="CritsAndCoffeeClientApp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="ClientApp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="app" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="components" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="CritsAndCoffeeClientApp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="CritsAndCoffeeClientApp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="ClientApp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="app" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="components" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="home" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="CritsAndCoffeeClientApp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="CritsAndCoffeeClientApp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="ClientApp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="app" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="components" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="home" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="crits-hero" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="CritsAndCoffeeClientApp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="CritsAndCoffeeClientApp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="ClientApp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="app" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="services" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="CritsAndCoffeeClientApp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="CritsAndCoffeeClientApp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Controllers" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
           </expand>
           <select />
         </subPane>
         <option name="show-all-files" value="false" />
       </pane>
-      <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -230,11 +155,12 @@
       <workItem from="1552972646816" duration="160000" />
       <workItem from="1552972895441" duration="700000" />
       <workItem from="1553062260193" duration="239000" />
+      <workItem from="1554609032620" duration="42000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3101000" />
+    <option name="totallyTimeSpent" value="3143000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -246,10 +172,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="2560" height="1055" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1280" height="777" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19093078" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19386107" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -280,6 +205,8 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -295,18 +222,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding>
-            <marker date="1552950405092" expanded="true" signature="78:302" ph="{...}" />
-            <marker date="1552950405092" expanded="true" signature="177:300" ph="{...}" />
-            <marker date="1552950405092" expanded="true" signature="235:294" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/services/instagram-mapping.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="734">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="1104">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
@@ -315,8 +237,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/crits-hero/crits-hero.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+        <state relative-caret-position="402">
+          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
         </state>
       </provider>
     </entry>
