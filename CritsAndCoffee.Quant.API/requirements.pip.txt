@@ -7,4 +7,4 @@ marshmallow-sqlalchemy
 python-dotenv
 passlib
 tox
-psycopg2
+psycopg2-binary

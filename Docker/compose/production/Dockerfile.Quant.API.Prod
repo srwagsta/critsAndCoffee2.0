@@ -5,9 +5,15 @@ RUN addgroup --system quant \
 
 WORKDIR /quant_api
 
-COPY requirements.txt requirements.txt
-RUN pip install -r requirements.txt
-RUN pip install gunicorn
+COPY requirements.pip.txt requirements.pip.txt
+COPY requirements.conda.txt requirements.conda.txt
+RUN conda update conda
+RUN conda install pip
+RUN pip install -U pip
+RUN pip install -r requirements.pip.txt
+RUN conda install --file=requirements.conda.txt
+RUN conda install -c anaconda gunicorn
+RUN conda update --update-all
 
 COPY API_Quant /app
 COPY app.py config.py ./

@@ -1,5 +1,6 @@
 from functools import wraps
 
+
 def jwt_required(f):
     @wraps(f)
     def wrapper(*args, **kwargs):
