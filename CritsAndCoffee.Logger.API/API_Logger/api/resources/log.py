@@ -2,12 +2,12 @@ from flask_restful import Resource
 from flask import request, jsonify
 import logging
 from logging.handlers import RotatingFileHandler
+from datetime import datetime
 from API_Logger.decorators.jwt_validation import jwt_required
 
 logger = logging.getLogger('LOG API')
-file_handler = RotatingFileHandler('/crits-logs/critsAndcoffee.log', maxBytes=1024 * 1024 * 15, backupCount=10)\
-    .setLevel(logging.INFO)
-
+file_handler = RotatingFileHandler('/crits-logs/critsAndcoffee.log', maxBytes=1024 * 1024 * 15, backupCount=10)
+file_handler.setLevel(logging.INFO)
 logger.addHandler(file_handler)
 
 
@@ -16,7 +16,8 @@ class CriticalLogger(Resource):
 
     def post(self):
         try:
-            logger.critical(request.remote_addr)
+            logger.critical(f'{datetime.utcnow()} CRITICAL => Source:({request.remote_addr}) {request.values.to_dict()}')
+            # Testing the logging format
             return {}, 201
         except Exception as e:
             logger.error(f'API failed to parse logging request => {e}')
@@ -28,7 +29,7 @@ class ErrorLogger(Resource):
 
     def post(self):
         try:
-            logger.error(request.json)
+            logger.error(f'{datetime.utcnow()} ERROR => Source:({request.remote_addr}) {request.values.to_dict()}')
             return {}, 201
         except Exception as e:
             logger.error(f'API failed to parse logging request => {e}')
@@ -40,7 +41,7 @@ class WarningLogger(Resource):
 
     def post(self):
         try:
-            logger.warning(request.json)
+            logger.warning(f'{datetime.utcnow()} WARNING => Source:({request.remote_addr}) {request.values.to_dict()}')
             return {}, 201
         except Exception as e:
             logger.error(f'API failed to parse logging request => {e}')
@@ -52,7 +53,7 @@ class InfoLogger(Resource):
 
     def post(self):
         try:
-            logger.info(request.json)
+            logger.info(f'{datetime.utcnow()} INFO => Source:({request.remote_addr}) {request.values.to_dict()}')
             return {}, 201
         except Exception as e:
             logger.error(f'API failed to parse logging request => {e}')
@@ -64,7 +65,7 @@ class DebugLogger(Resource):
 
     def post(self):
         try:
-            logger.debug(request.json)
+            logger.debug(f'{datetime.utcnow()} DEBUG => Source:({request.remote_addr}) {request.values.to_dict()}')
             return {}, 201
         except Exception as e:
             logger.error(f'API failed to parse logging request => {e}')

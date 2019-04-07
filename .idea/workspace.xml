@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="90fe1e25-08d0-474a-b016-dfaccdc13a79" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Quant.API/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Quant.API/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Quant.API/API_Quant/decorators/jwt_validation.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Quant.API/API_Quant/decorators/jwt_validation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Quant.API/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Quant.API/requirements.pip.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docker/compose/local/Dockerfile.Quant.API" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/local/Dockerfile.Quant.API" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docker/compose/production/Dockerfile.Quant.API.Prod" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/production/Dockerfile.Quant.API.Prod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Logger.API/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Logger.API/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Logger.API/API_Logger/api/resources/log.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Logger.API/API_Logger/api/resources/log.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,17 +22,7 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Docker/compose/local/Dockerfile.Quant.API">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -117,8 +104,8 @@
         <option value="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/docker-scripts/django/start.prod" />
         <option value="$PROJECT_DIR$/Docker/compose/production.yml" />
         <option value="$PROJECT_DIR$/Docker/compose/production/Caddyfile.production" />
-        <option value="$PROJECT_DIR$/Docker/compose/production/Dockerfile.Quant.API.Prod" />
         <option value="$PROJECT_DIR$/Docker/compose/local/Dockerfile.Quant.API" />
+        <option value="$PROJECT_DIR$/Docker/compose/production/Dockerfile.Quant.API.Prod" />
       </list>
     </option>
   </component>
@@ -128,7 +115,7 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="777" />
@@ -222,7 +209,7 @@
       <workItem from="1554154568419" duration="7358000" />
       <workItem from="1554167929857" duration="93000" />
       <workItem from="1554168512935" duration="12275000" />
-      <workItem from="1554603925278" duration="2244000" />
+      <workItem from="1554603925278" duration="3213000" />
     </task>
     <servers />
   </component>
@@ -232,10 +219,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165158000" />
+    <option name="totallyTimeSpent" value="166127000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="777" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="777" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -528,13 +515,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Docker/compose/production/Dockerfile.Quant.API.Prod">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Quant.API/API_Quant/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -586,10 +566,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Docker/compose/production/Dockerfile.Quant.API.Prod">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Docker/compose/local/Dockerfile.Quant.API">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <caret line="16" lean-forward="true" selection-start-line="7" selection-end-line="16" />
         </state>
       </provider>
     </entry>
