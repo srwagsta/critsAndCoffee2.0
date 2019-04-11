@@ -16,13 +16,15 @@ app-footer {
 .crits-brand {
   margin-left: -80px;
   margin-top: -15px;
-  // font-style: italic !important;
-  // font-size: 250% !important;
-  // color: rgba($brand-secondary-color, 1);
+  -webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+   font-style: italic !important;
+   font-size: 250% !important;
+   color: rgba($brand-secondary-color, 1);
 
-  // &:hover {
-  //   color: rgba($brand-primary-color, .8);
-  // }
+   &:hover {
+     color: rgba($brand-primary-color, .8);
+   }
 }
 
 .crits-nav-container {}
