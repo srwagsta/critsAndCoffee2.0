@@ -1,5 +1,4 @@
 from flask import Flask
-
 from API_Quant import api
 from API_Quant.extensions import db, migrate
 

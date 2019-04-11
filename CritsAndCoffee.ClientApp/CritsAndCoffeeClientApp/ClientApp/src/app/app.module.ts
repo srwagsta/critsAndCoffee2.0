@@ -48,6 +48,7 @@ import { NgxsModule } from '@ngxs/store';
 import { NgxsLoggerPluginModule } from '@ngxs/logger-plugin';
 import { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';
 import { NgxsRouterPluginModule } from '@ngxs/router-plugin';
+import { NgxsStoragePluginModule } from '@ngxs/storage-plugin';
 
 // States
 import {InstagramPostListState} from "./state/instagram/instagram.state";
@@ -88,6 +89,9 @@ import {AuthState} from "./state/auth/auth.state";
     NgxsLoggerPluginModule.forRoot({}),
     NgxsReduxDevtoolsPluginModule.forRoot(),
     NgxsRouterPluginModule.forRoot(),
+    NgxsStoragePluginModule.forRoot({
+      key: 'auth.token'
+    }),
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCNPlDnedCEachOH08pszCanYO2RDuJ6pk\n'
     })

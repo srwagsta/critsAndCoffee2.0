@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4ff619e-abd9-4cf9-a2b5-15bf7e6ac91b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/home.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/services/logging.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/services/logging.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/state/instagram/instagram.state.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/state/instagram/instagram.state.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/CritsAndCoffee.Logger.API.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CritsAndCoffee.Logger.API.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API_Logger/api/resources/log.py" beforeDir="false" afterPath="$PROJECT_DIR$/API_Logger/api/resources/log.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.Quant.API/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.Quant.API/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.Quant.API/API_Quant/api/resources/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.Quant.API/API_Quant/api/resources/data.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

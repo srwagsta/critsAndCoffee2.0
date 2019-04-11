@@ -1,6 +1,9 @@
 from flask_restful import Resource
 import quandl
 from API_Quant.decorators.jwt_validation import jwt_required
+from API_Quant.config import QUANDL_API_KEY
+
+quandl.ApiConfig.api_key = QUANDL_API_KEY
 
 
 class DataList(Resource):

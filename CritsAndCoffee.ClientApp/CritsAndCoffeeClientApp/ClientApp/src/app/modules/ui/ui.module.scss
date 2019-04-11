@@ -1,9 +1,10 @@
 @import "../../../sass/styles";
-mat-nav-list{
+
+mat-nav-list {
   padding: 1rem 1rem 0 1rem;
 }
 
-mat-sidenav{
+mat-sidenav {
   background: rgba($dark-grey, .92) !important;
 }
 
@@ -12,32 +13,36 @@ app-footer {
   width: 100%;
 }
 
-.crits-brand{
-    font-style: italic !important;
-    font-size: 250% !important;
-    color: rgba($brand-secondary-color, 1);
-    &:hover{
-      color: rgba($brand-primary-color, .8);
-    }
+.crits-brand {
+  margin-left: -80px;
+  margin-top: -15px;
+  // font-style: italic !important;
+  // font-size: 250% !important;
+  // color: rgba($brand-secondary-color, 1);
+
+  // &:hover {
+  //   color: rgba($brand-primary-color, .8);
+  // }
 }
 
-.crits-nav-container{
+.crits-nav-container {}
+
+.crits-toolbar {
+  background: rgba($dark-grey, 1) !important;
 }
 
-.crits-toolbar{
-  background:  rgba($dark-grey, .7) !important;
-}
+.crits-sidenav-container {}
 
-.crits-sidenav-container{}
-
-.crits-content{ }
+.crits-content {}
 
 .spacer {
   flex: 1 1 auto;
 }
 
 
-.togglerBar1, .togglerBar2, .togglerBar3{
+.togglerBar1,
+.togglerBar2,
+.togglerBar3 {
   width: 35px;
   height: 5px;
   background-color: $brand-primary-color;
@@ -46,13 +51,15 @@ app-footer {
 }
 
 .change {
-   .togglerBar1 {
+  .togglerBar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
-     background-color: $brand-secondary-color;
+    background-color: $brand-secondary-color;
   }
 
-  .togglerBar2 {opacity: 0;}
+  .togglerBar2 {
+    opacity: 0;
+  }
 
   .togglerBar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
@@ -72,6 +79,3 @@ app-footer {
 .nav-item:hover .nav-link {
   color: $white;
 }
-
-
-
