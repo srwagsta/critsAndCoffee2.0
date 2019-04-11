@@ -9,7 +9,7 @@ volumes:
 services:
   caddy:
     build:
-      context: ./production/caddy
+      context: ./production
       dockerfile: production/caddy/Dockerfile.caddy.Prod
     image: ${DOCKER_REGISTRY}crits_and_coffee_caddy:${DOCKER_PRODUCTION_TAG}
     depends_on:
