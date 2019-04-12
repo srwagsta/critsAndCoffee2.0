@@ -13,6 +13,13 @@ app-footer {
   width: 100%;
 }
 
+.crits-brand-animate{
+  &:hover {
+    animation:heartbeat 1.5s ease-in-out infinite both
+  }
+  
+}
+
 .crits-brand {
   margin-left: -80px;
   margin-top: -15px;
@@ -41,6 +48,10 @@ app-footer {
   flex: 1 1 auto;
 }
 
+.custom-toggler{
+  animation: flip-2-ver-right-fwd 2s;
+  animation-fill-mode: both;
+}
 
 .togglerBar1,
 .togglerBar2,
@@ -80,4 +91,13 @@ app-footer {
 .nav-item.active .nav-link,
 .nav-item:hover .nav-link {
   color: $white;
+}
+
+.footer-bottom{
+  img{
+    height: 5rem;
+    width: auto;
+    margin-right: -15rem;
+    margin-left: 10rem;
+  }
 }

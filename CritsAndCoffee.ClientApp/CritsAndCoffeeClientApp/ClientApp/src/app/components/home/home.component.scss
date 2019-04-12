@@ -1,20 +1,60 @@
-.crits-home-component{
-  padding: 0 0 !important;
-  margin: 0 0 !important;
-}
+@import '../../../sass/styles';
 
-.crits-button{
-  animation: slide-in-blurred-bottom;
-  animation-duration: 2s;
-  .button-1{
-    padding-right: 20%;
-    animation-delay: 1s;
+.crits-home-component {
+  padding: 0 0 !important;
+  margin: -1.7rem 0 0 0 !important;
+  background: linear-gradient(rgba(21, 20, 20, 0.45), rgba(60, 58, 58, 0.74)), url('~/assets/images/components/home/crits-hero-bg.jpg');
+  background-size: cover;
+  h1 {
+    animation-fill-mode: both;
+    animation: focus-in-contract;
+    animation-duration: 2s;
   }
-  .button-2{
+
+  h5 {
+    animation: swing-in-top-fwd;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
     animation-delay: 2s;
   }
-  .button-3{
-    padding-left: 20%;
-    animation-delay: 3s;
+
+  mat-divider{
+    margin: -1rem 25% .1rem 25%;
+    border-top-width: .2rem;
+    width: 50%;
+    border-top-color: $brand-primary-color; 
   }
+
+}
+
+.crits-button-animate {
+  &:hover {
+    animation: shake-horizontal .8s both
+  }
+}
+
+.crits-button {
+  animation: slide-in-blurred-bottom;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  &:hover{
+    text-decoration: none !important;
+  }
+}
+
+.button-1 {
+  animation-fill-mode: both;
+  padding-left: 20%;
+  animation-delay: 1s;
+}
+
+.button-2 {
+  animation-fill-mode: both;
+  animation-delay: 2s;
+}
+
+.button-3 {
+  animation-fill-mode: both;
+  padding-right: 20%;
+  animation-delay: 3s;
 }

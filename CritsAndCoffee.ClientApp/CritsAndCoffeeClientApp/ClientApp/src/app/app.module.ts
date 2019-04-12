@@ -10,7 +10,8 @@ import { AgmCoreModule } from '@agm/core';
 import {
   MatTooltipModule,
   MatButtonModule,
-  MatIconModule
+  MatIconModule,
+  MatDividerModule
 } from '@angular/material';
 
 // Custom modules
@@ -83,6 +84,7 @@ import {AuthState} from "./state/auth/auth.state";
     MatButtonModule,
     MatIconModule,
     MatTooltipModule,
+    MatDividerModule,
     FontAwesomeModule,
     NgbModule,
     NgxsModule.forRoot([AuthState, InstagramPostListState],{developmentMode: true }),

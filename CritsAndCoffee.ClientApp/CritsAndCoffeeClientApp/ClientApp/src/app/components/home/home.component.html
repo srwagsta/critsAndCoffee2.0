@@ -1,26 +1,37 @@
   <div class="crits-home-component">
 
-    <crits-hero></crits-hero>
-
     <h1 fxLayout="row wrap" fxLayoutAlign="space-around center">Stephen R. Wagstaff</h1>
-    <h3 fxLayout="row wrap" fxLayoutAlign="space-around center">Software Developer - Professional Cyclist - Foodie</h3>
+    <mat-divider></mat-divider>
+    <h5 fxLayout="row wrap" fxLayoutAlign="space-around center">Software Developer - Professional Cyclist - Foodie</h5>
     <hr>
     <div fxLayout="row wrap" fxLayoutAlign="space-around center">
-      <a mat-button color="accent" href="https://www.instagram.com/critsandcoffee/" target="_blank"
-        class="crits-button button-1">
-        <fa-icon [icon]="['fab', 'instagram']"></fa-icon>
-        Instagram
-      </a>
-      <a mat-button color="accent" href="https://github.com/srwagsta" target="_blank"
-        class="crits-button button-2">
-        <fa-icon [icon]="['fab', 'github']"></fa-icon>
-        Github
-      </a>
-      <a mat-button color="accent" href="https://www.linkedin.com/in/srwagsta" target="_blank"
-        class="crits-button button-3">
-        <fa-icon [icon]="['fab', 'linkedin']"></fa-icon>
-        Linkedin
-      </a>
+
+      <div class="crits-button-animate">
+        <a mat-button color="primary" href="https://www.instagram.com/critsandcoffee/" target="_blank"
+          class="crits-button button-1">
+          <fa-icon [icon]="['fab', 'instagram']"></fa-icon>
+          Instagram
+        </a>
+      </div>
+
+      <div class="crits-button-animate">
+        <a mat-button color="primary" href="https://github.com/srwagsta" target="_blank" class="crits-button button-2">
+          <fa-icon [icon]="['fab', 'github']"></fa-icon>
+          Github
+        </a>
+      </div>
+
+      <div class="crits-button-animate">
+        <a mat-button color="primary" href="https://www.linkedin.com/in/srwagsta" target="_blank"
+          class="crits-button button-3">
+          <fa-icon [icon]="['fab', 'linkedin']"></fa-icon>
+          Linkedin
+        </a>
+      </div>
+
     </div>
-    <img src="assets/images/site_images/crits_and_coffee_logo.png" alt="">
+
+
+    <crits-hero></crits-hero>
+
   </div>
