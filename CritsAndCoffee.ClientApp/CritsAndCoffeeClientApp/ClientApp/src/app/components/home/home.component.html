@@ -1,11 +1,10 @@
-  <div class="crits-home-component">
+  <div fxLayout="column" fxLayoutAlign="center" class="crits-home-component">
 
     <h1 fxLayout="row wrap" fxLayoutAlign="space-around center">Stephen R. Wagstaff</h1>
-    <mat-divider></mat-divider>
+    <mat-divider class="home-divider"></mat-divider>
     <h5 fxLayout="row wrap" fxLayoutAlign="space-around center">Software Developer - Professional Cyclist - Foodie</h5>
     <hr>
     <div fxLayout="row wrap" fxLayoutAlign="space-around center">
-
       <div class="crits-button-animate">
         <a mat-button color="primary" href="https://www.instagram.com/critsandcoffee/" target="_blank"
           class="crits-button button-1">
@@ -28,10 +27,12 @@
           Linkedin
         </a>
       </div>
-
     </div>
 
-
-    <crits-hero></crits-hero>
+    <div fxLayout="row wrap" fxLayoutAlign="space-around center">
+      <div class="home-quote">
+        "{{currentQuote.quote}}" <br/> - {{currentQuote.author}}
+      </div>
+    </div>
 
   </div>

@@ -13,25 +13,26 @@ app-footer {
   width: 100%;
 }
 
-.crits-brand-animate{
+.crits-brand-animate {
   &:hover {
-    animation:heartbeat 1.5s ease-in-out infinite both
+    animation: heartbeat 1.5s ease-in-out infinite both
   }
-  
+
 }
 
 .crits-brand {
   margin-left: -80px;
   margin-top: -15px;
-  -webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-  animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-   font-style: italic !important;
-   font-size: 250% !important;
-   color: rgba($brand-secondary-color, 1);
+  -webkit-animation: focus-in-contract 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: focus-in-contract 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  font-style: italic !important;
+  font-size: 250% !important;
+  animation-delay: 6s;
+  color: rgba($brand-secondary-color, 1);
 
-   &:hover {
-     color: rgba($brand-primary-color, .8);
-   }
+  &:hover {
+    color: rgba($brand-primary-color, .8);
+  }
 }
 
 .crits-nav-container {}
@@ -48,9 +49,11 @@ app-footer {
   flex: 1 1 auto;
 }
 
-.custom-toggler{
-  animation: flip-2-ver-right-fwd 2s;
-  animation-fill-mode: both;
+.custom-toggler {
+  -webkit-animation: text-focus-in 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: text-focus-in 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-delay: 6s;
+
 }
 
 .togglerBar1,
@@ -93,8 +96,8 @@ app-footer {
   color: $white;
 }
 
-.footer-bottom{
-  img{
+.footer-bottom {
+  img {
     height: 5rem;
     width: auto;
     margin-right: -15rem;
