@@ -1,5 +1,7 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {MatSidenav} from "@angular/material";
+import { Store } from '@ngxs/store';
+import { RouterState } from '@ngxs/router-plugin';
 
 export class NavLinks{
   public static links:{label: string, link:string, icon:string}[] = [
@@ -21,7 +23,7 @@ export class HeaderComponent implements OnInit {
   @ViewChild('sideNav') sidenav: MatSidenav;
   @ViewChild('menuIcon', {read: ElementRef}) menuIcon: ElementRef;
 
-  constructor() {
+  constructor(private _store: Store) {
   }
 
   ngOnInit() {
@@ -36,4 +38,7 @@ export class HeaderComponent implements OnInit {
     this.menuIcon.nativeElement.classList.toggle('change');
   }
 
+  public getNavStyling():string{
+    return this._store.selectSnapshot(RouterState.url) === '/home' ? 'crits-toolbar-home' : 'crits-toolbar';
+  }
 }

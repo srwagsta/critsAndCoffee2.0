@@ -12,7 +12,6 @@ import { InstagramPostModel } from 'src/app/models/instagram-post.model';
 export class CritsHeroComponent implements OnInit {
 
   @Select(InstagramPostListState.recentTenPosts) recentPosts$: Observable<InstagramPostModel[]>;
-
   constructor() { }
 
   ngOnInit() {

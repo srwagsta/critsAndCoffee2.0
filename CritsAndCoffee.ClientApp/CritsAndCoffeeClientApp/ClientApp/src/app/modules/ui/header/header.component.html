@@ -1,5 +1,5 @@
 <div class="crits-nav-container">
-  <mat-toolbar color="primary" class="crits-toolbar">
+  <mat-toolbar color="primary" [ngClass]="getNavStyling()">
 
     <div class="crits-brand-animate">
       <h1 class="crits-brand" routerLink="home">
@@ -17,8 +17,8 @@
   </mat-toolbar>
 
   <mat-sidenav-container (backdropClick)="toggleMenuIcon()" class="crits-sidenav-container">
-    <mat-sidenav #sideNav fixedTopGap="56" (keydown)="toggleMenuIcon()">
-      <mat-nav-list>
+    <mat-sidenav #sideNav fixedTopGap="56" (keydown)="toggleMenuIcon()" >
+      <mat-nav-list fxLayout="column" fxLayoutAlign="center" >
 
         <mat-list-item *ngFor="let link of links" (click)="onClick()">
           <button mat-icon-button routerLink="{{link.link}}">

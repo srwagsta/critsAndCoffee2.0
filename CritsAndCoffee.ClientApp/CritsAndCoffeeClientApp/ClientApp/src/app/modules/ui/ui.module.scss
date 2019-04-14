@@ -5,8 +5,15 @@ mat-nav-list {
 }
 
 mat-sidenav {
-  background: rgba($dark-grey, .92) !important;
+  background: linear-gradient(rgba($brand-secondary-color, .90),rgba($brand-primary-color, .70)) !important;
 }
+
+mat-list-item{
+  a{
+    color: $brand-secondary-color;
+  }
+}
+
 
 app-footer {
   z-index: 2;
@@ -37,8 +44,11 @@ app-footer {
 
 .crits-nav-container {}
 
-.crits-toolbar {
+.crits-toolbar-home{
   background: rgba(black, 1) !important;
+}
+.crits-toolbar {
+  background: rgba($dark-grey, 1) !important;
 }
 
 .crits-sidenav-container {}
