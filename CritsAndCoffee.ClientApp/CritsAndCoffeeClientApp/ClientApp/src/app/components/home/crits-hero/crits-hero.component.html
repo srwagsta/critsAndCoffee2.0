@@ -1,7 +1,7 @@
 <div fxLayout="row wrap" fxLayoutAlign="space-around center" class="crits-hero-container">
 
-  <a *ngFor="let post of recentPosts$ | async" href="post.link" target="_blank">
-    <img src="post.image_thumbnail_url">
+  <a class="crits-hero-image" *ngFor="let post of recentPosts$ | async" href="{{post.link}}" target="_blank">
+    <img src="{{post.image_thumbnail_url}}">
   </a>
 
 </div>
