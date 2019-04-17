@@ -50,8 +50,8 @@ export class InstagramPostListState implements NgxsAfterBootstrap {
   }
 
   @Selector()
-  public static recentTenPosts(state: InstagramPostListModel){
-    return state.posts.slice(0,9);
+  public static recentPosts(state: InstagramPostListModel){
+    return state.posts.slice(0,14);
   }
 
   @Selector()

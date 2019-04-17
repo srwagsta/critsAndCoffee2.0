@@ -38,7 +38,7 @@ export class HeaderComponent implements OnInit {
     this.menuIcon.nativeElement.classList.toggle('change');
   }
 
-  public getNavStyling():string{
-    return this._store.selectSnapshot(RouterState.url) === '/home' ? 'crits-toolbar-home' : 'crits-toolbar';
+  public getNavStyling(baseClass:string):string{
+    return this._store.selectSnapshot(RouterState.url) === '/home' ? `${baseClass}-home` : baseClass;
   }
 }

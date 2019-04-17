@@ -4,12 +4,16 @@ mat-nav-list {
   padding: 1rem 1rem 0 1rem;
 }
 
-mat-sidenav {
-  background: linear-gradient(rgba($brand-secondary-color, .90),rgba($brand-primary-color, .70)) !important;
+.crits-sidenav {
+  background: linear-gradient(rgba($dark-grey, 1), rgba($brand-primary-color, .40)) !important;
+
+  &-home{
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba($brand-primary-color, .40)) !important;
+  }
 }
 
-mat-list-item{
-  a{
+mat-list-item {
+  a {
     color: $brand-secondary-color;
   }
 }
@@ -44,11 +48,12 @@ app-footer {
 
 .crits-nav-container {}
 
-.crits-toolbar-home{
-  background: rgba(black, 1) !important;
-}
 .crits-toolbar {
   background: rgba($dark-grey, 1) !important;
+
+  &-home {
+    background: rgba(black, 1) !important;
+  }
 }
 
 .crits-sidenav-container {}
