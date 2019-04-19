@@ -163,7 +163,7 @@ LOGGING = {
     'disable_existing_loggers': True,
     'root': {
         'level': 'WARNING',
-        'handlers': ['sentry','django_logfile'],
+        'handlers': ['sentry'],
     },
     'formatters': {
         'verbose': {
@@ -175,40 +175,33 @@ LOGGING = {
         'sentry': {
             'level': 'ERROR',
             'class': 'raven.contrib.django.raven_compat.handlers.SentryHandler',
-        },
-        'django_logfile': {
-            'level':'DEBUG',
-            'class':'logging.handlers.RotatingFileHandler',
-            'filename': '/crits-logs/critsAndcoffee.log',
-            'maxBytes': 1024*1024*15, # 15MB
-            'backupCount': 10,
-            'formatter': 'standard'
+        }
         },
     },
     'loggers': {
         'django.db.backends': {
             'level': 'ERROR',
-            'handlers': ['django_logfile'],
+            'handlers': ['sentry'],
             'propagate': False,
         },
         'raven': {
             'level': 'DEBUG',
-            'handlers': ['django_logfile'],
+            'handlers': ['sentry],
             'propagate': False,
         },
         'sentry.errors': {
             'level': 'DEBUG',
-            'handlers': ['django_logfile'],
+            'handlers': ['sentry'],
             'propagate': False,
         },
         'django.security.DisallowedHost': {
             'level': 'ERROR',
-            'handlers': ['django_logfile', 'sentry'],
+            'handlers': ['sentry'],
             'propagate': False,
         },
         'django': {
             'level': 'DEBUG',
-            'handlers': ['django_logfile'],
+            'handlers': ['sentry'],
             'propagate': True,
         },
     },

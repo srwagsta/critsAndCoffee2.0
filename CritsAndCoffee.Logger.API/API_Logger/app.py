@@ -2,12 +2,16 @@ from flask import Flask
 from API_Logger import api
 from logging.handlers import RotatingFileHandler
 import logging
+import os
 
 
 def create_app(config=None, testing=False):
     """Application factory, used to create application
     """
-    file_logger = RotatingFileHandler('/crits-logs/critsAndcoffee.log', maxBytes=1024 * 1024 * 15, backupCount=10)
+
+    log_filename = "/crits-logs/critsAndcoffee.log"
+    os.makedirs(os.path.dirname(log_filename), exist_ok=True)
+    file_logger = RotatingFileHandler('critsAndcoffee.log', maxBytes=1024 * 1024 * 15, backupCount=10)
     file_logger.setLevel(logging.INFO)
 
     app = Flask('API_Logger')

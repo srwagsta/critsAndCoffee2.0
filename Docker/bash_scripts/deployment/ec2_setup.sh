@@ -25,15 +25,14 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.24.0/docker-
 
 sudo chmod +x /usr/local/bin/docker-compose
 
-set -o allexport; source .aws_ec2; set +o allexport
-
-sudo docker plugin install  --grant-all-permissions rexray/efs \
-    EFS_ACCESSKEY=$EFS_ACCESSKEY \
-    EFS_SECRETKEY=$EFS_SECRETKEY \
-    EFS_SECURITYGROUPS=$EFS_SECURITYGROUPS
+set -o allexport; source ../../.envs/.private/.production/.aws_ec2; set +o allexport
 
 sudo docker login -u $DOCKER_HUB_USERNAME -p $DOCKER_HUB_PASSWORD
 
-sudo chmod +x ./live.sh
+echo '** Server setup complete, launching containers ** '
 
-./live.sh
+cd ../../compose
+
+sudo docker-compose -f ./production.deploy.yml pull
+
+sudo docker-compose -f ./production.deploy.yml up

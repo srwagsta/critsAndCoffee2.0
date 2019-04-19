@@ -1,0 +1,85 @@
+version: '3'
+
+services:
+  caddy:
+    image: ${DOCKER_REGISTRY}crits_and_coffee_caddy:${DOCKER_PRODUCTION_TAG}
+    build:
+      context: ./production
+      dockerfile: production/Dockerfile.caddy.Prod
+
+
+  front-end-app:
+    image: ${DOCKER_REGISTRY}crits_and_coffee_client_app:${DOCKER_PRODUCTION_TAG}
+    container_name: client-app-production
+    build:
+      context: ../../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp
+      dockerfile: ../../Docker/compose/production/Dockerfile.ClientApp.Prod
+
+
+  instagram-api: &instagram-api
+    image: ${DOCKER_REGISTRY}crits_and_coffee_api:${INSTAGRAM_API_PRODUCTION_TAG}
+    container_name: instagram-api-production
+    build:
+      context: ../../CritsAndCoffee.Instagram.API
+      dockerfile: ../Docker/compose/production/Dockerfile.Instagram.API.Prod
+
+
+  quant-api:
+    image: ${DOCKER_REGISTRY}crits_and_coffee_api:${QUANT_API_PRODUCTION_TAG}
+    container_name: quant-api-production
+    build:
+      context: ../../CritsAndCoffee.Quant.API
+      dockerfile: ../Docker/compose/production/Dockerfile.Quant.API
+
+
+  logger-api:
+    image: ${DOCKER_REGISTRY}crits_and_coffee_api:${LOGGER_API_PRODUCTION_TAG}
+    container_name: logger-api-production
+    build:
+      context: ../../CritsAndCoffee.Logger.API
+      dockerfile: ../Docker/compose/production/Dockerfile.Logger.API.Prod
+
+
+  redis:
+    image: redis:3.2
+    networks:
+      - back-end
+
+  selenium:
+    image: selenium/standalone-chrome
+    networks:
+      - back-end
+
+  celeryworker:
+    <<: *instagram-api
+    image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${CELERY_WORKER_PRODUCTION_TAG}
+    command: /start-celeryworker
+    networks:
+      - back-end
+
+  celerybeat:
+    <<: *instagram-api
+    image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${CELERY_BEAT_PRODUCTION_TAG}
+    command: /start-celerybeat
+    networks:
+      - back-end
+
+  flower:
+    <<: *instagram-api
+    image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${FLOWER_PRODUCTION_TAG}
+    networks:
+      - front-end
+      - back-end
+    ports:
+      - "5555:5555"
+    command: /start-flower
+
+networks:
+  front-end:
+    driver: bridge
+    driver_opts:
+      com.docker.network.enable_ipv6: "true"
+  back-end:
+    driver: bridge
+    driver_opts:
+      com.docker.network.enable_ipv6: "true"

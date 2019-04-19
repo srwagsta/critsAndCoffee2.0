@@ -1,20 +1,10 @@
 version: '3'
 
 volumes:
-  production_postgres_data:
-    driver: rexray/efs:latest
-  production_postgres_data_backups:
-    driver: rexray/efs:latest
-  production_caddy:
-    driver: rexray/efs:latest
-  production_logs: 
-    driver: rexray/efs:latest
-
+  production_caddy: {}
+  production_logs: {}
 services:
   caddy:
-    build:
-      context: ./production
-      dockerfile: production/Dockerfile.caddy.Prod
     image: ${DOCKER_REGISTRY}crits_and_coffee_caddy:${DOCKER_PRODUCTION_TAG}
     depends_on:
       - front-end-app
@@ -34,15 +24,11 @@ services:
   front-end-app:
     image: ${DOCKER_REGISTRY}crits_and_coffee_client_app:${DOCKER_PRODUCTION_TAG}
     container_name: client-app-production
-    build:
-      context: ../../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp
-      dockerfile: ../../Docker/compose/production/Dockerfile.ClientApp.Prod
     environment:
       - ASPNETCORE_ENVIRONMENT=Production
       - ASPNETCORE_URLS=http://+:80
       - NODE_ENV=production
     depends_on:
-      - postgres
       - instagram-api
       - quant-api
       - logger-api
@@ -52,15 +38,9 @@ services:
   instagram-api: &instagram-api
     image: ${DOCKER_REGISTRY}crits_and_coffee_api:${INSTAGRAM_API_PRODUCTION_TAG}
     container_name: instagram-api-production
-    build:
-      context: ../../CritsAndCoffee.Instagram.API
-      dockerfile: ../Docker/compose/production/Dockerfile.Instagram.API.Prod
-    volumes:
-      - production_logs:/crits-logs/
     links:
       - selenium
     depends_on:
-      - postgres
       - redis
     networks:
       - back-end
@@ -73,11 +53,7 @@ services:
   quant-api:
     image: ${DOCKER_REGISTRY}crits_and_coffee_api:${QUANT_API_PRODUCTION_TAG}
     container_name: quant-api-production
-    build:
-      context: ../../CritsAndCoffee.Quant.API
-      dockerfile: ../Docker/compose/production/Dockerfile.Quant.API
     depends_on:
-      - postgres
       - instagram-api
       - logger-api
     networks:
@@ -91,31 +67,13 @@ services:
   logger-api:
     image: ${DOCKER_REGISTRY}crits_and_coffee_api:${LOGGER_API_PRODUCTION_TAG}
     container_name: logger-api-production
-    build:
-      context: ../../CritsAndCoffee.Logger.API
-      dockerfile: ../Docker/compose/production/Dockerfile.Logger.API.Prod
     volumes:
       - production_logs:/crits-logs/
-    depends_on:
-      - postgres
     networks:
       - back-end
     env_file:
       - ../.envs/.private/.production/.flask_logger
     command: /start
-
-  postgres:
-    build:
-      context: ./production/postgres
-      dockerfile: ./Dockerfile
-    image: ${DOCKER_REGISTRY}crits_and_coffee_postgres:${DOCKER_PRODUCTION_TAG}
-    networks:
-      - back-end
-    volumes:
-      - production_postgres_data:/var/lib/postgresql/data
-      - production_postgres_data_backups:/backups
-    env_file:
-      - ../.envs/.private/.production/.postgres
 
   redis:
     image: redis:3.2
@@ -130,6 +88,7 @@ services:
   celeryworker:
     <<: *instagram-api
     image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${CELERY_WORKER_PRODUCTION_TAG}
+    container_name: ${CELERY_WORKER_PRODUCTION_TAG}
     command: /start-celeryworker
     networks:
       - back-end
@@ -137,6 +96,7 @@ services:
   celerybeat:
     <<: *instagram-api
     image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${CELERY_BEAT_PRODUCTION_TAG}
+    container_name: ${CELERY_BEAT_PRODUCTION_TAG}
     command: /start-celerybeat
     networks:
       - back-end
@@ -144,6 +104,7 @@ services:
   flower:
     <<: *instagram-api
     image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${FLOWER_PRODUCTION_TAG}
+    container_name: ${FLOWER_PRODUCTION_TAG}
     networks:
       - front-end
       - back-end
