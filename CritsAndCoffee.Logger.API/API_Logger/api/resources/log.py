@@ -4,9 +4,11 @@ import logging
 from logging.handlers import RotatingFileHandler
 from datetime import datetime
 from API_Logger.decorators.jwt_validation import jwt_required
+import os
 
 logger = logging.getLogger('LOG API')
-file_handler = RotatingFileHandler('/crits-logs/critsAndcoffee.log', maxBytes=1024 * 1024 * 15, backupCount=10)
+os.makedirs(os.path.dirname(log_filename), exist_ok=True)
+file_handler = RotatingFileHandler('critsAndcoffee.log', maxBytes=1024 * 1024 * 15, backupCount=10)
 file_handler.setLevel(logging.INFO)
 logger.addHandler(file_handler)
 
