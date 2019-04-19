@@ -5,7 +5,7 @@ services:
     image: ${DOCKER_REGISTRY}crits_and_coffee_caddy:${DOCKER_PRODUCTION_TAG}
     build:
       context: ./production
-      dockerfile: production/Dockerfile.caddy.Prod
+      dockerfile: ./Dockerfile.caddy.Prod
 
 
   front-end-app:
