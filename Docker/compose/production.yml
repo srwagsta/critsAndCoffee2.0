@@ -1,10 +1,15 @@
 version: '3'
 
 volumes:
+  efs_storage:
+    driver: rexray/efs:latest
   production_postgres_data: {}
-  production_postgres_data_backups: {}
-  production_caddy: {}
-  production_logs: {}
+  production_postgres_data_backups:
+    driver: rexray/efs:latest
+  production_caddy:
+    driver: rexray/efs:latest
+  production_logs: 
+    driver: rexray/efs:latest
 
 services:
   caddy:
@@ -19,6 +24,7 @@ services:
       - production_caddy:/root/.caddy
     env_file:
       - ../.envs/.production/.caddy
+      - ../.envs/.private/.production/.aws
     networks:
       - back-end
       - front-end
@@ -61,16 +67,16 @@ services:
       - back-end
     env_file:
       - ../.envs/.private/.instagram
-      - ../.envs/.production/.django
-      - ../.envs/.production/.postgres
+      - ../.envs/.private/.production/.django
+      - ../.envs/.private/.production/.postgres
     command: /start
 
   quant-api:
-    image: ${DOCKER_REGISTRY}crits_and_coffee_api:${QUANT_API_LOCAL_TAG}
-    container_name: quant-api-local
+    image: ${DOCKER_REGISTRY}crits_and_coffee_api:${QUANT_API_PRODUCTION_TAG}
+    container_name: quant-api-production
     build:
       context: ../../CritsAndCoffee.Quant.API
-      dockerfile: ../Docker/compose/local/Dockerfile.Quant.API
+      dockerfile: ../Docker/compose/production/Dockerfile.Quant.API.Prod
     depends_on:
       - postgres
       - instagram-api
@@ -78,17 +84,17 @@ services:
     networks:
       - back-end
     env_file:
-      - ../.envs/.local/.postgres
-      - ../.envs/.local/.flask_quant
+      - ../.envs/.private/.production/.postgres
+      - ../.envs/.private/.production/.flask_quant
       - ../.envs/.private/.quandl
     command: /start
 
   logger-api:
-    image: ${DOCKER_REGISTRY}crits_and_coffee_api:${LOGGER_API_LOCAL_TAG}
-    container_name: logger-api-local
+    image: ${DOCKER_REGISTRY}crits_and_coffee_api:${LOGGER_API_PRODUCTION_TAG}
+    container_name: logger-api-production
     build:
       context: ../../CritsAndCoffee.Logger.API
-      dockerfile: ../Docker/compose/local/Dockerfile.Logger.API
+      dockerfile: ../Docker/compose/production/Dockerfile.Logger.API.Prod
     volumes:
       - production_logs:/crits-logs/
     depends_on:
@@ -96,7 +102,7 @@ services:
     networks:
       - back-end
     env_file:
-      - ../.envs/.local/.flask_logger
+      - ../.envs/.private/.production/.flask_logger
     command: /start
 
   postgres:
@@ -110,7 +116,7 @@ services:
       - production_postgres_data:/var/lib/postgresql/data
       - production_postgres_data_backups:/backups
     env_file:
-      - ../.envs/.production/.postgres
+      - ../.envs/.private/.production/.postgres
 
   redis:
     image: redis:3.2

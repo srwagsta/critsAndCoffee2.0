@@ -1,6 +1,7 @@
-#!/usr/bin/env bash
+#!/bin/bash
+
 cd ../../compose
 
-docker-compose -f ./production.yml pull
+sudo docker-compose -f ./production.yml pull
 
-docker-compose -f ./production.yml up
+sudo docker-compose -f ./production.yml up

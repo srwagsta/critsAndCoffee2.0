@@ -3,6 +3,9 @@ www.{$DOMAIN_NAME} {
 }
 
 {$DOMAIN_NAME} {
+    tls{
+      dns route53
+    }
     proxy / front-end-app:4200 {
         websocket
     }
