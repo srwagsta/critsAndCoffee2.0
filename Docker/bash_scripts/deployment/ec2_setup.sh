@@ -32,6 +32,8 @@ sudo docker plugin install  --grant-all-permissions rexray/efs \
     EFS_SECRETKEY=$EFS_SECRETKEY \
     EFS_SECURITYGROUPS=$EFS_SECURITYGROUPS
 
+sudo docker login -u $DOCKER_HUB_USERNAME -p $DOCKER_HUB_PASSWORD
+
 sudo chmod +x ./live.sh
 
 ./live.sh

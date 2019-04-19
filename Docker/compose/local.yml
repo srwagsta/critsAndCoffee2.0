@@ -53,7 +53,7 @@ services:
     container_name: quant-api-local
     build:
       context: ../../CritsAndCoffee.Quant.API
-      dockerfile: ../Docker/compose/local/Dockerfile.Quant.API
+      dockerfile: ../Docker/compose/production/Dockerfile.Quant.API
     depends_on:
       - postgres
       - instagram-api

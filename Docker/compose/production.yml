@@ -1,9 +1,8 @@
 version: '3'
 
 volumes:
-  efs_storage:
+  production_postgres_data:
     driver: rexray/efs:latest
-  production_postgres_data: {}
   production_postgres_data_backups:
     driver: rexray/efs:latest
   production_caddy:
@@ -76,7 +75,7 @@ services:
     container_name: quant-api-production
     build:
       context: ../../CritsAndCoffee.Quant.API
-      dockerfile: ../Docker/compose/production/Dockerfile.Quant.API.Prod
+      dockerfile: ../Docker/compose/production/Dockerfile.Quant.API
     depends_on:
       - postgres
       - instagram-api

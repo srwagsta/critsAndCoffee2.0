@@ -38,8 +38,10 @@ pipeline {
         stage('Deploy To Live') {
             agent any
             steps {
-                 //sh 'cd ./Docker/bash_scripts/deployment && chmod 777 ./* && ./live.sh'
-                 sh 'echo TODO: Deploy Live!'
+                sh 'scp -r -i "./Docker/.envs/.private/aws_prod_key.pem" ./Docker ubuntu@18.216.197.199:/'
+                sh 'ssh -i "./Docker/.envs/.private/aws_prod_key.pem" ./Docker ubuntu@18.216.197.199 "chmod +x /Docker/bash_scripts/deployment/ec2_setup.sh"'
+                sh 'ssh -i "./Docker/.envs/.private/aws_prod_key.pem" ./Docker ubuntu@18.216.197.199 "chmod +x /Docker/bash_scripts/deployment/live.sh"'
+                sh 'ssh -i "./Docker/.envs/.private/aws_prod_key.pem" ./Docker ubuntu@18.216.197.199 "/Docker/bash_scripts/deployment/ec2_setup.sh"'
             }
         }
 
