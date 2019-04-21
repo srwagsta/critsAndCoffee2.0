@@ -7,6 +7,7 @@ volumes:
       device: /caddy
       o: bind
   production_logs: {}
+
 services:
   caddy:
     image: ${DOCKER_REGISTRY}crits_and_coffee_caddy:${DOCKER_PRODUCTION_TAG}

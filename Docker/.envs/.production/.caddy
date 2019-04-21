@@ -1,3 +1,4 @@
 # Caddy
 # ------------------------------------------------------------------------------
 DOMAIN_NAME=critsandcoffee.com
+ACME_AGREE=true
