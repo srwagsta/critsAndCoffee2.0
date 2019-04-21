@@ -35,4 +35,4 @@ cd ../../compose
 
 sudo docker-compose -f ./production.deploy.yml pull
 
-sudo docker-compose -f ./production.deploy.yml up
+sudo docker-compose -d -f ./production.deploy.yml up
