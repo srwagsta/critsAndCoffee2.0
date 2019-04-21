@@ -1,11 +1,8 @@
 www.{$DOMAIN_NAME} {
-    redir https://critsandcoffee.com
+    redir https://{$DOMAIN_NAME}
 }
 
 {$DOMAIN_NAME} {
-    tls{
-      dns route53
-    }
     proxy / front-end-app:4200 {
         websocket
     }

@@ -176,7 +176,6 @@ LOGGING = {
             'level': 'ERROR',
             'class': 'raven.contrib.django.raven_compat.handlers.SentryHandler',
         }
-        },
     },
     'loggers': {
         'django.db.backends': {
