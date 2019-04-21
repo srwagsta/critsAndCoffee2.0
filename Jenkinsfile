@@ -39,7 +39,7 @@ pipeline {
             agent any
             steps {
                 sh 'chmod 400 ./Docker/.envs/.private/aws_prod_key.pem'
-                sh 'scp -o StrictHostKeyChecking=no -r -i "./Docker/.envs/.private/aws_prod_key.pem" ./Docker ubuntu@18.216.197.199:'
+                sh 'rsync -av -e "ssh -o StrictHostKeyChecking=no -i ./Docker/.envs/.private/aws_prod_key.pem" --exclude="*.pem" ./Docker ubuntu@18.216.197.199:'
                 sh 'ssh -o StrictHostKeyChecking=no -i "./Docker/.envs/.private/aws_prod_key.pem" ubuntu@18.216.197.199 "chmod +x ./Docker/bash_scripts/deployment/ec2_setup.sh"'
                 sh 'ssh -o StrictHostKeyChecking=no -i "./Docker/.envs/.private/aws_prod_key.pem" ubuntu@18.216.197.199 "cd ./Docker/bash_scripts/deployment/ && . ./ec2_setup.sh"'
             }
