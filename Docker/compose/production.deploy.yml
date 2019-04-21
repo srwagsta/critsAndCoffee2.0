@@ -1,7 +1,11 @@
 version: '3'
 
 volumes:
-  production_caddy: {}
+  production_caddy: 
+    driver_opts:
+      type: none
+      device: /caddy
+      o: bind
   production_logs: {}
 services:
   caddy:
@@ -18,8 +22,8 @@ services:
       - back-end
       - front-end
     ports:
-      - "0.0.0.0:80:80"
-      - "0.0.0.0:443:443"
+      - "80:80"
+      - "443:443"
 
   front-end-app:
     image: ${DOCKER_REGISTRY}crits_and_coffee_client_app:${DOCKER_PRODUCTION_TAG}
