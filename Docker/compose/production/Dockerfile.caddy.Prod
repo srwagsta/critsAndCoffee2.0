@@ -1,2 +1,5 @@
-FROM abiosoft/caddy:0.11.0
+FROM abiosoft/caddy:0.11.5
+
+ARG plugins=tls.dns.route53
+
 COPY Caddyfile.production /etc/Caddyfile
