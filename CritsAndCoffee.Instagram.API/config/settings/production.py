@@ -185,7 +185,7 @@ LOGGING = {
         },
         'raven': {
             'level': 'DEBUG',
-            'handlers': ['sentry],
+            'handlers': ['sentry'],
             'propagate': False,
         },
         'sentry.errors': {
