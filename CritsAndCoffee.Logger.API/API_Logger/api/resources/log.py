@@ -7,6 +7,7 @@ from API_Logger.decorators.jwt_validation import jwt_required
 import os
 
 logger = logging.getLogger('LOG API')
+log_filename = "/crits-logs/critsAndcoffee.log"
 os.makedirs(os.path.dirname(log_filename), exist_ok=True)
 file_handler = RotatingFileHandler('critsAndcoffee.log', maxBytes=1024 * 1024 * 15, backupCount=10)
 file_handler.setLevel(logging.INFO)

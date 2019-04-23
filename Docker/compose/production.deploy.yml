@@ -6,11 +6,16 @@ volumes:
       type: none
       device: /caddy
       o: bind
-  production_logs: {}
+  production_logs: 
+    driver_opts:
+      type: none
+      device: /logs
+      o: bind
 
 services:
   caddy:
     image: ${DOCKER_REGISTRY}crits_and_coffee_caddy:${DOCKER_PRODUCTION_TAG}
+    container_name: caddy-production
     depends_on:
       - front-end-app
       - instagram-api
@@ -23,8 +28,8 @@ services:
       - back-end
       - front-end
     ports:
-      - "80:80"
-      - "443:443"
+      - "0.0.0.0:80:80"
+      - "0.0.0.0:443:443"
 
   front-end-app:
     image: ${DOCKER_REGISTRY}crits_and_coffee_client_app:${DOCKER_PRODUCTION_TAG}
@@ -82,11 +87,13 @@ services:
 
   redis:
     image: redis:3.2
+    container_name: redis-production
     networks:
       - back-end
 
   selenium:
     image: selenium/standalone-chrome
+    container_name: instagram-selenium-production
     networks:
       - back-end
 
