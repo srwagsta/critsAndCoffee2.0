@@ -3,7 +3,7 @@ www.{$DOMAIN_NAME} {
 }
 
 {$DOMAIN_NAME} {
-    proxy / front-end-app:443 {
+    proxy / front-end-app:80 {
         websocket
     }
     proxy /api/v1/quant quant-api:5000 {
