@@ -1,12 +1,16 @@
 ARG GeoDjango="srwagsta/crits_and_coffee_accessories:geo-django"
-
 FROM ${GeoDjango}
+
+ARG django_requirements_file=production.txt
+ARG django_start_script_version=start.prod
+ARG django_celery_directory=celery.prod
 
 RUN addgroup --system django \
     && adduser --system --group django
+
 # Requirements are installed here to ensure they will be cached.
 COPY ./requirements /requirements
-RUN pip install --no-cache-dir -r /requirements/production.txt \
+RUN pip install --no-cache-dir -r /requirements/${django_requirements_file} \
     && rm -rf /requirements
 
 COPY ./docker-scripts/django/entrypoint /entrypoint
@@ -14,22 +18,22 @@ RUN sed -i 's/\r//' /entrypoint
 RUN chmod +x /entrypoint
 RUN chown django /entrypoint
 
-COPY ./docker-scripts/django/start.prod /start
+COPY ./docker-scripts/django/${django_start_script_version} /start
 RUN sed -i 's/\r//' /start
 RUN chmod +x /start
 RUN chown django /start
 
-COPY ./docker-scripts/celery.prod/worker/start /start-celeryworker
+COPY ./docker-scripts/${django_celery_directory}/worker/start /start-celeryworker
 RUN sed -i 's/\r//' /start-celeryworker
 RUN chmod +x /start-celeryworker
 RUN chown django /start-celeryworker
 
-COPY ./docker-scripts/celery.prod/beat/start /start-celerybeat
+COPY ./docker-scripts/${django_celery_directory}/beat/start /start-celerybeat
 RUN sed -i 's/\r//' /start-celerybeat
 RUN chmod +x /start-celerybeat
 RUN chown django /start-celerybeat
 
-COPY ./docker-scripts/celery.prod/flower/start /start-flower
+COPY ./docker-scripts/${django_celery_directory}/flower/start /start-flower
 RUN sed -i 's/\r//' /start-flower
 RUN chmod +x /start-flower
 

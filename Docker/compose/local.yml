@@ -32,7 +32,11 @@ services:
     container_name: instagram-api-local
     build:
       context: ../../CritsAndCoffee.Instagram.API
-      dockerfile: ../Docker/compose/local/Dockerfile.Instagram.API
+      dockerfile: ../Docker/compose/dockerfiles/Dockerfile.Instagram.API
+      args:
+        - django_requirements_file=local.txt
+        - django_start_script_version=start.local
+        - django_celery_directory=celery
     volumes:
       - ../logs/:/crits-logs/
     links:
@@ -53,7 +57,7 @@ services:
     container_name: quant-api-local
     build:
       context: ../../CritsAndCoffee.Quant.API
-      dockerfile: ../Docker/compose/production/Dockerfile.Quant.API
+      dockerfile: ../Docker/compose/dockerfiles/Dockerfile.Quant.API
     depends_on:
       - postgres
       - instagram-api
@@ -70,7 +74,7 @@ services:
     container_name: logger-api-local
     build:
       context: ../../CritsAndCoffee.Logger.API
-      dockerfile: ../Docker/compose/local/Dockerfile.Logger.API
+      dockerfile: ../Docker/compose/dockerfiles/Dockerfile.Logger.API
     volumes:
       - ../logs/:/crits-logs/
     networks:
@@ -95,8 +99,10 @@ services:
 
   caddy:
     build:
-      context: ./local
-      dockerfile: ./Dockerfile.caddy.local
+      context: ./dockerfiles
+      dockerfile: Dockerfile.caddy
+      args:
+        - caddyfile_version=Caddyfile.local
     image: ${DOCKER_REGISTRY}crits_and_coffee_caddy:${DOCKER_LOCAL_TAG}
     container_name: caddy-local
     depends_on:
@@ -106,8 +112,6 @@ services:
       - quant-api
     volumes:
       - local_caddy:/root/.caddy
-    env_file:
-      - ../.envs/.local/.caddy
     networks:
       - back-end
       - front-end

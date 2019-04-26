@@ -5,7 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90fe1e25-08d0-474a-b016-dfaccdc13a79" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/Docker/compose/dockerfiles/Dockerfile.caddy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/modules/ui/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/modules/ui/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/API_InstagramPosts/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/API_InstagramPosts/helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/docker-scripts/django/start.local" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/docker-scripts/django/start.local" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/requirements/base.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/requirements/base.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docker/.envs/.local/.caddy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docker/compose/local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/local.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docker/compose/local/Caddyfile.local" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/dockerfiles/Caddyfile.local" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docker/compose/local/Dockerfile.Instagram.API" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docker/compose/local/Dockerfile.Logger.API" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/dockerfiles/Dockerfile.Logger.API" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docker/compose/local/Dockerfile.caddy.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docker/compose/production.build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/production.build.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docker/compose/production/Caddyfile.production" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/dockerfiles/Caddyfile.production" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docker/compose/production/Dockerfile.ClientApp.Prod" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/dockerfiles/Dockerfile.ClientApp.Prod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docker/compose/production/Dockerfile.Instagram.API.Prod" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/dockerfiles/Dockerfile.Instagram.API" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docker/compose/production/Dockerfile.Logger.API.Prod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docker/compose/production/Dockerfile.Quant.API" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/dockerfiles/Dockerfile.Quant.API" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docker/compose/production/Dockerfile.caddy.Prod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docker/compose/test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/compose/test.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,32 +41,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/settings/production.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2369">
-              <caret line="108" column="43" selection-start-line="108" selection-start-column="43" selection-end-line="108" selection-end-column="43" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Docker/.envs/.private/.production/.django">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="667">
-              <caret line="29" column="69" selection-start-line="29" selection-start-column="69" selection-end-line="29" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/requirements/production.txt">
+        <entry file="file://$PROJECT_DIR$/Docker/compose/dockerfiles/Caddyfile.local">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="63">
+              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Docker/compose/local.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="924">
+              <caret line="113" column="32" selection-start-line="113" selection-start-column="32" selection-end-line="113" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/API_InstagramPosts/helpers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,22 +104,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/auth/login/login.component.html" />
-        <option value="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/home.component.ts" />
-        <option value="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/auth/login/login.component.ts" />
-        <option value="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/crits-hero/crits-hero.component.html" />
-        <option value="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/modules/ui/header/header.component.ts" />
-        <option value="$PROJECT_DIR$/CritsAndCoffee.Quant.API/requirements.txt" />
-        <option value="$PROJECT_DIR$/CritsAndCoffee.Quant.API/API_Quant/manage.py" />
-        <option value="$PROJECT_DIR$/Docker/.envs/.production/.flask_quant" />
-        <option value="$PROJECT_DIR$/CritsAndCoffee.Quant.API/tests/conftest.py" />
-        <option value="$PROJECT_DIR$/CritsAndCoffee.Quant.API/tests/factories.py" />
-        <option value="$PROJECT_DIR$/CritsAndCoffee.Quant.API/setup.py" />
-        <option value="$PROJECT_DIR$/CritsAndCoffee.Quant.API/API_Quant/extensions.py" />
-        <option value="$PROJECT_DIR$/CritsAndCoffee.Quant.API/API_Quant/configtest.py" />
-        <option value="$PROJECT_DIR$/CritsAndCoffee.Quant.API/API_Quant/models/user.py" />
-        <option value="$PROJECT_DIR$/CritsAndCoffee.Quant.API/API_Quant/decorators/jwt_validation.py" />
         <option value="$PROJECT_DIR$/CritsAndCoffee.Quant.API/API_Quant/api/resources/user.py" />
         <option value="$PROJECT_DIR$/CritsAndCoffee.Quant.API/API_Quant/api/views.py" />
         <option value="$PROJECT_DIR$/CritsAndCoffee.Quant.API/API_Quant/config.py" />
@@ -117,7 +121,6 @@
         <option value="$PROJECT_DIR$/Docker/compose/local/Caddyfile.local" />
         <option value="$PROJECT_DIR$/Docker/compose/.env" />
         <option value="$PROJECT_DIR$/Docker/compose/local/Dockerfile.Logger.API" />
-        <option value="$PROJECT_DIR$/Docker/compose/local.yml" />
         <option value="$PROJECT_DIR$/Docker/.envs/.local/.flask_logger" />
         <option value="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/apiv1_urls.py" />
         <option value="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/settings/base.py" />
@@ -129,12 +132,29 @@
         <option value="$PROJECT_DIR$/Docker/compose/production.yml" />
         <option value="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/assets/images/site_images/crits_and_coffee_brand.svg" />
         <option value="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/home.component.html" />
-        <option value="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/modules/ui/header/header.component.html" />
         <option value="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/home.component.scss" />
         <option value="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/modules/ui/ui.module.scss" />
         <option value="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/settings/production.py" />
         <option value="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/requirements/production.txt" />
         <option value="$PROJECT_DIR$/Docker/.envs/.private/.production/.django" />
+        <option value="$PROJECT_DIR$/Docker/compose/production/Dockerfile.caddy.Prod" />
+        <option value="$PROJECT_DIR$/Docker/compose/production/Dockerfile.Instagram.API.Prod" />
+        <option value="$PROJECT_DIR$/Docker/compose/dockerfiles/Dockerfile.Instagram.API.Prod" />
+        <option value="$PROJECT_DIR$/Docker/compose/dockerfiles/Dockerfile.Logger.API" />
+        <option value="$PROJECT_DIR$/Docker/compose/production.build.yml" />
+        <option value="$PROJECT_DIR$/Docker/compose/test.yml" />
+        <option value="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/requirements/base.txt" />
+        <option value="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/modules/ui/header/header.component.html" />
+        <option value="$PROJECT_DIR$/Docker/compose/dockerfiles/Dockerfile.Quant.API" />
+        <option value="$PROJECT_DIR$/Docker/compose/dockerfiles/Dockerfile.ClientApp.Prod" />
+        <option value="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/docker-scripts/django/start.local" />
+        <option value="$PROJECT_DIR$/Docker/compose/dockerfiles/Dockerfile.Instagram.API" />
+        <option value="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/Properties/launchSettings.json" />
+        <option value="$PROJECT_DIR$/Docker/compose/dockerfiles/Caddyfile.production" />
+        <option value="$PROJECT_DIR$/Docker/compose/dockerfiles/Dockerfile.caddy" />
+        <option value="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/API_InstagramPosts/helpers.py" />
+        <option value="$PROJECT_DIR$/Docker/compose/local.yml" />
+        <option value="$PROJECT_DIR$/Docker/compose/dockerfiles/Caddyfile.local" />
       </list>
     </option>
   </component>
@@ -144,10 +164,10 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="777" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="25" />
+    <option name="width" value="2560" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -159,65 +179,71 @@
         <subPane>
           <expand>
             <path>
-              <item name="CritsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CritsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="critsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="critsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CritsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CritsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="critsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="critsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
               <item name="CritsAndCoffee.Instagram.API" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CritsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CritsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="critsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="critsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
               <item name="CritsAndCoffee.Instagram.API" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="API_InstagramPosts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CritsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CritsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="critsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="critsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
               <item name="CritsAndCoffee.Instagram.API" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="settings" type="462c0819:PsiDirectoryNode" />
+              <item name="API_InstagramPosts" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CritsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CritsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="critsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="critsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="CritsAndCoffee.Instagram.API" type="462c0819:PsiDirectoryNode" />
+              <item name="API_InstagramPosts" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+              <item name="commands" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="critsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="critsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
               <item name="CritsAndCoffee.Instagram.API" type="462c0819:PsiDirectoryNode" />
               <item name="requirements" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CritsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CritsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="critsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="critsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
               <item name="Docker" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CritsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CritsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="critsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="critsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
               <item name="Docker" type="462c0819:PsiDirectoryNode" />
               <item name=".envs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CritsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CritsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="critsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="critsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
               <item name="Docker" type="462c0819:PsiDirectoryNode" />
               <item name=".envs" type="462c0819:PsiDirectoryNode" />
-              <item name=".private" type="462c0819:PsiDirectoryNode" />
+              <item name=".local" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CritsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CritsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="critsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="critsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
               <item name="Docker" type="462c0819:PsiDirectoryNode" />
-              <item name=".envs" type="462c0819:PsiDirectoryNode" />
-              <item name=".private" type="462c0819:PsiDirectoryNode" />
-              <item name=".production" type="462c0819:PsiDirectoryNode" />
+              <item name="compose" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CritsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CritsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="critsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="critsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
               <item name="Docker" type="462c0819:PsiDirectoryNode" />
-              <item name=".envs" type="462c0819:PsiDirectoryNode" />
-              <item name=".production" type="462c0819:PsiDirectoryNode" />
+              <item name="compose" type="462c0819:PsiDirectoryNode" />
+              <item name="dockerfiles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -236,24 +262,24 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/node_modules/typescript/lib" />
     <property name="typescript-compiler-editor-notification" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Docker/compose/dockerfiles" />
+      <recent name="$PROJECT_DIR$/Docker/compose/production" />
+      <recent name="$PROJECT_DIR$/CritsAndCoffee.Quant.API/Docker_scripts" />
+      <recent name="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/modules" />
+      <recent name="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/services/tests" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Docker/.envs/.production" />
       <recent name="$PROJECT_DIR$/Docker/compose/production" />
       <recent name="$PROJECT_DIR$/Docker/compose/local" />
       <recent name="$PROJECT_DIR$/CritsAndCoffee.Logger.API" />
       <recent name="$PROJECT_DIR$/Docker/.envs/.local" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Docker/compose/production" />
-      <recent name="$PROJECT_DIR$/CritsAndCoffee.Quant.API/Docker_scripts" />
-      <recent name="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/modules" />
-      <recent name="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/services/tests" />
-      <recent name="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/state/instagram" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -299,6 +325,8 @@
       <workItem from="1555017839971" duration="2524000" />
       <workItem from="1555895240382" duration="906000" />
       <workItem from="1556244863827" duration="232000" />
+      <workItem from="1556284575324" duration="244000" />
+      <workItem from="1556284834666" duration="10184000" />
     </task>
     <servers />
   </component>
@@ -308,14 +336,14 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169795000" />
+    <option name="totallyTimeSpent" value="180223000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="777" extended-state="0" />
+    <frame x="0" y="25" width="2560" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.17689823" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.13325378" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.09453125" />
       <window_info id="npm" order="3" sideWeight="0.5005291" side_tool="true" weight="0.09257813" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" weight="0.32903227" />
@@ -323,13 +351,13 @@
       <window_info anchor="bottom" id="Python Console" order="2" />
       <window_info anchor="bottom" id="Terminal" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" weight="0.32884902" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32785088" />
       <window_info anchor="bottom" id="Run" order="6" weight="0.32903227" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" weight="0.32894737" />
+      <window_info anchor="bottom" id="Docker" order="11" weight="0.32894737" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="13" weight="0.32903227" />
       <window_info anchor="bottom" id="Inspection Results" order="14" weight="0.32903227" />
@@ -343,7 +371,7 @@
     </layout>
     <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.27059773" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.13325378" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.09453125" />
       <window_info id="npm" order="3" sideWeight="0.5005291" side_tool="true" weight="0.09257813" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" weight="0.32903227" />
@@ -351,13 +379,13 @@
       <window_info anchor="bottom" id="Python Console" order="2" />
       <window_info anchor="bottom" id="Terminal" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" weight="0.32884902" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32785088" />
       <window_info anchor="bottom" id="Run" order="6" weight="0.32903227" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" weight="0.32894737" />
+      <window_info anchor="bottom" id="Docker" order="11" weight="0.32894737" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="13" weight="0.32903227" />
       <window_info anchor="bottom" id="Inspection Results" order="14" weight="0.32903227" />
@@ -373,6 +401,9 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.cs" />
+  </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
       <list>
@@ -384,133 +415,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Docker/.envs/.production/.flask_logger" />
-    <entry file="file://$PROJECT_DIR$/Docker/compose/production/Dockerfile.Logger.API.Prod">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Logger.API/Docker_scripts/start.prod">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="74" selection-start-line="2" selection-start-column="74" selection-end-line="2" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Quant.API/Docker_scripts/start.prod">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Docker/.envs/.production/.caddy">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Docker/.envs/.local/.caddy">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Docker/compose/production/Dockerfile.Instagram.API.Prod">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Docker/.envs/.production/.django" />
-    <entry file="file://$PROJECT_DIR$/Docker/compose/local/Caddyfile.local">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="29" column="5" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="29" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-390">
-          <folding>
-            <element signature="e#670#679#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/docker-scripts/django/start.local">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/docker-scripts/django/start.prod">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/Startup.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-266" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/Properties/launchSettings.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/appsettings.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-63" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Docker/compose/local/Dockerfile.ClientApp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Docker/compose/production/Dockerfile.ClientApp.Prod">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-69" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Docker/compose/production/Caddyfile.production">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/docker-scripts/start.sh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Logger.API/API_Logger/api/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Docker/.envs/.local/.flask_logger">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="54" selection-start-column="54" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Docker/.envs/.local/.flask_quant">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="30" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Docker/compose/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="621">
@@ -562,22 +466,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Docker/compose/local/Dockerfile.Logger.API">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Docker/compose/production/Dockerfile.Quant.API.Prod" />
     <entry file="file://$PROJECT_DIR$/Docker/compose/local/Dockerfile.Quant.API" />
-    <entry file="file://$PROJECT_DIR$/Docker/compose/local.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="71" column="14" selection-start-line="71" selection-start-column="14" selection-end-line="71" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Docker/compose/production.yml" />
     <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/crits-hero/crits-hero.component.scss">
       <provider selected="true" editor-type-id="text-editor" />
@@ -587,13 +477,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/crits-hero/crits-hero.component.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/modules/ui/header/header.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/modules/ui/ui.module.scss">
       <provider selected="true" editor-type-id="text-editor">
@@ -616,30 +499,177 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Docker/.envs/.private/.production/.aws">
+    <entry file="file://$PROJECT_DIR$/Docker/.envs/.private/.production/.aws" />
+    <entry file="file://$PROJECT_DIR$/Docker/.envs/.private/.production/.django" />
+    <entry file="file://$PROJECT_DIR$/Docker/compose/local/Dockerfile.caddy.local">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Docker/compose/local/Dockerfile.ClientApp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Docker/compose/local/Dockerfile.Instagram.API">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/settings/production.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2369">
-          <caret line="108" column="43" selection-start-line="108" selection-start-column="43" selection-end-line="108" selection-end-column="43" />
+        <state relative-caret-position="1470">
+          <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Docker/.envs/.private/.production/.django">
+    <entry file="file://$PROJECT_DIR$/Docker/compose/production/Dockerfile.Logger.API.Prod">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Docker/compose/production.deploy.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="29" column="69" selection-start-line="29" selection-start-column="69" selection-end-line="29" selection-end-column="69" />
+        <state relative-caret-position="-1638" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Docker/compose/test.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="805">
+          <caret line="90" column="23" selection-start-line="90" selection-start-column="23" selection-end-line="90" selection-end-column="23" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Docker/compose/production.build.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="90" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Docker/compose/base_images/Dockerfile.geo-django">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/requirements/production.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="231">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/modules/ui/header/header.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="34" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/requirements/base.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Docker/compose/dockerfiles/Dockerfile.Quant.API">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Docker/compose/dockerfiles/Dockerfile.Logger.API">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/docker-scripts/django/start.local">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/appsettings.Development.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/appsettings.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/Properties/launchSettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/Program.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-315" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Docker/compose/dockerfiles/Dockerfile.ClientApp.Prod">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Docker/compose/dockerfiles/Dockerfile.Instagram.API">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/API_InstagramPosts/management/commands/collectinstagramposts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/API_InstagramPosts/helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Docker/compose/dockerfiles/Caddyfile.production">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Docker/compose/dockerfiles/Dockerfile.caddy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Docker/.envs/.local/.caddy">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Docker/compose/local.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="113" column="32" selection-start-line="113" selection-start-column="32" selection-end-line="113" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Docker/compose/dockerfiles/Caddyfile.local">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
         </state>
       </provider>
     </entry>

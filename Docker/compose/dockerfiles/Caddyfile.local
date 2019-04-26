@@ -1,8 +1,8 @@
-{$DOMAIN_NAME}:8080 {
+localhost:8080 {
 tls self_signed
-    proxy / https://front-end-app:5001 {
+
+    proxy / front-end-app:5000 {
         websocket
-	    insecure_skip_verify
     }
 
     proxy /api/v1/quant quant-api:5000 {

@@ -30,7 +30,7 @@ def _get_instagram_auth_token(headless=True, docker_driver=True):
     except Exception as e:
         log.error(f'Instagram data pull missing environment variables => {e}')
 
-    DRIVER_TIMEOUT = 10
+    DRIVER_TIMEOUT = 30
 
     return_token = None
 
@@ -69,9 +69,10 @@ def _get_instagram_auth_token(headless=True, docker_driver=True):
 
     except TimeoutException as te:
         log.error(f'Timeout during Instagram data pull => {te}')
-
+        print(f'Timeout during Instagram data pull => {te}')
     except Exception as e:
         log.error(f'Exception thrown during Instagram data pull => {e}')
+        print(f'Exception thrown during Instagram data pull => {e}')
 
     else:
         driver.close()
@@ -85,6 +86,7 @@ def _parse_recent_media():
         return requests.get(url=recent_media_url, params=auth_params).json()['data']
     except Exception as e:
         log.error(f'INSTAGRAM DATA FAILURE => {e}')
+        print(f'INSTAGRAM DATA FAILURE => {e}')
         return None
 
 def _add_post_to_db(post_data):
@@ -110,5 +112,6 @@ def retrieve_recent_media():
                 log.info(media['id'] + f' => Added post')
             except Exception as e:
                 log.info(media['id'] + f' => Post NOT added --- {e} : {traceback.print_tb(tb=e.__traceback__)}')
+                print(media['id'] + f' => Post NOT added --- {e} : {traceback.print_tb(tb=e.__traceback__)}')
         return True
     return  False

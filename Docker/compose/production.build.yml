@@ -4,8 +4,10 @@ services:
   caddy:
     image: ${DOCKER_REGISTRY}crits_and_coffee_caddy:${DOCKER_PRODUCTION_TAG}
     build:
-      context: ./production
-      dockerfile: ./Dockerfile.caddy.Prod
+      context: ./dockerfiles
+      dockerfile: Dockerfile.caddy
+      args:
+        - caddyfile_version=Caddyfile.production
 
 
   front-end-app:
@@ -13,7 +15,7 @@ services:
     container_name: client-app-production
     build:
       context: ../../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp
-      dockerfile: ../../Docker/compose/production/Dockerfile.ClientApp.Prod
+      dockerfile: ../../Docker/compose/dockerfiles/Dockerfile.ClientApp.Prod
 
 
   instagram-api: &instagram-api
@@ -21,7 +23,11 @@ services:
     container_name: instagram-api-production
     build:
       context: ../../CritsAndCoffee.Instagram.API
-      dockerfile: ../Docker/compose/production/Dockerfile.Instagram.API.Prod
+      dockerfile: ../Docker/compose/dockerfiles/Dockerfile.Instagram.API
+      args:
+        - django_requirements_file=production.txt
+        - django_start_script_version=start.prod
+        - django_celery_directory=celery.prod
 
 
   quant-api:
@@ -29,7 +35,7 @@ services:
     container_name: quant-api-production
     build:
       context: ../../CritsAndCoffee.Quant.API
-      dockerfile: ../Docker/compose/production/Dockerfile.Quant.API
+      dockerfile: ../Docker/compose/dockerfiles/Dockerfile.Quant.API
 
 
   logger-api:
@@ -37,7 +43,7 @@ services:
     container_name: logger-api-production
     build:
       context: ../../CritsAndCoffee.Logger.API
-      dockerfile: ../Docker/compose/production/Dockerfile.Logger.API.Prod
+      dockerfile: ../Docker/compose/dockerfiles/Dockerfile.Logger.API
 
 
   redis:
