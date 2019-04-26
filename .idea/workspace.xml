@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90fe1e25-08d0-474a-b016-dfaccdc13a79" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/settings/production.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/settings/production.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/requirements/production.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/requirements/production.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +24,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/settings/production.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-125">
-              <caret line="107" column="43" selection-start-line="107" selection-start-column="43" selection-end-line="107" selection-end-column="43" />
+            <state relative-caret-position="2369">
+              <caret line="108" column="43" selection-start-line="108" selection-start-column="43" selection-end-line="108" selection-end-column="43" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -155,6 +154,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -223,7 +223,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -298,7 +297,8 @@
       <workItem from="1554168512935" duration="12275000" />
       <workItem from="1554603925278" duration="3219000" />
       <workItem from="1555017839971" duration="2524000" />
-      <workItem from="1555895240382" duration="729000" />
+      <workItem from="1555895240382" duration="906000" />
+      <workItem from="1556244863827" duration="232000" />
     </task>
     <servers />
   </component>
@@ -308,14 +308,14 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169386000" />
+    <option name="totallyTimeSpent" value="169795000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="777" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.17447495" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.17689823" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.09453125" />
       <window_info id="npm" order="3" sideWeight="0.5005291" side_tool="true" weight="0.09257813" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" weight="0.32903227" />
@@ -384,9 +384,7 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Docker/.envs/.production/.flask_logger">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Docker/.envs/.production/.flask_logger" />
     <entry file="file://$PROJECT_DIR$/Docker/compose/production/Dockerfile.Logger.API.Prod">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -413,9 +411,7 @@
     <entry file="file://$PROJECT_DIR$/Docker/compose/production/Dockerfile.Instagram.API.Prod">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Docker/.envs/.production/.django">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Docker/.envs/.production/.django" />
     <entry file="file://$PROJECT_DIR$/Docker/compose/local/Caddyfile.local">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="667">
@@ -573,20 +569,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Docker/compose/production/Dockerfile.Quant.API.Prod">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Docker/compose/local/Dockerfile.Quant.API">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" lean-forward="true" selection-start-line="7" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Docker/compose/production/Dockerfile.Quant.API.Prod" />
+    <entry file="file://$PROJECT_DIR$/Docker/compose/local/Dockerfile.Quant.API" />
     <entry file="file://$PROJECT_DIR$/Docker/compose/local.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-102">
@@ -594,13 +578,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Docker/compose/production.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Docker/compose/production.yml" />
     <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/crits-hero/crits-hero.component.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -643,8 +621,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/settings/production.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-125">
-          <caret line="107" column="43" selection-start-line="107" selection-start-column="43" selection-end-line="107" selection-end-column="43" />
+        <state relative-caret-position="2369">
+          <caret line="108" column="43" selection-start-line="108" selection-start-column="43" selection-end-line="108" selection-end-column="43" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
