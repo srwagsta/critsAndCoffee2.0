@@ -81,9 +81,9 @@ services:
 
   postgres:
     image: ${DOCKER_REGISTRY}crits_and_coffee_postgres:${DOCKER_LOCAL_TAG}
-    container_name: postgres-production
+    container_name: postgres-local
     build:
-      context: ./production/postgres
+      context: ./local/postgres
       dockerfile: ./Dockerfile
     networks:
       - back-end
