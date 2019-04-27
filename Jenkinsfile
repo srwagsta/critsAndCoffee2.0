@@ -13,8 +13,8 @@ pipeline {
           agent any
           when {
               expression {
-                  return env.GIT_BRANCH != 'origin/master';
-                  }
+                return env.GIT_BRANCH == 'origin/master';
+              }
             }
           steps {
               sh 'cd ./Docker/bash_scripts/image-builder && chmod 777 ./* && ./build_base_images.sh'
@@ -43,6 +43,11 @@ pipeline {
 
         stage('Deploy To Live') {
             agent any
+            when {
+              expression {
+                return env.GIT_BRANCH == 'origin/master';
+              }
+            }
             steps {
                 sh 'chmod 400 ./Docker/.envs/.private/aws_prod_key.pem'
                 sh 'rsync -av -e "ssh -o StrictHostKeyChecking=no -i ./Docker/.envs/.private/aws_prod_key.pem" --exclude="*.pem" ./Docker ubuntu@18.216.197.199:'
