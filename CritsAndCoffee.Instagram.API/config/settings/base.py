@@ -235,6 +235,13 @@ INSTALLED_APPS += ['crits_and_coffee.taskapp.celery.CeleryAppConfig']
 if USE_TZ:
     # http://docs.celeryproject.org/en/latest/userguide/configuration.html#std:setting-timezone
     CELERY_TIMEZONE = TIME_ZONE
+
+CELERY_BEAT_SCHEDULE = {
+    'poll-instagram': {
+       'task': 'poll_instagram',
+       'schedule': 86400,
+    },
+}
 # http://docs.celeryproject.org/en/latest/userguide/configuration.html#std:setting-broker_url
 CELERY_BROKER_URL = env('CELERY_BROKER_URL')
 # http://docs.celeryproject.org/en/latest/userguide/configuration.html#std:setting-result_backend

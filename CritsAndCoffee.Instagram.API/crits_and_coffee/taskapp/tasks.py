@@ -1,3 +1,4 @@
+from celery import shared_task
 import pytz
 from django.utils.datetime_safe import datetime
 from selenium import webdriver
@@ -11,7 +12,7 @@ import requests
 import urllib.parse as urlparse
 from os import environ
 import logging
-from .models import InstagramPost
+from API_InstagramPosts.models import InstagramPost
 from django.contrib.gis.geos import Point
 import traceback
 
@@ -106,6 +107,7 @@ def _add_post_to_db(post_data):
                  }).save()
 
 
+@shared_task(name='poll_instagram')
 def retrieve_recent_media():
     recent_media = _parse_recent_media()
     if recent_media is not None:
@@ -116,5 +118,7 @@ def retrieve_recent_media():
             except Exception as e:
                 log.info(media['id'] + f' => Post NOT added --- {e} : {traceback.print_tb(tb=e.__traceback__)}')
                 print(media['id'] + f' => Post NOT added --- {e} : {traceback.print_tb(tb=e.__traceback__)}')
-        return True
-    return False
+        print(f'****Successfully retrieved recent Instagram posts****')
+        return
+    print(f'****Unable to retrieve recent Instagram posts****')
+
