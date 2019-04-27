@@ -79,6 +79,7 @@ def _get_instagram_auth_token(headless=True, docker_driver=True):
 
     return return_token
 
+
 def _parse_recent_media():
     recent_media_url = "https://api.instagram.com/v1/users/self/media/recent/"
     auth_params = {'access_token': _get_instagram_auth_token()}
@@ -88,6 +89,7 @@ def _parse_recent_media():
         log.error(f'INSTAGRAM DATA FAILURE => {e}')
         print(f'INSTAGRAM DATA FAILURE => {e}')
         return None
+
 
 def _add_post_to_db(post_data):
     InstagramPost(**{'id': post_data['id'],
@@ -103,6 +105,7 @@ def _add_post_to_db(post_data):
                  'location_name': post_data['location']['name']
                  }).save()
 
+
 def retrieve_recent_media():
     recent_media = _parse_recent_media()
     if recent_media is not None:
@@ -114,4 +117,4 @@ def retrieve_recent_media():
                 log.info(media['id'] + f' => Post NOT added --- {e} : {traceback.print_tb(tb=e.__traceback__)}')
                 print(media['id'] + f' => Post NOT added --- {e} : {traceback.print_tb(tb=e.__traceback__)}')
         return True
-    return  False
+    return False

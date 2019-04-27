@@ -4,7 +4,6 @@ from celery import Celery
 from django.apps import apps, AppConfig
 from django.conf import settings
 
-
 if not settings.configured:
     # set the default Django settings module for the 'celery' program.
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings.local')  # pragma: no cover
@@ -41,6 +40,20 @@ class CeleryAppConfig(AppConfig):
             raven_client = RavenClient(dsn=settings.RAVEN_CONFIG['dsn'])
             raven_register_logger_signal(raven_client)
             raven_register_signal(raven_client)
+
+
+@app.on_after_configure.connect
+def setup_periodic_tasks(sender, **kwargs):
+    # Calls test('hello') every 10 seconds.
+    sender.add_periodic_task(10.0, pollInstagram.s("**CELERY TASK MAKING MOVES****"), name='Poll Instagram')
+
+    # Calls test('world') every 30 seconds
+    # sender.add_periodic_task(30.0, retrieve_recent_media(), expires=10)
+
+
+@app.task(bind=True)
+def pollInstagram(arg):
+    print(arg)
 
 
 @app.task(bind=True)
