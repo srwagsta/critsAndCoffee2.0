@@ -8,13 +8,14 @@ pipeline {
                 sh 'cp -r /var/jenkins_build_data/.private ./Docker/.envs'
             }
         }
-        if(env.BRANCH_NAME == 'master'){
+        
           stage('Build and Push new GeoDjango container') {
-              agent any
+            agent any
+            if(env.BRANCH_NAME == 'master'){
               steps {
                   sh 'cd ./Docker/bash_scripts/image-builder && chmod 777 ./* && ./build_base_images.sh'
               }
-          }
+            }
         }
         stage('Build and Push test images') {
             agent any
