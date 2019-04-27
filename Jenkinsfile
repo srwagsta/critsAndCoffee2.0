@@ -5,7 +5,7 @@ pipeline {
         stage('Add Private data to project for building from host') {
             agent any
             steps {
-                sh 'echo GIT_BRANCH'
+              echo env.BRANCH_NAME
                 sh 'cp -r /var/jenkins_build_data/.private ./Docker/.envs'
             }
         }
