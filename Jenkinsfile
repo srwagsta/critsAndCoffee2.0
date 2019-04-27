@@ -11,11 +11,6 @@ pipeline {
         
         stage('Build and Push new GeoDjango container') {
           agent any
-          when {
-              expression {
-                return env.GIT_BRANCH == 'origin/master';
-              }
-            }
           steps {
               sh 'cd ./Docker/bash_scripts/image-builder && chmod 777 ./* && ./build_base_images.sh'
           }
