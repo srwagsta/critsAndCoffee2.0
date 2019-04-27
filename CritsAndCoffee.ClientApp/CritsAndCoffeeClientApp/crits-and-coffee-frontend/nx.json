@@ -1,0 +1,18 @@
+{
+  "npmScope": "CritsAndCoffee",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": "*",
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "crits-and-coffee-app": {
+      "tags": []
+    },
+    "crits-and-coffee-app-e2e": {
+      "tags": []
+    }
+  }
+}

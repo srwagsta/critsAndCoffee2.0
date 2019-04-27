@@ -23,7 +23,7 @@ namespace CritsAndCoffeeClientApp
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             // In production, the Angular files will be served from this directory
-            services.AddSpaStaticFiles(configuration => { configuration.RootPath = "ClientApp/dist/ClientApp"; });
+            services.AddSpaStaticFiles(configuration => { configuration.RootPath = "crits-and-coffee-frontend/dist/apps/crits-and-coffee-app"; });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -32,6 +32,7 @@ namespace CritsAndCoffeeClientApp
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                // app.UseHttpsRedirection();
             }
             else
             {
@@ -39,7 +40,6 @@ namespace CritsAndCoffeeClientApp
                 app.UseHsts();
             }
 
-            // app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseSpaStaticFiles();
 
@@ -55,7 +55,7 @@ namespace CritsAndCoffeeClientApp
                 // To learn more about options for serving an Angular SPA from ASP.NET Core,
                 // see https://go.microsoft.com/fwlink/?linkid=864501
 
-                spa.Options.SourcePath = "ClientApp";
+                spa.Options.SourcePath = "crits-and-coffee-frontend/apps/crits-and-coffee-app";
 
                 if (env.IsDevelopment())
                 {

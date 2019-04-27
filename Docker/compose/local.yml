@@ -17,14 +17,14 @@ services:
       - NODE_ENV=development
     volumes:
       - ../../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/:/CritsAndCoffeeClientApp
-      - /CritsAndCoffeeClientApp/ClientApp/node_modules/
+      - /CritsAndCoffeeClientApp/crits-and-coffee-frontend/node_modules
     depends_on:
       - postgres
       - instagram-api
       - quant-api
       - logger-api
     networks:
-      - front-end
+      - back-end
     command: "/start.sh"
 
   instagram-api: &instagram-api
@@ -120,6 +120,7 @@ services:
 
   mailhog:
     image: mailhog/mailhog:v1.0.0
+    container_name: mailhog-local
     networks:
       - back-end
     ports:
@@ -127,11 +128,13 @@ services:
 
   selenium:
     image: selenium/standalone-chrome
+    container_name: selenium-local
     networks:
       - back-end
 
   redis:
     image: redis:3.2
+    container_name: redis-local
     networks:
       - back-end
 

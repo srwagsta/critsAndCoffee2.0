@@ -1,5 +1,5 @@
 #!/bin/sh
-cd ./ClientApp
+cd ./crits-and-coffee-frontend
 npm i 
 cd ../
 dotnet run

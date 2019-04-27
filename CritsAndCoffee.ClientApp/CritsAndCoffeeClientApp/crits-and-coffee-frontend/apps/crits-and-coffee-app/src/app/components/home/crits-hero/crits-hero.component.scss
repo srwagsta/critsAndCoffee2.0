@@ -1,0 +1,15 @@
+.crits-hero-container {
+  position: absolute;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.crits-hero-image {
+  -webkit-animation: focus-in-expand-fwd 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: focus-in-expand-fwd 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-delay: .5s;
+  padding: 1.5rem;
+  z-index: -1;
+
+  height: 10rem; // The height needs to be set.
+}

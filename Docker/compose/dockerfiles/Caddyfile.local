@@ -1,7 +1,7 @@
 localhost:8080 {
 tls self_signed
 
-    proxy / front-end-app:5000 {
+    proxy / http://front-end-app:5000 {
         websocket
     }
 
