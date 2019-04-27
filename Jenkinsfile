@@ -11,7 +11,7 @@ pipeline {
         stage('Build and Push new GeoDjango container') {
             agent any
             when {
-              branch 'master'
+              branch '*/master'
               beforeAgent true
             }
             steps {
