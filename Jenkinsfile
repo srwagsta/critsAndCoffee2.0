@@ -4,11 +4,6 @@ pipeline {
     stages {
         stage('Add Private data to project for building from host') {
             agent any
-            when {
-              expression {
-                  return env.GIT_BRANCH != 'origin/master';
-                  }
-            }
             steps {
                 sh 'cp -r /var/jenkins_build_data/.private ./Docker/.envs'
             }
@@ -16,6 +11,11 @@ pipeline {
         
         stage('Build and Push new GeoDjango container') {
           agent any
+          when {
+              expression {
+                  return env.GIT_BRANCH != 'origin/master';
+                  }
+            }
           steps {
               sh 'cd ./Docker/bash_scripts/image-builder && chmod 777 ./* && ./build_base_images.sh'
           }
