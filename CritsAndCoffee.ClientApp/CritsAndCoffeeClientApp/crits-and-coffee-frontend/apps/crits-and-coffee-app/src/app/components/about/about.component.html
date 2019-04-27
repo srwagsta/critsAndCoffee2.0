@@ -1,3 +1,13 @@
 <p>
-  ABOUT PAGE
+  What you see is only the beginning. 
+  This project is more than a simple web app about displaying Instagram posts, this is my sandbox where I can learn new technologies.
+  This project is composed of a .NET core app serving you an Angular 7 frontend, but the user auth is taken car of by a Django api, 
+  and hiding in all of that is a redis and celery instance to keep my posts up to date so I don't have to keep asking instagram. 
+  Then there are some other micro frameworks I have only begun to use for future features, including a Flask app that uses Intel's python distribution and Quandl to hammer through large data sets!
+  Behind everything there is a completely automated CI/CD pipeline that leverages Jenkins and Git branches that allows me to develop new feature on different branches without worries of breaking 
+  the live app because only once a feature is merged to master will it attempt deployment. All of this is agnostic of environment as it is all containerized with Docker. When code is pushed Jenkins 
+  takes care of building the new container pushing them to DockerHub, later developers pull the local images using docker-compose and can continue developing using all the tools they like including HTTPS, Angular's JIT compiler, and a full Postgresql DB. 
+  All locally! When it comes to updating the live site, Jenkins builds the production containers, tests them, and then deploys them out to AWS, where redundant and scalable services such as Ec2, RDS, and Route53 are waiting to host in an enterprise level 
+  environment. So when I want to try a new technology I have an infrastructure ready, no matter what environment is required I can plug it in and start playing! 
+  So keep checking back, or pull the project on github and contribute!
 </p>
