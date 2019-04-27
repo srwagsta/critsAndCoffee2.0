@@ -4,6 +4,11 @@ pipeline {
     stages {
         stage('Add Private data to project for building from host') {
             agent any
+            when {
+              expression {
+                return env.BRANCH_NAME != 'master';
+              }
+            }
             steps {
                 sh 'cp -r /var/jenkins_build_data/.private ./Docker/.envs'
             }
@@ -38,7 +43,9 @@ pipeline {
         stage('Deploy To Live') {
             agent any
             when {
-                branch 'master'
+              expression {
+                return env.BRANCH_NAME != 'master';
+              }
             }
             steps {
                 sh 'chmod 400 ./Docker/.envs/.private/aws_prod_key.pem'
