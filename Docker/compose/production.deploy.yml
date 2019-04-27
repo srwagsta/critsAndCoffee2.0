@@ -41,7 +41,8 @@ services:
     depends_on:
       - instagram-api
       - quant-api
-      - logger-api
+    env_file:
+      - ../.envs/.private/.production/.django
     networks:
       - back-end
 
@@ -65,24 +66,13 @@ services:
     container_name: quant-api-production
     depends_on:
       - instagram-api
-      - logger-api
     networks:
       - back-end
     env_file:
       - ../.envs/.private/.production/.postgres
       - ../.envs/.private/.production/.flask_quant
+      - ../.envs/.private/.production/.django
       - ../.envs/.private/.quandl
-    command: /start
-
-  logger-api:
-    image: ${DOCKER_REGISTRY}crits_and_coffee_api:${LOGGER_API_PRODUCTION_TAG}
-    container_name: logger-api-production
-    volumes:
-      - production_logs:/crits-logs/
-    networks:
-      - back-end
-    env_file:
-      - ../.envs/.private/.production/.flask_logger
     command: /start
 
   redis:

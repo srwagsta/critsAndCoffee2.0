@@ -1,4 +1,4 @@
-<div fxLayout="row wrap" fxLayoutAlign="space-between" class="crits-hero-container">
+<div fxLayout="row wrap" fxLayoutAlign="space-between" fxLayoutAlign.lt-sm="center" class="crits-hero-container">
 
   <a class="crits-hero-image" *ngFor="let post of recentPosts$ | async" href="{{post.link}}" target="_blank">
     <img src="{{post.image_thumbnail_url}}">

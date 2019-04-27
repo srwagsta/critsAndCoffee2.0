@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {Observable} from "rxjs";
-import {LoggingService} from "../../services/logging.service";
 import {InstagramPostModel} from "../../models/instagram-post.model";
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import {InstagramPostDetailComponent} from "./instagram-post-detail/instagram-post-detail.component";
@@ -15,8 +14,7 @@ import {Select, Store} from "@ngxs/store";
 })
 export class InstagramMapComponent implements OnInit{
 
-  constructor(private log: LoggingService,
-              private modalService: NgbModal,
+  constructor(private _modalService: NgbModal,
               private _store: Store) {}
 
   //<editor-fold desc="Class Fields">
@@ -29,13 +27,13 @@ export class InstagramMapComponent implements OnInit{
 
   //<editor-fold desc="ng Events">
   ngOnInit() {
-    this.log.info(`${this._componentName}: Focus set (${this.clientCoordinate.latitude}, ${this.clientCoordinate.longitude})`);
+    console.log(`${this._componentName}: Focus set (${this.clientCoordinate.latitude}, ${this.clientCoordinate.longitude})`);
   }
 
   //</editor-fold>
 
   public onMarkerClick(post: InstagramPostModel): void{
-    const modalRef = this.modalService.open(InstagramPostDetailComponent);
+    const modalRef = this._modalService.open(InstagramPostDetailComponent);
     modalRef.componentInstance.post = post;
   }
 

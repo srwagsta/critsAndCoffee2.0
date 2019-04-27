@@ -1,8 +1,7 @@
-import { Injectable } from '@angular/core';
+import { Injectable} from '@angular/core';
 import { Observable, of} from 'rxjs';
 import { catchError, tap } from 'rxjs/operators';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import {LoggingService} from "./logging.service";
 import {InstagramPostModel} from "../models/instagram-post.model";
 
 
@@ -13,9 +12,9 @@ const httpOptions = {
 @Injectable({ providedIn: 'root' })
 export class InstagramMappingService {
 
-  constructor(private log: LoggingService, private http: HttpClient) { }
+  constructor(private _http: HttpClient) { }
 
-  private _serviceName:string = "Instagram Mapping Service: ";
+  private _serviceName:string = 'Instagram Mapping Service: ';
   private _instagramUrl:string = 'api/v1/instagram';
 
 
@@ -23,24 +22,24 @@ export class InstagramMappingService {
     return Observable.create(
       (observer) => {
       navigator.geolocation.watchPosition((pos: Position) => { observer.next(pos); },
-      () => {this.log.error(`${this._serviceName} Position not available.`) },
+      () => {throw new Error(`${this._serviceName} Position not available.`) },
       { enableHighAccuracy: true });
     });
   }
 
 
   public getPosts(): Observable<InstagramPostModel[]> {
-    return this.http.get<InstagramPostModel[]>(`${this._instagramUrl}/posts`, httpOptions)
+    return this._http.get<InstagramPostModel[]>(`${this._instagramUrl}/posts`, httpOptions)
       .pipe(
-        tap(data => this.log.info(`Entry content: ${data}`),
+        tap(data => console.log(`Entry content: ${data}`),
             error =>  catchError(this.handleError(error, [])))
       );
   }
 
   private handleError<T> (operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
-      this.log.error(`${this._serviceName} ${error}`);
-      this.log.error(`${this._serviceName} ${operation} failed: ${error.message}`);
+      throw new Error(`${this._serviceName} ${error} \n 
+          ${this._serviceName} ${operation} failed: ${error.message}`);
       // Let the app keep running by returning an empty result.
       return of(result as T);
     };

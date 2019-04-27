@@ -22,7 +22,6 @@ services:
       - postgres
       - instagram-api
       - quant-api
-      - logger-api
     networks:
       - back-end
     command: "/start.sh"
@@ -69,20 +68,6 @@ services:
       - ../.envs/.private/.quandl
     command: /start
 
-  logger-api:
-    image: ${DOCKER_REGISTRY}crits_and_coffee_api:${LOGGER_API_LOCAL_TAG}
-    container_name: logger-api-local
-    build:
-      context: ../../CritsAndCoffee.Logger.API
-      dockerfile: ../Docker/compose/dockerfiles/Dockerfile.Logger.API
-    volumes:
-      - ../logs/:/crits-logs/
-    networks:
-      - back-end
-    env_file:
-      - ../.envs/.local/.flask_logger
-    command: /start
-
   postgres:
     image: ${DOCKER_REGISTRY}crits_and_coffee_postgres:${DOCKER_LOCAL_TAG}
     container_name: postgres-local
@@ -108,7 +93,6 @@ services:
     depends_on:
       - front-end-app
       - instagram-api
-      - logger-api
       - quant-api
     volumes:
       - local_caddy:/root/.caddy

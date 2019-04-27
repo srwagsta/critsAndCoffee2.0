@@ -1,11 +1,20 @@
 from flask import Flask
 from API_Quant import api
 from API_Quant.extensions import db, migrate
-
+import sentry_sdk
+from sentry_sdk.integrations.flask import FlaskIntegration
+import os
 
 def create_app(config=None, testing=False, cli=False):
     """Application factory, used to create application
     """
+
+
+    sentry_sdk.init(
+        dsn=os.environ.get('SENTRY_DNS'),
+        integrations=[FlaskIntegration()]
+    )
+
     app = Flask('API_Quant')
 
     configure_app(app, testing)

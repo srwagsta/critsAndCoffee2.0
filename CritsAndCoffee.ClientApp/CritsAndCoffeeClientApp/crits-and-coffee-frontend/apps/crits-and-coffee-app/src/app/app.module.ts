@@ -3,10 +3,16 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, ErrorHandler } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
+import { environment } from '../environments/environment';
 import { AgmCoreModule } from '@agm/core';
+
+//Logging
+import * as Sentry from "@sentry/browser";
+import { SentryErrorHandler } from './services/sentryErrorHandler.service';
+
 import {
   MatTooltipModule,
   MatButtonModule,
@@ -55,7 +61,10 @@ import { NgxsStoragePluginModule } from '@ngxs/storage-plugin';
 import {InstagramPostListState} from "./state/instagram/instagram.state";
 import {AuthState} from "./state/auth/auth.state";
 
-import { environment } from '../environments/environment';
+
+Sentry.init({
+  dsn: "https://3d288dd060d947789b0e3dcc380efb2f@sentry.io/1444294"
+});
 
 @NgModule({
   declarations: [
@@ -100,7 +109,7 @@ import { environment } from '../environments/environment';
       apiKey: 'AIzaSyCNPlDnedCEachOH08pszCanYO2RDuJ6pk\n'
     })
   ],
-  providers: [],
+  providers: [{ provide: ErrorHandler, useClass: SentryErrorHandler }],
   entryComponents: [InstagramPostDetailComponent],
   bootstrap: [AppComponent]
 })

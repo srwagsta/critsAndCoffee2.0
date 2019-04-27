@@ -37,15 +37,6 @@ services:
       context: ../../CritsAndCoffee.Quant.API
       dockerfile: ../Docker/compose/dockerfiles/Dockerfile.Quant.API
 
-
-  logger-api:
-    image: ${DOCKER_REGISTRY}crits_and_coffee_api:${LOGGER_API_PRODUCTION_TAG}
-    container_name: logger-api-production
-    build:
-      context: ../../CritsAndCoffee.Logger.API
-      dockerfile: ../Docker/compose/dockerfiles/Dockerfile.Logger.API
-
-
   redis:
     image: redis:3.2
     networks:

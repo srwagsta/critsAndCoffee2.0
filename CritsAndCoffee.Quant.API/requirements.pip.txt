@@ -9,3 +9,4 @@ passlib
 tox
 psycopg2-binary
 quandl
+sentry-sdk[flask]==0.7.12
