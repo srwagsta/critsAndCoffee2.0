@@ -16,6 +16,7 @@ pipeline {
                 return env.GIT_BRANCH == 'origin/master';
               }
             }
+            
           steps {
               sh 'cd ./Docker/bash_scripts/image-builder && chmod 777 ./* && ./build_base_images.sh'
           }
