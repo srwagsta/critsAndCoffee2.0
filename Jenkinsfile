@@ -5,15 +5,13 @@ pipeline {
         stage('Add Private data to project for building from host') {
             agent any
             steps {
+                sh 'echo GIT_BRANCH'
                 sh 'cp -r /var/jenkins_build_data/.private ./Docker/.envs'
             }
         }
         
         stage('Build and Push new GeoDjango container') {
           agent any
-          when{
-            environment name: 'BRANCH_NAME', value: 'master'
-          }
           steps {
               sh 'cd ./Docker/bash_scripts/image-builder && chmod 777 ./* && ./build_base_images.sh'
           }
