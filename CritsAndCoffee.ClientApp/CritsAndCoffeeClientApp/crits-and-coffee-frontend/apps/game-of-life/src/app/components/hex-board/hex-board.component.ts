@@ -63,6 +63,9 @@ export class HexBoardComponent implements OnInit {
    *   If the cell is yellow it goes to red if S is 1 to 4 inclusive or is exactly 6.
    *   If the cell is red it stays red if S is 1 or 2 and goes to yellow if S is 4.
    *   Otherwise it is dead in the next generation.
+   *
+   *   ... Considering adding this entire project as a feature module to the main app
+   *       That seems like the better route.
    */
 
 }
