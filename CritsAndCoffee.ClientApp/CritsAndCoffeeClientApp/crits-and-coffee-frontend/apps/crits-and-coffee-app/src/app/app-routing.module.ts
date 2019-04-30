@@ -8,6 +8,7 @@ import {PrivacyPolicyComponent} from "./components/legal-documents/privacy-polic
 import {ProjectLicenseComponent} from "./components/legal-documents/project-license/project-license.component";
 import {ApiTermsOfUseComponent} from "./components/legal-documents/api-terms-of-use/api-terms-of-use.component";
 import {CopyrightPolicyComponent} from "./components/legal-documents/copyright-policy/copyright-policy.component";
+import { GameRootComponent } from '../../../game-of-life/src/app/game-root/game-root.component';
 
 
 const routes: Routes = [
@@ -21,12 +22,16 @@ const routes: Routes = [
       component: HomeComponent
   },
   {
+    path: 'instagram-map',
+    component: InstagramMapComponent
+  },
+  {
       path: 'about',
       component: AboutComponent
   },
   {
-    path: 'instagram-map',
-    component: InstagramMapComponent
+    path: 'game-of-life',
+    component: GameRootComponent
   },
   {
     path: 'privacy-policy',

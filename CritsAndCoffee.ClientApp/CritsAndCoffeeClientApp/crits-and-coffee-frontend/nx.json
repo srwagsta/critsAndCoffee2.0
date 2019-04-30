@@ -13,6 +13,12 @@
     },
     "crits-and-coffee-app-e2e": {
       "tags": []
+    },
+    "game-of-life": {
+      "tags": ["gol"]
+    },
+    "game-of-life-e2e": {
+      "tags": []
     }
   }
 }

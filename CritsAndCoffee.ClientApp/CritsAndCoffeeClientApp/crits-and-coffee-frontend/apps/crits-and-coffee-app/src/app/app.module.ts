@@ -1,4 +1,8 @@
 // Modules
+
+// tslint:disable-next-line:nx-enforce-module-boundaries
+import { GameOfLifeApp } from '../../../game-of-life/src/app/app.module';
+
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing.module';
@@ -86,6 +90,7 @@ Sentry.init({
     PasswordChangeComponent
   ],
   imports: [
+    GameOfLifeApp.forRoot(),
     BrowserModule,
     BrowserAnimationsModule,
     FlexLayoutModule,

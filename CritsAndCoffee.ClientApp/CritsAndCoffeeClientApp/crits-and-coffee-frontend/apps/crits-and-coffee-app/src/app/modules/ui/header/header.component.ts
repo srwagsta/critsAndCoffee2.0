@@ -7,6 +7,7 @@ export class NavLinks{
   public static links:{label: string, link:string, icon:string}[] = [
     {label: 'Home',link: 'home', icon: 'home'},
     {label: 'Instagram Map',link: 'instagram-map', icon: 'map'},
+    {label: 'Conway\'s Game of Life',link: 'game-of-life', icon: 'videogame_asset'},
     {label: 'About The Project',link: 'about', icon: 'help_outline'}
   ];
 }
