@@ -10,7 +10,7 @@ module.exports = function(config) {
     ...baseConfig,
     coverageIstanbulReporter: {
       ...baseConfig.coverageIstanbulReporter,
-      dir: join(__dirname, '../../coverage/apps/game-of-life/')
+      dir: join(__dirname, '../../coverage/libs/game-of-life')
     }
   });
 };

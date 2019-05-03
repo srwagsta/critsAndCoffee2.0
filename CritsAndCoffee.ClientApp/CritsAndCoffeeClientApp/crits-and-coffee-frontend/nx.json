@@ -15,10 +15,7 @@
       "tags": []
     },
     "game-of-life": {
-      "tags": ["gol"]
-    },
-    "game-of-life-e2e": {
-      "tags": []
+      "tags": ["life"]
     }
   }
 }

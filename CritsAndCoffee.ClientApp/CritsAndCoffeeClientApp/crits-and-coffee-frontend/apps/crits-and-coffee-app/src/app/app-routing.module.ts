@@ -1,37 +1,38 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {AboutComponent} from "./components/about/about.component";
-import {PageNotFoundComponent} from "./components/page-not-found/page-not-found.component";
-import {HomeComponent} from "./components/home/home.component";
-import {InstagramMapComponent} from "./components/instagram-map/instagram-map.component";
 import {
+  AboutComponent,
+  PageNotFoundComponent,
+  HomeComponent,
+  InstagramMapComponent,
   PrivacyPolicyComponent,
   ProjectLicenseComponent,
   ApiTermsOfUseComponent,
-  CopyrightPolicyComponent} from './components/legal-documents';
-import { GameRootComponent } from '../../../game-of-life/src/app/game-root/game-root.component';
+  CopyrightPolicyComponent,
+  GameOfLifeComponent
+} from './components';
 
 const routes: Routes = [
   {
-      path: '',
-      redirectTo: '/home',
-      pathMatch: 'full'
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
   },
   {
-      path: 'home',
-      component: HomeComponent
+    path: 'home',
+    component: HomeComponent
   },
   {
     path: 'instagram-map',
     component: InstagramMapComponent
   },
   {
-      path: 'about',
-      component: AboutComponent
+    path: 'about',
+    component: AboutComponent
   },
   {
     path: 'game-of-life',
-    component: GameRootComponent
+    component: GameOfLifeComponent
   },
   {
     path: 'privacy-policy',
@@ -50,8 +51,8 @@ const routes: Routes = [
     component: CopyrightPolicyComponent
   },
   {
-      path: '**',
-      component: PageNotFoundComponent
+    path: '**',
+    component: PageNotFoundComponent
   }
 ];
 
@@ -59,4 +60,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}
