@@ -18,7 +18,7 @@ export class HexBoardComponent implements OnInit {
     document.getElementById("hex-board").appendChild(this.app.view);
 
     const graphics = new PIXI.Graphics();
-    const Hex = Honeycomb.extendHex({ size: 5 });
+    const Hex = Honeycomb.extendHex({ size: 10 });
     const Grid = Honeycomb.defineGrid(Hex);
 
 
