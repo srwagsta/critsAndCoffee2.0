@@ -1,0 +1,11 @@
+.crits-hex-board-wrapper{
+
+}
+
+.crits-hex-board, #hex-board{
+  height: 50rem;
+  width: 50rem;
+  border: aqua;
+  border-style: dashed;
+  overflow: scroll !important;
+}

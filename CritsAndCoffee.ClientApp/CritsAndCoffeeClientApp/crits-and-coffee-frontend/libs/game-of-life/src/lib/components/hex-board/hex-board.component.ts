@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-declare var PIXI: any;
+declare var SVG: any;
 declare var Honeycomb: any;
 
 @Component({
@@ -14,37 +14,28 @@ export class HexBoardComponent implements OnInit {
   constructor(){ }
 
   ngOnInit(){
-    this.app = new PIXI.Application({ transparent: true });
-    document.getElementById("hex-board").appendChild(this.app.view);
 
-    const graphics = new PIXI.Graphics();
-    const Hex = Honeycomb.extendHex({ size: 10 });
+    const draw = SVG(document.getElementById("hex-board"));
+
+    const Hex = Honeycomb.extendHex({ size: 5 });
     const Grid = Honeycomb.defineGrid(Hex);
-
-
-// set a line style of 1px wide and color #999
-    graphics.lineStyle(1, 0x999999);
+// get the corners of a hex (they're the same for all hexes created with the same Hex factory)
+    const corners = Hex().corners();
+// an SVG symbol can be reused
+    const hexSymbol = draw.symbol()
+    // map the corners' positions to a string and create a polygon
+      .polygon(corners.map(({ x, y }) => `${x},${y}`))
+      .fill('none')
+      .stroke({ width: 1, color: '#999' });
 
 // render 10,000 hexes
     Grid.rectangle({ width: 100, height: 100 }).forEach(hex => {
-      const point = hex.toPoint();
-      // add the hex's position to each of its corner points
-      const corners = hex.corners().map(corner => corner.add(point));
-      // separate the first from the other corners
-      const [firstCorner, ...otherCorners] = corners;
-
-      // move the "pen" to the first corner
-      graphics.moveTo(firstCorner.x, firstCorner.y);
-      // draw lines to the other corners
-      otherCorners.forEach(({ x, y }) => graphics.lineTo(x, y));
-      // finish at the first corner
-      graphics.lineTo(firstCorner.x, firstCorner.y);
-
-      this.app.stage.addChild(graphics);
+      const { x, y } = hex.toPoint();
+      // use hexSymbol and set its position for each hex
+      draw.use(hexSymbol).translate(x, y);
     });
 
   }
-
 
   /**
    * This is far from the complete design. I think I will need more components?

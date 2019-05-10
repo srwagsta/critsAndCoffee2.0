@@ -33,7 +33,7 @@
               "apps/crits-and-coffee-app/src/assets/css/animista.css"
             ],
             "scripts": [
-              "node_modules/pixi.js/dist/pixi.js",
+              "node_modules/svg.js/dist/svg.js",
               "node_modules/honeycomb-grid/dist/honeycomb.min.js"
             ],
             "es5BrowserSupport": true
@@ -104,7 +104,7 @@
               "node_modules/material-design-icons/iconfont/material-icons.css"
             ],
             "scripts": [
-              "node_modules/pixi.js/dist/pixi.js",
+              "node_modules/svg.js/dist/svg.js",
               "node_modules/honeycomb-grid/dist/honeycomb.min.js"
             ],
             "assets": [
