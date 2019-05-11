@@ -88,11 +88,15 @@ def _parse_recent_media():
     auth_params = {'access_token': auth_token}
     try:
         response = requests.get(url=recent_media_url, params=auth_params)
+        print(f'Instagram status code => {response.status_code}')
+        log.info(f'Instagram status code => {response.status_code}')
         if response.ok:
             return response.json()['data']
         if response.status_code == 400:
+            print(f'Instagram response error => status code({response.status_code})')
+            log.error(f'Instagram response error => status code({response.status_code})')
             environ[ACCESS_TOKEN_ENV_VARIABLE] = _get_instagram_auth_token()
-            _parse_recent_media()
+            return _parse_recent_media()
         response.raise_for_status()
     except Exception as e:
         log.error(f'INSTAGRAM DATA FAILURE => {e}')
