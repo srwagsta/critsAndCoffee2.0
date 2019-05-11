@@ -9,7 +9,7 @@ declare var Honeycomb: any;
   styleUrls: ['./hex-board.component.scss']
 })
 export class HexBoardComponent implements OnInit {
-  public zoomLevel: number = 10;
+  public zoomLevel: number = 20;
   private _draw;
 
   constructor(){ }

@@ -7,6 +7,7 @@
     <list default="true" id="90fe1e25-08d0-474a-b016-dfaccdc13a79" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/button-zoom/button-zoom.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/button-zoom/button-zoom.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/hex-board.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/hex-board.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/hex-board.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/hex-board.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/hex-board.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/hex-board.component.ts" afterDir="false" />
@@ -29,11 +30,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5627395">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/hex-board.component.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="805">
-                  <caret line="46" column="3" lean-forward="true" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
+                <state relative-caret-position="70">
+                  <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
                 </state>
               </provider>
             </entry>
@@ -56,11 +57,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/button-zoom/button-zoom.component.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="504">
-                  <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+                <state relative-caret-position="567">
+                  <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
                 </state>
               </provider>
             </entry>
@@ -161,9 +162,9 @@
         <option value="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/package.json" />
         <option value="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/hex-board.component.scss" />
         <option value="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/button-zoom/button-zoom.component.html" />
-        <option value="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/button-zoom/button-zoom.component.ts" />
         <option value="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/hex-board.component.html" />
         <option value="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/hex-board.component.ts" />
+        <option value="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/button-zoom/button-zoom.component.ts" />
       </list>
     </option>
   </component>
@@ -420,7 +421,7 @@
       <workItem from="1556284575324" duration="244000" />
       <workItem from="1556284834666" duration="10184000" />
       <workItem from="1556390937227" duration="17000" />
-      <workItem from="1557541712826" duration="9685000" />
+      <workItem from="1557541712826" duration="10084000" />
     </task>
     <servers />
   </component>
@@ -430,7 +431,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="189925000" />
+    <option name="totallyTimeSpent" value="190324000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="2560" height="1055" extended-state="6" />
@@ -713,13 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/button-zoom/button-zoom.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/button-zoom/button-zoom.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -736,8 +730,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/hex-board.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="805">
-          <caret line="46" column="3" lean-forward="true" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
+        <state relative-caret-position="70">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/button-zoom/button-zoom.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
         </state>
       </provider>
     </entry>
