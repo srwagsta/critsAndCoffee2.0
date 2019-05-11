@@ -1,3 +1,4 @@
 <div class="crits-hex-board-wrapper" fxLayout="row" fxLayoutAlign="center center">
   <div class="crits-hex-board" id="hex-board"></div>
+  <CritsAndCoffee-button-zoom [initialZoom]="zoomLevel" (changeZoom)="updateZoom($event)"></CritsAndCoffee-button-zoom>
 </div>

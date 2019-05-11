@@ -3,9 +3,16 @@
 }
 
 .crits-hex-board, #hex-board{
-  height: 50rem;
+  height: 40rem;
   width: 50rem;
-  border: aqua;
-  border-style: dashed;
-  overflow: scroll !important;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  -webkit-animation: puff-in-center 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+  animation: puff-in-center 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+CritsAndCoffee-button-zoom{
+  position: relative;
+  left: -5rem;
+  bottom: -15rem;
 }

@@ -17,7 +17,7 @@ from django.contrib.gis.geos import Point
 import traceback
 
 log = logging.getLogger('django')
-
+ACCESS_TOKEN_ENV_VARIABLE = 'INSTA_ACCESS_TOKEN'
 
 def _get_instagram_auth_token(headless=True, docker_driver=True):
     try:
@@ -82,10 +82,17 @@ def _get_instagram_auth_token(headless=True, docker_driver=True):
 
 
 def _parse_recent_media():
+    auth_token = os.environ[ACCESS_TOKEN_ENV_VARIABLE]
     recent_media_url = "https://api.instagram.com/v1/users/self/media/recent/"
-    auth_params = {'access_token': _get_instagram_auth_token()}
+    auth_params = {'access_token': auth_token}
     try:
-        return requests.get(url=recent_media_url, params=auth_params).json()['data']
+        response = requests.get(url=recent_media_url, params=auth_params)
+        if response.ok:
+            return response.json()['data']
+        if response.status_code == 400:
+            os.environ[ACCESS_TOKEN_ENV_VARIABLE] = _get_instagram_auth_token()
+            _parse_recent_media()
+        response.raise_for_status()
     except Exception as e:
         log.error(f'INSTAGRAM DATA FAILURE => {e}')
         print(f'INSTAGRAM DATA FAILURE => {e}')

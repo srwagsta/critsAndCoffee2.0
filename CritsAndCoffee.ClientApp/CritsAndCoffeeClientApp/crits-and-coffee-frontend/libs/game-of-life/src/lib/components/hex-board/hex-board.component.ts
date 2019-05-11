@@ -9,20 +9,23 @@ declare var Honeycomb: any;
   styleUrls: ['./hex-board.component.scss']
 })
 export class HexBoardComponent implements OnInit {
-  public app: any;
+  public zoomLevel: number = 10;
+  private _draw;
 
   constructor(){ }
 
   ngOnInit(){
+    this._draw = SVG(document.getElementById("hex-board"));
+    this.updateGrid();
+  }
 
-    const draw = SVG(document.getElementById("hex-board"));
-
-    const Hex = Honeycomb.extendHex({ size: 5 });
+  private updateGrid(){
+    const Hex = Honeycomb.extendHex({ size: this.zoomLevel });
     const Grid = Honeycomb.defineGrid(Hex);
 // get the corners of a hex (they're the same for all hexes created with the same Hex factory)
     const corners = Hex().corners();
 // an SVG symbol can be reused
-    const hexSymbol = draw.symbol()
+    const hexSymbol = this._draw.symbol()
     // map the corners' positions to a string and create a polygon
       .polygon(corners.map(({ x, y }) => `${x},${y}`))
       .fill('none')
@@ -32,9 +35,15 @@ export class HexBoardComponent implements OnInit {
     Grid.rectangle({ width: 100, height: 100 }).forEach(hex => {
       const { x, y } = hex.toPoint();
       // use hexSymbol and set its position for each hex
-      draw.use(hexSymbol).translate(x, y);
+      this._draw.use(hexSymbol).translate(x, y);
     });
 
+  }
+
+  public updateZoom(newZoom: number){
+    this.zoomLevel = newZoom;
+    this._draw.clear();
+    this.updateGrid();
   }
 
   /**
