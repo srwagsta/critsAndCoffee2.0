@@ -7,10 +7,13 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class ButtonZoomComponent implements OnInit {
 
-  @Input() initialZoom = 20;
+  @Input() initialZoom: number = 20;
+
+  @Input() disabled: boolean = false;
+
   @Output() changeZoom = new EventEmitter<number>();
 
-  private readonly MAX_ZOOM: number = 50;
+  private readonly MAX_ZOOM: number = 30;
   private readonly MIN_ZOOM = 3;
 
   constructor() { }

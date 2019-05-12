@@ -9,8 +9,10 @@ declare var Honeycomb: any;
   styleUrls: ['./hex-board.component.scss']
 })
 export class HexBoardComponent implements OnInit {
-  public zoomLevel: number = 20;
+  public zoomLevel: number = 25;
+  public zoomButtonStatus: boolean = false;
   private _draw;
+  private readonly _dimensionRegression = (x) => 193.82922931585227 * Math.exp(-0.08889697304008894 * x);
 
   constructor(){ }
 
@@ -32,7 +34,7 @@ export class HexBoardComponent implements OnInit {
       .stroke({ width: 1, color: '#999' });
 
 // render 10,000 hexes
-    Grid.rectangle({ width: 100, height: 100 }).forEach(hex => {
+    Grid.rectangle({ width: this._dimensionRegression(this.zoomLevel), height: this._dimensionRegression(this.zoomLevel) }).forEach(hex => {
       const { x, y } = hex.toPoint();
       // use hexSymbol and set its position for each hex
       this._draw.use(hexSymbol).translate(x, y);
@@ -42,8 +44,10 @@ export class HexBoardComponent implements OnInit {
 
   public updateZoom(newZoom: number){
     this.zoomLevel = newZoom;
+    this.zoomButtonStatus = true;
     this._draw.clear();
     this.updateGrid();
+    this.zoomButtonStatus = false;
   }
 
   /**
