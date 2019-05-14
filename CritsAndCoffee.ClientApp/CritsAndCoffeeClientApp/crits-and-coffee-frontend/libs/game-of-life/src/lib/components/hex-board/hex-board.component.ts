@@ -11,8 +11,19 @@ declare var Honeycomb: any;
 export class HexBoardComponent implements OnInit {
   public zoomLevel: number = 25;
   public zoomButtonStatus: boolean = false;
+
   private _draw;
+  private _hexGrid;
+
+  private _hexPoint = (color: string = 'none') => this._draw.symbol()
+    // map the corners' positions to a string and create a polygon
+    .polygon(this._hexGrid().corners().map(({ x, y }) => `${x},${y}`))
+    .fill({ opacity: 1, color: color })
+    .stroke({ width: 1, color: '#999' });
+
   private readonly _dimensionRegression = (x) => 193.82922931585227 * Math.exp(-0.08889697304008894 * x);
+
+
 
   constructor(){ }
 
@@ -22,22 +33,21 @@ export class HexBoardComponent implements OnInit {
   }
 
   private updateGrid(){
-    const Hex = Honeycomb.extendHex({ size: this.zoomLevel });
-    const Grid = Honeycomb.defineGrid(Hex);
-// get the corners of a hex (they're the same for all hexes created with the same Hex factory)
-    const corners = Hex().corners();
-// an SVG symbol can be reused
-    const hexSymbol = this._draw.symbol()
-    // map the corners' positions to a string and create a polygon
-      .polygon(corners.map(({ x, y }) => `${x},${y}`))
-      .fill('none')
-      .stroke({ width: 1, color: '#999' });
+    this._hexGrid =  Honeycomb.extendHex({ size: this.zoomLevel });
+    const localGrid = Honeycomb.defineGrid(this._hexGrid);
 
 // render 10,000 hexes
-    Grid.rectangle({ width: this._dimensionRegression(this.zoomLevel), height: this._dimensionRegression(this.zoomLevel) }).forEach(hex => {
-      const { x, y } = hex.toPoint();
-      // use hexSymbol and set its position for each hex
-      this._draw.use(hexSymbol).translate(x, y);
+    localGrid.rectangle({ width: this._dimensionRegression(this.zoomLevel),
+                          height: this._dimensionRegression(this.zoomLevel) })
+      .forEach(hex => {
+        const { x, y } = hex.toPoint();
+
+        if(x === 324.7595264191645 && y === 37.5 ){
+          this._draw.use(this._hexPoint('aquamarine')).translate(x, y);
+        }
+        else {
+          this._draw.use(this._hexPoint()).translate(x, y);
+        }
     });
 
   }
