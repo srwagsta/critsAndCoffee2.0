@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HexPoint, Color } from '../../models/hex-point.model';
 
 declare var SVG: any;
 declare var Honeycomb: any;
@@ -9,20 +10,22 @@ declare var Honeycomb: any;
   styleUrls: ['./hex-board.component.scss']
 })
 export class HexBoardComponent implements OnInit {
+  private cells: HexPoint[] = [
+    new HexPoint(1,1, Color.RED_HEX_COLOR),
+    new HexPoint(5 ,5, Color.YELLOW_HEX_COLOR)
+  ];
+
   public zoomLevel: number = 25;
   public zoomButtonStatus: boolean = false;
 
   private _draw;
   private _hexGrid;
-
+  private readonly _dimensionRegression = (x) => 193.82922931585227 * Math.exp(-0.08889697304008894 * x);
   private _hexPoint = (color: string = 'none') => this._draw.symbol()
     // map the corners' positions to a string and create a polygon
     .polygon(this._hexGrid().corners().map(({ x, y }) => `${x},${y}`))
     .fill({ opacity: 1, color: color })
     .stroke({ width: 1, color: '#999' });
-
-  private readonly _dimensionRegression = (x) => 193.82922931585227 * Math.exp(-0.08889697304008894 * x);
-
 
 
   constructor(){ }
@@ -35,15 +38,13 @@ export class HexBoardComponent implements OnInit {
   private updateGrid(){
     this._hexGrid =  Honeycomb.extendHex({ size: this.zoomLevel });
     const localGrid = Honeycomb.defineGrid(this._hexGrid);
-
-// render 10,000 hexes
     localGrid.rectangle({ width: this._dimensionRegression(this.zoomLevel),
                           height: this._dimensionRegression(this.zoomLevel) })
       .forEach(hex => {
         const { x, y } = hex.toPoint();
-
-        if(x === 324.7595264191645 && y === 37.5 ){
-          this._draw.use(this._hexPoint('aquamarine')).translate(x, y);
+        const gameHex = this.cells.find((GameHex) => hex.x === GameHex.x && hex.y === GameHex.y);
+        if(gameHex){
+          this._draw.use(this._hexPoint(gameHex.color)).translate(x, y);
         }
         else {
           this._draw.use(this._hexPoint()).translate(x, y);
@@ -61,13 +62,13 @@ export class HexBoardComponent implements OnInit {
   }
 
   /**
-   * This is far from the complete design. I think I will need more components?
-   *     Add the grid.
+   * TODO
    *     Define the rules.
+   *     Add a service to get the game state and set it with state
+   *         The state should have an array of HexPoints as the game's current state
+   *     Mock the API call from now?
    *     Use a service to start the game randomly
    *         In the future this will be replaced by an API call and state
-   *     Maybe component to add objects to the game?
-   *         Services for these components?
    *     I need to add the websocket and API portion of the game
    *
    *
@@ -78,8 +79,6 @@ export class HexBoardComponent implements OnInit {
    *   If the cell is red it stays red if S is 1 or 2 and goes to yellow if S is 4.
    *   Otherwise it is dead in the next generation.
    *
-   *   ... Considering adding this entire project as a feature module to the main app
-   *       That seems like the better route.
    */
 
 }
