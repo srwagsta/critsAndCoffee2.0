@@ -24,6 +24,18 @@ services:
     env_file:
       - ../.envs/.production/.caddy
       - ../.envs/.private/.production/.aws
+    deploy:
+      placement:
+          constraints:
+            - node.role == manager
+      mode: replicated
+      replicas: 3
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
     networks:
       - back-end
       - front-end
@@ -43,6 +55,15 @@ services:
       - quant-api
     env_file:
       - ../.envs/.private/.production/.django
+    deploy:
+      mode: replicated
+      replicas: 2
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
     networks:
       - back-end
 
@@ -53,6 +74,15 @@ services:
       - selenium
     depends_on:
       - redis
+    deploy:
+      mode: replicated
+      replicas: 2
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
     networks:
       - back-end
     env_file:
@@ -68,6 +98,15 @@ services:
       - instagram-api
     networks:
       - back-end
+    deploy:
+      mode: replicated
+      replicas: 2
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
     env_file:
       - ../.envs/.private/.production/.postgres
       - ../.envs/.private/.production/.flask_quant
@@ -78,12 +117,34 @@ services:
   redis:
     image: redis:3.2
     container_name: redis-production
+    deploy:
+      mode: replicated
+      replicas: 1
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
     networks:
       - back-end
 
   selenium:
     image: selenium/standalone-chrome
     container_name: instagram-selenium-production
+    deploy:
+      mode: replicated
+      replicas: 1
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
+      resources:
+          limits:
+            cpus: '0.50'
+            memory: 50M
     networks:
       - back-end
 
@@ -92,6 +153,19 @@ services:
     image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${CELERY_WORKER_PRODUCTION_TAG}
     container_name: ${CELERY_WORKER_PRODUCTION_TAG}
     command: /start-celeryworker
+    deploy:
+      mode: replicated
+      replicas: 1
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
+      resources:
+          limits:
+            cpus: '0.50'
+            memory: 50M
     networks:
       - back-end
 
@@ -100,6 +174,19 @@ services:
     image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${CELERY_BEAT_PRODUCTION_TAG}
     container_name: ${CELERY_BEAT_PRODUCTION_TAG}
     command: /start-celerybeat
+    deploy:
+      mode: replicated
+      replicas: 1
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
+      resources:
+          limits:
+            cpus: '0.50'
+            memory: 50M
     networks:
       - back-end
 
@@ -107,6 +194,19 @@ services:
     <<: *instagram-api
     image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${FLOWER_PRODUCTION_TAG}
     container_name: ${FLOWER_PRODUCTION_TAG}
+    deploy:
+      mode: replicated
+      replicas: 1
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
+      resources:
+          limits:
+            cpus: '0.50'
+            memory: 50M
     networks:
       - front-end
       - back-end
