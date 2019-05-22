@@ -22,6 +22,7 @@ services:
       - postgres
       - instagram-api
       - quant-api
+      - auth-api
     networks:
       - back-end
     command: "/start.sh"
@@ -83,7 +84,7 @@ services:
       dockerfile: ../Docker/compose/dockerfiles/Dockerfile.Quant.API
     depends_on:
       - postgres
-      - instagram-api
+      - auth-api
     networks:
       - back-end
     env_file:
@@ -118,6 +119,7 @@ services:
       - front-end-app
       - instagram-api
       - quant-api
+      - auth-api
     volumes:
       - local_caddy:/root/.caddy
     networks:
