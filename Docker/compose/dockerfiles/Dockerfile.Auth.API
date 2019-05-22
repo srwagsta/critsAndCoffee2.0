@@ -25,6 +25,4 @@ RUN chown -R auth_admin /API_CODE
 
 USER auth_admin
 
-EXPOSE 5000
-
 ENTRYPOINT ["/entrypoint"]

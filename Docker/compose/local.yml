@@ -6,6 +6,39 @@ volumes:
   local_caddy: {}
 
 services:
+  caddy:
+    build:
+      context: ./dockerfiles
+      dockerfile: Dockerfile.caddy
+      args:
+        - caddyfile_version=Caddyfile.local
+    image: ${DOCKER_REGISTRY}crits_and_coffee_caddy:${DOCKER_LOCAL_TAG}
+    container_name: caddy-local
+    depends_on:
+      - front-end-app
+      - instagram-api
+      - quant-api
+      - auth-api
+    volumes:
+      - local_caddy:/root/.caddy
+    deploy:
+      placement:
+          constraints:
+            - node.role == manager
+      mode: replicated
+      replicas: 3
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
+    networks:
+      - back-end
+      - front-end
+    ports:
+      - "8080:8080"
+
   front-end-app:
     image: ${DOCKER_REGISTRY}crits_and_coffee_client_app:${DOCKER_LOCAL_TAG}
     container_name: client-app-local
@@ -23,6 +56,15 @@ services:
       - instagram-api
       - quant-api
       - auth-api
+    deploy:
+      mode: replicated
+      replicas: 2
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
     networks:
       - back-end
     command: "/start.sh"
@@ -68,6 +110,15 @@ services:
     depends_on:
       - postgres
       - mailhog
+    deploy:
+      mode: replicated
+      replicas: 2
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
     networks:
       - back-end
     env_file:
@@ -85,6 +136,19 @@ services:
     depends_on:
       - postgres
       - auth-api
+    deploy:
+      mode: replicated
+      replicas: 1
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
+      resources:
+          limits:
+            cpus: '0.50'
+            memory: 50M
     networks:
       - back-end
     env_file:
@@ -93,58 +157,58 @@ services:
       - ../.envs/.private/.quandl
     command: /start
 
-  postgres:
-    image: ${DOCKER_REGISTRY}crits_and_coffee_postgres:${DOCKER_LOCAL_TAG}
-    container_name: postgres-local
-    build:
-      context: ./local/postgres
-      dockerfile: ./Dockerfile
-    networks:
-      - back-end
-    volumes:
-      - local_postgres_data:/var/lib/postgresql/data
-      - local_postgres_data_backups:/backups
-    env_file:
-      - ../.envs/.local/.postgres
-
-  caddy:
-    build:
-      context: ./dockerfiles
-      dockerfile: Dockerfile.caddy
-      args:
-        - caddyfile_version=Caddyfile.local
-    image: ${DOCKER_REGISTRY}crits_and_coffee_caddy:${DOCKER_LOCAL_TAG}
-    container_name: caddy-local
-    depends_on:
-      - front-end-app
-      - instagram-api
-      - quant-api
-      - auth-api
-    volumes:
-      - local_caddy:/root/.caddy
-    networks:
-      - back-end
-      - front-end
-    ports:
-      - "8080:8080"
-
   mailhog:
     image: mailhog/mailhog:v1.0.0
     container_name: mailhog-local
     networks:
       - back-end
+    deploy:
+      mode: replicated
+      replicas: 1
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
     ports:
       - "8025:8025"
 
   selenium:
     image: selenium/standalone-chrome
     container_name: selenium-local
+    deploy:
+      mode: replicated
+      replicas: 1
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
+      resources:
+          limits:
+            cpus: '0.50'
+            memory: 50M
     networks:
       - back-end
 
   redis:
     image: redis:3.2
     container_name: redis-local
+    deploy:
+      mode: replicated
+      replicas: 1
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
+      resources:
+          limits:
+            cpus: '0.50'
+            memory: 50M
     networks:
       - back-end
 
@@ -156,6 +220,19 @@ services:
       - redis
       - postgres
       - mailhog
+    deploy:
+      mode: replicated
+      replicas: 1
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
+      resources:
+          limits:
+            cpus: '0.50'
+            memory: 50M
     networks:
       - back-end
     ports: []
@@ -169,6 +246,19 @@ services:
       - redis
       - postgres
       - mailhog
+    deploy:
+      mode: replicated
+      replicas: 1
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
+      resources:
+          limits:
+            cpus: '0.50'
+            memory: 50M
     networks:
       - back-end
     ports: []
@@ -178,12 +268,47 @@ services:
     <<: *instagram-api
     image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${FLOWER_LOCAL_TAG}
     container_name: ${FLOWER_LOCAL_TAG}
+    deploy:
+      mode: replicated
+      replicas: 1
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
+      resources:
+          limits:
+            cpus: '0.50'
+            memory: 50M
     networks:
       - back-end
     ports:
       - "5555:5555"
     command: /start-flower
 
+  postgres:
+    image: ${DOCKER_REGISTRY}crits_and_coffee_postgres:${DOCKER_LOCAL_TAG}
+    container_name: postgres-local
+    build:
+      context: ./local/postgres
+      dockerfile: ./Dockerfile
+    deploy:
+      mode: replicated
+      replicas: 1
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
+    networks:
+      - back-end
+    volumes:
+      - local_postgres_data:/var/lib/postgresql/data
+      - local_postgres_data_backups:/backups
+    env_file:
+      - ../.envs/.local/.postgres
 
 networks:
   front-end:

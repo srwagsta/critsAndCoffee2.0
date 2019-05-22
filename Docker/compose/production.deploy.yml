@@ -66,6 +66,27 @@ services:
         window: 120s
     networks:
       - back-end
+    
+  auth-api:
+    image: ${DOCKER_REGISTRY}crits_and_coffee_api:${AUTH_API_PRODUCTION_TAG}
+    container_name: auth-api-production
+    depends_on:
+      - postgres
+    networks:
+      - back-end
+    env_file:
+      - ../.envs/.private/.production/.flask_auth
+      - ../.envs/.private/.production/.postgres
+    deploy:
+      mode: replicated
+      replicas: 2
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
+    command: /start
 
   instagram-api: &instagram-api
     image: ${DOCKER_REGISTRY}crits_and_coffee_api:${INSTAGRAM_API_PRODUCTION_TAG}

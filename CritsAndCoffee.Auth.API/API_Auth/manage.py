@@ -12,7 +12,7 @@ def create_API_Auth(info):
 def cli():
     """Main entry point"""
 
-
+# TODO: Use some error handling here to ensure the db is migrated propperly but duplicate entryies are handled
 @cli.command("init")
 def init():
     """Init application, create database tables

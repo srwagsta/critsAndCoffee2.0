@@ -17,7 +17,7 @@ from API_Auth.auth.helpers import (
 )
 
 
-blueprint = Blueprint('auth', __name__, url_prefix='/auth')
+blueprint = Blueprint('auth', __name__, url_prefix='/api/v1/auth')
 
 
 @blueprint.route('/login', methods=['POST'])
