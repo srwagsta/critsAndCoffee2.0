@@ -1,4 +1,4 @@
-version: '3'
+version: '3.7'
 
 volumes:
   local_postgres_data: {}
@@ -25,6 +25,30 @@ services:
     networks:
       - back-end
     command: "/start.sh"
+  
+  auth-api:
+    image: ${DOCKER_REGISTRY}crits_and_coffee_api:${AUTH_API_LOCAL_TAG}
+    container_name: auth-api-local
+    build: 
+      context: ../../CritsAndCoffee.Auth.API
+      dockerfile: ../Docker/compose/dockerfiles/Dockerfile.Auth.API
+    depends_on:
+      - postgres
+    networks:
+      - back-end
+    env_file:
+      - ../.envs/.local/.flask_auth
+      - ../.envs/.local/.postgres
+    deploy:
+      mode: replicated
+      replicas: 2
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
+    command: /start
 
   instagram-api: &instagram-api
     image: ${DOCKER_REGISTRY}crits_and_coffee_api:${INSTAGRAM_API_LOCAL_TAG}

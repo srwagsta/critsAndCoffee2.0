@@ -1,0 +1,5 @@
+FLASK_ENV=development
+
+FLASK_APP=API_Auth.app:create_app
+
+SECRET_KEY=changeme

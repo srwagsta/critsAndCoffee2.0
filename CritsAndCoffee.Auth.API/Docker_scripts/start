@@ -1,0 +1,5 @@
+#!/bin/sh
+
+API_Auth init
+
+gunicorn  --chdir /API_CODE --bind 0.0.0.0:5000 API_Auth.wsgi:app

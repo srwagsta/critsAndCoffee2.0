@@ -3,11 +3,8 @@ flask-restful
 flask-migrate
 flask-sqlalchemy
 flask-marshmallow
+flask-jwt-extended
 marshmallow-sqlalchemy
-python-dotenv
-passlib
-tox
 psycopg2-binary
-quandl
-sentry-sdk[flask]==0.7.12
-click
+passlib
+gunicorn
