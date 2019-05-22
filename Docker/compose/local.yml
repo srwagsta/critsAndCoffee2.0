@@ -1,9 +1,9 @@
 version: '3.7'
 
 volumes:
-  local_postgres_data: {}
-  local_postgres_data_backups: {}
-  local_caddy: {}
+  local-postgres-data: {}
+  local-postgres-data-backups: {}
+  local-caddy: {}
 
 services:
   caddy:
@@ -20,7 +20,7 @@ services:
       - quant-api
       - auth-api
     volumes:
-      - local_caddy:/root/.caddy
+      - local-caddy:/root/.caddy
     deploy:
       placement:
           constraints:
@@ -215,7 +215,7 @@ services:
   celeryworker:
     <<: *instagram-api
     image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${CELERY_WORKER_LOCAL_TAG}
-    container_name: ${CELERY_WORKER_LOCAL_TAG}
+    container_name: celeryworker-local
     depends_on:
       - redis
       - postgres
@@ -241,7 +241,7 @@ services:
   celerybeat:
     <<: *instagram-api
     image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${CELERY_BEAT_LOCAL_TAG}
-    container_name: ${CELERY_BEAT_LOCAL_TAG}
+    container_name: celerybeat-local
     depends_on:
       - redis
       - postgres
@@ -267,7 +267,7 @@ services:
   flower:
     <<: *instagram-api
     image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${FLOWER_LOCAL_TAG}
-    container_name: ${FLOWER_LOCAL_TAG}
+    container_name: flower-local
     deploy:
       mode: replicated
       replicas: 1
@@ -305,8 +305,8 @@ services:
     networks:
       - back-end
     volumes:
-      - local_postgres_data:/var/lib/postgresql/data
-      - local_postgres_data_backups:/backups
+      - local-postgres-data:/var/lib/postgresql/data
+      - local-postgres-data-backups:/backups
     env_file:
       - ../.envs/.local/.postgres
 

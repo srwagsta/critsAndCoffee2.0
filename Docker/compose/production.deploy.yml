@@ -1,15 +1,10 @@
 version: '3'
 
 volumes:
-  production_caddy: 
+  production-caddy: 
     driver_opts:
       type: none
       device: /caddy
-      o: bind
-  production_logs: 
-    driver_opts:
-      type: none
-      device: /logs
       o: bind
 
 services:
@@ -20,7 +15,7 @@ services:
       - front-end-app
       - instagram-api
     volumes:
-      - production_caddy:/root/.caddy
+      - production-caddy:/root/.caddy
     env_file:
       - ../.envs/.production/.caddy
       - ../.envs/.private/.production/.aws
@@ -172,7 +167,7 @@ services:
   celeryworker:
     <<: *instagram-api
     image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${CELERY_WORKER_PRODUCTION_TAG}
-    container_name: ${CELERY_WORKER_PRODUCTION_TAG}
+    container_name: celeryworker-production
     command: /start-celeryworker
     deploy:
       mode: replicated
@@ -193,7 +188,7 @@ services:
   celerybeat:
     <<: *instagram-api
     image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${CELERY_BEAT_PRODUCTION_TAG}
-    container_name: ${CELERY_BEAT_PRODUCTION_TAG}
+    container_name: celerybeat-production
     command: /start-celerybeat
     deploy:
       mode: replicated
@@ -214,7 +209,7 @@ services:
   flower:
     <<: *instagram-api
     image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${FLOWER_PRODUCTION_TAG}
-    container_name: ${FLOWER_PRODUCTION_TAG}
+    container_name: flower-production
     deploy:
       mode: replicated
       replicas: 1
