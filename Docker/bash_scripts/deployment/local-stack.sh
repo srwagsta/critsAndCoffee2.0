@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 cd ../../compose
 
-docker-compose -f ./local.yml build
-
 docker swarm init
 
-docker stack deploy --compose-file ./local.yml crits-stack
+docker stack deploy -c <(docker-compose -f local.yml config) crits-stack

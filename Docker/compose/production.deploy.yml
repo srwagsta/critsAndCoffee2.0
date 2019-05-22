@@ -86,8 +86,6 @@ services:
   instagram-api: &instagram-api
     image: ${DOCKER_REGISTRY}crits_and_coffee_api:${INSTAGRAM_API_PRODUCTION_TAG}
     container_name: instagram-api-production
-    links:
-      - selenium
     depends_on:
       - redis
     deploy:

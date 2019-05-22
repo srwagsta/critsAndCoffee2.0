@@ -105,8 +105,6 @@ services:
         - django_celery_directory=celery
     volumes:
       - ../logs/:/crits-logs/
-    links:
-      - selenium
     depends_on:
       - postgres
       - mailhog
