@@ -5,7 +5,9 @@ from flask_jwt_extended import (
     jwt_required,
     jwt_refresh_token_required,
     get_jwt_identity,
-    get_raw_jwt
+    get_raw_jwt,
+    get_jwt_claims,
+    verify_jwt_in_request
 )
 
 from API_Auth.models import User
@@ -18,6 +20,21 @@ from API_Auth.auth.helpers import (
 
 
 blueprint = Blueprint('auth', __name__, url_prefix='/api/v1/auth')
+
+
+@blueprint.route('/token/claims', methods=['GET'])
+@jwt_required
+def get_token_claims():
+    return jsonify({"claims": get_jwt_claims()}), 200
+
+
+@blueprint.route('/token/verify', methods=['POST'])
+def verify_access_token():
+    try:
+        verify_jwt_in_request()
+        return 'No Content', 204
+    except Exception as e:
+        return jsonify({"errors": f'${e}'}), 401
 
 
 @blueprint.route('/login', methods=['POST'])
@@ -36,7 +53,7 @@ def login():
     if user is None or not pwd_context.verify(password, user.password):
         return jsonify({"msg": "Bad credentials"}), 400
 
-    access_token = create_access_token(identity=user.id)
+    access_token = create_access_token(identity=user.id, fresh=True)
     refresh_token = create_refresh_token(identity=user.id)
     add_token_to_database(access_token, app.config['JWT_IDENTITY_CLAIM'])
     add_token_to_database(refresh_token, app.config['JWT_IDENTITY_CLAIM'])
@@ -52,7 +69,7 @@ def login():
 @jwt_refresh_token_required
 def refresh():
     current_user = get_jwt_identity()
-    access_token = create_access_token(identity=current_user)
+    access_token = create_access_token(identity=current_user, fresh=False)
     ret = {
         'access_token': access_token
     }

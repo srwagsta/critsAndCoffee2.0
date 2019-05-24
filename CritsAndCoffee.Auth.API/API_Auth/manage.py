@@ -12,7 +12,7 @@ def create_API_Auth(info):
 def cli():
     """Main entry point"""
 
-# TODO: Use some error handling here to ensure the db is migrated propperly but duplicate entryies are handled
+
 @cli.command("init")
 def init():
     """Init application, create database tables
@@ -25,15 +25,18 @@ def init():
     click.echo("done")
 
     click.echo("create user")
-    user = User(
-        username='admin',
-        email='admin@mail.com',
-        password='admin',
-        active=True
-    )
-    db.session.add(user)
-    db.session.commit()
-    click.echo("created user admin")
+    try:
+        user = User(
+            username='admin',
+            email='admin@mail.com',
+            password='admin',
+            active=True
+        )
+        db.session.add(user)
+        db.session.commit()
+        click.echo("created user admin")
+    except Exception as e:
+        click.echo(f"Admin used creation failed: ${e}")
 
 
 if __name__ == "__main__":
