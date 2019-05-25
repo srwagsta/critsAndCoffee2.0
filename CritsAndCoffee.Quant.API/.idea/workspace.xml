@@ -2,17 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75cf0d85-bcf1-4ca9-8d65-40d4235bb1e7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/app-root/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/app-root/app.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/crits-hero/crits-hero.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/crits-hero/crits-hero.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/state/instagram/instagram.state.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/state/instagram/instagram.state.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.Logger.API/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.Logger.API/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.Auth.API/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.Auth.API/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.Auth.API/API_Auth/auth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.Auth.API/API_Auth/auth/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CritsAndCoffee.Auth.API/API_Auth/extensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CritsAndCoffee.Auth.API/API_Auth/extensions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API_Quant/api/resources/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/API_Quant/api/resources/data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_Quant/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/API_Quant/api/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API_Quant/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/API_Quant/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API_Quant/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/API_Quant/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_Quant/decorators/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_Quant/decorators/jwt_validation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.pip.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.pip.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Docker/.envs/.local/.flask_quant" beforeDir="false" afterPath="$PROJECT_DIR$/../Docker/.envs/.local/.flask_quant" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +31,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/API_Quant/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="253">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -41,28 +44,16 @@
         <entry file="file://$PROJECT_DIR$/API_Quant/config.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="207">
-              <caret line="9" column="45" lean-forward="true" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+              <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/API_Quant/api/resources/data.py">
+        <entry file="file://$PROJECT_DIR$/API_Quant/commons/decorators.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.pip.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+            <state>
+              <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -107,9 +98,11 @@
         <option value="$PROJECT_DIR$/API_Quant/__init__.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/requirements.pip.txt" />
-        <option value="$PROJECT_DIR$/API_Quant/app.py" />
         <option value="$PROJECT_DIR$/API_Quant/config.py" />
         <option value="$PROJECT_DIR$/API_Quant/api/resources/data.py" />
+        <option value="$PROJECT_DIR$/API_Quant/app.py" />
+        <option value="$PROJECT_DIR$/API_Quant/commons/exceptions.py" />
+        <option value="$PROJECT_DIR$/API_Quant/commons/decorators.py" />
       </list>
     </option>
   </component>
@@ -140,18 +133,20 @@
               <item name="CritsAndCoffee.Quant.API" type="b2602c69:ProjectViewProjectNode" />
               <item name="CritsAndCoffee.Quant.API" type="462c0819:PsiDirectoryNode" />
               <item name="API_Quant" type="462c0819:PsiDirectoryNode" />
-              <item name="commons" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CritsAndCoffee.Quant.API" type="b2602c69:ProjectViewProjectNode" />
               <item name="CritsAndCoffee.Quant.API" type="462c0819:PsiDirectoryNode" />
               <item name="API_Quant" type="462c0819:PsiDirectoryNode" />
-              <item name="decorators" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CritsAndCoffee.Quant.API" type="b2602c69:ProjectViewProjectNode" />
               <item name="CritsAndCoffee.Quant.API" type="462c0819:PsiDirectoryNode" />
-              <item name="Docker_scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="API_Quant" type="462c0819:PsiDirectoryNode" />
+              <item name="commons" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -192,17 +187,18 @@
       <workItem from="1554168277017" duration="4150000" />
       <workItem from="1554297108371" duration="3396000" />
       <workItem from="1554608951299" duration="3470000" />
+      <workItem from="1558756061819" duration="3652000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11016000" />
+    <option name="totallyTimeSpent" value="14668000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17932148" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18174475" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -261,25 +257,8 @@
     <entry file="file://$PROJECT_DIR$/API_Quant/models/user.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/API_Quant/configtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="52" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/factories.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Quant/extensions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#110#149#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/conftest.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -294,15 +273,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Quant/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -321,13 +291,6 @@
     <entry file="file://$PROJECT_DIR$/.flaskenv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/API_Quant/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/API_Quant/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -341,6 +304,16 @@
     <entry file="file://$PROJECT_DIR$/API_Quant/api/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.conda.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API_Quant/decorators/jwt_validation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/API_Quant/api/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -351,6 +324,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/API_Quant/api/resources/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API_Quant/extensions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#110#149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API_Quant/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API_Quant/configtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="52" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API_Quant/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API_Quant/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.pip.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -358,37 +378,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.conda.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/API_Quant/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Quant/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="45" lean-forward="true" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Quant/decorators/jwt_validation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Quant/api/resources/data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        <state relative-caret-position="253">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
-            <element signature="e#0#34#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API_Quant/commons/exceptions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API_Quant/commons/decorators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
         </state>
       </provider>
     </entry>

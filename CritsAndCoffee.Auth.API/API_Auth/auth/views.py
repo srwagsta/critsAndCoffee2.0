@@ -22,17 +22,11 @@ from API_Auth.auth.helpers import (
 blueprint = Blueprint('auth', __name__, url_prefix='/api/v1/auth')
 
 
-@blueprint.route('/token/claims', methods=['GET'])
-@jwt_required
-def get_token_claims():
-    return jsonify({"claims": get_jwt_claims()}), 200
-
-
 @blueprint.route('/token/verify', methods=['POST'])
 def verify_access_token():
     try:
         verify_jwt_in_request()
-        return 'No Content', 204
+        jsonify({"claims": get_jwt_claims()}), 200
     except Exception as e:
         return jsonify({"errors": f'${e}'}), 401
 

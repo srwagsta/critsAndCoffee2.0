@@ -5,10 +5,10 @@ import sentry_sdk
 from sentry_sdk.integrations.flask import FlaskIntegration
 import os
 
+
 def create_app(config=None, testing=False, cli=False):
     """Application factory, used to create application
     """
-
 
     sentry_sdk.init(
         dsn=os.environ.get('SENTRY_DNS'),

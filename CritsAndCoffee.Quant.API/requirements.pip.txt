@@ -5,8 +5,7 @@ flask-sqlalchemy
 flask-marshmallow
 marshmallow-sqlalchemy
 python-dotenv
-passlib
-tox
+requests
 psycopg2-binary
 quandl
 sentry-sdk[flask]==0.7.12

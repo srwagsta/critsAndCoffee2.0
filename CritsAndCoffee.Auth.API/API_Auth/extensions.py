@@ -15,3 +15,11 @@ jwt = JWTManager()
 ma = Marshmallow()
 migrate = Migrate()
 pwd_context = CryptContext(schemes=['pbkdf2_sha256'], deprecated='auto')
+
+
+@jwt.user_claims_loader
+def add_claims_to_access_token(identity):
+    # TODO: Use identy to set claims
+    return {
+        'claims': ['admin', 'quant']
+    }
