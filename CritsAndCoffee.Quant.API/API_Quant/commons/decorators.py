@@ -1,22 +1,10 @@
 import os
 import requests
 from functools import wraps
-from flask import jsonify, request
-from API_Quant.wsgi import app
+from flask import request
+from API_Quant.commons.exceptions import AuthError
+
 JWT_VALIDATION_ENDPOINT = os.getenv("JWT_VALIDATION_ENDPOINT")
-
-
-class AuthError(Exception):
-    def __init__(self, error, status_code):
-        self.error = error
-        self.status_code = status_code
-
-
-@app.errorhandler(AuthError)
-def handle_auth_error(ex):
-    response = jsonify(ex.error)
-    response.status_code = ex.status_code
-    return response
 
 
 def _get_token_auth_header(auth):
@@ -50,20 +38,18 @@ def _get_token_auth_header(auth):
 def token_required(f):
     @wraps(f)
     def wrap(*args, **kwargs):
-        token = _get_token_auth_header(request.headers.get('authorization'))
-        
-        response = requests.post(JWT_VALIDATION_ENDPOINT, headers={'authorization': 'Bearer ' + token})
         try:
-            response.raise_for_status()
+            token = _get_token_auth_header(request.headers.get('authorization'))
+            response = requests.get(JWT_VALIDATION_ENDPOINT, headers={'authorization': token})
+            # response.raise_for_status()
             if not validate_claims(response.json()['claims']):
                 raise AuthError({"code": "invalid_claims",
                                 "description": "The access token did not provided "
                                                "the required claims to access resource."}, 401)
-        except Exception:
+        except Exception as e:
                 raise AuthError({"code": "invalid_token",
-                                "description":
-                                    "token rejected"
-                                    " token."}, 401)
+                                "description": "token rejected",
+                                 "errors": e}, 401)
         return f(*args, **kwargs)
     return wrap
 

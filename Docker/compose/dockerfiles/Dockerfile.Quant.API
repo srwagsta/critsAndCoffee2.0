@@ -1,4 +1,4 @@
-FROM  intelpython/intelpython3_full:latest
+FROM  continuumio/miniconda3:latest
 
 RUN addgroup --system quant \
     && adduser --system --group quant
