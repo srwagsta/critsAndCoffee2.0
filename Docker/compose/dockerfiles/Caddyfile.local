@@ -6,6 +6,7 @@ tls self_signed
     }
 
     proxy /api/v1/auth auth-api:5000 {
+        except /token/verify
         transparent
     }
 

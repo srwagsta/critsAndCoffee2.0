@@ -3,6 +3,7 @@ import requests
 from functools import wraps
 from flask import request
 from API_Quant.commons.exceptions import AuthError
+from API_Quant.config import ACCEPTED_CLAIMS_SET
 
 JWT_VALIDATION_ENDPOINT = os.getenv("JWT_VALIDATION_ENDPOINT")
 
@@ -61,7 +62,11 @@ def validate_claims(response_claims):
     Args:
         required_scope (str): The scope required to access the resource
     """
-
+    response_claims_set = set(response_claims)
+    if len(response_claims_set.intersection(ACCEPTED_CLAIMS_SET)) > 0:
+        return True
+    return False
+    
     # token = get_token_auth_header()
     # unverified_claims = jwt.get_unverified_claims(token)
     # if unverified_claims.get("scope"):
@@ -69,4 +74,3 @@ def validate_claims(response_claims):
     #         for token_scope in token_scopes:
     #             if token_scope == required_scope:
     #                 return True
-    return True
