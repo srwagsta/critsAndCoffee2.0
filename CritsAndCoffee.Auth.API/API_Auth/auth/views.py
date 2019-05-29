@@ -17,6 +17,7 @@ from API_Auth.auth.helpers import (
     is_token_revoked,
     add_token_to_database
 )
+import json
 
 
 blueprint = Blueprint('auth', __name__, url_prefix='/api/v1/auth')
@@ -26,7 +27,7 @@ blueprint = Blueprint('auth', __name__, url_prefix='/api/v1/auth')
 def verify_access_token():
     try:
         verify_jwt_in_request()
-        return jsonify({"claims": get_jwt_claims()}), 200
+        return json.dumps(get_jwt_claims()), 200
     except Exception as e:
         return jsonify({"errors": f'${e}'}), 401
 

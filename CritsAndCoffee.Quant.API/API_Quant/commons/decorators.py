@@ -38,18 +38,20 @@ def _get_token_auth_header(auth):
 def token_required(f):
     @wraps(f)
     def wrap(*args, **kwargs):
+        response = None
         try:
             token = _get_token_auth_header(request.headers.get('authorization'))
-            response = requests.get(JWT_VALIDATION_ENDPOINT, headers={'authorization': token})
-            # response.raise_for_status()
+            response = requests.get(JWT_VALIDATION_ENDPOINT, headers={'authorization': "Bearer " + token})
+            response.raise_for_status()
             if not validate_claims(response.json()['claims']):
                 raise AuthError({"code": "invalid_claims",
                                 "description": "The access token did not provided "
                                                "the required claims to access resource."}, 401)
         except Exception as e:
-                raise AuthError({"code": "invalid_token",
-                                "description": "token rejected",
-                                 "errors": e}, 401)
+                raise AuthError({"description": "token rejected",
+                                 "token": token,
+                                 "errors": str(e),
+                                 "validation_response": response.json()}, 401)
         return f(*args, **kwargs)
     return wrap
 
@@ -59,6 +61,7 @@ def validate_claims(response_claims):
     Args:
         required_scope (str): The scope required to access the resource
     """
+
     # token = get_token_auth_header()
     # unverified_claims = jwt.get_unverified_claims(token)
     # if unverified_claims.get("scope"):

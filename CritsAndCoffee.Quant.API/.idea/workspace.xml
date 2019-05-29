@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75cf0d85-bcf1-4ca9-8d65-40d4235bb1e7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API_Quant/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/API_Quant/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_Quant/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/API_Quant/api/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API_Quant/commons/decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/API_Quant/commons/decorators.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/API_Quant/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+            <state relative-caret-position="253">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -56,8 +55,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/API_Quant/commons/decorators.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="51" column="44" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
+            <state>
+              <caret selection-end-line="73" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -77,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/API_Quant/api/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+            <state relative-caret-position="207">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
@@ -117,7 +116,6 @@
         <option value="$PROJECT_DIR$/Docker_scripts/start.prod" />
         <option value="$PROJECT_DIR$/API_Quant/api/resources/user.py" />
         <option value="$PROJECT_DIR$/API_Quant/api/resources/__init__.py" />
-        <option value="$PROJECT_DIR$/API_Quant/api/views.py" />
         <option value="$PROJECT_DIR$/API_Quant/models/__init__.py" />
         <option value="$PROJECT_DIR$/API_Quant/configtest.py" />
         <option value="$PROJECT_DIR$/API_Quant/extensions.py" />
@@ -130,6 +128,7 @@
         <option value="$PROJECT_DIR$/API_Quant/api/resources/data.py" />
         <option value="$PROJECT_DIR$/API_Quant/commons/exceptions.py" />
         <option value="$PROJECT_DIR$/API_Quant/app.py" />
+        <option value="$PROJECT_DIR$/API_Quant/api/views.py" />
         <option value="$PROJECT_DIR$/API_Quant/commons/decorators.py" />
       </list>
     </option>
@@ -216,12 +215,12 @@
       <workItem from="1554297108371" duration="3396000" />
       <workItem from="1554608951299" duration="3470000" />
       <workItem from="1558756061819" duration="4801000" />
-      <workItem from="1559087367450" duration="6120000" />
+      <workItem from="1559087367450" duration="10374000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21937000" />
+    <option name="totallyTimeSpent" value="26191000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="0" />
@@ -375,33 +374,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/API_Quant/api/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Quant/api/resources/data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Quant/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/API_Quant/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
@@ -419,10 +391,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/API_Quant/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API_Quant/api/resources/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API_Quant/api/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/API_Quant/commons/decorators.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="51" column="44" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
+        <state>
+          <caret selection-end-line="73" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
