@@ -1,3 +1,7 @@
+FLASK_ENV=development
+
+FLASK_APP="API_Quant.app:create_app"
+
 QUANT_API_SECRET_KEY=c5K6e0XVIgyPrXOSu222wneQW0QgSx61
 
 POSTGRES_DB=crits_and_coffee
