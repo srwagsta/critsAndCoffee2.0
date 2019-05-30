@@ -21,5 +21,8 @@ pwd_context = CryptContext(schemes=['pbkdf2_sha256'], deprecated='auto')
 def add_claims_to_access_token(identity):
     # TODO: Use identy to set claims
     return {
-        'claims': ['admin', 'quant']
+        'claims': {
+            'scopes': ['admin', 'quant'],
+            'identity': identity
+        }
     }

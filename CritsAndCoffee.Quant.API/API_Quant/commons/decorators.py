@@ -3,7 +3,7 @@ import requests
 from functools import wraps
 from flask import request
 from API_Quant.commons.exceptions import AuthError
-from API_Quant.config import ACCEPTED_CLAIMS_SET
+from API_Quant.config import ACCEPTED_SCOPE_SET
 
 JWT_VALIDATION_ENDPOINT = os.getenv("JWT_VALIDATION_ENDPOINT")
 
@@ -43,7 +43,7 @@ def token_required(f):
             token = _get_token_auth_header(request.headers.get('authorization'))
             response = requests.get(JWT_VALIDATION_ENDPOINT, headers={'authorization': "Bearer " + token})
             response.raise_for_status()
-            if not validate_claims(response.json()['claims']):
+            if not validate_claims(response.json()['claims']['scopes']):
                 raise AuthError({"code": "invalid_claims",
                                 "description": "The access token did not provided "
                                                "the required claims to access resource."}, 401)
@@ -60,6 +60,6 @@ def validate_claims(response_claims):
         response_claims(str): The scope required to access the resource
     """
     response_claims_set = set(response_claims)
-    if len(response_claims_set.intersection(ACCEPTED_CLAIMS_SET)) > 0:
+    if len(response_claims_set.intersection(ACCEPTED_SCOPE_SET)) > 0:
         return True
     return False
