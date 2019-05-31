@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6dce040e-fc58-4973-bed5-8771730cc57a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/crits-and-coffee-frontend/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/crits-and-coffee-frontend/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crits-and-coffee-frontend/apps/crits-and-coffee-app-e2e/tsconfig.e2e.json" beforeDir="false" afterPath="$PROJECT_DIR$/crits-and-coffee-frontend/apps/crits-and-coffee-app-e2e/tsconfig.e2e.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crits-and-coffee-frontend/apps/crits-and-coffee-app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/crits-and-coffee-frontend/apps/crits-and-coffee-app/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crits-and-coffee-frontend/apps/crits-and-coffee-app/src/app/modules/ui/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/crits-and-coffee-frontend/apps/crits-and-coffee-app/src/app/modules/ui/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crits-and-coffee-frontend/apps/crits-and-coffee-app/src/app/modules/ui/ui.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/crits-and-coffee-frontend/apps/crits-and-coffee-app/src/app/modules/ui/ui.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crits-and-coffee-frontend/apps/crits-and-coffee-app/src/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/crits-and-coffee-frontend/apps/crits-and-coffee-app/src/tsconfig.app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crits-and-coffee-frontend/apps/crits-and-coffee-app/src/tsconfig.spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/crits-and-coffee-frontend/apps/crits-and-coffee-app/src/tsconfig.spec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crits-and-coffee-frontend/apps/crits-and-coffee-app/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/crits-and-coffee-frontend/apps/crits-and-coffee-app/tsconfig.app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crits-and-coffee-frontend/apps/crits-and-coffee-app/tsconfig.spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/crits-and-coffee-frontend/apps/crits-and-coffee-app/tsconfig.spec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crits-and-coffee-frontend/libs/game-of-life/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/crits-and-coffee-frontend/libs/game-of-life/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crits-and-coffee-frontend/libs/game-of-life/src/lib/game-of-life.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/crits-and-coffee-frontend/libs/game-of-life/src/lib/game-of-life.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crits-and-coffee-frontend/libs/game-of-life/tsconfig.lib.json" beforeDir="false" afterPath="$PROJECT_DIR$/crits-and-coffee-frontend/libs/game-of-life/tsconfig.lib.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crits-and-coffee-frontend/libs/game-of-life/tsconfig.spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/crits-and-coffee-frontend/libs/game-of-life/tsconfig.spec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crits-and-coffee-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/crits-and-coffee-frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crits-and-coffee-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/crits-and-coffee-frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crits-and-coffee-frontend/tools/tsconfig.tools.json" beforeDir="false" afterPath="$PROJECT_DIR$/crits-and-coffee-frontend/tools/tsconfig.tools.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crits-and-coffee-frontend/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/crits-and-coffee-frontend/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crits-and-coffee-frontend/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/crits-and-coffee-frontend/tslint.json" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/crits-and-coffee-frontend/libs/game-of-life/src/lib/game-of-life.module.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <folding>
+                    <element signature="e#0#41#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/crits-and-coffee-frontend/package.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="574">
+                  <caret line="91" column="24" lean-forward="true" selection-start-line="91" selection-start-column="24" selection-end-line="91" selection-end-column="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/crits-and-coffee-frontend/apps/crits-and-coffee-app/src/app/app-routing.module.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-441">
+                  <folding>
+                    <element signature="e#0#41#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/crits-and-coffee-frontend/apps/crits-and-coffee-app/src/app/app.module.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="273">
+                  <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/crits-and-coffee-frontend/apps/crits-and-coffee-app/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/crits-and-coffee-frontend/libs/game-of-life/package.json" />
+        <option value="$PROJECT_DIR$/crits-and-coffee-frontend/package.json" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/CritsAndCoffeeClientApp.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+        <option value="$PROJECT_DIR$/.idea/codeStyles/Project.xml" />
+        <option value="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="189" />
+    <option name="y" value="27" />
+    <option name="width" value="2289" />
+    <option name="height" value="941" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="CritsAndCoffeeClientApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CritsAndCoffeeClientApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CritsAndCoffeeClientApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CritsAndCoffeeClientApp" type="462c0819:PsiDirectoryNode" />
+              <item name="crits-and-coffee-frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CritsAndCoffeeClientApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CritsAndCoffeeClientApp" type="462c0819:PsiDirectoryNode" />
+              <item name="crits-and-coffee-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CritsAndCoffeeClientApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CritsAndCoffeeClientApp" type="462c0819:PsiDirectoryNode" />
+              <item name="crits-and-coffee-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="crits-and-coffee-app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CritsAndCoffeeClientApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CritsAndCoffeeClientApp" type="462c0819:PsiDirectoryNode" />
+              <item name="crits-and-coffee-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="crits-and-coffee-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CritsAndCoffeeClientApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CritsAndCoffeeClientApp" type="462c0819:PsiDirectoryNode" />
+              <item name="crits-and-coffee-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="crits-and-coffee-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CritsAndCoffeeClientApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CritsAndCoffeeClientApp" type="462c0819:PsiDirectoryNode" />
+              <item name="crits-and-coffee-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CritsAndCoffeeClientApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CritsAndCoffeeClientApp" type="462c0819:PsiDirectoryNode" />
+              <item name="crits-and-coffee-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+              <item name="game-of-life" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/crits-and-coffee-frontend/node_modules/typescript/lib" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6dce040e-fc58-4973-bed5-8771730cc57a" name="Default Changelist" comment="" />
+      <created>1559307816971</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559307816971</updated>
+      <workItem from="1559307818069" duration="2995000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2995000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="25" width="2560" height="1055" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17067403" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="TypeScript" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/crits-and-coffee-frontend/libs/game-of-life/src/lib/game-of-life.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crits-and-coffee-frontend/apps/crits-and-coffee-app/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crits-and-coffee-frontend/libs/game-of-life/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crits-and-coffee-frontend/apps/crits-and-coffee-app/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-441">
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crits-and-coffee-frontend/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="91" column="24" lean-forward="true" selection-start-line="91" selection-start-column="24" selection-end-line="91" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

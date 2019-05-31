@@ -11,14 +11,12 @@ import {fas} from '@fortawesome/free-solid-svg-icons';
 import {fab} from '@fortawesome/free-brands-svg-icons';
 
 library.add(fas, fab);
-import {
-  MatSidenavModule,
-  MatToolbarModule,
-  MatListModule,
-  MatButtonModule,
-  MatIconModule,
-  MatTooltipModule
-} from '@angular/material';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [LayoutComponent, HeaderComponent, FooterComponent],

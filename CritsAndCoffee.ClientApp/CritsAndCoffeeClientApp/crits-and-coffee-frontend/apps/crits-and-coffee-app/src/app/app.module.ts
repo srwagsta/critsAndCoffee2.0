@@ -13,12 +13,10 @@ import { AgmCoreModule } from '@agm/core';
 import * as Sentry from '@sentry/browser';
 import { SentryErrorHandler } from './services/sentryErrorHandler.service';
 
-import {
-  MatTooltipModule,
-  MatButtonModule,
-  MatIconModule,
-  MatDividerModule
-} from '@angular/material';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 // Custom Libraries
 import { GameOfLifeModule } from '@CritsAndCoffee/game-of-life';
@@ -31,7 +29,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-
 library.add(fas, fab);
 
 // Components

@@ -1,5 +1,5 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
-import {MatSidenav} from "@angular/material";
+import { MatSidenav } from "@angular/material/sidenav";
 import { Store } from '@ngxs/store';
 import { RouterState } from '@ngxs/router-plugin';
 
