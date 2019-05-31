@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng build game-of-life && ng serve --watch",
+    "start": "ng build game-of-life && ng serve",
     "build": "ng build",
     "build-all": "ng build game-of-life && ng build crits-and-coffee-app",
     "build-all-prod": "ng build game-of-life --prod && ng build crits-and-coffee-app --prod",
