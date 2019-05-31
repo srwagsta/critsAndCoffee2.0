@@ -9,8 +9,7 @@ from flask_jwt_extended import (
     get_jwt_claims,
     verify_jwt_in_request
 )
-
-from API_Auth.models.user_roles import UserRoles
+from API_Auth.extensions import db
 from API_Auth.models import User
 from API_Auth.extensions import pwd_context, jwt
 from API_Auth.auth.helpers import (
@@ -19,7 +18,7 @@ from API_Auth.auth.helpers import (
     add_token_to_database
 )
 import json
-
+from datetime import datetime
 
 blueprint = Blueprint('auth', __name__, url_prefix='/api/v1/auth')
 
@@ -53,7 +52,8 @@ def login():
     refresh_token = create_refresh_token(identity=user.id)
     add_token_to_database(access_token, app.config['JWT_IDENTITY_CLAIM'])
     add_token_to_database(refresh_token, app.config['JWT_IDENTITY_CLAIM'])
-
+    user.last_login = datetime.utcnow()
+    db.session.commit()
     ret = {
         'access_token': access_token,
         'refresh_token': refresh_token
@@ -100,12 +100,16 @@ def user_loader_callback(identity):
 def check_if_token_revoked(decoded_token):
     return is_token_revoked(decoded_token)
 
+
 @jwt.user_claims_loader
 def add_claims_to_access_token(user_id):
     user = User.query.filter_by(id=user_id).first()
     return {
         'claims': {
             'scopes': user.role.value,
-            'identity': user.username
+            'first_name': user.first_name,
+            'last_name': user.last_name,
+            'username': user.username,
+            'last_login': user.last_login
         }
     }

@@ -14,5 +14,3 @@ jwt = JWTManager()
 ma = Marshmallow()
 migrate = Migrate()
 pwd_context = CryptContext(schemes=['pbkdf2_sha256'], deprecated='auto')
-
-
