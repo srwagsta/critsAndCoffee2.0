@@ -31,6 +31,9 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 library.add(fas, fab);
 
+//Nebular
+import { NbThemeModule } from '@nebular/theme';
+
 // Components
 import {
   AppComponent,
@@ -102,6 +105,7 @@ Sentry.init({
     MatTooltipModule,
     MatDividerModule,
     FontAwesomeModule,
+    NbThemeModule.forRoot({ name: 'crits-dark' }),
     NgbModule,
     NgxsModule.forRoot([AuthState, InstagramPostListState], { developmentMode: !environment.production }),
     NgxsLoggerPluginModule.forRoot({}),
