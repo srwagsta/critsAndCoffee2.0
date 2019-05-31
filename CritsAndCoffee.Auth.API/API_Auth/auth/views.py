@@ -10,6 +10,7 @@ from flask_jwt_extended import (
     verify_jwt_in_request
 )
 
+from API_Auth.models.user_roles import UserRoles
 from API_Auth.models import User
 from API_Auth.extensions import pwd_context, jwt
 from API_Auth.auth.helpers import (
@@ -98,3 +99,13 @@ def user_loader_callback(identity):
 @jwt.token_in_blacklist_loader
 def check_if_token_revoked(decoded_token):
     return is_token_revoked(decoded_token)
+
+@jwt.user_claims_loader
+def add_claims_to_access_token(user_id):
+    user = User.query.filter_by(id=user_id).first()
+    return {
+        'claims': {
+            'scopes': user.role.value,
+            'identity': user.username
+        }
+    }

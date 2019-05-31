@@ -1,5 +1,6 @@
 from API_Auth.extensions import db, pwd_context
-
+from API_Auth.models.user_roles import UserRoles
+from sqlalchemy.dialects.postgresql import ENUM
 
 class User(db.Model):
     """Basic user model
@@ -8,6 +9,7 @@ class User(db.Model):
     username = db.Column(db.String(80), unique=True, nullable=False)
     email = db.Column(db.String(80), unique=True, nullable=False)
     password = db.Column(db.String(255), nullable=False)
+    role = db.Column(ENUM(UserRoles), default=UserRoles.DEFAULT, nullable=False)
     active = db.Column(db.Boolean, default=True)
 
     def __init__(self, **kwargs):

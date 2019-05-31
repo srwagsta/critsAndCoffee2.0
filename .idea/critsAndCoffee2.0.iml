@@ -5,7 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/CritsAndCoffee.Instagram.API/docker-scripts" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CritsAndCoffee.Instagram.API/requirements" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Remote Python 3.6.8 Docker (srwagsta/crits_and_coffee_api:instagram-local)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Remote Python 3.7.3 Docker (srwagsta/crits_and_coffee_api:auth-local)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TemplatesService">
