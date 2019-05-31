@@ -1,18 +1,24 @@
 from flask import request
 from flask_restful import Resource
 from flask_jwt_extended import jwt_required
-
 from API_Auth.models import User
 from API_Auth.extensions import ma, db
 from API_Auth.commons.pagination import paginate
+from API_Auth.commons.decorators import admin_required, root_required
 
 
 class UserSchema(ma.ModelSchema):
 
     password = ma.String(load_only=True, required=True)
+    # Smart hyperlinking
+    _links = ma.Hyperlinks(
+        {"self": ma.URLFor("UserResource", id="<id>"), "collection": ma.URLFor("UserList")}
+    )
 
+# TODO: If the roles need to be added to the user query results then an encoder for the enum will need to be created
     class Meta:
         model = User
+        fields = ("first_name", "last_name", "username", "email", "active", "last_login")
         sqla_session = db.session
 
 
@@ -35,6 +41,7 @@ class UserResource(Resource):
 
         return {"msg": "user updated", "user": schema.dump(user).data}
 
+    @root_required
     def delete(self, user_id):
         user = User.query.get_or_404(user_id)
         db.session.delete(user)
@@ -46,7 +53,7 @@ class UserResource(Resource):
 class UserList(Resource):
     """Creation and get_all
     """
-    method_decorators = [jwt_required]
+    method_decorators = [jwt_required, admin_required]
 
     def get(self):
         schema = UserSchema(many=True)

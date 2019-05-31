@@ -1,5 +1,6 @@
 import enum
 
+
 class UserRoles(enum.Enum):
     QUANT_READ = ['quant-read']
     INSTAGRAM_READ = ['instagram-read']

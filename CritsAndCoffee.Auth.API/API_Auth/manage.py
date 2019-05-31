@@ -27,6 +27,8 @@ def init():
     click.echo("create user")
     try:
         user = User(
+            first_name='admin_first_name',
+            last_name='admin_last_name',
             username='admin',
             email='admin@mail.com',
             password='admin',

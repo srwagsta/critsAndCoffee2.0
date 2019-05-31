@@ -9,6 +9,10 @@ tls self_signed
         transparent
     }
 
+    proxy /api/v1/users auth-api:5000 {
+        transparent
+    }
+
     proxy /api/v1/quant quant-api:5000 {
         transparent
     }

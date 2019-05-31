@@ -105,11 +105,9 @@ def check_if_token_revoked(decoded_token):
 def add_claims_to_access_token(user_id):
     user = User.query.filter_by(id=user_id).first()
     return {
-        'claims': {
             'scopes': user.role.value,
             'first_name': user.first_name,
             'last_name': user.last_name,
             'username': user.username,
             'last_login': user.last_login
-        }
     }

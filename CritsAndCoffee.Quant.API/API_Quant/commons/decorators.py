@@ -43,7 +43,7 @@ def token_required(f):
             token = _get_token_auth_header(request.headers.get('authorization'))
             response = requests.get(JWT_VALIDATION_ENDPOINT, headers={'authorization': "Bearer " + token})
             response.raise_for_status()
-            if not validate_claims(response.json()['claims']['scopes']):
+            if not validate_claims(response.json()['scopes']):
                 raise AuthError({"code": "invalid_claims",
                                 "description": "The access token did not provided "
                                                "the required claims to access resource."}, 401)
