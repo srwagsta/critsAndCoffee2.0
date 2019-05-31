@@ -105,7 +105,7 @@ Sentry.init({
     MatTooltipModule,
     MatDividerModule,
     FontAwesomeModule,
-    NbThemeModule.forRoot({ name: 'crits-dark' }),
+    NbThemeModule.forRoot(),
     NgbModule,
     NgxsModule.forRoot([AuthState, InstagramPostListState], { developmentMode: !environment.production }),
     NgxsLoggerPluginModule.forRoot({}),
