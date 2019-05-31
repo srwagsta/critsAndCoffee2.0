@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6dce040e-fc58-4973-bed5-8771730cc57a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/crits-and-coffee-frontend/apps/crits-and-coffee-app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/crits-and-coffee-frontend/apps/crits-and-coffee-app/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crits-and-coffee-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/crits-and-coffee-frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crits-and-coffee-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/crits-and-coffee-frontend/package-lock.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -42,7 +42,7 @@
             <entry file="file://$PROJECT_DIR$/crits-and-coffee-frontend/apps/crits-and-coffee-app/src/sass/vendors/_nebular.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="84">
-                  <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+                  <caret line="4" selection-start-line="4" selection-end-line="4" />
                 </state>
               </provider>
             </entry>
@@ -55,7 +55,7 @@
             <entry file="file://$PROJECT_DIR$/crits-and-coffee-frontend/apps/crits-and-coffee-app/src/sass/styles.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="670">
-                  <caret line="39" column="29" lean-forward="true" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+                  <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
                 </state>
               </provider>
             </entry>
@@ -64,7 +64,7 @@
             <entry file="file://$PROJECT_DIR$/crits-and-coffee-frontend/apps/crits-and-coffee-app/src/app/app.module.ts">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="343">
-                  <caret line="108" column="14" lean-forward="true" selection-start-line="108" selection-start-column="14" selection-end-line="108" selection-end-column="14" />
+                  <caret line="108" column="14" selection-start-line="108" selection-start-column="14" selection-end-line="108" selection-end-column="14" />
                 </state>
               </provider>
             </entry>
@@ -72,8 +72,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/crits-and-coffee-frontend/package.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="427">
-                  <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+                <state relative-caret-position="805">
+                  <caret line="42" column="39" lean-forward="true" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
                 </state>
               </provider>
             </entry>
@@ -245,12 +245,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1559307816971</updated>
-      <workItem from="1559307818069" duration="6683000" />
+      <workItem from="1559307818069" duration="7466000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6683000" />
+    <option name="totallyTimeSpent" value="7466000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="2560" height="1055" extended-state="6" />
@@ -321,28 +321,28 @@
     <entry file="file://$PROJECT_DIR$/crits-and-coffee-frontend/apps/crits-and-coffee-app/src/sass/vendors/_nebular.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/crits-and-coffee-frontend/apps/crits-and-coffee-app/src/sass/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="670">
-          <caret line="39" column="29" lean-forward="true" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+          <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/crits-and-coffee-frontend/apps/crits-and-coffee-app/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
-          <caret line="108" column="14" lean-forward="true" selection-start-line="108" selection-start-column="14" selection-end-line="108" selection-end-column="14" />
+          <caret line="108" column="14" selection-start-line="108" selection-start-column="14" selection-end-line="108" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/crits-and-coffee-frontend/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+        <state relative-caret-position="805">
+          <caret line="42" column="39" lean-forward="true" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
         </state>
       </provider>
     </entry>
