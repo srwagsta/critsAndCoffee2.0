@@ -73,7 +73,7 @@ def refresh():
     return jsonify(ret), 200
 
 
-@blueprint.route('/revoke_access', methods=['DELETE'])
+@blueprint.route('/logout', methods=['DELETE'])
 @jwt_required
 def revoke_access_token():
     jti = get_raw_jwt()['jti']

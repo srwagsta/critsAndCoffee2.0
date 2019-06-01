@@ -33,6 +33,7 @@ library.add(fas, fab);
 
 //Nebular
 import { NbThemeModule } from '@nebular/theme';
+import { NbAuthModule, NbPasswordAuthStrategy } from '@nebular/auth';
 
 // Components
 import {
@@ -44,13 +45,7 @@ import {
   PrivacyPolicyComponent,
   CopyrightPolicyComponent,
   ProjectLicenseComponent,
-  ApiTermsOfUseComponent,
-  LoginComponent,
-  LogoutComponent,
-  RegisterComponent,
-  PasswordResetComponent,
-  PasswordChangeComponent
-
+  ApiTermsOfUseComponent
 } from './components';
 import { InstagramPostDetailComponent } from './components/instagram-map/instagram-post-detail/instagram-post-detail.component';
 import { CritsHeroComponent } from './components/home/crits-hero/crits-hero.component';
@@ -72,6 +67,16 @@ Sentry.init({
   dsn: 'https://3d288dd060d947789b0e3dcc380efb2f@sentry.io/1444294'
 });
 
+const authFormSetting: any = {
+  redirectDelay: 0,
+  strategy: 'crits-custom-auth',
+  showMessages: {
+    success: true,
+    error: true,
+  },
+  terms: true,
+};
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -85,11 +90,6 @@ Sentry.init({
     ApiTermsOfUseComponent,
     InstagramPostDetailComponent,
     CritsHeroComponent,
-    LoginComponent,
-    LogoutComponent,
-    RegisterComponent,
-    PasswordResetComponent,
-    PasswordChangeComponent,
     GameOfLifeComponent
   ],
   imports: [
@@ -98,6 +98,58 @@ Sentry.init({
     GameOfLifeModule,
     FlexLayoutModule,
     HttpClientModule,
+    NbAuthModule.forRoot({
+      strategies: [
+        NbPasswordAuthStrategy.setup({
+          name: 'crits-custom-auth',
+          baseEndpoint: '/api/v1/auth',
+          login: {
+            endpoint: '/login',
+            method: 'post',
+          },
+          logout: {
+            endpoint: '/logout',
+            method: 'post',
+          },
+          register: {
+            endpoint: '/sign-up',
+            method: 'post',
+          },
+          requestPass: {
+            endpoint: '/request-pass',
+            method: 'post',
+          },
+          resetPass: {
+            endpoint: '/reset-pass',
+            method: 'post',
+          },
+        }),
+      ],
+      forms: {
+        login: authFormSetting,
+        register: authFormSetting,
+        requestPassword: authFormSetting,
+        resetPassword: authFormSetting,
+        logout: {
+          redirectDelay: 0,
+        },
+        validation: {
+          password: {
+            required: true,
+            minLength: 4,
+            maxLength: 50,
+          },
+          email: {
+            required: true,
+          },
+          fullName: {
+            required: false,
+            minLength: 4,
+            maxLength: 50,
+          },
+        },
+      }
+    }),
     AppRoutingModule,
     UiModule,
     MatButtonModule,

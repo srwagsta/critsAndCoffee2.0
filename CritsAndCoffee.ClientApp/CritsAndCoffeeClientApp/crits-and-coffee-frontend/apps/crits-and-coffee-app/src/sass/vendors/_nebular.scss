@@ -1,26 +1,21 @@
+@import '../abstracts/variables';
 // import Nebular Theme System and the default theme
 @import '~@nebular/theme/styles/theming';
-@import '~@nebular/theme/styles/themes/default';
 @import '~@nebular/theme/styles/themes/cosmic';
+@import '~@nebular/auth/styles/themes/cosmic';
 
-$nb-enabled-themes: (crits-light, crits-dark);
 
-
-// This is an example of a light theme created from the default
 $nb-themes: nb-register-theme((
-  color-bg: #4ca6ff,
-  shadow: 0 1px 2px 0 #3780c0,
-  layout-bg: #ffffff,
-  color-fg: #222222
-), crits-light, default);
-
-// This is a dark them created from the cosmic
-$nb-themes: nb-register-theme((
-  color-bg: #222222,
+  font-main: $text-font-stack,
+  color-bg: $dark-grey,
   shadow: 0 1px 2px 0 #000000,
-  color-fg: #303030,
-  layout-bg: #ededed
-), crits-dark, cosmic);
+  color-fg: $base-grey,
+  layout-bg: #ededed,
+  color-fg-text: $text-color,
+  color-primary: $brand-primary-color
+), dark, cosmic);
+
+$nb-enabled-themes: (dark);
 
 // SEE --> https://akveo.github.io/nebular/docs/guides/change-theme#runtime-theme-switch
 
