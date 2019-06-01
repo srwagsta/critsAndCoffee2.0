@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import { FormValidationService } from '../../services/form-validation.service';
 
 @Component({
   selector: 'CritsAndCoffee-crits-login',
@@ -10,15 +11,20 @@ export class CritsLoginComponent implements OnInit {
 
   public loginForm = this._formBuilder.group({
     username: ['', Validators.required],
-    password: ['', Validators.required],
+    password: ['', [
+      Validators.required,
+      Validators.minLength(11),
+      FormValidationService.passwordValidator
+    ]]
   });
 
-  constructor(private _formBuilder: FormBuilder) { }
+  constructor(private _formBuilder: FormBuilder) {
+  }
 
   ngOnInit() {
   }
 
-  public onSubmit(){
+  public onSubmit() {
     alert('Submitted');
   }
 

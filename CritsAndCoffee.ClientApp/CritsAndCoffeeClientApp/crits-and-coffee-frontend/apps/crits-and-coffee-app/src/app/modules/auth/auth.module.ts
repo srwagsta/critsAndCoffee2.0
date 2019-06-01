@@ -15,6 +15,7 @@ import {
   MatFormFieldModule,
   MatButtonModule
 } from '@angular/material';
+import { FormFieldErrorMessageComponent } from './components/form-field-error-message/form-field-error-message.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {
     CritsRegisterComponent,
     CritsLogoutComponent,
     CritsRequestPasswordComponent,
-    CritsResetPasswordComponent
+    CritsResetPasswordComponent,
+    FormFieldErrorMessageComponent
   ],
   imports: [
     CommonModule,

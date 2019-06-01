@@ -13,6 +13,7 @@
           "style": "scss"
         }
       },
+
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",

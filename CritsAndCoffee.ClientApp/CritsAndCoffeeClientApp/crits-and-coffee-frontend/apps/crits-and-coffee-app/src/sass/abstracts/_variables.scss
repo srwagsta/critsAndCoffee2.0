@@ -23,6 +23,7 @@ $text-color: #222222 !default;
 /// Main brand color
 /// @type Color
 $brand-primary-color: #14d3e3 !default;
+$brand-primary-color-darker: darken($brand-primary-color, 20%) !default;
 $brand-secondary-color: #d9d9d9 !default;
 $brand-warning-color: 	#DC143C !default;
 
@@ -32,7 +33,7 @@ $white: #ffffff !default;
 $base-grey: #999999 !default;
 $light-grey: lighten($base-grey, 20%) !default;
 $dark-grey: darken($base-grey, 20%) !default;
-
+$black: #000000 !default;
 
 
 /// Container's maximum width
