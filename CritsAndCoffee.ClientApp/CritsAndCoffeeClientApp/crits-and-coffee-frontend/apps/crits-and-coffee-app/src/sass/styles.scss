@@ -25,19 +25,3 @@
 
 // 6. Page-specific styles
 @import 'pages/home';
-
-
-// Nebular Themeing
-// this is your created themes.scss file, make sure the path to the file is correct
-@import 'vendors/nebular';
-
-// framework component styles which will use your new theme
-@import '~@nebular/auth/styles/globals';
-@import '~@nebular/theme/styles/globals';
-
-// install the framework
-$nebular-breaking-notice-enable: false;
-@include nb-install() {
-  @include nb-theme-global();
-  @include nb-auth-global();
-};

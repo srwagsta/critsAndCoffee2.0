@@ -1,14 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {
-  NbAuthComponent,
-  NbLoginComponent,
-  NbRegisterComponent,
-  NbLogoutComponent,
-  NbRequestPasswordComponent,
-  NbResetPasswordComponent
-} from '@nebular/auth';
-import {
   AboutComponent,
   PageNotFoundComponent,
   HomeComponent,
@@ -67,33 +59,7 @@ const routes: Routes = [
 // Auth routes
   {
     path: 'auth',
-    component: NbAuthComponent,
-    children: [
-      {
-        path: '',
-        component: NbLoginComponent
-      },
-      {
-        path: 'login',
-        component: NbLoginComponent
-      },
-      {
-        path: 'register',
-        component: NbRegisterComponent
-      },
-      {
-        path: 'logout',
-        component: NbLogoutComponent
-      },
-      {
-        path: 'request-password',
-        component: NbRequestPasswordComponent
-      },
-      {
-        path: 'reset-password',
-        component: NbResetPasswordComponent
-      }
-    ]
+    loadChildren: () => import('./modules/auth/auth.module').then(mod => mod.AuthModule)
   },
 
 // 404 Route
