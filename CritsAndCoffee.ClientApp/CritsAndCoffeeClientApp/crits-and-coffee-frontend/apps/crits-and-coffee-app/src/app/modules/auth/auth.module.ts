@@ -18,7 +18,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {
   MatInputModule,
   MatFormFieldModule,
-  MatButtonModule
+  MatButtonModule,
+  MatSnackBarModule
 } from '@angular/material';
 
 import { FormFieldErrorMessageComponent } from './components/form-field-error-message/form-field-error-message.component';
@@ -40,7 +41,8 @@ import { FormFieldErrorMessageComponent } from './components/form-field-error-me
     NgxsModule.forFeature([AuthState]),
     MatInputModule,
     MatButtonModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatSnackBarModule
   ]
 })
 export class AuthModule { }

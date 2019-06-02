@@ -26,12 +26,12 @@ export class AuthState {
 
   constructor(private authService: AuthService) {}
 
-  @Action(Login)
-  login({ setState }: StateContext<AuthStateModel>, action: Login) {
-    return this.authService.login(action.payload).pipe(tap((auth_response) => {
-      setState({ token: auth_response.token, user: auth_response.user });
-    }));
-  }
+  // @Action(Login)
+  // login({ setState }: StateContext<AuthStateModel>, action: Login) {
+  //   return this.authService.login(action.payload).pipe(tap((auth_response) => {
+  //     setState({ token: auth_response.token, user: auth_response.user });
+  //   }));
+  // }
 
   @Action(Logout)
   logout({ setState }: StateContext<AuthStateModel>) {

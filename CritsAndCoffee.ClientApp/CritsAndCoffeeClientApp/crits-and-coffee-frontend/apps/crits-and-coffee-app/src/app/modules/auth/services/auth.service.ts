@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, NgZone } from '@angular/core';
 import {Observable, of} from "rxjs";
 import {catchError, tap} from "rxjs/operators";
 import {HttpClient, HttpHeaders} from "@angular/common/http";
@@ -19,12 +19,23 @@ export class AuthService {
 
   constructor(private _http: HttpClient) { }
 
-  public login(credentials: {username: string, password: string, email?: string}): Observable<{token: string, user:AuthUserModel}> {
-    return this._http.post<{token: string, user: AuthUserModel}>(`${this._authUrl}/login/`, credentials)
+  public login(username: string, password: string): {success: boolean, errors: string|null}{
+    let success: boolean = false;
+    let errors: string|null = null;
+    this._http.post<{access_token: string, refresh_token: string}>(`${this._authUrl}/login/`,
+      {'username': username, 'password': password})
       .pipe(
-        tap(data => console.log(`Login success for => ${data.user.username}`),
-            error =>  catchError(this.handleError(error, [])))
-      );
+        tap(data => {
+          console.log(`Login success for =>`);
+          success = true;
+        },
+            error =>  {
+          catchError(this.handleError(error, []));
+          success = false;
+          errors = error;
+        })
+      ).subscribe();
+    return {'success': success, 'errors': errors};
   }
 
   public logout(): Observable<{detail: string}>{
@@ -33,7 +44,6 @@ export class AuthService {
         tap(data => console.log(`Entry content: ${data}`),
             error =>  catchError(this.handleError(error, [])))
       );
-    // TODO: On the backend a blacklist needs to be setup to understand an invalid token
   }
 
   public passwordReset(email: string): Observable<string> {
@@ -66,5 +76,6 @@ export class AuthService {
           ${this._serviceName} ${operation} failed: ${error.message}`);
     };
   }
+
 
 }

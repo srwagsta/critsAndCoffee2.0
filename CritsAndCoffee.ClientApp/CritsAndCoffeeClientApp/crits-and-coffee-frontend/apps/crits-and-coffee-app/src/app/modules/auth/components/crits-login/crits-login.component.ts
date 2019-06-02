@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { FormValidationService } from '../../services/form-validation.service';
+import { AuthService } from '../../services/auth.service';
+import { MatSnackBar } from '@angular/material';
 
 @Component({
   selector: 'CritsAndCoffee-crits-login',
@@ -12,20 +14,28 @@ export class CritsLoginComponent implements OnInit {
   public loginForm = this._formBuilder.group({
     username: ['', Validators.required],
     password: ['', [
-      Validators.required,
-      Validators.minLength(11),
-      FormValidationService.passwordValidator
+      Validators.required
     ]]
   });
 
-  constructor(private _formBuilder: FormBuilder) {
+  constructor(private _formBuilder: FormBuilder,
+              private _authService: AuthService,
+              private _snackbar: MatSnackBar) {
   }
 
   ngOnInit() {
   }
 
   public onSubmit() {
-    alert('Submitted');
+    if (this.loginForm.dirty && this.loginForm.valid) {
+      let successStatus: {success: boolean, errors: string} =
+        this._authService.login(this.loginForm.value.username, this.loginForm.value.password);
+      if ( !successStatus.success){
+        this._snackbar.open(successStatus.errors, 'close', {
+          duration: 2000,
+        });
+      }
+    }
   }
 
 }
