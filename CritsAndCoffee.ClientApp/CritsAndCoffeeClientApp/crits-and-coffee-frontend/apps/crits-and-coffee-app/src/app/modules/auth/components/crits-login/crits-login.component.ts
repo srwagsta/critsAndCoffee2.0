@@ -14,7 +14,9 @@ export class CritsLoginComponent implements OnInit {
   public loginForm = this._formBuilder.group({
     username: ['', Validators.required],
     password: ['', [
-      Validators.required
+      Validators.required,
+      // Validators.minLength(11),
+      // FormValidationService.passwordValidator
     ]]
   });
 

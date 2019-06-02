@@ -59,7 +59,7 @@ import { InstagramPostListState } from './state/instagram/instagram.state';
 
 
 Sentry.init({
-  dsn: 'https://3d288dd060d947789b0e3dcc380efb2f@sentry.io/1444294'
+  dsn: environment.production ? 'https://3d288dd060d947789b0e3dcc380efb2f@sentry.io/1444294' : ''
 });
 
 @NgModule({

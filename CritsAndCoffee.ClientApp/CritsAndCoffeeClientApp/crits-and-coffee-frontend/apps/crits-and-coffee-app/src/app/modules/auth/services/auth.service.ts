@@ -1,7 +1,7 @@
-import { Injectable, NgZone } from '@angular/core';
-import {Observable, of} from "rxjs";
-import {catchError, tap} from "rxjs/operators";
-import {HttpClient, HttpHeaders} from "@angular/common/http";
+import { Injectable } from '@angular/core';
+import { Observable } from "rxjs";
+import { catchError, tap } from "rxjs/operators";
+import { HttpClient, HttpHeaders } from "@angular/common/http";
 import {AuthUserModel} from "../models/auth-user.model";
 
 
@@ -22,15 +22,15 @@ export class AuthService {
   public login(username: string, password: string): {success: boolean, errors: string|null}{
     let success: boolean = false;
     let errors: string|null = null;
+
     this._http.post<{access_token: string, refresh_token: string}>(`${this._authUrl}/login/`,
       {'username': username, 'password': password})
       .pipe(
         tap(data => {
-          console.log(`Login success for =>`);
+          alert(data);
           success = true;
-        },
-            error =>  {
-          catchError(this.handleError(error, []));
+        }),catchError(error => () => {
+          this.handleError(error, []);
           success = false;
           errors = error;
         })
