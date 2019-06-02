@@ -12,7 +12,7 @@ $text-font-stack:  'Playfair Display', 'Times New Roman', 'Open Sans', 'Helvetic
 /// @type List
 $code-font-stack: 'Anonymous Pro', 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
 
-
+$font-size-base: 1rem;
 
 
 
@@ -25,6 +25,7 @@ $text-color: #222222 !default;
 $brand-primary-color: #14d3e3 !default;
 $brand-primary-color-darker: darken($brand-primary-color, 20%) !default;
 $brand-secondary-color: #d9d9d9 !default;
+$brand-secondary-color-darker: darken($brand-secondary-color, 20%) !default;
 $brand-warning-color: 	#DC143C !default;
 
 /// Medium grey
@@ -51,6 +52,11 @@ $breakpoints: (
 ) !default;
 
 
+$bp-largest: 75em;     // 1200px
+$bp-large: 68.75em;    // 1100px
+$bp-medium: 56.25em;   // 900px
+$bp-small: 37.5em;     // 600px
+$bp-smallest: 31.25em; // 500px
 
 
 
