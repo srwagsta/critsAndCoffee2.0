@@ -23,7 +23,7 @@ export class AuthService {
     let success: boolean = false;
     let errors: string|null = null;
 
-    this._http.post<{access_token: string, refresh_token: string}>(`${this._authUrl}/login/`,
+    this._http.post<{access_token: string, refresh_token: string}>(`${this._authUrl}/login`,
       {'username': username, 'password': password})
       .pipe(
         tap(data => {
