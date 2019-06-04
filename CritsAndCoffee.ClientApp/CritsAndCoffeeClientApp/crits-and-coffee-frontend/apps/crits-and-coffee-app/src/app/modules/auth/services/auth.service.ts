@@ -1,8 +1,11 @@
-import { Injectable } from '@angular/core';
+import { Injectable, NgZone } from '@angular/core';
 import { Observable } from "rxjs";
 import { catchError, tap } from "rxjs/operators";
-import { HttpClient, HttpHeaders } from "@angular/common/http";
+import { HttpClient, HttpErrorResponse, HttpEvent, HttpHeaders } from '@angular/common/http';
 import {AuthUserModel} from "../models/auth-user.model";
+import { MatSnackBar } from '@angular/material';
+import { Store } from '@ngxs/store';
+import { Login } from '../state/auth/auth.actions';
 
 
 const httpOptions = {
@@ -17,25 +20,24 @@ export class AuthService {
   private _serviceName:string = 'Instagram Auth Service: ';
   private _authUrl:string = 'api/v1/auth';
 
-  constructor(private _http: HttpClient) { }
+  constructor(private _http: HttpClient,
+              private _store: Store,
+              private _snackbar: MatSnackBar,
+              private _zone: NgZone) { }
 
-  public login(username: string, password: string): {success: boolean, errors: string|null}{
-    let success: boolean = false;
-    let errors: string|null = null;
-
-    this._http.post<{access_token: string, refresh_token: string}>(`${this._authUrl}/login`,
-      {'username': username, 'password': password})
+  public login(username: string, password: string){
+    return this._http.post(`${this._authUrl}/login`,
+      {'username': username, 'password': password}, {observe: 'response'})
       .pipe(
-        tap(data => {
-          alert(data);
-          success = true;
-        }),catchError(error => () => {
-          this.handleError(error, []);
-          success = false;
-          errors = error;
-        })
-      ).subscribe();
-    return {'success': success, 'errors': errors};
+        tap((response:any) => {
+          this.setTokens(response.body);
+        }),catchError(error =>
+            new Observable<HttpEvent<any>>(observer => {
+              this._zone.run(() => this._snackbar.open("Invalid Login", 'Close'));
+              observer.error(error);
+              observer.complete();
+            }))
+      );
   }
 
   public logout(): Observable<{detail: string}>{
@@ -75,6 +77,16 @@ export class AuthService {
       throw new Error(`${this._serviceName} ${error} \n 
           ${this._serviceName} ${operation} failed: ${error.message}`);
     };
+  }
+
+
+  private setTokens(responseBody){
+    try{
+      this._store.dispatch(new Login(responseBody));
+    }
+    catch (e) {
+      this._zone.run(() => this._snackbar.open('Unable to find tokens in response', 'Close'));
+    }
   }
 
 

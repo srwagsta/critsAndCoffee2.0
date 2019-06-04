@@ -13,10 +13,14 @@ import { AgmCoreModule } from '@agm/core';
 import * as Sentry from '@sentry/browser';
 import { SentryErrorHandler } from './services/sentryErrorHandler.service';
 
-import { MatButtonModule } from '@angular/material/button';
-import { MatDividerModule } from '@angular/material/divider';
-import { MatIconModule } from '@angular/material/icon';
-import { MatTooltipModule } from '@angular/material/tooltip';
+//Material
+import {
+  MatButtonModule,
+  MatDividerModule,
+  MatIconModule,
+  MatTooltipModule,
+  MatSnackBarModule
+} from '@angular/material';
 
 // Custom Libraries
 import { GameOfLifeModule } from '@CritsAndCoffee/game-of-life';
@@ -56,6 +60,7 @@ import { NgxsStoragePluginModule } from '@ngxs/storage-plugin';
 
 // States
 import { InstagramPostListState } from './state/instagram/instagram.state';
+import { AuthService } from './modules/auth/services/auth.service';
 
 
 Sentry.init({
@@ -89,6 +94,7 @@ Sentry.init({
     MatIconModule,
     MatTooltipModule,
     MatDividerModule,
+    MatSnackBarModule,
     FontAwesomeModule,
     NgbModule,
     NgxsModule.forRoot([InstagramPostListState], { developmentMode: !environment.production }),
@@ -96,13 +102,16 @@ Sentry.init({
     NgxsReduxDevtoolsPluginModule.forRoot(),
     NgxsRouterPluginModule.forRoot(),
     NgxsStoragePluginModule.forRoot({
-      key: 'auth.token'
+      key: ['auth.access_token', 'auth.refresh_token']
     }),
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCNPlDnedCEachOH08pszCanYO2RDuJ6pk\n'
     })
   ],
-  providers: [{ provide: ErrorHandler, useClass: SentryErrorHandler }],
+  providers: [
+    AuthService,
+    environment.production ? { provide: ErrorHandler, useClass: SentryErrorHandler }: {provide: ErrorHandler, useClass: ErrorHandler}
+    ],
   entryComponents: [InstagramPostDetailComponent],
   bootstrap: [AppComponent]
 })

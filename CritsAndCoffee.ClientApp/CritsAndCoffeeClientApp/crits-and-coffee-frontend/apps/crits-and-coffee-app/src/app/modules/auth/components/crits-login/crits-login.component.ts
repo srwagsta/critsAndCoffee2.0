@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { FormValidationService } from '../../services/form-validation.service';
 import { AuthService } from '../../services/auth.service';
-import { MatSnackBar } from '@angular/material';
+import { Store } from '@ngxs/store';
+import { Navigate } from '@ngxs/router-plugin';
 
 @Component({
   selector: 'CritsAndCoffee-crits-login',
@@ -22,7 +23,7 @@ export class CritsLoginComponent implements OnInit {
 
   constructor(private _formBuilder: FormBuilder,
               private _authService: AuthService,
-              private _snackbar: MatSnackBar) {
+              private _store: Store) {
   }
 
   ngOnInit() {
@@ -30,13 +31,10 @@ export class CritsLoginComponent implements OnInit {
 
   public onSubmit() {
     if (this.loginForm.dirty && this.loginForm.valid) {
-      let successStatus: {success: boolean, errors: string} =
-        this._authService.login(this.loginForm.value.username, this.loginForm.value.password);
-      if ( !successStatus.success){
-        this._snackbar.open(successStatus.errors, 'close', {
-          duration: 2000,
-        });
-      }
+      this._authService.login(this.loginForm.value.username, this.loginForm.value.password)
+        .subscribe(()=> this._store.dispatch(new Navigate(['/'])),
+          (error)=> this.loginForm.setErrors({"BackendError": error}));
+
     }
   }
 

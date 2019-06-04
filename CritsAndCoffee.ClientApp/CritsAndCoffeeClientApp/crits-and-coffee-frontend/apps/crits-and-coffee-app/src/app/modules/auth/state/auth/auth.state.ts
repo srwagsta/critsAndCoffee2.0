@@ -5,59 +5,59 @@ import { AuthUserModel } from "../../models/auth-user.model";
 import { tap } from 'rxjs/operators';
 
 export class AuthStateModel {
-  token: string|null;
+  access_token: string|null;
+  refresh_token: string|null;
   user: AuthUserModel|null;
 }
 
 @State<AuthStateModel>({
   name: 'auth',
   defaults: {
-    token: null,
+    access_token: null,
+    refresh_token: null,
     user: null
   }
 })
 export class AuthState {
 
   @Selector()
-  static token(state: AuthStateModel) { return state.token; }
+  static access_token(state: AuthStateModel) { return state.access_token; }
 
    @Selector()
   static user(state: AuthStateModel) { return state.user; }
 
   constructor(private authService: AuthService) {}
 
-  // @Action(Login)
-  // login({ setState }: StateContext<AuthStateModel>, action: Login) {
-  //   return this.authService.login(action.payload).pipe(tap((auth_response) => {
-  //     setState({ token: auth_response.token, user: auth_response.user });
-  //   }));
-  // }
+  @Action(Login)
+  login({ patchState }: StateContext<AuthStateModel>, { payload }: Login) {
+    patchState({access_token: payload.access_token, refresh_token: payload.refresh_token})
+  }
 
   @Action(Logout)
   logout({ setState }: StateContext<AuthStateModel>) {
     return this.authService.logout().pipe(tap(() => {
-      setState({token: null, user: null});
+      setState({access_token: null, refresh_token:null ,user: null});
     }));
   }
 
   @Action(PasswordReset)
   passwordReset({ patchState }: StateContext<AuthStateModel>, action: PasswordReset) {
     return this.authService.passwordReset(action.payload.email).pipe(tap(() => {
-      patchState({token: null});
+      patchState({access_token: null});
     }));
   }
 
   @Action(PasswordChange)
   passwordChange({ setState }: StateContext<AuthStateModel>, action: PasswordChange) {
     return this.authService.passwordChange(action.payload).pipe(tap(() => {
-      setState({token: null, user: null});
+      setState({access_token: null, refresh_token:null, user: null});
     }));
   }
 
   @Action(Register)
   register({ setState }: StateContext<AuthStateModel>, action: Register) {
     return this.authService.basicRegister(action.payload).pipe(tap(() => {
-      setState({token: null, user: null});
+      setState({access_token: null, refresh_token:null, user: null});
     }));
     // TODO: This need to be set based on the expected response
   }
