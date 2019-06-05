@@ -1,6 +1,9 @@
 @import "../../../../sass/abstracts/variables";
 @import "../../../../sass/abstracts/mixins";
 
+.crits-error-snackbar{
+  background: $brand-warning-color;
+}
 
 .crits-section-form {
   display: flex;

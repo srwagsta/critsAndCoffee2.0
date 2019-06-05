@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { environment } from '../environments/environment';
 import { AgmCoreModule } from '@agm/core';
 
@@ -61,6 +61,7 @@ import { NgxsStoragePluginModule } from '@ngxs/storage-plugin';
 // States
 import { InstagramPostListState } from './state/instagram/instagram.state';
 import { AuthService } from './modules/auth/services/auth.service';
+import { AuthInterceptorService } from './modules/auth/services/auth-interceptor.service';
 
 
 Sentry.init({
@@ -110,7 +111,12 @@ Sentry.init({
   ],
   providers: [
     AuthService,
-    environment.production ? { provide: ErrorHandler, useClass: SentryErrorHandler }: {provide: ErrorHandler, useClass: ErrorHandler}
+    environment.production ? { provide: ErrorHandler, useClass: SentryErrorHandler }: {provide: ErrorHandler, useClass: ErrorHandler},
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptorService,
+      multi: true
+    }
     ],
   entryComponents: [InstagramPostDetailComponent],
   bootstrap: [AppComponent]

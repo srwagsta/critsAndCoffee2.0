@@ -29,8 +29,8 @@ export class AuthState {
   constructor(private authService: AuthService) {}
 
   @Action(Login)
-  login({ patchState }: StateContext<AuthStateModel>, { payload }: Login) {
-    patchState({access_token: payload.access_token, refresh_token: payload.refresh_token})
+  login({ setState }: StateContext<AuthStateModel>, { tokens, user }: Login) {
+    setState({access_token: tokens.access_token, refresh_token: tokens.refresh_token, user:user})
   }
 
   @Action(Logout)

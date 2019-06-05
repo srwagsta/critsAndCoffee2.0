@@ -3,7 +3,6 @@ import { HttpErrorResponse, HttpEvent, HttpHandler, HttpInterceptor, HttpRequest
 import { Router } from '@angular/router';
 import { Observable, of } from 'rxjs';
 import { Store } from '@ngxs/store';
-import { AuthState } from '../state/auth/auth.state';
 
 
 @Injectable({
@@ -28,7 +27,7 @@ export class AuthInterceptorService implements HttpInterceptor{
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
     // Clone the request to add the new header.
     const authReq = req.clone({setHeaders: {
-      Authorization: `Bearer ${this._store.selectSnapshot<string>(AuthState.access_token)}`}});
+      Authorization: `Bearer ${this._store.selectSnapshot<string>(state => state.auth.access_token)}`}});
     // catch the error, make specific functions for catching specific errors and you can chain through them with more catch operators
     return next.handle(authReq);
   }

@@ -34,8 +34,9 @@ export class CritsLoginComponent implements OnInit {
       this._authService.login(this.loginForm.value.username, this.loginForm.value.password)
         .subscribe(()=> this._store.dispatch(new Navigate(['/'])),
           (error)=> this.loginForm.setErrors({"BackendError": error}));
-
     }
   }
+
+  //TODO: Display error messages and show that form is invalid on unsucessful login
 
 }

@@ -1,11 +1,11 @@
 import { Injectable, NgZone } from '@angular/core';
 import { Observable } from "rxjs";
 import { catchError, tap } from "rxjs/operators";
-import { HttpClient, HttpErrorResponse, HttpEvent, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpEvent, HttpHeaders } from '@angular/common/http';
 import {AuthUserModel} from "../models/auth-user.model";
 import { MatSnackBar } from '@angular/material';
 import { Store } from '@ngxs/store';
-import { Login, Logout } from '../state/auth/auth.actions';
+import { Login } from '../state/auth/auth.actions';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { Navigate } from '@ngxs/router-plugin';
 
@@ -28,16 +28,24 @@ export class AuthService {
               private _snackbar: MatSnackBar,
               private _zone: NgZone) { }
 
+  public basicRegister(credentials: {username: string, password1: string, password2: string, email: string}): Observable<string> {
+    return this._http.post<string>(`${this._authUrl}/registration/`, credentials)
+      .pipe(
+        tap(data => console.log(`Entry content: ${data}`),
+          error =>  catchError(this.handleError(error, [])))
+      );
+  }
+
   public login(username: string, password: string){
     return this._http.post(`${this._authUrl}/login`,
       {'username': username, 'password': password}, {observe: 'response'})
       .pipe(
         tap((response:any) => {
-          this._store.dispatch(new Login(response.body));
-          alert(this._jwtHelper.decodeToken(response.body.access_token));
+          this._store.dispatch(new Login(response.body, this._jwtHelper.decodeToken(response.body.access_token).user_claims));
         }),catchError(error =>
             new Observable<HttpEvent<any>>(observer => {
-              this._zone.run(() => this._snackbar.open("Invalid Login", 'Close'));
+              this._zone.run(() => this._snackbar.open("Invalid Login", 'Close',
+                {panelClass: 'crits-error-snackbar'}));
               observer.error(error);
               observer.complete();
             }))
@@ -64,14 +72,6 @@ export class AuthService {
 
   public passwordChange(credentials: {old_password: string, new_password1: string, new_password2: string}): Observable<string> {
     return this._http.post<string>(`${this._authUrl}/password/change/`, credentials)
-      .pipe(
-        tap(data => console.log(`Entry content: ${data}`),
-            error =>  catchError(this.handleError(error, [])))
-      );
-  }
-
-  public basicRegister(credentials: {username: string, password1: string, password2: string, email: string}): Observable<string> {
-    return this._http.post<string>(`${this._authUrl}/registration/`, credentials)
       .pipe(
         tap(data => console.log(`Entry content: ${data}`),
             error =>  catchError(this.handleError(error, [])))

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'CritsAndCoffee-crits-register',
@@ -7,7 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CritsRegisterComponent implements OnInit {
 
-  constructor() { }
+  public loginForm = this._formBuilder.group({
+    username: ['', Validators.required],
+    password: ['', [
+      Validators.required,
+      // Validators.minLength(11),
+      // FormValidationService.passwordValidator
+    ]]
+  });
+
+  constructor(private _formBuilder: FormBuilder) { }
 
   ngOnInit() {
   }

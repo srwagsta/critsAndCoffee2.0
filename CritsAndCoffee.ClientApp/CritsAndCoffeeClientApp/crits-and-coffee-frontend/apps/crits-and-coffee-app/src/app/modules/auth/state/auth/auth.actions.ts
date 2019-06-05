@@ -1,6 +1,8 @@
+import { AuthUserModel } from '../../models/auth-user.model';
+
 export class Login {
   static readonly type = '[Auth] Login';
-  constructor(public payload: { access_token: string, refresh_token: string }) {}
+  constructor(public tokens: { access_token: string, refresh_token: string }, public user: AuthUserModel) {}
 }
 
 export class Logout {
