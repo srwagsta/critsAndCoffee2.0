@@ -2,6 +2,14 @@ from API_Auth.extensions import db, pwd_context
 from API_Auth.models.user_roles import UserRoles
 from sqlalchemy.dialects.postgresql import ENUM
 from datetime import datetime
+import json
+
+
+def dump_datetime(value):
+    """Deserialize datetime object into string form for JSON processing."""
+    if value is None:
+        return None
+    return [value.strftime("%Y-%m-%d"), value.strftime("%H:%M:%S")]
 
 
 class User(db.Model):
@@ -23,3 +31,15 @@ class User(db.Model):
 
     def __repr__(self):
         return "<User %s>" % self.username
+
+    @property
+    def serialize(self):
+        """Return object data in easily serializable format"""
+        return {
+            'id': self.id,
+            'first_name': self.first_name,
+            'last_name': self.last_name,
+            'username': self.username,
+            'email': self.email,
+            'last_login': dump_datetime(self.last_login)
+        }

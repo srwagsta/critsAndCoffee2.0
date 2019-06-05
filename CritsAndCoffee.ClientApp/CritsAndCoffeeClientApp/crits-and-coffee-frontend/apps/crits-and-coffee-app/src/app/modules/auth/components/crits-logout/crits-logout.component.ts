@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Store } from '@ngxs/store';
+import { Logout } from '../../state/auth/auth.actions';
 
 @Component({
   selector: 'CritsAndCoffee-crits-logout',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CritsLogoutComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _store: Store) { }
 
   ngOnInit() {
   }
 
+  public onClick(){
+    this._store.dispatch(new Logout());
+  }
 }
