@@ -32,6 +32,22 @@ def verify_access_token():
         return jsonify({"errors": f'${e}'}), 401
 
 
+@blueprint.route('/register', methods=['POST'])
+def register():
+    required_fields = ['first_name', 'last_name', 'username', 'email', 'password']
+    request_fields = {field: request.json.get(field, None) for field in required_fields}
+    for key, value in request_fields.items():
+        if value is None:
+            return jsonify({'errors': f'Missing value for {key}'}), 422
+    try:
+        db.session.add(User(request_fields))
+        db.session.commit()
+    except Exception as error:
+        return jsonify({'errors': error}), 422
+
+    return {"msg": "user created"}, 201
+
+
 @blueprint.route('/login', methods=['POST'])
 def login():
     """Authenticate user and return token

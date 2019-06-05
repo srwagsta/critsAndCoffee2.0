@@ -20,6 +20,7 @@ def init():
     """
     from API_Auth.extensions import db
     from API_Auth.models import User
+    from API_Auth.models.user_roles import UserRoles
     click.echo("create database")
     db.create_all()
     click.echo("done")
@@ -32,6 +33,7 @@ def init():
             username='admin',
             email='admin@mail.com',
             password='admin',
+            role=UserRoles.ADMIN,
             active=True
         )
         db.session.add(user)

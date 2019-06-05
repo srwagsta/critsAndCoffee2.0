@@ -2,7 +2,6 @@ from API_Auth.extensions import db, pwd_context
 from API_Auth.models.user_roles import UserRoles
 from sqlalchemy.dialects.postgresql import ENUM
 from datetime import datetime
-import json
 
 
 def dump_datetime(value):
