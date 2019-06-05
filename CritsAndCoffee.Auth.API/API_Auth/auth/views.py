@@ -40,10 +40,11 @@ def register():
         if value is None:
             return jsonify({'errors': f'Missing value for {key}'}), 422
     try:
+        # User constructor takes one argument but 2 were given??
         db.session.add(User(request_fields))
         db.session.commit()
     except Exception as error:
-        return jsonify({'errors': error}), 422
+        return jsonify({'errors': str(error)}), 422
 
     return {"msg": "user created"}, 201
 
