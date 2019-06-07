@@ -19,6 +19,7 @@ from API_Auth.auth.helpers import (
 )
 import json
 from datetime import datetime
+from API_Auth.commons.decorators import registration_validation
 
 blueprint = Blueprint('auth', __name__, url_prefix='/api/v1/auth')
 
@@ -33,20 +34,26 @@ def verify_access_token():
 
 
 @blueprint.route('/register', methods=['POST'])
-def register():
-    required_fields = ['first_name', 'last_name', 'username', 'email', 'password']
-    request_fields = {field: request.json.get(field, None) for field in required_fields}
-    for key, value in request_fields.items():
-        if value is None:
-            return jsonify({'errors': f'Missing value for {key}'}), 422
+@registration_validation
+def register(**kwargs):
     try:
-        # User constructor takes one argument but 2 were given??
-        db.session.add(User(request_fields))
+        db.session.add(User(**kwargs['request_fields']))
         db.session.commit()
     except Exception as error:
         return jsonify({'errors': str(error)}), 422
 
-    return {"msg": "user created"}, 201
+    user = User.query.filter_by(username=kwargs['request_fields'].get('username')).first()
+    access_token = create_access_token(identity=user.id, fresh=True)
+    refresh_token = create_refresh_token(identity=user.id)
+    add_token_to_database(access_token, app.config['JWT_IDENTITY_CLAIM'])
+    add_token_to_database(refresh_token, app.config['JWT_IDENTITY_CLAIM'])
+    user.last_login = datetime.utcnow()
+    db.session.commit()
+    ret = {
+        'access_token': access_token,
+        'refresh_token': refresh_token
+    }
+    return jsonify(ret), 201
 
 
 @blueprint.route('/login', methods=['POST'])

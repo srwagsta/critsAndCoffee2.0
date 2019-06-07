@@ -8,13 +8,17 @@ import { FormBuilder, Validators } from '@angular/forms';
 })
 export class CritsRegisterComponent implements OnInit {
 
-  public loginForm = this._formBuilder.group({
+  public registrationForm = this._formBuilder.group({
+    first_name: ['', Validators.required],
+    last_name: ['', Validators.required],
+    email: ['', [Validators.required, Validators.email]],
     username: ['', Validators.required],
     password: ['', [
       Validators.required,
       // Validators.minLength(11),
       // FormValidationService.passwordValidator
-    ]]
+    ]],
+    password_confirm: ['', Validators.required],
   });
 
   constructor(private _formBuilder: FormBuilder) { }

@@ -2,23 +2,53 @@
   <div class="crits-full-form__row">
     <div class="crits-full-form">
 
-      <form class="crits-full-form__form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <form class="crits-full-form__form" [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+        <div class="crits-form__group">
+        <mat-form-field class="crits-inline-form-field">
+          <label for="firstName">First Name</label>
+          <input matInput formControlName="first_name" id="firstName" placeholder="First Name">
+          <CritsAndCoffee-form-field-error-message
+            [control]="registrationForm.controls.first_name"></CritsAndCoffee-form-field-error-message>
+        </mat-form-field>
+
+        <mat-form-field class="crits-inline-form-field">
+          <label for="lastName">Last Name</label>
+          <input matInput formControlName="last_name" id="lastName" placeholder="Last Name">
+          <CritsAndCoffee-form-field-error-message
+            [control]="registrationForm.controls.last_name"></CritsAndCoffee-form-field-error-message>
+        </mat-form-field>
+        </div>
+
         <mat-form-field class="crits-form__group">
           <label for="username">Username</label>
           <input matInput formControlName="username" id="username" placeholder="Username">
           <CritsAndCoffee-form-field-error-message
-            [control]="loginForm.controls.username"></CritsAndCoffee-form-field-error-message>
+            [control]="registrationForm.controls.username"></CritsAndCoffee-form-field-error-message>
+        </mat-form-field>
+
+        <mat-form-field class="crits-form__group">
+          <label for="email">Email</label>
+          <input matInput formControlName="email" id="email" placeholder="Email">
+          <CritsAndCoffee-form-field-error-message
+            [control]="registrationForm.controls.email"></CritsAndCoffee-form-field-error-message>
         </mat-form-field>
 
         <mat-form-field class="crits-form__group">
           <label for="password">Password</label>
           <input type="password" matInput formControlName="password" id="password" placeholder="Password">
           <CritsAndCoffee-form-field-error-message
-            [control]="loginForm.controls.password"></CritsAndCoffee-form-field-error-message>
+            [control]="registrationForm.controls.password"></CritsAndCoffee-form-field-error-message>
+        </mat-form-field>
+
+        <mat-form-field class="crits-form__group">
+          <label for="passwordConfirm">Confirm Password</label>
+          <input type="password" matInput formControlName="password_confirm" id="passwordConfirm" placeholder="Confirm Password">
+          <CritsAndCoffee-form-field-error-message
+            [control]="registrationForm.controls.password_confirm"></CritsAndCoffee-form-field-error-message>
         </mat-form-field>
 
         <div class="crits-form__group">
-          <button class="crits-form__button" mat-raised-button color="primary" type="submit" [disabled]="!loginForm.valid">Login</button>
+          <button class="crits-form__button" mat-raised-button color="primary" type="submit" [disabled]="!registrationForm.valid">Login</button>
         </div>
 
       </form>
