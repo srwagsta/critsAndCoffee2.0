@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import { Navigate } from '@ngxs/router-plugin';
 
 @Component({
   selector: 'CritsAndCoffee-crits-register',
@@ -25,5 +26,15 @@ export class CritsRegisterComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  public onSubmit() {
+    if (this.registrationForm.dirty && this.registrationForm.valid) { return true}
+    return false
+    //   this._authService.login(this.loginForm.value.username, this.loginForm.value.password)
+    //     .subscribe(()=> this._store.dispatch(new Navigate(['/'])),
+    //       (error)=> this.loginForm.setErrors({"BackendError": error}));
+    // }
+  }
+
 
 }

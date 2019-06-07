@@ -7,7 +7,7 @@
     "start": "ng build game-of-life && ng serve",
     "build": "ng build",
     "build-all": "ng build game-of-life && ng build crits-and-coffee-app",
-    "build-all-prod": "ng build game-of-life --prod && ng build crits-and-coffee-app --prod",
+    "build-all-prod": "ng build game-of-life && ng build crits-and-coffee-app --prod",
     "test": "ng test",
     "lint": "./node_modules/.bin/nx lint && ng lint",
     "e2e": "ng e2e",
