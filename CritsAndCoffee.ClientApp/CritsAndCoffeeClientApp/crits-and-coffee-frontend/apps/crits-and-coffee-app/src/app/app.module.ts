@@ -7,7 +7,6 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { environment } from '../environments/environment';
-import { AgmCoreModule } from '@agm/core';
 
 //Logging
 import * as Sentry from '@sentry/browser';
@@ -27,6 +26,7 @@ import { GameOfLifeModule } from '@CritsAndCoffee/game-of-life';
 
 // Custom modules
 import { UiModule } from './modules/ui/ui.module';
+import {AuthModule} from './modules/auth/auth.module';
 
 // Font awesome icons
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -42,13 +42,7 @@ import {
   AboutComponent,
   GameOfLifeComponent,
   PageNotFoundComponent,
-  InstagramMapComponent,
-  PrivacyPolicyComponent,
-  CopyrightPolicyComponent,
-  ProjectLicenseComponent,
-  ApiTermsOfUseComponent
 } from './components';
-import { InstagramPostDetailComponent } from './components/instagram-map/instagram-post-detail/instagram-post-detail.component';
 import { CritsHeroComponent } from './components/home/crits-hero/crits-hero.component';
 
 // ngxs plugins
@@ -59,9 +53,9 @@ import { NgxsRouterPluginModule } from '@ngxs/router-plugin';
 import { NgxsStoragePluginModule } from '@ngxs/storage-plugin';
 
 // States
-import { InstagramPostListState } from './state/instagram/instagram.state';
 import { AuthService } from './modules/auth/services/auth.service';
 import { AuthInterceptorService } from './modules/auth/services/auth-interceptor.service';
+import { AppState } from './state/app.state';
 
 
 Sentry.init({
@@ -74,12 +68,6 @@ Sentry.init({
     HomeComponent,
     AboutComponent,
     PageNotFoundComponent,
-    InstagramMapComponent,
-    PrivacyPolicyComponent,
-    CopyrightPolicyComponent,
-    ProjectLicenseComponent,
-    ApiTermsOfUseComponent,
-    InstagramPostDetailComponent,
     CritsHeroComponent,
     GameOfLifeComponent
   ],
@@ -91,6 +79,7 @@ Sentry.init({
     HttpClientModule,
     AppRoutingModule,
     UiModule,
+    AuthModule,
     MatButtonModule,
     MatIconModule,
     MatTooltipModule,
@@ -98,15 +87,12 @@ Sentry.init({
     MatSnackBarModule,
     FontAwesomeModule,
     NgbModule,
-    NgxsModule.forRoot([InstagramPostListState], { developmentMode: !environment.production }),
+    NgxsModule.forRoot([AppState], { developmentMode: !environment.production }),
     NgxsLoggerPluginModule.forRoot({}),
     NgxsReduxDevtoolsPluginModule.forRoot(),
     NgxsRouterPluginModule.forRoot(),
     NgxsStoragePluginModule.forRoot({
       key: ['auth.access_token', 'auth.refresh_token']
-    }),
-    AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyCNPlDnedCEachOH08pszCanYO2RDuJ6pk\n'
     })
   ],
   providers: [
@@ -118,7 +104,7 @@ Sentry.init({
       multi: true
     }
     ],
-  entryComponents: [InstagramPostDetailComponent],
+  entryComponents: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {

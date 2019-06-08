@@ -1,5 +1,5 @@
 import { State, Action, Selector, StateContext } from '@ngxs/store';
-import {Login, Logout, PasswordChange, PasswordReset, Register} from './auth.actions';
+import {Login, Logout, PasswordChange, PasswordReset} from './auth.actions';
 import { AuthService } from '../../services/auth.service'
 import { AuthUserModel } from "../../models/auth-user.model";
 import { tap } from 'rxjs/operators';
@@ -54,12 +54,5 @@ export class AuthState {
     }));
   }
 
-  @Action(Register)
-  register({ setState }: StateContext<AuthStateModel>, action: Register) {
-    return this.authService.basicRegister(action.payload).pipe(tap(() => {
-      setState({access_token: null, refresh_token:null, user: null});
-    }));
-    // TODO: This need to be set based on the expected response
-  }
 
 }

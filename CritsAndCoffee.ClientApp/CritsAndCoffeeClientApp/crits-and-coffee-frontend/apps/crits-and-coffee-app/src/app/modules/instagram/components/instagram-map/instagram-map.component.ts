@@ -3,7 +3,7 @@ import {Observable} from "rxjs";
 import {InstagramPostModel} from "../../models/instagram-post.model";
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import {InstagramPostDetailComponent} from "./instagram-post-detail/instagram-post-detail.component";
-import {InstagramPostListState} from "../../state/instagram/instagram.state";
+import {InstagramPostListState} from "../../state/instagram.state";
 import {Select, Store} from "@ngxs/store";
 
 @Component({

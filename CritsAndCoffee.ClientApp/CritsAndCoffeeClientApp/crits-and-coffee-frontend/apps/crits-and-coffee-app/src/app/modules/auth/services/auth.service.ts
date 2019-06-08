@@ -5,7 +5,7 @@ import { HttpClient, HttpEvent, HttpHeaders } from '@angular/common/http';
 import {AuthUserModel} from "../models/auth-user.model";
 import { MatSnackBar } from '@angular/material';
 import { Store } from '@ngxs/store';
-import { Login } from '../state/auth/auth.actions';
+import { Login, Logout } from '../state/auth/auth.actions';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { Navigate } from '@ngxs/router-plugin';
 
@@ -28,11 +28,21 @@ export class AuthService {
               private _snackbar: MatSnackBar,
               private _zone: NgZone) { }
 
-  public basicRegister(credentials: {username: string, password1: string, password2: string, email: string}): Observable<string> {
-    return this._http.post<string>(`${this._authUrl}/registration/`, credentials)
+  public register(fname:string, lname: string, username:string, email:string, password:string){
+    return this._http.post(`${this._authUrl}/registration`,
+      {'first_name': fname, 'last_name': lname, 'username': username,
+        'email':email, 'password': password},
+      {observe: 'response'})
       .pipe(
-        tap(data => console.log(`Entry content: ${data}`),
-          error =>  catchError(this.handleError(error, [])))
+        tap((response:any) => {
+          this._store.dispatch(new Login(response.body, this._jwtHelper.decodeToken(response.body.access_token).user_claims));
+        }),catchError(error =>
+          new Observable<HttpEvent<any>>(observer => {
+            this._zone.run(() => this._snackbar.open("Invalid Registration", 'Close',
+              {panelClass: 'crits-error-snackbar'}));
+            observer.error(error);
+            observer.complete();
+          }))
       );
   }
 
@@ -55,7 +65,7 @@ export class AuthService {
   public logout(): Observable<{detail: string}>{
     return this._http.delete<{detail: string}>(`${this._authUrl}/logout`, httpOptions)
       .pipe(
-        tap(() => this._store.dispatch(new Navigate(['/']))),
+        tap(() => this._store.dispatch(new Logout())),
             catchError(error =>  this.handleError(error, [])));
   }
 

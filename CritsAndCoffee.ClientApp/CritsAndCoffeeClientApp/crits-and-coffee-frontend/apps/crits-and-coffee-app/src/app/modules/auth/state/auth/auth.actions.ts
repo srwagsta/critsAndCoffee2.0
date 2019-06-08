@@ -19,7 +19,3 @@ export class PasswordChange {
   constructor(public payload: {old_password: string, new_password1: string, new_password2: string}) {}
 }
 
-export class Register {
-  static readonly type = '[Auth] Register';
-  constructor(public payload: { username: string, password1: string, password2: string, email: string }) {}
-}

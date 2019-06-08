@@ -1,7 +1,7 @@
 import {State, Action, Selector, StateContext, NgxsAfterBootstrap} from '@ngxs/store';
 import {GetInstagramPosts, SetClientLocation} from './instagram.actions';
-import {InstagramMappingService} from "../../services/instagram-mapping.service"
-import {InstagramPostModel} from "../../models/instagram-post.model";
+import {InstagramMappingService} from "../services/instagram-mapping.service"
+import {InstagramPostModel} from "../models/instagram-post.model";
 
 
 export interface InstagramPostListModel {

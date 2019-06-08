@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Navigate } from '@ngxs/router-plugin';
+import { AuthService } from '../../services/auth.service';
+import { Store } from '@ngxs/store';
 
 @Component({
   selector: 'CritsAndCoffee-crits-register',
@@ -22,18 +24,21 @@ export class CritsRegisterComponent implements OnInit {
     password_confirm: ['', Validators.required],
   });
 
-  constructor(private _formBuilder: FormBuilder) { }
+  constructor(private _formBuilder: FormBuilder,
+              private _authService: AuthService,
+              private _store: Store) { }
 
   ngOnInit() {
   }
 
   public onSubmit() {
-    if (this.registrationForm.dirty && this.registrationForm.valid) { return true}
-    return false
-    //   this._authService.login(this.loginForm.value.username, this.loginForm.value.password)
-    //     .subscribe(()=> this._store.dispatch(new Navigate(['/'])),
-    //       (error)=> this.loginForm.setErrors({"BackendError": error}));
-    // }
+    if (this.registrationForm.dirty && this.registrationForm.valid) {
+      this._authService.register(this.registrationForm.value.first_name,
+        this.registrationForm.value.last_name, this.registrationForm.value.username,
+        this.registrationForm.value.email, this.registrationForm.value.password)
+        .subscribe(()=> this._store.dispatch(new Navigate(['/'])),
+          (error)=> this.registrationForm.setErrors({"BackendError": error}));
+    }
   }
 
 

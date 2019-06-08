@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { InstagramMappingService } from '../instagram-mapping.service';
+import { InstagramMappingService } from '../../modules/instagram/services/instagram-mapping.service';
 
 describe('InstagramMappingService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));

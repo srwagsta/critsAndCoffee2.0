@@ -4,11 +4,6 @@ import {
   AboutComponent,
   PageNotFoundComponent,
   HomeComponent,
-  InstagramMapComponent,
-  PrivacyPolicyComponent,
-  ProjectLicenseComponent,
-  ApiTermsOfUseComponent,
-  CopyrightPolicyComponent,
   GameOfLifeComponent
 } from './components';
 
@@ -24,10 +19,20 @@ const routes: Routes = [
     component: HomeComponent
   },
 
+  // Auth routes
+  {
+    path: 'auth',
+    loadChildren: () => import('./modules/auth/auth.module').then(mod => mod.AuthModule)
+  },
+
 // Feature component routes
   {
     path: 'instagram-map',
-    component: InstagramMapComponent
+    loadChildren: () => import('./modules/instagram/instagram.module').then(mod => mod.InstagramModule)
+  },
+  {
+    path: 'legal',
+    loadChildren: () => import('./modules/legal/legal.module').then(mod => mod.LegalModule)
   },
   {
     path: 'about',
@@ -38,29 +43,6 @@ const routes: Routes = [
     component: GameOfLifeComponent
   },
 
-// Legal routes
-  {
-    path: 'privacy-policy',
-    component: PrivacyPolicyComponent
-  },
-  {
-    path: 'project-license',
-    component: ProjectLicenseComponent
-  },
-  {
-    path: 'terms-of-use',
-    component: ApiTermsOfUseComponent
-  },
-  {
-    path: 'copyright',
-    component: CopyrightPolicyComponent
-  },
-
-// Auth routes
-  {
-    path: 'auth',
-    loadChildren: () => import('./modules/auth/auth.module').then(mod => mod.AuthModule)
-  },
 
 // 404 Route
   {
