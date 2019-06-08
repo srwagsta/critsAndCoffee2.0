@@ -4,8 +4,8 @@ import { CommonModule } from '@angular/common';
 import { AuthRoutingModule } from './auth-routing.module';
 
 import { CritsLoginComponent } from './components/crits-login/crits-login.component';
-import { CritsInlineLoginComponent } from './components/crits-inline-login/crits-inline-login.component';
-import { CritsRegisterComponent } from './components/crits-register/crits-register.component';
+import { CritsLogoutComponent } from './components/crits-logout/crits-logout.component';
+import { InlineAccountComponent } from './components/inline-account/inline-account.component';import { CritsRegisterComponent } from './components/crits-register/crits-register.component';
 import { CritsRequestPasswordComponent } from './components/crits-request-password/crits-request-password.component';
 import { CritsResetPasswordComponent } from './components/crits-reset-password/crits-reset-password.component';
 
@@ -18,11 +18,13 @@ import {
   MatInputModule,
   MatFormFieldModule,
   MatButtonModule,
-  MatSnackBarModule
+  MatSnackBarModule,
+  MatMenuModule,
+  MatIconModule
 } from '@angular/material';
 
 import { FormFieldErrorMessageComponent } from './components/form-field-error-message/form-field-error-message.component';
-import { CritsLogoutComponent } from './components/crits-logout/crits-logout.component';
+
 
 @NgModule({
   declarations: [
@@ -31,8 +33,8 @@ import { CritsLogoutComponent } from './components/crits-logout/crits-logout.com
     CritsRequestPasswordComponent,
     CritsResetPasswordComponent,
     FormFieldErrorMessageComponent,
-    CritsInlineLoginComponent,
-    CritsLogoutComponent
+    CritsLogoutComponent,
+    InlineAccountComponent
   ],
   imports: [
     CommonModule,
@@ -42,7 +44,10 @@ import { CritsLogoutComponent } from './components/crits-logout/crits-logout.com
     MatInputModule,
     MatButtonModule,
     MatFormFieldModule,
-    MatSnackBarModule
-  ]
+    MatSnackBarModule,
+    MatMenuModule,
+    MatIconModule
+  ],
+  exports: [InlineAccountComponent]
 })
 export class AuthModule { }

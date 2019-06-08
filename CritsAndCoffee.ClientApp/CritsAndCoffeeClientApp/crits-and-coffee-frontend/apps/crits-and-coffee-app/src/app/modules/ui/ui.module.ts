@@ -9,6 +9,7 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {library} from '@fortawesome/fontawesome-svg-core';
 import {fas} from '@fortawesome/free-solid-svg-icons';
 import {fab} from '@fortawesome/free-brands-svg-icons';
+import { AuthModule } from '../auth/auth.module';
 
 library.add(fas, fab);
 import { MatButtonModule } from '@angular/material/button';
@@ -25,6 +26,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     AppRoutingModule,
     CommonModule,
     BrowserAnimationsModule,
+    AuthModule,
     FontAwesomeModule,
     MatSidenavModule,
     MatIconModule,

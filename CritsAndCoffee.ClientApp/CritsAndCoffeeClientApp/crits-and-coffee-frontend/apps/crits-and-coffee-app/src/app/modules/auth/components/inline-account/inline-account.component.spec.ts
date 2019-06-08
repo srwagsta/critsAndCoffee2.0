@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CritsInlineLoginComponent } from './crits-inline-login.component';
+import { InlineAccountComponent } from './inline-account.component';
 
-describe('CritsInlineLoginComponent', () => {
-  let component: CritsInlineLoginComponent;
-  let fixture: ComponentFixture<CritsInlineLoginComponent>;
+describe('InlineAccountComponent', () => {
+  let component: InlineAccountComponent;
+  let fixture: ComponentFixture<InlineAccountComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CritsInlineLoginComponent ]
+      declarations: [ InlineAccountComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CritsInlineLoginComponent);
+    fixture = TestBed.createComponent(InlineAccountComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

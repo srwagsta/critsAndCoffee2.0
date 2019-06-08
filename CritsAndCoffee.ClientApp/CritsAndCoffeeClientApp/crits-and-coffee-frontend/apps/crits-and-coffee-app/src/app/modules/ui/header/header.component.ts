@@ -20,7 +20,6 @@ export class NavLinks{
 export class HeaderComponent implements OnInit {
   API_route: string = `${window.location.origin}/api/docs`;
   links = NavLinks.links;
-
   @ViewChild('sideNav', { static: true }) sidenav: MatSidenav;
   @ViewChild('menuIcon', { read: ElementRef, static: true }) menuIcon: ElementRef;
 
