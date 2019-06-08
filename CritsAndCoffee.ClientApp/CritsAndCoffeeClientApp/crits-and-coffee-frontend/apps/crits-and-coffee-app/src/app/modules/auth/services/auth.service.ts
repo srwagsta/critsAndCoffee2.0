@@ -5,10 +5,8 @@ import { HttpClient, HttpEvent, HttpHeaders } from '@angular/common/http';
 import {AuthUserModel} from "../models/auth-user.model";
 import { MatSnackBar } from '@angular/material';
 import { Store } from '@ngxs/store';
-import { Login, Logout } from '../state/auth/auth.actions';
+import { Login, Logout } from '../state/auth.actions';
 import { JwtHelperService } from '@auth0/angular-jwt';
-import { Navigate } from '@ngxs/router-plugin';
-
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -19,9 +17,9 @@ const httpOptions = {
 })
 export class AuthService {
 
+  private _jwtHelper: JwtHelperService = new JwtHelperService();
   private _serviceName:string = 'Instagram Auth Service: ';
   private _authUrl:string = 'api/v1/auth';
-  private _jwtHelper: JwtHelperService = new JwtHelperService();
 
   constructor(private _http: HttpClient,
               private _store: Store,

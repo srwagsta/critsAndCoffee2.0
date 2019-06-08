@@ -18,8 +18,27 @@
   }
 }
 
-.crits-header-account-button {
-  margin: 0 2rem 0 0;
+.crits-header-account {
+  &--span{
+    font-size: .7rem;
+
+  }
+  &--button {
+    margin: 0 2rem 0 0;
+  }
+
+  &--fa_button{
+    margin: 0 3rem 0 0;
+    font-size: .7rem;
+  }
+}
+
+
+.fa-to-mat-icon {
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  padding-right:16px;
 }
 
 

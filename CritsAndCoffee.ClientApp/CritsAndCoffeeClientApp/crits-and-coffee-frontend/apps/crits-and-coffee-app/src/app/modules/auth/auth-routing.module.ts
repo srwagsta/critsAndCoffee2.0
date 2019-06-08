@@ -11,30 +11,33 @@ const routes: Routes = [
     path: 'auth',
     component: CritsLoginComponent,
     children: [
-  {
-    path: 'login',
-    component: CritsLoginComponent
-  },
-  {
-    path: 'register',
-    component: CritsRegisterComponent
-  },
-  {
-    path: 'logout',
-    component: CritsLogoutComponent
-  },
-  {
-    path: 'request-password',
-    component: CritsRequestPasswordComponent
-  },
-  {
-    path: 'reset-password',
-    component: CritsResetPasswordComponent
-  }]}
+      {
+        path: 'login',
+        component: CritsLoginComponent
+      },
+      {
+        path: 'register',
+        component: CritsRegisterComponent
+      },
+      {
+        path: 'logout',
+        component: CritsLogoutComponent
+      },
+      {
+        path: 'request-password',
+        component: CritsRequestPasswordComponent
+      },
+      {
+        path: 'reset-password',
+        component: CritsResetPasswordComponent
+      }
+    ]
+  }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class AuthRoutingModule { }
+export class AuthRoutingModule {
+}

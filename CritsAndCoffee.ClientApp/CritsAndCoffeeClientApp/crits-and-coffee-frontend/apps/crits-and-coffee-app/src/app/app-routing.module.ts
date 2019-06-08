@@ -19,12 +19,6 @@ const routes: Routes = [
     component: HomeComponent
   },
 
-  // Auth routes
-  // {
-  //   path: 'auth',
-  //   loadChildren: () => import('./modules/auth/auth.module').then(mod => mod.AuthModule)
-  // },
-
 // Feature component routes
   {
     path: 'instagram-map',

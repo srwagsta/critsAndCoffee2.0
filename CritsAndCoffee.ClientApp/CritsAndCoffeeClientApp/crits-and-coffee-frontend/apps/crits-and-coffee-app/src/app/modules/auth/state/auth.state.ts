@@ -1,7 +1,7 @@
 import { State, Action, Selector, StateContext } from '@ngxs/store';
 import {Login, Logout, PasswordChange, PasswordReset} from './auth.actions';
-import { AuthService } from '../../services/auth.service'
-import { AuthUserModel } from "../../models/auth-user.model";
+import { AuthService } from '../services/auth.service'
+import { AuthUserModel } from "../models/auth-user.model";
 import { tap } from 'rxjs/operators';
 
 export class AuthStateModel {

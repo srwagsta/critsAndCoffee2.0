@@ -1,4 +1,4 @@
-import { AuthUserModel } from '../../models/auth-user.model';
+import { AuthUserModel } from '../models/auth-user.model';
 
 export class Login {
   static readonly type = '[Auth] Login';

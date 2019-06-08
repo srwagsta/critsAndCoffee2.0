@@ -107,4 +107,5 @@ Sentry.init({
   bootstrap: [AppComponent]
 })
 export class AppModule {
+
 }

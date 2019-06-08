@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngxs/store';
 import { FormBuilder, Validators } from '@angular/forms';
-import { Navigate } from '@ngxs/router-plugin';
 import { AuthService } from '../../services/auth.service';
 
 @Component({
@@ -12,6 +11,8 @@ import { AuthService } from '../../services/auth.service';
 export class InlineAccountComponent implements OnInit {
 
   public user$ = this._store.select(state => state.auth.user);
+  public userFirstName$ = this._store.select(state => state.auth.user.first_name);
+  public lastLogin$ = this._store.select(state => state.auth.user.last_login);
 
   public loginForm = this._formBuilder.group({
     username: ['', Validators.required],
@@ -35,6 +36,10 @@ export class InlineAccountComponent implements OnInit {
         .subscribe(()=> console.log('statechange'),
           (error)=> this.loginForm.setErrors({"BackendError": error}));
     }
+  }
+
+  public onLogoutClick() {
+    alert('TODO: Implement logout');
   }
 
 }

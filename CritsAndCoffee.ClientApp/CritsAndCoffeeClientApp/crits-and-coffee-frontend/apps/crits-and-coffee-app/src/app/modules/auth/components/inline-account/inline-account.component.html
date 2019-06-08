@@ -1,5 +1,6 @@
-<button class="crits-header-account-button" mat-icon-button [matMenuTriggerFor]="loginMenu" *ngIf="!(user$ | async)">
-  <mat-icon>account_circle</mat-icon>
+<button class="crits-header-account--fa_button" mat-icon-button [matMenuTriggerFor]="loginMenu" *ngIf="!(user$ | async)">
+  <span>Sign-In </span>
+  <fa-icon [icon]="['fas', 'sign-in-alt']"></fa-icon>
 </button>
 
 <mat-menu #loginMenu="matMenu">
@@ -18,14 +19,28 @@
   </div>
 </mat-menu>
 
-<span *ngIf="user$ | async">
-  Hello, {{user$.first_name | async}}
-<button class="crits-header-account-button" mat-icon-button [matMenuTriggerFor]="accountMenu">
-  <mat-icon>perm_identity</mat-icon>
+<span class="crits-header-account--span" *ngIf="user$ | async" matTooltip="Last Login: {{lastLogin$ | async}}">
+  {{userFirstName$ | async}}
+<button class="crits-header-account--button" mat-icon-button [matMenuTriggerFor]="accountMenu">
+  <mat-icon>account_circle</mat-icon>
 </button>
 </span>
 
-<mat-menu #accountMenu="matMenu" class="crits-header-account-menu">
+<mat-menu #accountMenu="matMenu" class="crits-header-account--menu">
+  <span mat-menu-item>
+    User information ...
+  </span>
+  <button mat-menu-item>
+    <mat-icon>settings</mat-icon>
+    <span>Settings</span>
+  </button>
+  <button mat-menu-item (click)="onLogoutClick()">
+    <fa-icon class="fa-to-mat-icon" [icon]="['fas', 'sign-out-alt']"></fa-icon>
+    <span>Logout</span>
+  </button>
+
   <span> TODO: Place account details here</span>
   <span> TODO: Logout button? Links to account pages? </span>
+
+
 </mat-menu>
