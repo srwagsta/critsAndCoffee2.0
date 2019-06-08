@@ -20,10 +20,10 @@ const routes: Routes = [
   },
 
   // Auth routes
-  {
-    path: 'auth',
-    loadChildren: () => import('./modules/auth/auth.module').then(mod => mod.AuthModule)
-  },
+  // {
+  //   path: 'auth',
+  //   loadChildren: () => import('./modules/auth/auth.module').then(mod => mod.AuthModule)
+  // },
 
 // Feature component routes
   {

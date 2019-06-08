@@ -1,17 +1,31 @@
-<button mat-icon-button [matMenuTriggerFor]="loginMenu" *ngIf="!(user$ | async)">
+<button class="crits-header-account-button" mat-icon-button [matMenuTriggerFor]="loginMenu" *ngIf="!(user$ | async)">
   <mat-icon>account_circle</mat-icon>
 </button>
 
 <mat-menu #loginMenu="matMenu">
+  <div (click)="$event.stopPropagation()" (keydown)="$event.stopPropagation()">
   <form class="crits-inline-form" [formGroup]="loginForm" (ngSubmit)="onLoginSubmit()">
-    <mat-form-field class="crits-inline-form--field">
-    <label for="username">Username</label>
+    <mat-form-field class="crits-inline-form--field" >
     <input matInput formControlName="username" id="username" placeholder="Username">
     </mat-form-field>
 
     <mat-form-field class="crits-inline-form--field">
-      <label for="password">Password</label>
       <input type="password" matInput formControlName="password" id="password" placeholder="Password">
     </mat-form-field>
+
+    <button class="crits-inline-form--button" mat-raised-button color="primary" type="submit" [disabled]="!loginForm.valid">Login</button>
   </form>
+  </div>
+</mat-menu>
+
+<span *ngIf="user$ | async">
+  Hello, {{user$.first_name | async}}
+<button class="crits-header-account-button" mat-icon-button [matMenuTriggerFor]="accountMenu">
+  <mat-icon>perm_identity</mat-icon>
+</button>
+</span>
+
+<mat-menu #accountMenu="matMenu" class="crits-header-account-menu">
+  <span> TODO: Place account details here</span>
+  <span> TODO: Logout button? Links to account pages? </span>
 </mat-menu>

@@ -24,6 +24,7 @@ import {
 } from '@angular/material';
 
 import { FormFieldErrorMessageComponent } from './components/form-field-error-message/form-field-error-message.component';
+import { AuthService } from './services/auth.service';
 
 
 @NgModule({
@@ -48,6 +49,7 @@ import { FormFieldErrorMessageComponent } from './components/form-field-error-me
     MatMenuModule,
     MatIconModule
   ],
+  providers: [AuthService],
   exports: [InlineAccountComponent]
 })
 export class AuthModule { }

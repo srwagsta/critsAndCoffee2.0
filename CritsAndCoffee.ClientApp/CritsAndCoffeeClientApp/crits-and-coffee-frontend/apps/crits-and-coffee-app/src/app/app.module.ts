@@ -72,14 +72,14 @@ Sentry.init({
     GameOfLifeComponent
   ],
   imports: [
+    AuthModule,
     BrowserModule,
     BrowserAnimationsModule,
     GameOfLifeModule,
     FlexLayoutModule,
     HttpClientModule,
-    AppRoutingModule,
     UiModule,
-    AuthModule,
+    AppRoutingModule,
     MatButtonModule,
     MatIconModule,
     MatTooltipModule,
@@ -96,7 +96,6 @@ Sentry.init({
     })
   ],
   providers: [
-    AuthService,
     environment.production ? { provide: ErrorHandler, useClass: SentryErrorHandler }: {provide: ErrorHandler, useClass: ErrorHandler},
     {
       provide: HTTP_INTERCEPTORS,

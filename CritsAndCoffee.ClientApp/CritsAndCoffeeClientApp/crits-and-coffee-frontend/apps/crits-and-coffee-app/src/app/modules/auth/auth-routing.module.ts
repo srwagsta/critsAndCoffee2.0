@@ -8,9 +8,9 @@ import { CritsResetPasswordComponent } from './components/crits-reset-password/c
 
 const routes: Routes = [
   {
-    path: '',
-    component: CritsLoginComponent
-  },
+    path: 'auth',
+    component: CritsLoginComponent,
+    children: [
   {
     path: 'login',
     component: CritsLoginComponent
@@ -30,7 +30,7 @@ const routes: Routes = [
   {
     path: 'reset-password',
     component: CritsResetPasswordComponent
-  }
+  }]}
 ];
 
 @NgModule({

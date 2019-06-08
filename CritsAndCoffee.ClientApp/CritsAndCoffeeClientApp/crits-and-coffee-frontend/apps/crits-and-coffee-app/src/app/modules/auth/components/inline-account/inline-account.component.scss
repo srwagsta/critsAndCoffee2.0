@@ -1,6 +1,25 @@
-.crits-inline-form{
-  display: flex;
+@import "../../../../../sass/abstracts/variables";
+
+.crits-inline-form {
+
   &--field {
-    padding-right: 2rem;
+    padding: 0 1rem 0 1rem;
+    max-width: 8rem;
+    font-size: .7rem;
+    color:$white;
+  }
+
+  &--button{
+    margin-left: 73%;
+    height:1rem !important;
+    width:1rem !important;
+    font-size: .7rem !important;
+    line-height: 1rem !important;
   }
 }
+
+.crits-header-account-button {
+  margin: 0 2rem 0 0;
+}
+
+

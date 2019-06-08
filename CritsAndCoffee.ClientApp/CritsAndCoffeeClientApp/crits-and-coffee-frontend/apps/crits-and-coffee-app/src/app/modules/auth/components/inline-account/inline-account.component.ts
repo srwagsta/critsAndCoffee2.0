@@ -32,7 +32,7 @@ export class InlineAccountComponent implements OnInit {
   public onLoginSubmit() {
     if (this.loginForm.dirty && this.loginForm.valid) {
       this._authService.login(this.loginForm.value.username, this.loginForm.value.password)
-        .subscribe(()=> this._store.dispatch(new Navigate(['/'])),
+        .subscribe(()=> console.log('statechange'),
           (error)=> this.loginForm.setErrors({"BackendError": error}));
     }
   }
