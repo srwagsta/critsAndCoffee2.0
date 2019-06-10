@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngxs/store';
 import { FormBuilder, Validators } from '@angular/forms';
 import { AuthService } from '../../services/auth.service';
+import { Logout } from '../../state/auth.actions';
+import { FormValidationService } from '../../services/form-validation.service';
 
 @Component({
   selector: 'CritsAndCoffee-inline-account',
@@ -18,8 +20,7 @@ export class InlineAccountComponent implements OnInit {
     username: ['', Validators.required],
     password: ['', [
       Validators.required,
-      // Validators.minLength(11),
-      // FormValidationService.passwordValidator
+      FormValidationService.passwordValidator
     ]]
   });
 
@@ -33,13 +34,13 @@ export class InlineAccountComponent implements OnInit {
   public onLoginSubmit() {
     if (this.loginForm.dirty && this.loginForm.valid) {
       this._authService.login(this.loginForm.value.username, this.loginForm.value.password)
-        .subscribe(()=> console.log('statechange'),
+        .subscribe(()=> this.loginForm.reset(),
           (error)=> this.loginForm.setErrors({"BackendError": error}));
     }
   }
 
   public onLogoutClick() {
-    alert('TODO: Implement logout');
+    this._store.dispatch(new Logout());
   }
 
 }

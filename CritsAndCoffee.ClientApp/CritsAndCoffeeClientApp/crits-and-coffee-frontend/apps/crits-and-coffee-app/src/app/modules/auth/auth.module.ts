@@ -30,6 +30,7 @@ import { AuthService } from './services/auth.service';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
+import { CritsAccountSettingsComponent } from './components/crits-account-settings/crits-account-settings.component';
 library.add(fas);
 
 @NgModule({
@@ -40,7 +41,8 @@ library.add(fas);
     CritsResetPasswordComponent,
     FormFieldErrorMessageComponent,
     CritsLogoutComponent,
-    InlineAccountComponent
+    InlineAccountComponent,
+    CritsAccountSettingsComponent
   ],
   imports: [
     CommonModule,

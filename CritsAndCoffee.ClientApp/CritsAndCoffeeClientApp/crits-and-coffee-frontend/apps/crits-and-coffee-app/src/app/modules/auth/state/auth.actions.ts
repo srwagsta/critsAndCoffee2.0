@@ -5,6 +5,10 @@ export class Login {
   constructor(public tokens: { access_token: string, refresh_token: string }, public user: AuthUserModel) {}
 }
 
+export class RefreshToken {
+  static readonly type = '[Auth] Refresh';
+}
+
 export class Logout {
   static readonly type = '[Auth] Logout';
 }

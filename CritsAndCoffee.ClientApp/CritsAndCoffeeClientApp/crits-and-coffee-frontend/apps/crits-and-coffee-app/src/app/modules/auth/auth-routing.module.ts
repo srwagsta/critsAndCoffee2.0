@@ -5,12 +5,16 @@ import { CritsRegisterComponent } from './components/crits-register/crits-regist
 import { CritsLogoutComponent } from './components/crits-logout/crits-logout.component';
 import { CritsRequestPasswordComponent } from './components/crits-request-password/crits-request-password.component';
 import { CritsResetPasswordComponent } from './components/crits-reset-password/crits-reset-password.component';
+import { CritsAccountSettingsComponent } from './components/crits-account-settings/crits-account-settings.component';
 
 const routes: Routes = [
   {
     path: 'auth',
-    component: CritsLoginComponent,
     children: [
+      {
+        path: '',
+        component: CritsLoginComponent
+      },
       {
         path: 'login',
         component: CritsLoginComponent
@@ -18,6 +22,10 @@ const routes: Routes = [
       {
         path: 'register',
         component: CritsRegisterComponent
+      },
+      {
+        path: 'account',
+        component: CritsAccountSettingsComponent
       },
       {
         path: 'logout',
