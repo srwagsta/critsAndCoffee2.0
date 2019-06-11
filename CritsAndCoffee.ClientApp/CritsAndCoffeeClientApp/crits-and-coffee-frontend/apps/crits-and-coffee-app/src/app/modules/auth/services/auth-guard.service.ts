@@ -13,9 +13,16 @@ export class RoleGuardService implements CanActivate {
 
   canActivate(route: ActivatedRouteSnapshot): boolean {
     const expectedRole = route.data.expectedRole;
-    if (!this._store.selectSnapshot(state => state.auth.access_token) ||
-      !this._store.selectSnapshot(state => state.auth.user.scopes).includes(expectedRole)
-    ) {
+    try {
+      if (!this._store.selectSnapshot(state => state.auth.access_token) ||
+        !this._store.selectSnapshot(state => state.auth.user).scopes.includes(expectedRole)
+      ) {
+        this._store.dispatch(new Navigate(['/auth/login']));
+        return false;
+      }
+    }
+    catch (e) {
+      console.error(`Error in RoleGuard ${e}`);
       this._store.dispatch(new Navigate(['/auth/login']));
       return false;
     }

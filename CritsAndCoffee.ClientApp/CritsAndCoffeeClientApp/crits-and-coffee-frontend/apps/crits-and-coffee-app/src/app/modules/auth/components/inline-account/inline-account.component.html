@@ -28,6 +28,10 @@
 </span>
 
 <mat-menu #accountMenu="matMenu" class="crits-header-account--menu">
+  <button mat-menu-item routerLink="auth/admin" *ngIf="isAdmin">
+    <mat-icon>verified_user</mat-icon>
+    <span>Admin Settings</span>
+  </button>
   <button mat-menu-item routerLink="auth/account">
     <mat-icon>settings</mat-icon>
     <span>Settings</span>
