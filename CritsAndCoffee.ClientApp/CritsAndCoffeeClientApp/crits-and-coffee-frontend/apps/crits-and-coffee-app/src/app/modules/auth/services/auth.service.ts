@@ -2,7 +2,6 @@ import { Injectable, NgZone } from '@angular/core';
 import { Observable } from "rxjs";
 import { catchError, tap } from "rxjs/operators";
 import { HttpClient, HttpEvent, HttpHeaders } from '@angular/common/http';
-import {AuthUserModel} from "../models/auth-user.model";
 import { MatSnackBar } from '@angular/material';
 import { Store } from '@ngxs/store';
 import { Login, Logout } from '../state/auth.actions';
@@ -58,6 +57,10 @@ export class AuthService {
               observer.complete();
             }))
       );
+  }
+
+  public refreshAccessToken():boolean{
+    return true;
   }
 
   public logout(): Observable<{detail: string}>{

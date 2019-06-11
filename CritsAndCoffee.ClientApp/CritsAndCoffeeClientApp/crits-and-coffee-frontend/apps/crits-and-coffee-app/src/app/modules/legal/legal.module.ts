@@ -6,13 +6,15 @@ import { ApiTermsOfUseComponent } from './components/api-terms-of-use/api-terms-
 import { CopyrightPolicyComponent } from './components/copyright-policy/copyright-policy.component';
 import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
 import { ProjectLicenseComponent } from './components/project-license/project-license.component';
+import { LegalDocumentWrapperComponent } from './components/legal-document-wrapper/legal-document-wrapper.component';
 
 @NgModule({
   declarations: [
     ApiTermsOfUseComponent,
     CopyrightPolicyComponent,
     PrivacyPolicyComponent,
-    ProjectLicenseComponent
+    ProjectLicenseComponent,
+    LegalDocumentWrapperComponent
   ],
   imports: [
     CommonModule,

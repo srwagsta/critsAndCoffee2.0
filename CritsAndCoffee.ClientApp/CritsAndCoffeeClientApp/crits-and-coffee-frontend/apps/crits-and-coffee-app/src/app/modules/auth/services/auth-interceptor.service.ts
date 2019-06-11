@@ -3,6 +3,7 @@ import { HttpErrorResponse, HttpEvent, HttpHandler, HttpInterceptor, HttpRequest
 import { Router } from '@angular/router';
 import { Observable, of } from 'rxjs';
 import { Store } from '@ngxs/store';
+import { AuthService } from './auth.service';
 
 
 @Injectable({
@@ -11,11 +12,14 @@ import { Store } from '@ngxs/store';
 export class AuthInterceptorService implements HttpInterceptor{
 
   constructor(private _router: Router,
-              private _store: Store) { }
+              private _store: Store,
+              private _authService: AuthService) { }
 
   private handleAuthError(err: HttpErrorResponse): Observable<any> {
     //handle your auth error or rethrow
     if (err.status === 401 || err.status === 403) {
+      this._authService.refreshAccessToken();
+      // TODO: How do we make the request again?
       //navigate /delete cookies or whatever
       this._router.navigateByUrl(`/login`);
       // if you've caught / handled the error, you don't want to rethrow it unless you also want downstream consumers to have to handle it as well.

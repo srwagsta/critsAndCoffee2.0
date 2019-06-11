@@ -31,6 +31,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { CritsAccountSettingsComponent } from './components/crits-account-settings/crits-account-settings.component';
+import { RoleGuardService } from './services/auth-guard.service';
+import { AdminDashboardComponent } from './components/admin/admin-dashboard/admin-dashboard.component';
 library.add(fas);
 
 @NgModule({
@@ -42,7 +44,8 @@ library.add(fas);
     FormFieldErrorMessageComponent,
     CritsLogoutComponent,
     InlineAccountComponent,
-    CritsAccountSettingsComponent
+    CritsAccountSettingsComponent,
+    AdminDashboardComponent
   ],
   imports: [
     CommonModule,
@@ -58,7 +61,7 @@ library.add(fas);
     MatMenuModule,
     MatIconModule
   ],
-  providers: [AuthService],
+  providers: [AuthService, RoleGuardService],
   exports: [InlineAccountComponent]
 })
 export class AuthModule { }
