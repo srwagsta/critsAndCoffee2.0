@@ -7,12 +7,13 @@
  */
 html {
   box-sizing: border-box;
-  background-color: rgba($dark-grey, .5);
+  //background-color: rgba($dark-grey, .5);
+  background-color: $black !important;
+
 }
 
 body {
-  background-color: rgba($dark-grey, .5);
-
+  margin: .75rem !important;
 }
 
 /**

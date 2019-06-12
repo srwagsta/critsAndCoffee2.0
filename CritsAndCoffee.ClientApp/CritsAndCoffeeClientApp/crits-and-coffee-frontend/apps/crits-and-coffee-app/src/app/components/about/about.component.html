@@ -1,179 +1,195 @@
-<h1>Much More Than A Pretty Page</h1>
 
-<h2>
-  The real power is hidden deep. This project is not a simple page, it's a sandbox, a digital playground,
-  a place for new ideas and methods to be tested. I spent a great deal of time designing and building this site,
-  but it was not without purpose. This site has elements of my own personal interests, technologies I'm looking it
-  incorporate into my work projects, and most of all technologies I want to use in my future career. This is a digital
-  space I continue to build with new technologies and methodologies, to share my obstacles, and find new ways of
-  bring my job, hobbies, passion, and goals closer together.
-</h2>
+<div class="blog-view">
+<section class="overview" id="overview">
+  <h1 class="overview__heading">
+    The Crits And Coffee Project
+  </h1>
+</section>
 
-<mat-accordion class="crits-accordian">
-  <mat-expansion-panel [expanded]="expansionStep === 0" (opened)="setExpansionStep(0)" hideToggle>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        Jenkins to stay Agile
-      </mat-panel-title>
-      <mat-panel-description>
-        Never. Stop. Progress.
-      </mat-panel-description>
-      <img class="crits-jenkins--image" src="assets/images/components/about/jenkins_logo.png" alt=""
-           *ngIf="expansionStep !== 0">
-    </mat-expansion-panel-header>
-    <div class="crits-jenkins--panel">
-      <p>
-        The world is constantly moving, spinning, creating, and rethinking, to keep pace Jenkins just builds. Linked
-        with Git
-        Jenkins makes CI/CD easy. Multi-branch development makes it easy to keep building while staying confident that
-        the
-        production site remains stable. Jenkins rebuilds on each push with the newest Docker images, keeping the project
-        up to
-        date, the tests are run, the containers are pushed to the repository, and if the master is updated Jenkins will
-        take
-        care of redeploying the site out to production. Setup programmatically Jenkins is updated with the project,
-        leaving the development team to do one thing, develop.
-      </p>
+<section class="detail" id="details">
+  <div class="description">
+    <p class="paragraph">
+      The real power is hidden deep. This project is not a simple page, it's a sandbox, a digital playground,
+      a place for new ideas and methods to be tested. I spent a great deal of time designing and building this site,
+      but it was not without purpose. This site has elements of my own personal interests, technologies I'm looking it
+      incorporate into my work projects, and most of all technologies I want to use in my future career. This is a digital
+      space I continue to build with new technologies and methodologies, to share my obstacles, and find new ways of
+      bring my job, hobbies, passion, and goals closer together.
+    </p>
+    <mat-accordion class="crits-accordian">
+      <mat-expansion-panel [expanded]="expansionStep === 0" (opened)="setExpansionStep(0)" hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Jenkins to stay Agile
+          </mat-panel-title>
+          <mat-panel-description>
+            Never. Stop. Progress.
+          </mat-panel-description>
+          <img class="crits-jenkins--image" src="assets/images/components/about/jenkins_logo.png" alt=""
+               *ngIf="expansionStep !== 0">
+        </mat-expansion-panel-header>
+        <div class="crits-jenkins--panel">
+          <p>
+            The world is constantly moving, spinning, creating, and rethinking, to keep pace Jenkins just builds. Linked
+            with Git
+            Jenkins makes CI/CD easy. Multi-branch development makes it easy to keep building while staying confident that
+            the
+            production site remains stable. Jenkins rebuilds on each push with the newest Docker images, keeping the project
+            up to
+            date, the tests are run, the containers are pushed to the repository, and if the master is updated Jenkins will
+            take
+            care of redeploying the site out to production. Setup programmatically Jenkins is updated with the project,
+            leaving the development team to do one thing, develop.
+          </p>
 
-      <mat-action-row>
-        <button mat-button color="primary" (click)="nextStep()">Next</button>
-      </mat-action-row>
-    </div>
-  </mat-expansion-panel>
+          <mat-action-row>
+            <button mat-button color="primary" (click)="nextStep()">Next</button>
+          </mat-action-row>
+        </div>
+      </mat-expansion-panel>
 
-  <mat-expansion-panel [expanded]="expansionStep === 1" (opened)="setExpansionStep(1)" hideToggle>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        Docker + AWS
-      </mat-panel-title>
-      <mat-panel-description>
-        Cloud Native, Ready To Grow
-      </mat-panel-description>
-      <img class="crits-docker--image" src="assets/images/components/about/docker_logo.png" alt=""
-           *ngIf="expansionStep !== 1">
-    </mat-expansion-panel-header>
-    <div class="crits-docker--panel">
-      <p>
-        Docker gives an application to scale and move as needed. Every part of this project lives inside containers.
-        During development this give the project the flexibility to move machines, have a full DB that can be replicated
-        and
-        destroyed over and over, most importantly the environment is always the same. More than that, containers can
-        fail,
-        be thrown away, upgraded, segmented, all without worry of data corruption. As the need arises spin up more,
-        and when all is calm take them down to keep costs low. All the containers are deployed and manged using
-        docker-compose
-        with a Kubernetes layer orchestrating everything.</p>
-      <p>
-        Cloud native from the ground up. AWS provides the infrastructure to manage everything from domain names,
-        containers,
-        networking, and DB availability and replication. Easy to manage and control, but by no mean the only option.
-        The lightweight and portable nature of this project gives it the ability to move and deploy on any cloud
-        platform.
-      </p>
-      <mat-action-row>
-        <button mat-button color="warn" (click)="prevStep()">Previous</button>
-        <button mat-button color="primary" (click)="nextStep()">Next</button>
-      </mat-action-row>
-    </div>
-  </mat-expansion-panel>
+      <mat-expansion-panel [expanded]="expansionStep === 1" (opened)="setExpansionStep(1)" hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Docker + AWS
+          </mat-panel-title>
+          <mat-panel-description>
+            Cloud Native, Ready To Grow
+          </mat-panel-description>
+          <img class="crits-docker--image" src="assets/images/components/about/docker_logo.png" alt=""
+               *ngIf="expansionStep !== 1">
+        </mat-expansion-panel-header>
+        <div class="crits-docker--panel">
+          <p>
+            Docker gives an application to scale and move as needed. Every part of this project lives inside containers.
+            During development this give the project the flexibility to move machines, have a full DB that can be replicated
+            and
+            destroyed over and over, most importantly the environment is always the same. More than that, containers can
+            fail,
+            be thrown away, upgraded, segmented, all without worry of data corruption. As the need arises spin up more,
+            and when all is calm take them down to keep costs low. All the containers are deployed and manged using
+            docker-compose
+            with a Kubernetes layer orchestrating everything.</p>
+          <p>
+            Cloud native from the ground up. AWS provides the infrastructure to manage everything from domain names,
+            containers,
+            networking, and DB availability and replication. Easy to manage and control, but by no mean the only option.
+            The lightweight and portable nature of this project gives it the ability to move and deploy on any cloud
+            platform.
+          </p>
+          <mat-action-row>
+            <button mat-button color="warn" (click)="prevStep()">Previous</button>
+            <button mat-button color="primary" (click)="nextStep()">Next</button>
+          </mat-action-row>
+        </div>
+      </mat-expansion-panel>
 
-  <mat-expansion-panel [expanded]="expansionStep === 2" (opened)="setExpansionStep(2)" hideToggle>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        Caddy + Let's Encrypt + CertBot
-      </mat-panel-title>
-      <mat-panel-description>
-        HTTPS That You Can Trust. In Seconds.
-      </mat-panel-description>
-      <img class="crits-lets_encrypt--image" src="assets/images/components/about/lets_encrypt_logo.png" alt=""
-           *ngIf="expansionStep !== 2">
-    </mat-expansion-panel-header>
-    <div class="crits-lets_encrypt--panel">
-      <p>
-        when containers are spinning up and down at any moment, ip address are never guaranteed and HTTP proxy is a must.
-        With all the options it becomes hard to choose, but at the end of the day it just needs to do the job. Caddy comes
-        out of the box with HTTPS provided at no cost thanks to Let's Encrypt, and it will always be valid thanks to CertBot!
-        All in containers, it can easily be replaced but with an easy config to keep, and the ability to run even in development
-        there is no need to look further.
-      </p>
-      <mat-action-row>
-        <button mat-button color="warn" (click)="prevStep()">Previous</button>
-        <button mat-button color="primary" (click)="nextStep()">Next</button>
-      </mat-action-row>
-    </div>
-  </mat-expansion-panel>
+      <mat-expansion-panel [expanded]="expansionStep === 2" (opened)="setExpansionStep(2)" hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Caddy + Let's Encrypt + CertBot
+          </mat-panel-title>
+          <mat-panel-description>
+            HTTPS That You Can Trust. In Seconds.
+          </mat-panel-description>
+          <img class="crits-lets_encrypt--image" src="assets/images/components/about/lets_encrypt_logo.png" alt=""
+               *ngIf="expansionStep !== 2">
+        </mat-expansion-panel-header>
+        <div class="crits-lets_encrypt--panel">
+          <p>
+            when containers are spinning up and down at any moment, ip address are never guaranteed and HTTP proxy is a must.
+            With all the options it becomes hard to choose, but at the end of the day it just needs to do the job. Caddy comes
+            out of the box with HTTPS provided at no cost thanks to Let's Encrypt, and it will always be valid thanks to CertBot!
+            All in containers, it can easily be replaced but with an easy config to keep, and the ability to run even in development
+            there is no need to look further.
+          </p>
+          <mat-action-row>
+            <button mat-button color="warn" (click)="prevStep()">Previous</button>
+            <button mat-button color="primary" (click)="nextStep()">Next</button>
+          </mat-action-row>
+        </div>
+      </mat-expansion-panel>
 
-  <mat-expansion-panel [expanded]="expansionStep === 3" (opened)="setExpansionStep(3)" hideToggle>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        PostgreSQL
-      </mat-panel-title>
-      <mat-panel-description>
-        Open Source, Scalable, Relational
-      </mat-panel-description>
-      <img class="crits-postgresql--image" src="assets/images/components/about/postgresql_logo.png" alt=""
-           *ngIf="expansionStep !== 3">
-    </mat-expansion-panel-header>
-    <div class="crits-postgresql--panel">
-      <p>
-        When it comes to the data layer there are a ton of options. NoSql didn't fit the job here. Users were a must,
-        and there are plan to build more relationships later in the project. So relational was a must. PostgreSQL is
-        open source, growing rapidly, and has the perfect GIS support. Simple, supported, solutions.
-      </p>
-      <mat-action-row>
-        <button mat-button color="warn" (click)="prevStep()">Previous</button>
-        <button mat-button color="primary" (click)="nextStep()">Next</button>
-      </mat-action-row>
-    </div>
-  </mat-expansion-panel>
+      <mat-expansion-panel [expanded]="expansionStep === 3" (opened)="setExpansionStep(3)" hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            PostgreSQL
+          </mat-panel-title>
+          <mat-panel-description>
+            Open Source, Scalable, Relational
+          </mat-panel-description>
+          <img class="crits-postgresql--image" src="assets/images/components/about/postgresql_logo.png" alt=""
+               *ngIf="expansionStep !== 3">
+        </mat-expansion-panel-header>
+        <div class="crits-postgresql--panel">
+          <p>
+            When it comes to the data layer there are a ton of options. NoSql didn't fit the job here. Users were a must,
+            and there are plan to build more relationships later in the project. So relational was a must. PostgreSQL is
+            open source, growing rapidly, and has the perfect GIS support. Simple, supported, solutions.
+          </p>
+          <mat-action-row>
+            <button mat-button color="warn" (click)="prevStep()">Previous</button>
+            <button mat-button color="primary" (click)="nextStep()">Next</button>
+          </mat-action-row>
+        </div>
+      </mat-expansion-panel>
 
-  <mat-expansion-panel [expanded]="expansionStep === 4" (opened)="setExpansionStep(4)" hideToggle>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        .NET Core
-      </mat-panel-title>
-      <mat-panel-description>
-        Multi-platform, Fast, Familar
-      </mat-panel-description>
-      <img class="crits-dot_net--image" src="assets/images/components/about/dot_net_logo.png" alt=""
-           *ngIf="expansionStep !== 4">
-    </mat-expansion-panel-header>
-    <div class="crits-dot_net--panel">
-      <p>
-        On the API side there are options, probably to many, but when it comes to a well supported platform that has a
-        massive knowledge base .Net was the clear choice. This is project is a sandbox for real world skills, .Net has
-        the largest user base and is the clear choice for enterprise, so keeping those skills sharp is exactly what I need.
-        Now muilt-platform thanks to Core, and Angular ready thanks to the added support for SPA (Single Page Applications).
-        All of the functionality I need with the speed of a compiled language, and the great features of the C# language!
-      </p>
-      <mat-action-row>
-        <button mat-button color="warn" (click)="prevStep()">Previous</button>
-        <button mat-button color="primary" (click)="nextStep()">Next</button>
-      </mat-action-row>
-    </div>
-  </mat-expansion-panel>
+      <mat-expansion-panel [expanded]="expansionStep === 4" (opened)="setExpansionStep(4)" hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            .NET Core
+          </mat-panel-title>
+          <mat-panel-description>
+            Multi-platform, Fast, Familar
+          </mat-panel-description>
+          <img class="crits-dot_net--image" src="assets/images/components/about/dot_net_logo.png" alt=""
+               *ngIf="expansionStep !== 4">
+        </mat-expansion-panel-header>
+        <div class="crits-dot_net--panel">
+          <p>
+            On the API side there are options, probably to many, but when it comes to a well supported platform that has a
+            massive knowledge base .Net was the clear choice. This is project is a sandbox for real world skills, .Net has
+            the largest user base and is the clear choice for enterprise, so keeping those skills sharp is exactly what I need.
+            Now muilt-platform thanks to Core, and Angular ready thanks to the added support for SPA (Single Page Applications).
+            All of the functionality I need with the speed of a compiled language, and the great features of the C# language!
+          </p>
+          <mat-action-row>
+            <button mat-button color="warn" (click)="prevStep()">Previous</button>
+            <button mat-button color="primary" (click)="nextStep()">Next</button>
+          </mat-action-row>
+        </div>
+      </mat-expansion-panel>
 
-  <mat-expansion-panel [expanded]="expansionStep === 5" (opened)="setExpansionStep(5)" hideToggle>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        Flask
-      </mat-panel-title>
-      <mat-panel-description>
-        Lightweight, With The Data Stomping Power Of Python
-      </mat-panel-description>
-      <img class="crits-flask--image" src="assets/images/components/about/flask_logo.png" alt=""
-           *ngIf="expansionStep !== 5">
-    </mat-expansion-panel-header>
-    <div class="crits-flask--panel">
-      <p>
-        Flask is a micro-framework built on python, with low overhead, and extensive libraries.
-        This small python web framework allows me to use the latest Python data libraries while still inside a web
-        capable framework. Of course this means I can leverage Anaconda Python distribution when I need to, small services ready for big data.
-      </p>
-      <mat-action-row>
-        <button mat-button color="warn" (click)="prevStep()">Previous</button>
-        <button mat-button color="primary" (click)="nextStep()">End</button>
-      </mat-action-row>
-    </div>
-  </mat-expansion-panel>
-</mat-accordion>
+      <mat-expansion-panel [expanded]="expansionStep === 5" (opened)="setExpansionStep(5)" hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Flask
+          </mat-panel-title>
+          <mat-panel-description>
+            Lightweight, With The Data Stomping Power Of Python
+          </mat-panel-description>
+          <img class="crits-flask--image" src="assets/images/components/about/flask_logo.png" alt=""
+               *ngIf="expansionStep !== 5">
+        </mat-expansion-panel-header>
+        <div class="crits-flask--panel">
+          <p>
+            Flask is a micro-framework built on python, with low overhead, and extensive libraries.
+            This small python web framework allows me to use the latest Python data libraries while still inside a web
+            capable framework. Of course this means I can leverage Anaconda Python distribution when I need to, small services ready for big data.
+          </p>
+          <mat-action-row>
+            <button mat-button color="warn" (click)="prevStep()">Previous</button>
+            <button mat-button color="primary" (click)="nextStep()">End</button>
+          </mat-action-row>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <p class="paragraph">
+      If you have an comments or concerns relating to the site please make a post about them. I'm always looking
+      for new way to improve this
+      project. If you would like to see some of my other work feel free to find me on <a
+      href="https://github.com/srwagsta" target="_blank">Github</a>.
+    </p>
+  </div>
+</section>
+</div>
