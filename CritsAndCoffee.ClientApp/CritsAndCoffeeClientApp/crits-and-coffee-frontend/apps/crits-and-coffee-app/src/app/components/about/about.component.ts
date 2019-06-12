@@ -7,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
+  public expansionStep: number = 0;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  public setExpansionStep(newStep: number){
+    this.expansionStep = newStep;
+  }
+
+  public nextStep() {
+    this.expansionStep++;
+  }
+
+  public prevStep() {
+    this.expansionStep--;
   }
 
 }

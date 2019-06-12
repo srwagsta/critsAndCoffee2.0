@@ -18,7 +18,9 @@ import {
   MatDividerModule,
   MatIconModule,
   MatTooltipModule,
-  MatSnackBarModule
+  MatSnackBarModule,
+  MatExpansionModule,
+  MatCardModule
 } from '@angular/material';
 
 // Custom Libraries
@@ -85,6 +87,8 @@ Sentry.init({
     MatTooltipModule,
     MatDividerModule,
     MatSnackBarModule,
+    MatExpansionModule,
+    MatCardModule,
     FontAwesomeModule,
     NgbModule,
     NgxsModule.forRoot([AppState], { developmentMode: !environment.production }),
