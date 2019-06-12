@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  public expansionStep: number = 0;
+  public expansionStep: number = -1;
 
   constructor() { }
 
