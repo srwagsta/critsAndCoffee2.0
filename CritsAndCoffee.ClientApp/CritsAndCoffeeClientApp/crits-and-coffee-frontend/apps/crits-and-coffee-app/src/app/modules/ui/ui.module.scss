@@ -18,6 +18,10 @@ mat-nav-list {
       transparent 40%),
     url("/assets/images/site_images/base_background_2.jpg") !important;
   }
+
+  &-container{
+    background-color: $black;
+  }
 }
 
 mat-list-item {
@@ -52,9 +56,6 @@ app-footer {
   &:hover {
     color: rgba($brand-primary-color, .8);
   }
-}
-
-.crits-nav-container {
 }
 
 .crits-toolbar {

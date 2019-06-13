@@ -1,8 +1,23 @@
 @import "../../../sass/abstracts/variables";
 @import "../../../sass/abstracts/mixins";
 
-.crits-accordian {
+.paragraph {
+  margin: 2rem 0;
+}
 
+.about-view {
+  flex: 1;
+  background: linear-gradient(105deg, black 0%, rgba(0, 0, 0, 0.4) 51%, rgb(0, 0, 0) 90%);
+}
+
+.crits-accordian {
+  mat-expansion-panel{
+    background: linear-gradient(105deg,
+      rgba($brand-primary-color,.5) 0%,
+      rgba(0, 0, 0, 0.4) 60%,
+      rgb(0, 0, 0) 90%);
+  }
+  margin-bottom: 2rem;
 }
 
 .crits-jenkins {
@@ -13,12 +28,10 @@
 
   &--panel {
 
-    background-image: linear-gradient(105deg, transparent 0%,
-      rgba(102, 102, 102, 0.4) 51%, rgba(102, 102, 102, 0.9) 90%),
-    url("/assets/images/components/about/jenkins_logo.png");
+    background-image: url("/assets/images/components/about/jenkins_logo.png");
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: right;
+    background-size: 3rem;
+    background-position-y: bottom;
 
   }
 }
@@ -67,11 +80,10 @@
 
   &--panel {
 
-    background-image: linear-gradient(105deg, transparent 0%,
-      rgba(102, 102, 102, 0.4) 51%, transparent 90%),
-    url("/assets/images/components/about/postgresql_logo.png");
+    background-image: url("/assets/images/components/about/postgresql_logo.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 3rem;
+    background-position-y: bottom;
 
   }
 }
@@ -84,12 +96,10 @@
 
   &--panel {
 
-    background-image: linear-gradient(105deg, transparent 0%,
-      rgba(102, 102, 102, 0.4) 51%, transparent 90%),
-    url("/assets/images/components/about/dot_net_logo.png");
+    background-image: url("/assets/images/components/about/dot_net_logo.png");
     background-repeat: no-repeat;
-    background-size: contain;
-
+    background-size: 3rem;
+    background-position-y: bottom;
   }
 }
 
@@ -101,101 +111,38 @@
 
   &--panel {
 
-    background-image: linear-gradient(105deg, transparent 0%,
-      rgba(102, 102, 102, 0.4) 51%, transparent 90%),
-    url("/assets/images/components/about/flask_logo.png");
+    background-image: url("/assets/images/components/about/flask_logo.png");
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: center;
+    background-size: 3rem;
+    background-position-y: bottom;
   }
 }
 
 
-////////////////////////////////////////
-// HOTEL OVERVIEW
 .overview {
   display: flex;
   align-items: center;
-  border-bottom: var(--line);
+  border-bottom: 1px;
 
   &__heading {
     font-size: 2.25rem;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 3rem 0 3rem;
 
     @media only screen and (max-width: $bp-small) {
       font-size: 1.8rem;
       padding: 1.25rem 2rem;
     }
   }
-
-  &__stars {
-    margin-right: auto;
-    display: flex;
-  }
-
-  &__icon-star,
-  &__icon-location {
-    width: 1.75rem;
-    height: 1.75rem;
-    fill: var(--color-primary);
-  }
-
-  &__location {
-    font-size: 1.2rem;
-    display: flex;
-    vertical-align: center;
-  }
-
-  &__icon-location {
-    margin-right: .5rem;
-  }
-
-  &__rating {
-    background-color: var(--color-primary);
-    color: #fff;
-    margin-left: 3rem;
-    padding: 0 2.25rem;
-    align-self: stretch;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    @media only screen and (max-width: $bp-small) {
-      padding: 0 1.5rem;
-    }
-  }
-
-  &__rating-average {
-    font-size: 2.25rem;
-    font-weight: 300;
-    margin-bottom: -3px;
-
-    @media only screen and (max-width: $bp-small) {
-      font-size: 1.8rem;
-    }
-  }
-
-  &__rating-count {
-    font-size: .8rem;
-    text-transform: uppercase;
-
-    @media only screen and (max-width: $bp-small) {
-      font-size: .5rem;
-    }
-  }
 }
 
 .detail {
-  font-size: 1.4rem;
+  font-size: 1rem;
   display: flex;
   padding: 0 4.5rem;
-  background-color: var(--color-grey-light-1);
-  border-bottom: var(--line);
+  border-bottom: 1px;
 
   @media only screen and (max-width: $bp-medium) {
     padding: 3rem;
@@ -204,17 +151,6 @@
   @media only screen and (max-width: $bp-small) {
     flex-direction: column;
   }
-}
-
-////////////////////////////////////////
-// PARAGRAPH
-.paragraph:not(:last-of-type) {
-  margin-bottom: 2rem;
-}
-
-
-.blog-view {
-  flex: 1;
 }
 
 

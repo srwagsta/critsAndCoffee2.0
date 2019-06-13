@@ -28,7 +28,8 @@ import { GameOfLifeModule } from '@CritsAndCoffee/game-of-life';
 
 // Custom modules
 import { UiModule } from './modules/ui/ui.module';
-import {AuthModule} from './modules/auth/auth.module';
+import { AuthModule } from './modules/auth/auth.module';
+import { InstagramModule } from './modules/instagram/instagram.module';
 
 // Font awesome icons
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -55,7 +56,6 @@ import { NgxsRouterPluginModule } from '@ngxs/router-plugin';
 import { NgxsStoragePluginModule } from '@ngxs/storage-plugin';
 
 // States
-import { AuthService } from './modules/auth/services/auth.service';
 import { AuthInterceptorService } from './modules/auth/services/auth-interceptor.service';
 import { AppState } from './state/app.state';
 
@@ -74,14 +74,22 @@ Sentry.init({
     GameOfLifeComponent
   ],
   imports: [
+    NgxsModule.forRoot([AppState], { developmentMode: !environment.production }),
+    NgxsLoggerPluginModule.forRoot({}),
+    NgxsReduxDevtoolsPluginModule.forRoot(),
+    NgxsRouterPluginModule.forRoot(),
+    NgxsStoragePluginModule.forRoot({
+      key: ['auth.access_token', 'auth.refresh_token']
+    }),
     AuthModule,
+    InstagramModule,
+    GameOfLifeModule,
+    AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
-    GameOfLifeModule,
     FlexLayoutModule,
     HttpClientModule,
     UiModule,
-    AppRoutingModule,
     MatButtonModule,
     MatIconModule,
     MatTooltipModule,
@@ -90,14 +98,7 @@ Sentry.init({
     MatExpansionModule,
     MatCardModule,
     FontAwesomeModule,
-    NgbModule,
-    NgxsModule.forRoot([AppState], { developmentMode: !environment.production }),
-    NgxsLoggerPluginModule.forRoot({}),
-    NgxsReduxDevtoolsPluginModule.forRoot(),
-    NgxsRouterPluginModule.forRoot(),
-    NgxsStoragePluginModule.forRoot({
-      key: ['auth.access_token', 'auth.refresh_token']
-    })
+    NgbModule
   ],
   providers: [
     environment.production ? { provide: ErrorHandler, useClass: SentryErrorHandler }: {provide: ErrorHandler, useClass: ErrorHandler},

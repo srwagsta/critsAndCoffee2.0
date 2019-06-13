@@ -21,10 +21,6 @@ const routes: Routes = [
 
 // Feature component routes
   {
-    path: 'instagram-map',
-    loadChildren: () => import('./modules/instagram/instagram.module').then(mod => mod.InstagramModule)
-  },
-  {
     path: 'legal',
     loadChildren: () => import('./modules/legal/legal.module').then(mod => mod.LegalModule)
   },

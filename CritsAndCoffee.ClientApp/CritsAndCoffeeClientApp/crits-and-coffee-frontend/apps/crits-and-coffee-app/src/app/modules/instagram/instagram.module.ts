@@ -6,9 +6,12 @@ import { NgxsModule } from '@ngxs/store';
 import { InstagramPostListState } from './state/instagram.state';
 import { InstagramPostDetailComponent } from './components/instagram-map/instagram-post-detail/instagram-post-detail.component';
 import { InstagramMapComponent } from './components/instagram-map/instagram-map.component';
+
 //Material
 import {
-  MatIconModule
+  MatIconModule,
+  MatButtonModule,
+  MatTooltipModule
 } from '@angular/material';
 
 @NgModule({
@@ -20,7 +23,9 @@ import {
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCNPlDnedCEachOH08pszCanYO2RDuJ6pk\n'
     }),
-    MatIconModule
+    MatIconModule,
+    MatButtonModule,
+    MatTooltipModule
   ],
   entryComponents: [InstagramPostDetailComponent]
 })

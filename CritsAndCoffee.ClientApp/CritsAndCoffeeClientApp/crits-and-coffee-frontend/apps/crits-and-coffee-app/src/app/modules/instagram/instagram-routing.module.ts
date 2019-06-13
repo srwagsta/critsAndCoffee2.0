@@ -4,7 +4,7 @@ import { InstagramMapComponent } from './components/instagram-map/instagram-map.
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'instagram-map',
     component: InstagramMapComponent
   },
 ];
