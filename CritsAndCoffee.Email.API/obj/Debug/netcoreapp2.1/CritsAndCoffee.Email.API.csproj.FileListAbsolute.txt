@@ -1,0 +1,14 @@
+/Users/Stephen_Wagstaff/Desktop/CritsAndCoffee.Email.API/bin/Debug/netcoreapp2.1/CritsAndCoffee.Email.API.deps.json
+/Users/Stephen_Wagstaff/Desktop/CritsAndCoffee.Email.API/bin/Debug/netcoreapp2.1/CritsAndCoffee.Email.API.runtimeconfig.json
+/Users/Stephen_Wagstaff/Desktop/CritsAndCoffee.Email.API/bin/Debug/netcoreapp2.1/CritsAndCoffee.Email.API.runtimeconfig.dev.json
+/Users/Stephen_Wagstaff/Desktop/CritsAndCoffee.Email.API/bin/Debug/netcoreapp2.1/CritsAndCoffee.Email.API.dll
+/Users/Stephen_Wagstaff/Desktop/CritsAndCoffee.Email.API/bin/Debug/netcoreapp2.1/CritsAndCoffee.Email.API.pdb
+/Users/Stephen_Wagstaff/Desktop/CritsAndCoffee.Email.API/obj/Debug/netcoreapp2.1/CritsAndCoffee.Email.API.csprojAssemblyReference.cache
+/Users/Stephen_Wagstaff/Desktop/CritsAndCoffee.Email.API/obj/Debug/netcoreapp2.1/CritsAndCoffee.Email.API.csproj.CoreCompileInputs.cache
+/Users/Stephen_Wagstaff/Desktop/CritsAndCoffee.Email.API/obj/Debug/netcoreapp2.1/CritsAndCoffee.Email.API.RazorAssemblyInfo.cache
+/Users/Stephen_Wagstaff/Desktop/CritsAndCoffee.Email.API/obj/Debug/netcoreapp2.1/CritsAndCoffee.Email.API.RazorAssemblyInfo.cs
+/Users/Stephen_Wagstaff/Desktop/CritsAndCoffee.Email.API/obj/Debug/netcoreapp2.1/CritsAndCoffee.Email.API.AssemblyInfoInputs.cache
+/Users/Stephen_Wagstaff/Desktop/CritsAndCoffee.Email.API/obj/Debug/netcoreapp2.1/CritsAndCoffee.Email.API.AssemblyInfo.cs
+/Users/Stephen_Wagstaff/Desktop/CritsAndCoffee.Email.API/obj/Debug/netcoreapp2.1/CritsAndCoffee.Email.API.RazorTargetAssemblyInfo.cache
+/Users/Stephen_Wagstaff/Desktop/CritsAndCoffee.Email.API/obj/Debug/netcoreapp2.1/CritsAndCoffee.Email.API.dll
+/Users/Stephen_Wagstaff/Desktop/CritsAndCoffee.Email.API/obj/Debug/netcoreapp2.1/CritsAndCoffee.Email.API.pdb

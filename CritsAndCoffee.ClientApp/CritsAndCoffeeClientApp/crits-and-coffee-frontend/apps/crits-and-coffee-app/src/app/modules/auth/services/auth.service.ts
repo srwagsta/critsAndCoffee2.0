@@ -60,6 +60,7 @@ export class AuthService {
   }
 
   public refreshAccessToken():boolean{
+    // TODO: Refresh the token. 
     return true;
   }
 
@@ -84,7 +85,7 @@ export class AuthService {
   public passwordChange(credentials: {old_password: string, new_password1: string, new_password2: string}): Observable<string> {
     return this._http.post<string>(`${this._authUrl}/password/change/`, credentials)
       .pipe(
-        tap(data => console.log(`Entry content: ${data}`),
+        tap(data => console.log(`TODO: Auth Service Password Change ${data}`),
             error =>  catchError(this.handleError(error, [])))
       );
   }
