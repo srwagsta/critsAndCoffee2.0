@@ -83,6 +83,27 @@ services:
         window: 120s
     command: /start
 
+  email-api:
+    image: ${DOCKER_REGISTRY}crits_and_coffee_client_api:${EMAIL_API_PRODUCTION_TAG}
+    container_name: email-api-latest
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+    depends_on:
+      - auth-api
+    deploy:
+      mode: replicated
+      replicas: 2
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
+    networks:
+      - back-end
+    env_file:
+      - ../.envs/.private/.email
+
   instagram-api: &instagram-api
     image: ${DOCKER_REGISTRY}crits_and_coffee_api:${INSTAGRAM_API_PRODUCTION_TAG}
     container_name: instagram-api-production

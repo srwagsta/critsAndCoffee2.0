@@ -16,7 +16,7 @@ www.{$DOMAIN_NAME} {
         transparent
     }
 
-    proxy /api/v1/logger logger-api:5000 {
+    proxy /api/email email-api:80 {
         transparent
     }
 

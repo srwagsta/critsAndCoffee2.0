@@ -68,7 +68,31 @@ services:
     networks:
       - back-end
     command: "/start.sh"
-  
+
+  email-api:
+    image: ${DOCKER_REGISTRY}crits_and_coffee_client_api:${EMAIL_API_LOCAL_TAG}
+    container_name: email-api-local
+    build:
+      context: ../../CritsAndCoffee.Email.API
+      dockerfile: ../Docker/compose/dockerfiles/Dockerfile.Email.API
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      - auth-api
+    deploy:
+      mode: replicated
+      replicas: 3
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
+    networks:
+      - back-end
+    env_file:
+      - ../.envs/.local/.email
+
   auth-api:
     image: ${DOCKER_REGISTRY}crits_and_coffee_api:${AUTH_API_LOCAL_TAG}
     container_name: auth-api-local

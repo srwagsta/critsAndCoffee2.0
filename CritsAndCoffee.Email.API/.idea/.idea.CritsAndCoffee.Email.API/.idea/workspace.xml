@@ -9,11 +9,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Startup.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
+            <state relative-caret-position="644">
               <caret line="47" column="96" selection-start-line="47" selection-start-column="96" selection-end-line="47" selection-end-column="96" />
               <folding>
                 <marker date="1560553997045" expanded="false" signature="6:547" ph="..." />
@@ -33,10 +33,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controllers/EmailController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-13">
+            <state relative-caret-position="805">
               <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
               <folding>
-                <marker date="1560561798537" expanded="true" signature="6:288" ph="..." />
+                <marker date="1560561798537" expanded="false" signature="6:288" ph="..." />
                 <marker date="1560561798537" expanded="true" signature="336:1919" ph="{...}" />
                 <marker date="1560561798537" expanded="true" signature="432:1917" ph="{...}" />
                 <marker date="1560561798537" expanded="true" signature="666:793" ph="{...}" />
@@ -53,7 +53,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Models/Implementations/AdminEmailMessage.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="23">
@@ -70,25 +70,47 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/appsettings.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+            <state relative-caret-position="230">
+              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Services/EmailService.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <marker date="1560562567555" expanded="true" signature="6:218" ph="..." />
+                <marker date="1560562567555" expanded="true" signature="263:1786" ph="{...}" />
+                <marker date="1560562567555" expanded="true" signature="311:1784" ph="{...}" />
+                <marker date="1560562567555" expanded="true" signature="452:526" ph="{...}" />
+                <marker date="1560562567555" expanded="true" signature="612:1778" ph="{...}" />
+                <marker date="1560562567555" expanded="true" signature="728:1755" ph="{...}" />
+                <marker date="1560562567555" expanded="true" signature="1090:1212" ph="{...}" />
+                <marker date="1560562567555" expanded="true" signature="1308:1585" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Controllers/EmailController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Startup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/Implementations/AdminEmailMessage.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/Interface/IEmailConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/Implementations/EmailMessage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/Interface/IEmailMessage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/Interface/IEmailConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Services/EmailService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Services/IEmailService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/Implementations/EmailConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/Implementations/EmailMessage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/Implementations/AdminEmailMessage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Controllers/EmailController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Services/IEmailService.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -98,13 +120,13 @@
         <option value="$PROJECT_DIR$/Startup.cs" />
         <option value="$PROJECT_DIR$/Models/Implementations/EmailMessage.cs" />
         <option value="$PROJECT_DIR$/Services/IEmailService.cs" />
-        <option value="$PROJECT_DIR$/Services/EmailService.cs" />
-        <option value="$PROJECT_DIR$/appsettings.json" />
         <option value="$PROJECT_DIR$/Models/Interface/IEmailConfiguration.cs" />
         <option value="$PROJECT_DIR$/Models/Implementations/EmailConfiguration.cs" />
         <option value="$PROJECT_DIR$/Models/Interface/IEmailMessage.cs" />
         <option value="$PROJECT_DIR$/Models/Implementations/AdminEmailMessage.cs" />
         <option value="$PROJECT_DIR$/Controllers/EmailController.cs" />
+        <option value="$PROJECT_DIR$/appsettings.json" />
+        <option value="$PROJECT_DIR$/Services/EmailService.cs" />
       </list>
     </option>
   </component>
@@ -113,12 +135,12 @@
     <option name="width" value="1280" />
     <option name="height" value="777" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="SolutionExplorer" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AssemblyExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -126,17 +148,13 @@
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="CritsAndCoffee.Email.API" type="24d0babc:SolutionExplorerModelNode" />
             </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="CritsAndCoffee.Email.API" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Properties" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
           </expand>
           <select />
         </subPane>
         <option name="show-all-files" value="false" />
       </pane>
       <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -182,11 +200,12 @@
       <option name="presentableId" value="Default" />
       <updated>1560549042124</updated>
       <workItem from="1560549046715" duration="9650000" />
+      <workItem from="1560562426202" duration="381000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9650000" />
+    <option name="totallyTimeSpent" value="10031000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -199,11 +218,36 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.24959612" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.2536349" />
+      <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" order="1" />
+      <window_info anchor="bottom" id="REST Client" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="5" />
+      <window_info anchor="bottom" id="NuGet" order="6" weight="0.6935725" />
+      <window_info anchor="bottom" id="Message" order="7" />
+      <window_info anchor="bottom" id="Find" order="8" />
+      <window_info anchor="bottom" id="Run" order="9" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="13" />
+      <window_info anchor="right" id="Errors In Solution" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Capture Tool" order="1" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.2536349" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
@@ -225,12 +269,12 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -262,27 +306,9 @@
     <entry file="file://$PROJECT_DIR$/Properties/launchSettings.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Models/Implementations/EmailAddress.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/ValuesController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Models/Interface/IEmailAddress.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/Implementations/EmailAddress.cs" />
+    <entry file="file://$PROJECT_DIR$/Controllers/ValuesController.cs" />
+    <entry file="file://$PROJECT_DIR$/Models/Interface/IEmailAddress.cs" />
     <entry file="file://$PROJECT_DIR$/Services/IEmailService.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -292,13 +318,6 @@
             <marker date="1560559865201" expanded="true" signature="180:304" ph="{...}" />
             <marker date="1560559865201" expanded="true" signature="217:302" ph="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appsettings.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -349,26 +368,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Services/EmailService.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-end-line="19" />
-          <folding>
-            <marker date="1560560296069" expanded="false" signature="6:356" ph="..." />
-            <marker date="1560560296069" expanded="true" signature="401:1924" ph="{...}" />
-            <marker date="1560560296069" expanded="true" signature="449:1922" ph="{...}" />
-            <marker date="1560560296069" expanded="true" signature="590:664" ph="{...}" />
-            <marker date="1560560296069" expanded="true" signature="750:1916" ph="{...}" />
-            <marker date="1560560296069" expanded="true" signature="866:1893" ph="{...}" />
-            <marker date="1560560296069" expanded="true" signature="1228:1350" ph="{...}" />
-            <marker date="1560560296069" expanded="true" signature="1446:1723" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Startup.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
+        <state relative-caret-position="644">
           <caret line="47" column="96" selection-start-line="47" selection-start-column="96" selection-end-line="47" selection-end-column="96" />
           <folding>
             <marker date="1560553997045" expanded="false" signature="6:547" ph="..." />
@@ -386,10 +388,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/EmailController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
+        <state relative-caret-position="805">
           <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
           <folding>
-            <marker date="1560561798537" expanded="true" signature="6:288" ph="..." />
+            <marker date="1560561798537" expanded="false" signature="6:288" ph="..." />
             <marker date="1560561798537" expanded="true" signature="336:1919" ph="{...}" />
             <marker date="1560561798537" expanded="true" signature="432:1917" ph="{...}" />
             <marker date="1560561798537" expanded="true" signature="666:793" ph="{...}" />
@@ -413,6 +415,30 @@
             <marker date="1560561747812" expanded="true" signature="6:82" ph="..." />
             <marker date="1560561747812" expanded="true" signature="141:350" ph="{...}" />
             <marker date="1560561747812" expanded="true" signature="193:348" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appsettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Services/EmailService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <marker date="1560562567555" expanded="true" signature="6:218" ph="..." />
+            <marker date="1560562567555" expanded="true" signature="263:1786" ph="{...}" />
+            <marker date="1560562567555" expanded="true" signature="311:1784" ph="{...}" />
+            <marker date="1560562567555" expanded="true" signature="452:526" ph="{...}" />
+            <marker date="1560562567555" expanded="true" signature="612:1778" ph="{...}" />
+            <marker date="1560562567555" expanded="true" signature="728:1755" ph="{...}" />
+            <marker date="1560562567555" expanded="true" signature="1090:1212" ph="{...}" />
+            <marker date="1560562567555" expanded="true" signature="1308:1585" ph="{...}" />
           </folding>
         </state>
       </provider>

@@ -13,6 +13,10 @@ tls self_signed
         transparent
     }
 
+    proxy /api/email email-api:80 {
+        transparent
+    }
+
     proxy /api/v1/quant quant-api:5000 {
         transparent
     }
@@ -29,9 +33,6 @@ tls self_signed
         transparent
     }
 
-    proxy /admin instagram-api:8000 {
-        transparent
-    }
     log stdout
     errors stdout
     gzip

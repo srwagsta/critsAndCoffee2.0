@@ -16,6 +16,12 @@ services:
       context: ../../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp
       dockerfile: ../../Docker/compose/dockerfiles/Dockerfile.ClientApp.Prod
 
+  email-api:
+    image: ${DOCKER_REGISTRY}crits_and_coffee_client_api:${EMAIL_API_PRODUCTION_TAG}
+    build:
+      context: ../../CritsAndCoffee.Email.API
+      dockerfile: ../../Docker/compose/dockerfiles/Dockerfile.Email.API
+
   auth-api:
     image: ${DOCKER_REGISTRY}crits_and_coffee_api:${AUTH_API_PRODUCTION_TAG}
     container_name: auth-api-production
