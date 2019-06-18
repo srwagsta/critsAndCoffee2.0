@@ -1,8 +1,7 @@
 using System;
 using System.Linq;
-using System.Net.Http;
-using System.Net.Sockets;
 using System.Threading.Tasks;
+using CritsAndCoffee.Email.API.Attributes;
 using CritsAndCoffee.Email.API.Models.Implementations;
 using CritsAndCoffee.Email.API.Models.Interface;
 using CritsAndCoffee.Email.API.Services;
@@ -12,6 +11,7 @@ namespace CritsAndCoffee.Email.API.Controllers
 {
     [Route("api/email")]
     [ApiController]
+    [ServiceFilter(typeof(CustomAuthorizationAttribute))]
     public class EmailController: ControllerBase
     {
         private readonly IEmailService _emailService;
@@ -27,6 +27,7 @@ namespace CritsAndCoffee.Email.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] EmailMessage emailMessage)
         {
+            
             if (emailMessage == null)
             {
                 return BadRequest("Missing Body");

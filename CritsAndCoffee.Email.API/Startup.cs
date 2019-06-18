@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CritsAndCoffee.Email.API.Attributes;
 using CritsAndCoffee.Email.API.Models.Implementations;
 using CritsAndCoffee.Email.API.Models.Interface;
 using CritsAndCoffee.Email.API.Services;
@@ -29,7 +30,8 @@ namespace CritsAndCoffee.Email.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            services.AddSingleton<IEmailConfiguration>(Configuration.GetSection("EmailConfiguration").Get<EmailConfiguration>());
+            services.AddSingleton<IEmailConfiguration>(Configuration.GetSection("EMAILCONFIGURATION").Get<EmailConfiguration>());
+            services.AddScoped<CustomAuthorizationAttribute>();
             services.AddTransient<IEmailService, EmailService>();
         }
 
@@ -47,6 +49,7 @@ namespace CritsAndCoffee.Email.API
 
             // No need for this as we will be running behind a secured proxy on a Docker network
             //app.UseHttpsRedirection();
+            
             app.UseMvc();
         }
     }

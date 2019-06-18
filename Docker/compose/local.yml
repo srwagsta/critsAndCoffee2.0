@@ -91,7 +91,7 @@ services:
     networks:
       - back-end
     env_file:
-      - ../.envs/.local/.email
+      - ../.envs/.private/.email
 
   auth-api:
     image: ${DOCKER_REGISTRY}crits_and_coffee_api:${AUTH_API_LOCAL_TAG}

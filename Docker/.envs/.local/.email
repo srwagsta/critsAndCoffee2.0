@@ -1,7 +1,0 @@
-MAIL_API_KEY=mailgunApiKey
-
-MAIL_API_BASE_URI=mailgunBaseUri
-
-MAIL_API_FROM_ADDRESS=sender@domain.com
-
-MAIL_ADMIN_ADDRESSES=[info@spy.com,admin@spy.com]

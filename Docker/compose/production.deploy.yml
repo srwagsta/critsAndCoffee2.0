@@ -102,7 +102,7 @@ services:
     networks:
       - back-end
     env_file:
-      - ../.envs/.private/.email
+      - ../.envs/.private/.production/.email
 
   instagram-api: &instagram-api
     image: ${DOCKER_REGISTRY}crits_and_coffee_api:${INSTAGRAM_API_PRODUCTION_TAG}

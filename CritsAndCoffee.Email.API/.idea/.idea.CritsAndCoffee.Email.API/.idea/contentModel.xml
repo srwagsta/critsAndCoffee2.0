@@ -4,6 +4,9 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="appsettings.Development.json" t="Include" />
       <e p="appsettings.json" t="Include" />
+      <e p="Attributes" t="Include">
+        <e p="CustomAuthorizationAttribute.cs" t="Include" />
+      </e>
       <e p="bin" t="ExcludeRecursive" />
       <e p="Controllers" t="Include">
         <e p="EmailController.cs" t="Include" />
@@ -12,10 +15,12 @@
       <e p="models" t="Include">
         <e p="Implementations" t="Include">
           <e p="AdminEmailMessage.cs" t="Include" />
+          <e p="AuthResponse.cs" t="Include" />
           <e p="EmailConfiguration.cs" t="Include" />
           <e p="EmailMessage.cs" t="Include" />
         </e>
         <e p="interface" t="Include">
+          <e p="IAuthResponse.cs" t="Include" />
           <e p="IEmailConfiguration.cs" t="Include" />
           <e p="IEmailMessage.cs" t="Include" />
         </e>
