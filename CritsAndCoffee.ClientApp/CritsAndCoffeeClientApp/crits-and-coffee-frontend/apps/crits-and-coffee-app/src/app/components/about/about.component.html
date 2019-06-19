@@ -20,13 +20,43 @@
         <mat-expansion-panel [expanded]="expansionStep === 0" (opened)="setExpansionStep(0)" hideToggle>
           <mat-expansion-panel-header>
             <mat-panel-title>
+              Angular 8
+            </mat-panel-title>
+            <mat-panel-description>
+              Interactive, Scalable, and Fast. Ready To Take On The New World
+            </mat-panel-description>
+            <img class="crits-angular--image" src="assets/images/components/about/angular_logo.png" alt=""
+                 *ngIf="expansionStep !== 0">
+            <img class="crits-nrwl--image" src="assets/images/components/about/nrwl_logo.png" alt=""
+                 *ngIf="expansionStep !== 0">
+          </mat-expansion-panel-header>
+          <div class="crits-nrwl--panel">
+            <p>
+              An enterprise ready framework made for a mobile rich experience. Angular provides a rich user experience
+              with the enterprise an ready architecture, large user base, and rich libraries. Angular gives the developer
+              a strongly type environment for a better development experience while still providing the strong client side
+              Javascript experience. Using the latest Angular version gives smaller bundles, faster loading, and makes use
+              of the new Ivy rendering engine. At the same time the Nrwl Nx team adds enterprise ready pratices to the Angular CLI.
+              Nx provides advanced tools which helps scale enterprise development. Nx helps enforce standards and
+              community best practices.
+            </p>
+
+            <mat-action-row>
+              <button mat-button color="primary" (click)="nextStep()">Next</button>
+            </mat-action-row>
+          </div>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel [expanded]="expansionStep === 1" (opened)="setExpansionStep(1)" hideToggle>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
               Jenkins to stay Agile
             </mat-panel-title>
             <mat-panel-description>
               Never. Stop. Progress.
             </mat-panel-description>
             <img class="crits-jenkins--image" src="assets/images/components/about/jenkins_logo.png" alt=""
-                 *ngIf="expansionStep !== 0">
+                 *ngIf="expansionStep !== 1">
           </mat-expansion-panel-header>
           <div class="crits-jenkins--panel">
             <p>
@@ -48,12 +78,13 @@
             </p>
 
             <mat-action-row>
+              <button mat-button color="warn" (click)="prevStep()">Previous</button>
               <button mat-button color="primary" (click)="nextStep()">Next</button>
             </mat-action-row>
           </div>
         </mat-expansion-panel>
 
-        <mat-expansion-panel [expanded]="expansionStep === 1" (opened)="setExpansionStep(1)" hideToggle>
+        <mat-expansion-panel [expanded]="expansionStep === 2" (opened)="setExpansionStep(2)" hideToggle>
           <mat-expansion-panel-header>
             <mat-panel-title>
               Docker + AWS
@@ -62,7 +93,7 @@
               Cloud Native, Ready To Grow
             </mat-panel-description>
             <img class="crits-docker--image" src="assets/images/components/about/docker_logo.png" alt=""
-                 *ngIf="expansionStep !== 1">
+                 *ngIf="expansionStep !== 2">
           </mat-expansion-panel-header>
           <div class="crits-docker--panel">
             <p>
@@ -94,7 +125,7 @@
           </div>
         </mat-expansion-panel>
 
-        <mat-expansion-panel [expanded]="expansionStep === 2" (opened)="setExpansionStep(2)" hideToggle>
+        <mat-expansion-panel [expanded]="expansionStep === 3" (opened)="setExpansionStep(3)" hideToggle>
           <mat-expansion-panel-header>
             <mat-panel-title>
               Caddy + Let's Encrypt + CertBot
@@ -103,7 +134,7 @@
               HTTPS That You Can Trust. In Seconds.
             </mat-panel-description>
             <img class="crits-lets_encrypt--image" src="assets/images/components/about/lets_encrypt_logo.png" alt=""
-                 *ngIf="expansionStep !== 2">
+                 *ngIf="expansionStep !== 3">
           </mat-expansion-panel-header>
           <div class="crits-lets_encrypt--panel">
             <p>
@@ -124,7 +155,7 @@
           </div>
         </mat-expansion-panel>
 
-        <mat-expansion-panel [expanded]="expansionStep === 3" (opened)="setExpansionStep(3)" hideToggle>
+        <mat-expansion-panel [expanded]="expansionStep === 4" (opened)="setExpansionStep(4)" hideToggle>
           <mat-expansion-panel-header>
             <mat-panel-title>
               PostgreSQL
@@ -133,7 +164,7 @@
               Open Source, Scalable, Relational
             </mat-panel-description>
             <img class="crits-postgresql--image" src="assets/images/components/about/postgresql_logo.png" alt=""
-                 *ngIf="expansionStep !== 3">
+                 *ngIf="expansionStep !== 4">
           </mat-expansion-panel-header>
           <div class="crits-postgresql--panel">
             <p>
@@ -150,7 +181,7 @@
           </div>
         </mat-expansion-panel>
 
-        <mat-expansion-panel [expanded]="expansionStep === 4" (opened)="setExpansionStep(4)" hideToggle>
+        <mat-expansion-panel [expanded]="expansionStep === 5" (opened)="setExpansionStep(5)" hideToggle>
           <mat-expansion-panel-header>
             <mat-panel-title>
               .NET Core
@@ -159,7 +190,7 @@
               Multi-platform, Fast, Familar
             </mat-panel-description>
             <img class="crits-dot_net--image" src="assets/images/components/about/dot_net_logo.png" alt=""
-                 *ngIf="expansionStep !== 4">
+                 *ngIf="expansionStep !== 5">
           </mat-expansion-panel-header>
           <div class="crits-dot_net--panel">
             <p>
@@ -181,7 +212,7 @@
           </div>
         </mat-expansion-panel>
 
-        <mat-expansion-panel [expanded]="expansionStep === 5" (opened)="setExpansionStep(5)" hideToggle>
+        <mat-expansion-panel [expanded]="expansionStep === 6" (opened)="setExpansionStep(6)" hideToggle>
           <mat-expansion-panel-header>
             <mat-panel-title>
               Flask
@@ -190,7 +221,7 @@
               Lightweight, With The Data Stomping Power Of Python
             </mat-panel-description>
             <img class="crits-flask--image" src="assets/images/components/about/flask_logo.png" alt=""
-                 *ngIf="expansionStep !== 5">
+                 *ngIf="expansionStep !== 6">
           </mat-expansion-panel-header>
           <div class="crits-flask--panel">
             <p>

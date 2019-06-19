@@ -19,6 +19,31 @@
   }
   margin-bottom: 2rem;
 }
+.crits-nrwl {
+  &--image {
+    width: auto;
+    height: 2rem;
+  }
+
+  &--panel {
+
+    background-image: linear-gradient(105deg, transparent 0%,
+      rgba(102, 102, 102, 0.4) 51%, transparent 90%),
+    url("/assets/images/components/about/nrwl_logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+  }
+
+}
+
+.crits-angular {
+  &--image {
+    width: auto;
+    height: 2rem;
+    padding-right: 2rem;
+  }
+}
 
 .crits-jenkins {
   &--image {

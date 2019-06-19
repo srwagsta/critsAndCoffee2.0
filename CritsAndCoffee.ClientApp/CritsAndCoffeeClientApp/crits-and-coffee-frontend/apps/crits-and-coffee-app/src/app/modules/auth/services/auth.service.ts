@@ -60,7 +60,7 @@ export class AuthService {
   }
 
   public refreshAccessToken():boolean{
-    // TODO: Refresh the token. 
+    // TODO: Refresh the token.
     return true;
   }
 
