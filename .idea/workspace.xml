@@ -3,16 +3,19 @@
   <component name="AnalysisUIOptions">
     <option name="SCOPE_TYPE" value="3" />
   </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/CritsAndCoffee.Auth.API/API_Auth/models/user.py" line="1" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="90fe1e25-08d0-474a-b016-dfaccdc13a79" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/critsAndCoffee2.0.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/critsAndCoffee2.0.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/button-zoom/button-zoom.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/button-zoom/button-zoom.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/hex-board.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/hex-board.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/hex-board.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/hex-board.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/hex-board.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/hex-board.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/game-of-life.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/game-of-life.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Auth.API/API_Auth/auth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Auth.API/API_Auth/auth/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Auth.API/API_Auth/extensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Auth.API/API_Auth/extensions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Auth.API/API_Auth/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Auth.API/API_Auth/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CritsAndCoffee.Auth.API/API_Auth/models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/CritsAndCoffee.Auth.API/API_Auth/models/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docker/.envs/.local/.flask_quant" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/.envs/.local/.flask_quant" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,61 +30,38 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5627395">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/hex-board.component.ts">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="70">
-                  <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/hex-board.component.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="63">
-                  <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/button-zoom/button-zoom.component.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="84">
-                  <caret line="4" column="60" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/button-zoom/button-zoom.component.ts">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="567">
-                  <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/hex-board.component.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="378">
-                  <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Auth.API/API_Auth/models/user_roles.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" column="27" lean-forward="true" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Docker/.envs/.local/.flask_quant">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Auth.API/API_Auth/auth/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="658">
+              <caret line="107" column="22" lean-forward="true" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#65#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -114,15 +94,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CritsAndCoffee.Logger.API/setup.py" />
-        <option value="$PROJECT_DIR$/CritsAndCoffee.Logger.API/requirements.txt" />
-        <option value="$PROJECT_DIR$/CritsAndCoffee.Logger.API/API_Logger/wsgi.py" />
-        <option value="$PROJECT_DIR$/CritsAndCoffee.Logger.API/tests/conftest.py" />
-        <option value="$PROJECT_DIR$/CritsAndCoffee.Logger.API/API_Logger/api/resources/data.py" />
-        <option value="$PROJECT_DIR$/CritsAndCoffee.Logger.API/API_Logger/api/views.py" />
-        <option value="$PROJECT_DIR$/Docker/compose/local/Caddyfile.local" />
-        <option value="$PROJECT_DIR$/Docker/compose/.env" />
-        <option value="$PROJECT_DIR$/Docker/compose/local/Dockerfile.Logger.API" />
         <option value="$PROJECT_DIR$/Docker/.envs/.local/.flask_logger" />
         <option value="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/apiv1_urls.py" />
         <option value="$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/settings/base.py" />
@@ -165,6 +136,15 @@
         <option value="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/hex-board.component.html" />
         <option value="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/hex-board.component.ts" />
         <option value="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/button-zoom/button-zoom.component.ts" />
+        <option value="$PROJECT_DIR$/CritsAndCoffee.Quant.API/API_Quant/config.py" />
+        <option value="$PROJECT_DIR$/CritsAndCoffee.Quant.API/API_Quant/commons/decorators.py" />
+        <option value="$PROJECT_DIR$/CritsAndCoffee.Auth.API/API_Auth/models/user_roles.py" />
+        <option value="$PROJECT_DIR$/CritsAndCoffee.Auth.API/API_Auth/extensions.py" />
+        <option value="$PROJECT_DIR$/CritsAndCoffee.Auth.API/API_Auth/app.py" />
+        <option value="$PROJECT_DIR$/CritsAndCoffee.Auth.API/API_Auth/models/user.py" />
+        <option value="$PROJECT_DIR$/CritsAndCoffee.Auth.API/API_Auth/models/__init__.py" />
+        <option value="$PROJECT_DIR$/CritsAndCoffee.Auth.API/API_Auth/auth/views.py" />
+        <option value="$PROJECT_DIR$/Docker/.envs/.local/.flask_quant" />
       </list>
     </option>
   </component>
@@ -185,7 +165,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -196,152 +175,44 @@
             <path>
               <item name="critsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
               <item name="critsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
-              <item name="CritsAndCoffee.ClientApp" type="462c0819:PsiDirectoryNode" />
+              <item name="CritsAndCoffee.Auth.API" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="critsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
               <item name="critsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
-              <item name="CritsAndCoffee.ClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="CritsAndCoffeeClientApp" type="462c0819:PsiDirectoryNode" />
+              <item name="CritsAndCoffee.Auth.API" type="462c0819:PsiDirectoryNode" />
+              <item name="API_Auth" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="critsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
               <item name="critsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
-              <item name="CritsAndCoffee.ClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="CritsAndCoffeeClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="crits-and-coffee-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="CritsAndCoffee.Auth.API" type="462c0819:PsiDirectoryNode" />
+              <item name="API_Auth" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="critsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
               <item name="critsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
-              <item name="CritsAndCoffee.ClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="CritsAndCoffeeClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="crits-and-coffee-frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="Docker" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="critsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
               <item name="critsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
-              <item name="CritsAndCoffee.ClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="CritsAndCoffeeClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="crits-and-coffee-frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="crits-and-coffee-app" type="462c0819:PsiDirectoryNode" />
+              <item name="Docker" type="462c0819:PsiDirectoryNode" />
+              <item name=".envs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="critsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
               <item name="critsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
-              <item name="CritsAndCoffee.ClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="CritsAndCoffeeClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="crits-and-coffee-frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="crits-and-coffee-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="critsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="critsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
-              <item name="CritsAndCoffee.ClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="CritsAndCoffeeClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="crits-and-coffee-frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="crits-and-coffee-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="critsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="critsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
-              <item name="CritsAndCoffee.ClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="CritsAndCoffeeClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="crits-and-coffee-frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="critsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="critsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
-              <item name="CritsAndCoffee.ClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="CritsAndCoffeeClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="crits-and-coffee-frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
-              <item name="game-of-life" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="critsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="critsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
-              <item name="CritsAndCoffee.ClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="CritsAndCoffeeClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="crits-and-coffee-frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
-              <item name="game-of-life" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="critsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="critsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
-              <item name="CritsAndCoffee.ClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="CritsAndCoffeeClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="crits-and-coffee-frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
-              <item name="game-of-life" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="critsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="critsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
-              <item name="CritsAndCoffee.ClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="CritsAndCoffeeClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="crits-and-coffee-frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
-              <item name="game-of-life" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="critsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="critsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
-              <item name="CritsAndCoffee.ClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="CritsAndCoffeeClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="crits-and-coffee-frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
-              <item name="game-of-life" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="hex-board" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="critsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="critsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
-              <item name="CritsAndCoffee.ClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="CritsAndCoffeeClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="crits-and-coffee-frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
-              <item name="game-of-life" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="hex-board" type="462c0819:PsiDirectoryNode" />
-              <item name="button-zoom" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="critsAndCoffee2.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="critsAndCoffee2.0" type="462c0819:PsiDirectoryNode" />
-              <item name="CritsAndCoffee.ClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="CritsAndCoffeeClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="crits-and-coffee-frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
-              <item name="game-of-life" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="game-root" type="462c0819:PsiDirectoryNode" />
+              <item name="Docker" type="462c0819:PsiDirectoryNode" />
+              <item name=".envs" type="462c0819:PsiDirectoryNode" />
+              <item name=".local" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -356,7 +227,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/node_modules/typescript/lib" />
     <property name="typescript-compiler-editor-notification" value="false" />
   </component>
   <component name="RecentsManager">
@@ -422,6 +293,9 @@
       <workItem from="1556284834666" duration="10184000" />
       <workItem from="1556390937227" duration="17000" />
       <workItem from="1557541712826" duration="10084000" />
+      <workItem from="1559247178819" duration="1270000" />
+      <workItem from="1559250895607" duration="348000" />
+      <workItem from="1559251265816" duration="6432000" />
     </task>
     <servers />
   </component>
@@ -431,17 +305,17 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190324000" />
+    <option name="totallyTimeSpent" value="198374000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="2560" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.17698069" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1662689" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.09453125" />
       <window_info id="npm" order="3" sideWeight="0.5005291" side_tool="true" weight="0.09257813" />
-      <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" weight="0.32903227" />
+      <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" weight="0.32894737" />
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.91885966" />
       <window_info anchor="bottom" id="Python Console" order="2" />
       <window_info anchor="bottom" id="Terminal" order="3" />
@@ -510,18 +384,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Docker/compose/local/Dockerfile.Quant.API" />
-    <entry file="file://$PROJECT_DIR$/Docker/compose/production.yml" />
-    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/crits-hero/crits-hero.component.scss" />
-    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/assets/images/site_images/crits_and_coffee_brand.svg" />
-    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/crits-hero/crits-hero.component.html" />
-    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/modules/ui/ui.module.scss" />
-    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/home.component.scss" />
-    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/ClientApp/src/app/components/home/home.component.html" />
-    <entry file="file://$PROJECT_DIR$/Docker/.envs/.private/.production/.aws" />
-    <entry file="file://$PROJECT_DIR$/Docker/.envs/.private/.production/.django" />
-    <entry file="file://$PROJECT_DIR$/Docker/compose/local/Dockerfile.caddy.local" />
-    <entry file="file://$PROJECT_DIR$/Docker/compose/local/Dockerfile.Instagram.API" />
     <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Instagram.API/config/settings/production.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1470">
@@ -707,38 +569,128 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/hex-board.component.scss">
+    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/hex-board.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/button-zoom/button-zoom.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="60" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
+        <state relative-caret-position="252">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/hex-board.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
-          <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/hex-board.component.ts">
+    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/button-zoom/button-zoom.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        <state relative-caret-position="84">
+          <caret line="4" column="84" selection-start-line="4" selection-start-column="84" selection-end-line="4" selection-end-column="84" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/button-zoom/button-zoom.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+        <state relative-caret-position="735">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp/crits-and-coffee-frontend/libs/game-of-life/src/lib/components/hex-board/hex-board.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Quant.API/API_Quant/api/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Quant.API/API_Quant/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Auth.API/API_Auth/config.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Auth.API/API_Auth/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Auth.API/API_Auth/extensions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#110#149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Auth.API/API_Auth/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Auth.API/API_Auth/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Auth.API/API_Auth/auth/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="658">
+          <caret line="107" column="22" lean-forward="true" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Auth.API/API_Auth/models/user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Quant.API/API_Quant/commons/decorators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="45" column="68" selection-start-line="45" selection-start-column="68" selection-end-line="45" selection-end-column="68" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CritsAndCoffee.Auth.API/API_Auth/models/user_roles.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="27" lean-forward="true" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Docker/.envs/.local/.flask_quant">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
         </state>
       </provider>
     </entry>

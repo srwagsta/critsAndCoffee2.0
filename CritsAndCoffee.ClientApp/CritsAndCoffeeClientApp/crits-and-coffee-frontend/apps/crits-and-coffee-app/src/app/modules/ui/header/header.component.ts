@@ -1,5 +1,5 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
-import {MatSidenav} from "@angular/material";
+import { MatSidenav } from "@angular/material/sidenav";
 import { Store } from '@ngxs/store';
 import { RouterState } from '@ngxs/router-plugin';
 
@@ -20,9 +20,8 @@ export class NavLinks{
 export class HeaderComponent implements OnInit {
   API_route: string = `${window.location.origin}/api/docs`;
   links = NavLinks.links;
-
-  @ViewChild('sideNav') sidenav: MatSidenav;
-  @ViewChild('menuIcon', {read: ElementRef}) menuIcon: ElementRef;
+  @ViewChild('sideNav', { static: true }) sidenav: MatSidenav;
+  @ViewChild('menuIcon', { read: ElementRef, static: true }) menuIcon: ElementRef;
 
   constructor(private _store: Store) {
   }

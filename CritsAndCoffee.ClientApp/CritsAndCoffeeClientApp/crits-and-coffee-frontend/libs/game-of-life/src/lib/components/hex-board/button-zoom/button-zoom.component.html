@@ -1,8 +1,8 @@
-<button mat-raised-button color="primary" (click)="zoomIn()">
+<button mat-raised-button color="primary" (click)="zoomIn()" [disabled]="false">
   <mat-icon aria-label="zoom-in">zoom_in</mat-icon>
 </button>
 <br/>
-<button mat-raised-button color="primary" (click)="zoomOut()">
+<button mat-raised-button color="primary" (click)="zoomOut()" [disabled]="disabled">
   <mat-icon aria-label="zoom-out">zoom_out</mat-icon>
 </button>
 

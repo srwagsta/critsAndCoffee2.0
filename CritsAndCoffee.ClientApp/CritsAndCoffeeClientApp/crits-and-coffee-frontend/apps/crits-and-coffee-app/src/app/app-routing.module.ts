@@ -4,15 +4,11 @@ import {
   AboutComponent,
   PageNotFoundComponent,
   HomeComponent,
-  InstagramMapComponent,
-  PrivacyPolicyComponent,
-  ProjectLicenseComponent,
-  ApiTermsOfUseComponent,
-  CopyrightPolicyComponent,
   GameOfLifeComponent
 } from './components';
 
 const routes: Routes = [
+// Base routes
   {
     path: '',
     redirectTo: '/home',
@@ -22,9 +18,11 @@ const routes: Routes = [
     path: 'home',
     component: HomeComponent
   },
+
+// Feature component routes
   {
-    path: 'instagram-map',
-    component: InstagramMapComponent
+    path: 'legal',
+    loadChildren: () => import('./modules/legal/legal.module').then(mod => mod.LegalModule)
   },
   {
     path: 'about',
@@ -34,22 +32,9 @@ const routes: Routes = [
     path: 'game-of-life',
     component: GameOfLifeComponent
   },
-  {
-    path: 'privacy-policy',
-    component: PrivacyPolicyComponent
-  },
-  {
-    path: 'project-license',
-    component: ProjectLicenseComponent
-  },
-  {
-    path: 'terms-of-use',
-    component: ApiTermsOfUseComponent
-  },
-  {
-    path: 'copyright',
-    component: CopyrightPolicyComponent
-  },
+
+
+// 404 Route
   {
     path: '**',
     component: PageNotFoundComponent

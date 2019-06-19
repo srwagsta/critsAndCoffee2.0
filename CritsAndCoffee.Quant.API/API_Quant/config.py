@@ -9,3 +9,5 @@ SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 QUANDL_API_KEY = os.environ['QUANDL_API_KEY']
 
+ACCEPTED_SCOPE_SET = set([x.strip().lower() for x in
+                          (os.environ.get('ACCEPT_TOKEN_CLAIMS').split(','))])

@@ -1,11 +1,44 @@
-version: '3'
+version: '3.7'
 
 volumes:
-  local_postgres_data: {}
-  local_postgres_data_backups: {}
-  local_caddy: {}
+  local-postgres-data: {}
+  local-postgres-data-backups: {}
+  local-caddy: {}
 
 services:
+  caddy:
+    build:
+      context: ./dockerfiles
+      dockerfile: Dockerfile.caddy
+      args:
+        - caddyfile_version=Caddyfile.local
+    image: ${DOCKER_REGISTRY}crits_and_coffee_caddy:${DOCKER_LOCAL_TAG}
+    container_name: caddy-local
+    depends_on:
+      - front-end-app
+      - instagram-api
+      - quant-api
+      - auth-api
+    volumes:
+      - local-caddy:/root/.caddy
+    deploy:
+      placement:
+          constraints:
+            - node.role == manager
+      mode: replicated
+      replicas: 3
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
+    networks:
+      - back-end
+      - front-end
+    ports:
+      - "8080:8080"
+
   front-end-app:
     image: ${DOCKER_REGISTRY}crits_and_coffee_client_app:${DOCKER_LOCAL_TAG}
     container_name: client-app-local
@@ -22,9 +55,67 @@ services:
       - postgres
       - instagram-api
       - quant-api
+      - auth-api
+    deploy:
+      mode: replicated
+      replicas: 1
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
     networks:
       - back-end
     command: "/start.sh"
+
+  email-api:
+    image: ${DOCKER_REGISTRY}crits_and_coffee_client_api:${EMAIL_API_LOCAL_TAG}
+    container_name: email-api-local
+    build:
+      context: ../../CritsAndCoffee.Email.API
+      dockerfile: ../Docker/compose/dockerfiles/Dockerfile.Email.API
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      - auth-api
+    deploy:
+      mode: replicated
+      replicas: 3
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
+    networks:
+      - back-end
+    env_file:
+      - ../.envs/.private/.email
+
+  auth-api:
+    image: ${DOCKER_REGISTRY}crits_and_coffee_api:${AUTH_API_LOCAL_TAG}
+    container_name: auth-api-local
+    build: 
+      context: ../../CritsAndCoffee.Auth.API
+      dockerfile: ../Docker/compose/dockerfiles/Dockerfile.Auth.API
+    depends_on:
+      - postgres
+    networks:
+      - back-end
+    env_file:
+      - ../.envs/.local/.flask_auth
+      - ../.envs/.local/.postgres
+    deploy:
+      mode: replicated
+      replicas: 2
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
+    command: /start
 
   instagram-api: &instagram-api
     image: ${DOCKER_REGISTRY}crits_and_coffee_api:${INSTAGRAM_API_LOCAL_TAG}
@@ -38,11 +129,18 @@ services:
         - django_celery_directory=celery
     volumes:
       - ../logs/:/crits-logs/
-    links:
-      - selenium
     depends_on:
       - postgres
       - mailhog
+    deploy:
+      mode: replicated
+      replicas: 2
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
     networks:
       - back-end
     env_file:
@@ -59,7 +157,20 @@ services:
       dockerfile: ../Docker/compose/dockerfiles/Dockerfile.Quant.API
     depends_on:
       - postgres
-      - instagram-api
+      - auth-api
+    deploy:
+      mode: replicated
+      replicas: 1
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
+      resources:
+          limits:
+            cpus: '0.50'
+            memory: 50M
     networks:
       - back-end
     env_file:
@@ -68,68 +179,82 @@ services:
       - ../.envs/.private/.quandl
     command: /start
 
-  postgres:
-    image: ${DOCKER_REGISTRY}crits_and_coffee_postgres:${DOCKER_LOCAL_TAG}
-    container_name: postgres-local
-    build:
-      context: ./local/postgres
-      dockerfile: ./Dockerfile
-    networks:
-      - back-end
-    volumes:
-      - local_postgres_data:/var/lib/postgresql/data
-      - local_postgres_data_backups:/backups
-    env_file:
-      - ../.envs/.local/.postgres
-
-  caddy:
-    build:
-      context: ./dockerfiles
-      dockerfile: Dockerfile.caddy
-      args:
-        - caddyfile_version=Caddyfile.local
-    image: ${DOCKER_REGISTRY}crits_and_coffee_caddy:${DOCKER_LOCAL_TAG}
-    container_name: caddy-local
-    depends_on:
-      - front-end-app
-      - instagram-api
-      - quant-api
-    volumes:
-      - local_caddy:/root/.caddy
-    networks:
-      - back-end
-      - front-end
-    ports:
-      - "8080:8080"
-
   mailhog:
     image: mailhog/mailhog:v1.0.0
     container_name: mailhog-local
     networks:
       - back-end
+    deploy:
+      mode: replicated
+      replicas: 1
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
     ports:
       - "8025:8025"
 
   selenium:
     image: selenium/standalone-chrome
     container_name: selenium-local
+    deploy:
+      mode: replicated
+      replicas: 1
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
+      resources:
+          limits:
+            cpus: '0.50'
+            memory: 50M
     networks:
       - back-end
 
   redis:
     image: redis:3.2
     container_name: redis-local
+    deploy:
+      mode: replicated
+      replicas: 1
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
+      resources:
+          limits:
+            cpus: '0.50'
+            memory: 50M
     networks:
       - back-end
 
   celeryworker:
     <<: *instagram-api
     image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${CELERY_WORKER_LOCAL_TAG}
-    container_name: ${CELERY_WORKER_LOCAL_TAG}
+    container_name: celeryworker-local
     depends_on:
       - redis
       - postgres
       - mailhog
+    deploy:
+      mode: replicated
+      replicas: 1
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
+      resources:
+          limits:
+            cpus: '0.50'
+            memory: 50M
     networks:
       - back-end
     ports: []
@@ -138,11 +263,24 @@ services:
   celerybeat:
     <<: *instagram-api
     image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${CELERY_BEAT_LOCAL_TAG}
-    container_name: ${CELERY_BEAT_LOCAL_TAG}
+    container_name: celerybeat-local
     depends_on:
       - redis
       - postgres
       - mailhog
+    deploy:
+      mode: replicated
+      replicas: 1
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
+      resources:
+          limits:
+            cpus: '0.50'
+            memory: 50M
     networks:
       - back-end
     ports: []
@@ -151,13 +289,48 @@ services:
   flower:
     <<: *instagram-api
     image: ${DOCKER_REGISTRY}${ACCESSORY_CONTAINER_REPOSITORY}:${FLOWER_LOCAL_TAG}
-    container_name: ${FLOWER_LOCAL_TAG}
+    container_name: flower-local
+    deploy:
+      mode: replicated
+      replicas: 1
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
+      resources:
+          limits:
+            cpus: '0.50'
+            memory: 50M
     networks:
       - back-end
     ports:
       - "5555:5555"
     command: /start-flower
 
+  postgres:
+    image: ${DOCKER_REGISTRY}crits_and_coffee_postgres:${DOCKER_LOCAL_TAG}
+    container_name: postgres-local
+    build:
+      context: ./local/postgres
+      dockerfile: ./Dockerfile
+    deploy:
+      mode: replicated
+      replicas: 1
+      endpoint_mode: dnsrr
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
+    networks:
+      - back-end
+    volumes:
+      - local-postgres-data:/var/lib/postgresql/data
+      - local-postgres-data-backups:/backups
+    env_file:
+      - ../.envs/.local/.postgres
 
 networks:
   front-end:

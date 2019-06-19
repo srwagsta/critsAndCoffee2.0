@@ -5,10 +5,22 @@ mat-nav-list {
 }
 
 .crits-sidenav {
-  background: linear-gradient(rgba($dark-grey, 1), rgba($brand-primary-color, .40)) !important;
+  background-image: linear-gradient(140deg,
+    rgba(0, 0, 0, .8) 0%,
+    rgba(0, 0, 0, 0.9) 40%,
+    transparent 40%),
+  url("/assets/images/site_images/base_background_2.jpg") !important;
 
   &-home{
-    background: linear-gradient(rgba(0, 0, 0, 1), rgba($brand-primary-color, .40)) !important;
+    background-image: linear-gradient(140deg,
+      rgba(0, 0, 0, .8) 0%,
+      rgba(0, 0, 0, 0.9) 40%,
+      transparent 40%),
+    url("/assets/images/site_images/base_background_2.jpg") !important;
+  }
+
+  &-container{
+    background-color: $black;
   }
 }
 
@@ -46,25 +58,30 @@ app-footer {
   }
 }
 
-.crits-nav-container {}
-
 .crits-toolbar {
-  background: rgba($dark-grey, 1) !important;
+  background-image: linear-gradient(105deg,
+    rgba(0, 0, 0, 0.9) 0%,
+      #1f7ea280 5%,
+      rgba(0, 0, 0, 0.9) 40%,
+    transparent 40%),
+  url("/assets/images/site_images/base_background_2.jpg") !important;
 
   &-home {
     background: rgba(black, 1) !important;
   }
 }
 
-.crits-sidenav-container {}
+.crits-sidenav-container {
+}
 
-.crits-content {}
+.crits-content {
+}
 
 .spacer {
   flex: 1 1 auto;
 }
 
-.custom-toggler {
+.account-btn, .custom-toggler {
   -webkit-animation: text-focus-in 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation: text-focus-in 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation-delay: 6s;

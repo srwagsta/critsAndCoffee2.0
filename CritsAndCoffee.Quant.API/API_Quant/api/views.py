@@ -7,4 +7,3 @@ api = Api(blueprint)
 
 
 api.add_resource(DataList, '/data')
-

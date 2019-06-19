@@ -1,0 +1,51 @@
+@import "../../../../../sass/abstracts/variables";
+
+.crits-inline-form {
+
+  &--field {
+    padding: 0 1rem 0 1rem;
+    max-width: 8rem;
+    font-size: .7rem;
+    color:$white;
+  }
+
+  &--button{
+    margin-left: 73%;
+    height:1rem !important;
+    width:1rem !important;
+    font-size: .7rem !important;
+    line-height: 1rem !important;
+  }
+}
+
+.crits-header-account {
+  &--span{
+    font-size: .7rem;
+
+  }
+  &--button {
+    margin: 0 2rem 0 0;
+  }
+
+  &--fa_button{
+    margin: 0 3rem 0 0;
+    font-size: .7rem;
+  }
+}
+
+.crits-header-menu--button{
+  margin-left: 73%;
+  height:1rem !important;
+  width:1rem !important;
+  font-size: .7rem !important;
+  line-height: 1rem !important;
+}
+
+.fa-to-mat-icon {
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  padding-right:16px;
+}
+
+

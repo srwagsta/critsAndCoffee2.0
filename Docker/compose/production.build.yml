@@ -12,15 +12,26 @@ services:
 
   front-end-app:
     image: ${DOCKER_REGISTRY}crits_and_coffee_client_app:${DOCKER_PRODUCTION_TAG}
-    container_name: client-app-production
     build:
       context: ../../CritsAndCoffee.ClientApp/CritsAndCoffeeClientApp
       dockerfile: ../../Docker/compose/dockerfiles/Dockerfile.ClientApp.Prod
 
+  email-api:
+    image: ${DOCKER_REGISTRY}crits_and_coffee_client_api:${EMAIL_API_PRODUCTION_TAG}
+    build:
+      context: ../../CritsAndCoffee.Email.API
+      dockerfile: ../Docker/compose/dockerfiles/Dockerfile.Email.API
+
+  auth-api:
+    image: ${DOCKER_REGISTRY}crits_and_coffee_api:${AUTH_API_PRODUCTION_TAG}
+    container_name: auth-api-production
+    build: 
+      context: ../../CritsAndCoffee.Auth.API
+      dockerfile: ../Docker/compose/dockerfiles/Dockerfile.Auth.API
+
 
   instagram-api: &instagram-api
     image: ${DOCKER_REGISTRY}crits_and_coffee_api:${INSTAGRAM_API_PRODUCTION_TAG}
-    container_name: instagram-api-production
     build:
       context: ../../CritsAndCoffee.Instagram.API
       dockerfile: ../Docker/compose/dockerfiles/Dockerfile.Instagram.API
@@ -32,7 +43,6 @@ services:
 
   quant-api:
     image: ${DOCKER_REGISTRY}crits_and_coffee_api:${QUANT_API_PRODUCTION_TAG}
-    container_name: quant-api-production
     build:
       context: ../../CritsAndCoffee.Quant.API
       dockerfile: ../Docker/compose/dockerfiles/Dockerfile.Quant.API

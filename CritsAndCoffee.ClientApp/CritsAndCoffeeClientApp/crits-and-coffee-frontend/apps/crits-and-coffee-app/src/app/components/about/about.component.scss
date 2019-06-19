@@ -1,0 +1,181 @@
+@import "../../../sass/abstracts/variables";
+@import "../../../sass/abstracts/mixins";
+
+.paragraph {
+  margin: 2rem 0;
+}
+
+.about-view {
+  flex: 1;
+  background: linear-gradient(105deg, black 0%, rgba(0, 0, 0, 0.4) 51%, rgb(0, 0, 0) 90%);
+}
+
+.crits-accordian {
+  mat-expansion-panel{
+    background: linear-gradient(105deg,
+      rgba($brand-primary-color,.5) 0%,
+      rgba(0, 0, 0, 0.4) 60%,
+      rgb(0, 0, 0) 90%);
+  }
+  margin-bottom: 2rem;
+}
+.crits-nrwl {
+  &--image {
+    width: auto;
+    height: 2rem;
+  }
+
+  &--panel {
+
+    background-image: linear-gradient(105deg, transparent 0%,
+      rgba(102, 102, 102, 0.4) 51%, transparent 90%),
+    url("/assets/images/components/about/nrwl_logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+  }
+
+}
+
+.crits-angular {
+  &--image {
+    width: auto;
+    height: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.crits-jenkins {
+  &--image {
+    width: auto;
+    height: 2rem;
+  }
+
+  &--panel {
+
+    background-image: url("/assets/images/components/about/jenkins_logo.png");
+    background-repeat: no-repeat;
+    background-size: 3rem;
+    background-position-y: bottom;
+
+  }
+}
+
+.crits-docker {
+  &--image {
+    width: auto;
+    height: 2rem;
+  }
+
+  &--panel {
+
+    background-image: linear-gradient(105deg, transparent 0%,
+      rgba(102, 102, 102, 0.4) 51%, transparent 90%),
+    url("/assets/images/components/about/docker_logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+  }
+
+}
+
+.crits-lets_encrypt {
+  &--image {
+    width: auto;
+    height: 2rem;
+  }
+
+  &--panel {
+
+    background-image: linear-gradient(105deg, transparent 0%,
+      rgba(102, 102, 102, 0.4) 51%, transparent 90%),
+    url("/assets/images/components/about/lets_encrypt_logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+
+  }
+}
+
+.crits-postgresql {
+  &--image {
+    width: auto;
+    height: 2rem;
+  }
+
+  &--panel {
+
+    background-image: url("/assets/images/components/about/postgresql_logo.png");
+    background-repeat: no-repeat;
+    background-size: 3rem;
+    background-position-y: bottom;
+
+  }
+}
+
+.crits-dot_net {
+  &--image {
+    width: auto;
+    height: 2rem;
+  }
+
+  &--panel {
+
+    background-image: url("/assets/images/components/about/dot_net_logo.png");
+    background-repeat: no-repeat;
+    background-size: 3rem;
+    background-position-y: bottom;
+  }
+}
+
+.crits-flask {
+  &--image {
+    width: auto;
+    height: 2rem;
+  }
+
+  &--panel {
+
+    background-image: url("/assets/images/components/about/flask_logo.png");
+    background-repeat: no-repeat;
+    background-size: 3rem;
+    background-position-y: bottom;
+  }
+}
+
+
+.overview {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px;
+
+  &__heading {
+    font-size: 2.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.5rem 3rem 0 3rem;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.8rem;
+      padding: 1.25rem 2rem;
+    }
+  }
+}
+
+.detail {
+  font-size: 1rem;
+  display: flex;
+  padding: 0 4.5rem;
+  border-bottom: 1px;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 3rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
+}
+
+

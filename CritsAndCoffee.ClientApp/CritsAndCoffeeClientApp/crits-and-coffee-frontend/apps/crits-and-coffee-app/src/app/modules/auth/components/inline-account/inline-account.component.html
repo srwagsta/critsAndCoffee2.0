@@ -1,0 +1,43 @@
+<button class="crits-header-account--fa_button" mat-icon-button [matMenuTriggerFor]="loginMenu" *ngIf="!(user$ | async)">
+  <span>Sign-In </span>
+  <fa-icon [icon]="['fas', 'sign-in-alt']"></fa-icon>
+</button>
+
+<mat-menu #loginMenu="matMenu">
+  <div (click)="$event.stopPropagation()" (keydown)="$event.stopPropagation()">
+  <form class="crits-inline-form" [formGroup]="loginForm" (ngSubmit)="onLoginSubmit()">
+    <mat-form-field class="crits-inline-form--field" >
+    <input matInput formControlName="username" id="username" placeholder="Username">
+    </mat-form-field>
+
+    <mat-form-field class="crits-inline-form--field">
+      <input type="password" matInput formControlName="password" id="password" placeholder="Password">
+    </mat-form-field>
+
+    <button class="crits-inline-form--button" mat-raised-button color="primary" type="submit" [disabled]="!loginForm.valid">Login</button>
+  </form>
+  </div>
+  <button class="crits-header-menu--button" mat-raised-button color="primary" routerLink="auth/register">Register</button>
+</mat-menu>
+
+<span class="crits-header-account--span" *ngIf="user$ | async" matTooltip="Last Login: {{lastLogin$ | async}}">
+  {{userFirstName$ | async}}
+<button class="crits-header-account--button" mat-icon-button [matMenuTriggerFor]="accountMenu">
+  <mat-icon>account_circle</mat-icon>
+</button>
+</span>
+
+<mat-menu #accountMenu="matMenu" class="crits-header-account--menu">
+  <button mat-menu-item routerLink="auth/admin" *ngIf="isAdmin">
+    <mat-icon>verified_user</mat-icon>
+    <span>Admin Settings</span>
+  </button>
+  <button mat-menu-item routerLink="auth/account">
+    <mat-icon>settings</mat-icon>
+    <span>Settings</span>
+  </button>
+  <button mat-menu-item (click)="onLogoutClick()">
+    <fa-icon class="fa-to-mat-icon" [icon]="['fas', 'sign-out-alt']"></fa-icon>
+    <span>Logout</span>
+  </button>
+</mat-menu>

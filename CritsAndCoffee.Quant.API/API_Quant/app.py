@@ -1,14 +1,15 @@
 from flask import Flask
 from API_Quant import api
 from API_Quant.extensions import db, migrate
+from API_Quant.commons.exceptions import AuthError, handle_auth_error
 import sentry_sdk
 from sentry_sdk.integrations.flask import FlaskIntegration
 import os
 
+
 def create_app(config=None, testing=False, cli=False):
     """Application factory, used to create application
     """
-
 
     sentry_sdk.init(
         dsn=os.environ.get('SENTRY_DNS'),
@@ -16,7 +17,7 @@ def create_app(config=None, testing=False, cli=False):
     )
 
     app = Flask('API_Quant')
-
+    app.register_error_handler(AuthError, handle_auth_error)
     configure_app(app, testing)
     configure_extensions(app, cli)
     register_blueprints(app)

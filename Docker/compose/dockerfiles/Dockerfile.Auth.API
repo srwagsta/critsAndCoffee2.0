@@ -1,0 +1,28 @@
+FROM python
+
+RUN addgroup --system critsandcoffee \
+    && adduser --system --group auth_admin
+
+RUN mkdir /API_CODE
+WORKDIR /API_CODE
+
+COPY . /API_CODE/
+
+RUN pip install -r requirements.txt
+RUN pip install -e .
+
+COPY Docker_scripts/start /start
+RUN chmod +x /start
+RUN chown auth_admin /start
+
+COPY Docker_scripts/entrypoint /entrypoint
+RUN sed -i 's/\r//' /entrypoint
+RUN chmod +x /entrypoint
+RUN chown auth_admin /entrypoint
+
+
+RUN chown -R auth_admin /API_CODE
+
+USER auth_admin
+
+ENTRYPOINT ["/entrypoint"]
