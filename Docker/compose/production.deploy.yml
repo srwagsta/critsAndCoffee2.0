@@ -84,7 +84,7 @@ services:
     command: /start
 
   email-api:
-    image: ${DOCKER_REGISTRY}crits_and_coffee_client_api:${EMAIL_API_PRODUCTION_TAG}
+    image: ${DOCKER_REGISTRY}crits_and_coffee_api:${EMAIL_API_PRODUCTION_TAG}
     container_name: email-api-latest
     environment:
       - ASPNETCORE_ENVIRONMENT=Production

@@ -70,7 +70,7 @@ services:
     command: "/start.sh"
 
   email-api:
-    image: ${DOCKER_REGISTRY}crits_and_coffee_client_api:${EMAIL_API_LOCAL_TAG}
+    image: ${DOCKER_REGISTRY}crits_and_coffee_api:${EMAIL_API_LOCAL_TAG}
     container_name: email-api-local
     build:
       context: ../../CritsAndCoffee.Email.API
