@@ -63,8 +63,6 @@ services:
   auth-api:
     image: ${DOCKER_REGISTRY}crits_and_coffee_api:${AUTH_API_PRODUCTION_TAG}
     container_name: auth-api-production
-    depends_on:
-      - postgres
     networks:
       - back-end
     env_file:
